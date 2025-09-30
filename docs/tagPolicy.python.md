@@ -4,7 +4,7 @@
 
 ### TagPolicy <a name="TagPolicy" id="@cdktf/provider-databricks.tagPolicy.TagPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy databricks_tag_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy databricks_tag_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer"></a>
 
@@ -23,8 +23,7 @@ tagPolicy.TagPolicy(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   tag_key: str,
   description: str = None,
-  values: typing.Union[IResolvable, typing.List[TagPolicyValues]] = None,
-  workspace_id: str = None
+  values: typing.Union[IResolvable, typing.List[TagPolicyValues]] = None
 )
 ```
 
@@ -39,10 +38,9 @@ tagPolicy.TagPolicy(
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}. |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#description TagPolicy#description}. |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.values">values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#values TagPolicy#values}. |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#workspace_id TagPolicy#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#description TagPolicy#description}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.values">values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#values TagPolicy#values}. |
 
 ---
 
@@ -110,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}.
 
 ---
 
@@ -118,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#description TagPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#description TagPolicy#description}.
 
 ---
 
@@ -126,15 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#values TagPolicy#values}.
-
----
-
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer.parameter.workspaceId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#workspace_id TagPolicy#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#values TagPolicy#values}.
 
 ---
 
@@ -168,7 +158,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.putValues">put_values</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.resetValues">reset_values</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -523,12 +512,6 @@ def reset_description() -> None
 def reset_values() -> None
 ```
 
-##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.resetWorkspaceId"></a>
-
-```python
-def reset_workspace_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -643,7 +626,7 @@ The construct id used in the generated config for the TagPolicy to import.
 
 The id of the existing TagPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,15 +656,15 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.values">values</a></code> | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValuesList">TagPolicyValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.tagKeyInput">tag_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.valuesInput">values_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.tagKey">tag_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicy.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -827,10 +810,30 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.property.createTime"></a>
+
+```python
+create_time: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.property.id"></a>
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.property.updateTime"></a>
+
+```python
+update_time: str
 ```
 
 - *Type:* str
@@ -877,16 +880,6 @@ values_input: typing.Union[IResolvable, typing.List[TagPolicyValues]]
 
 ---
 
-##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.property.workspaceIdInput"></a>
-
-```python
-workspace_id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.property.description"></a>
 
 ```python
@@ -901,16 +894,6 @@ description: str
 
 ```python
 tag_key: str
-```
-
-- *Type:* str
-
----
-
-##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.property.workspaceId"></a>
-
-```python
-workspace_id: str
 ```
 
 - *Type:* str
@@ -954,8 +937,7 @@ tagPolicy.TagPolicyConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   tag_key: str,
   description: str = None,
-  values: typing.Union[IResolvable, typing.List[TagPolicyValues]] = None,
-  workspace_id: str = None
+  values: typing.Union[IResolvable, typing.List[TagPolicyValues]] = None
 )
 ```
 
@@ -970,10 +952,9 @@ tagPolicy.TagPolicyConfig(
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}. |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#description TagPolicy#description}. |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.values">values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#values TagPolicy#values}. |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#workspace_id TagPolicy#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#description TagPolicy#description}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.values">values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#values TagPolicy#values}. |
 
 ---
 
@@ -1055,7 +1036,7 @@ tag_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}.
 
 ---
 
@@ -1067,7 +1048,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#description TagPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#description TagPolicy#description}.
 
 ---
 
@@ -1079,19 +1060,7 @@ values: typing.Union[IResolvable, typing.List[TagPolicyValues]]
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues">TagPolicyValues</a>]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#values TagPolicy#values}.
-
----
-
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.property.workspaceId"></a>
-
-```python
-workspace_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#workspace_id TagPolicy#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#values TagPolicy#values}.
 
 ---
 
@@ -1111,7 +1080,7 @@ tagPolicy.TagPolicyValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#name TagPolicy#name}. |
+| <code><a href="#@cdktf/provider-databricks.tagPolicy.TagPolicyValues.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#name TagPolicy#name}. |
 
 ---
 
@@ -1123,7 +1092,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/tag_policy#name TagPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/tag_policy#name TagPolicy#name}.
 
 ---
 

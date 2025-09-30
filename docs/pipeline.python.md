@@ -4,7 +4,7 @@
 
 ### Pipeline <a name="Pipeline" id="@cdktf/provider-databricks.pipeline.Pipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline databricks_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline databricks_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.Pipeline.Initializer"></a>
 
@@ -75,46 +75,46 @@ pipeline.Pipeline(
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.allowDuplicateNames">allow_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.cause">cause</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cause Pipeline#cause}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.channel">channel</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#channel Pipeline#channel}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.allowDuplicateNames">allow_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.cause">cause</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.channel">channel</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.cluster">cluster</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>]]</code> | cluster block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.configuration">configuration</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.continuous">continuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.creatorUserName">creator_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.configuration">configuration</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.continuous">continuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.creatorUserName">creator_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.development">development</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#development Pipeline#development}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.development">development</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.environment">environment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.eventLog">event_log</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | event_log block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.expectedLastModified">expected_last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.expectedLastModified">expected_last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.filters">filters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.gatewayDefinition">gateway_definition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | gateway_definition block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.health">health</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#health Pipeline#health}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.health">health</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#health Pipeline#health}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.ingestionDefinition">ingestion_definition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.lastModified">last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.lastModified">last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.latestUpdates">latest_updates</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>]]</code> | latest_updates block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.library">library</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>]]</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.notification">notification</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>]]</code> | notification block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.photon">photon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.photon">photon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.restartWindow">restart_window</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | restart_window block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.rootPath">root_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.rootPath">root_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | run_as block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.serverless">serverless</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.storage">storage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#storage Pipeline#storage}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#tags Pipeline#tags}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#target Pipeline#target}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.serverless">serverless</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.storage">storage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#target Pipeline#target}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | trigger block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -182,7 +182,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cause Pipeline#cause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}.
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#channel Pipeline#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}.
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster Pipeline#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster Pipeline#cluster}
 
 ---
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#configuration Pipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deployment Pipeline#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deployment Pipeline#deployment}
 
 ---
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#development Pipeline#development}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}.
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#edition Pipeline#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}.
 
 ---
 
@@ -292,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#environment Pipeline#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#environment Pipeline#environment}
 
 ---
 
@@ -302,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 event_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#event_log Pipeline#event_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#event_log Pipeline#event_log}
 
 ---
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 
 ---
 
@@ -320,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#filters Pipeline#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#filters Pipeline#filters}
 
 ---
 
@@ -330,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 gateway_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
 
 ---
 
@@ -338,7 +338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#health Pipeline#health}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#health Pipeline#health}.
 
 ---
 
@@ -346,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#id Pipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -359,7 +359,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ingestion_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 latest_updates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 
 ---
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#library Pipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#library Pipeline#library}
 
 ---
 
@@ -395,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#notification Pipeline#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#notification Pipeline#notification}
 
 ---
 
@@ -413,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#photon Pipeline#photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}.
 
 ---
 
@@ -423,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 restart_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
 
 ---
 
@@ -431,7 +431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#root_path Pipeline#root_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}.
 
 ---
 
@@ -441,7 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as Pipeline#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as Pipeline#run_as}
 
 ---
 
@@ -449,7 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 
 ---
 
@@ -457,7 +457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -465,7 +465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 
 ---
 
@@ -473,7 +473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -481,7 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#storage Pipeline#storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}.
 
 ---
 
@@ -489,7 +489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#tags Pipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}.
 
 ---
 
@@ -497,7 +497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#target Pipeline#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#target Pipeline#target}.
 
 ---
 
@@ -507,7 +507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
 
 ---
 
@@ -517,7 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#trigger Pipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#trigger Pipeline#trigger}
 
 ---
 
@@ -525,7 +525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -965,7 +965,7 @@ def put_deployment(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kind Pipeline#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kind Pipeline#kind}.
 
 ---
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
 
 ---
 
@@ -989,7 +989,7 @@ def put_environment(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
 
 ---
 
@@ -1007,7 +1007,7 @@ def put_event_log(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -1040,7 +1040,7 @@ def put_filters(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude Pipeline#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude Pipeline#exclude}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -1068,7 +1068,7 @@ def put_gateway_definition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
 
 ---
 
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
 
 ---
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
 
 ---
 
@@ -1110,6 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 def put_ingestion_definition(
   connection_name: str = None,
   ingestion_gateway_id: str = None,
+  netsuite_jar_path: str = None,
   objects: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjects]] = None,
   source_configurations: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionSourceConfigurations]] = None,
   source_type: str = None,
@@ -1121,7 +1122,7 @@ def put_ingestion_definition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -1129,7 +1130,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+
+---
+
+###### `netsuite_jar_path`<sup>Optional</sup> <a name="netsuite_jar_path" id="@cdktf/provider-databricks.pipeline.Pipeline.putIngestionDefinition.parameter.netsuiteJarPath"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}.
 
 ---
 
@@ -1139,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 objects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#objects Pipeline#objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#objects Pipeline#objects}
 
 ---
 
@@ -1149,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 source_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
 
 ---
 
@@ -1157,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_type Pipeline#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_type Pipeline#source_type}.
 
 ---
 
@@ -1167,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -1227,7 +1236,7 @@ def put_restart_window(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
 
 ---
 
@@ -1235,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
 
 ---
 
@@ -1243,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
 
 ---
 
@@ -1260,7 +1269,7 @@ def put_run_as(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
 
 ---
 
@@ -1268,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#user_name Pipeline#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#user_name Pipeline#user_name}.
 
 ---
 
@@ -1284,7 +1293,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#default Pipeline#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#default Pipeline#default}.
 
 ---
 
@@ -1303,7 +1312,7 @@ def put_trigger(
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cron Pipeline#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cron Pipeline#cron}
 
 ---
 
@@ -1313,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#manual Pipeline#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#manual Pipeline#manual}
 
 ---
 
@@ -1671,7 +1680,7 @@ The construct id used in the generated config for the Pipeline to import.
 
 The id of the existing Pipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2780,25 +2789,25 @@ pipeline.PipelineCluster(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale">PipelineClusterAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.awsAttributes">aws_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes">PipelineClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.azureAttributes">azure_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes">PipelineClusterAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.clusterLogConf">cluster_log_conf</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConf">PipelineClusterClusterLogConf</a></code> | cluster_log_conf block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.gcpAttributes">gcp_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes">PipelineClusterGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.initScripts">init_scripts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>]]</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#label Pipeline#label}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#label Pipeline#label}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkConf">spark_conf</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">spark_env_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
 
 ---
 
@@ -2810,7 +2819,7 @@ apply_policy_default_values: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
 
 ---
 
@@ -2824,7 +2833,7 @@ autoscale: PipelineClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
 
 ---
 
@@ -2838,7 +2847,7 @@ aws_attributes: PipelineClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
 
 ---
 
@@ -2852,7 +2861,7 @@ azure_attributes: PipelineClusterAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
 
 ---
 
@@ -2866,7 +2875,7 @@ cluster_log_conf: PipelineClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
 
 ---
 
@@ -2878,7 +2887,7 @@ custom_tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
 
 ---
 
@@ -2890,7 +2899,7 @@ driver_instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
 
 ---
 
@@ -2902,7 +2911,7 @@ driver_node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
 
 ---
 
@@ -2914,7 +2923,7 @@ enable_local_disk_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
 
 ---
 
@@ -2928,7 +2937,7 @@ gcp_attributes: PipelineClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
 
 ---
 
@@ -2942,7 +2951,7 @@ init_scripts: typing.Union[IResolvable, typing.List[PipelineClusterInitScripts]]
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
 
 ---
 
@@ -2954,7 +2963,7 @@ instance_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
 
 ---
 
@@ -2966,7 +2975,7 @@ label: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#label Pipeline#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#label Pipeline#label}.
 
 ---
 
@@ -2978,7 +2987,7 @@ node_type_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
 
 ---
 
@@ -2990,7 +2999,7 @@ num_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
 
 ---
 
@@ -3002,7 +3011,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
 
 ---
 
@@ -3014,7 +3023,7 @@ spark_conf: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
 
 ---
 
@@ -3026,7 +3035,7 @@ spark_env_vars: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
 
 ---
 
@@ -3038,7 +3047,7 @@ ssh_public_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
 
 ---
 
@@ -3060,9 +3069,9 @@ pipeline.PipelineClusterAutoscale(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#mode Pipeline#mode}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">max_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">min_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#mode Pipeline#mode}. |
 
 ---
 
@@ -3074,7 +3083,7 @@ max_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
 
 ---
 
@@ -3086,7 +3095,7 @@ min_workers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
 
 ---
 
@@ -3098,7 +3107,7 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#mode Pipeline#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#mode Pipeline#mode}.
 
 ---
 
@@ -3127,16 +3136,16 @@ pipeline.PipelineClusterAwsAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">ebs_volume_iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">ebs_volume_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">ebs_volume_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">ebs_volume_iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">ebs_volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">ebs_volume_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">ebs_volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">spot_bid_price_percent</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -3148,7 +3157,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -3160,7 +3169,7 @@ ebs_volume_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
 
 ---
 
@@ -3172,7 +3181,7 @@ ebs_volume_iops: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
 
 ---
 
@@ -3184,7 +3193,7 @@ ebs_volume_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
 
 ---
 
@@ -3196,7 +3205,7 @@ ebs_volume_throughput: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
 
 ---
 
@@ -3208,7 +3217,7 @@ ebs_volume_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
 
 ---
 
@@ -3220,7 +3229,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -3232,7 +3241,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
 
 ---
 
@@ -3244,7 +3253,7 @@ spot_bid_price_percent: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
 
 ---
 
@@ -3256,7 +3265,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -3279,10 +3288,10 @@ pipeline.PipelineClusterAzureAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.logAnalyticsInfo">log_analytics_info</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">spot_bid_max_price</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
 
 ---
 
@@ -3294,7 +3303,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -3306,7 +3315,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -3320,7 +3329,7 @@ log_analytics_info: PipelineClusterAzureAttributesLogAnalyticsInfo
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
 
 ---
 
@@ -3332,7 +3341,7 @@ spot_bid_max_price: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
 
 ---
 
@@ -3353,8 +3362,8 @@ pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">log_analytics_primary_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">log_analytics_workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">log_analytics_primary_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">log_analytics_workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
 
 ---
 
@@ -3366,7 +3375,7 @@ log_analytics_primary_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
 
 ---
 
@@ -3378,7 +3387,7 @@ log_analytics_workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
 
 ---
 
@@ -3416,7 +3425,7 @@ dbfs: PipelineClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -3430,7 +3439,7 @@ s3: PipelineClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -3444,7 +3453,7 @@ volumes: PipelineClusterClusterLogConfVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -3464,7 +3473,7 @@ pipeline.PipelineClusterClusterLogConfDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3476,7 +3485,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3502,13 +3511,13 @@ pipeline.PipelineClusterClusterLogConfS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -3520,7 +3529,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3532,7 +3541,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -3544,7 +3553,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -3556,7 +3565,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -3568,7 +3577,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -3580,7 +3589,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -3592,7 +3601,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -3612,7 +3621,7 @@ pipeline.PipelineClusterClusterLogConfVolumes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3624,7 +3633,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3648,11 +3657,11 @@ pipeline.PipelineClusterGcpAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">availability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -3664,7 +3673,7 @@ availability: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -3676,7 +3685,7 @@ first_on_demand: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -3688,7 +3697,7 @@ google_service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
 
 ---
 
@@ -3700,7 +3709,7 @@ local_ssd_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
 
 ---
 
@@ -3712,7 +3721,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -3758,7 +3767,7 @@ abfss: PipelineClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#abfss Pipeline#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#abfss Pipeline#abfss}
 
 ---
 
@@ -3772,7 +3781,7 @@ dbfs: PipelineClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -3786,7 +3795,7 @@ file: PipelineClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -3800,7 +3809,7 @@ gcs: PipelineClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gcs Pipeline#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gcs Pipeline#gcs}
 
 ---
 
@@ -3814,7 +3823,7 @@ s3: PipelineClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -3828,7 +3837,7 @@ volumes: PipelineClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -3842,7 +3851,7 @@ workspace: PipelineClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#workspace Pipeline#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workspace Pipeline#workspace}
 
 ---
 
@@ -3862,7 +3871,7 @@ pipeline.PipelineClusterInitScriptsAbfss(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3874,7 +3883,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3894,7 +3903,7 @@ pipeline.PipelineClusterInitScriptsDbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3906,7 +3915,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3926,7 +3935,7 @@ pipeline.PipelineClusterInitScriptsFile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3938,7 +3947,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3958,7 +3967,7 @@ pipeline.PipelineClusterInitScriptsGcs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3970,7 +3979,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3996,13 +4005,13 @@ pipeline.PipelineClusterInitScriptsS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -4014,7 +4023,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -4026,7 +4035,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -4038,7 +4047,7 @@ enable_encryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -4050,7 +4059,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -4062,7 +4071,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -4074,7 +4083,7 @@ kms_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -4086,7 +4095,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -4106,7 +4115,7 @@ pipeline.PipelineClusterInitScriptsVolumes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -4118,7 +4127,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -4138,7 +4147,7 @@ pipeline.PipelineClusterInitScriptsWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -4150,7 +4159,7 @@ destination: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -4223,46 +4232,46 @@ pipeline.PipelineConfig(
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">allow_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause">cause</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cause Pipeline#cause}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">channel</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#channel Pipeline#channel}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">allow_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause">cause</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">channel</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cluster">cluster</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>]]</code> | cluster block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">configuration</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">continuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">creator_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">configuration</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">continuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">creator_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.deployment">deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">development</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#development Pipeline#development}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">development</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.environment">environment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.eventLog">event_log</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | event_log block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">expected_last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">expected_last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.filters">filters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.gatewayDefinition">gateway_definition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | gateway_definition block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.health">health</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#health Pipeline#health}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.health">health</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#health Pipeline#health}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.ingestionDefinition">ingestion_definition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified">last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified">last_modified</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates">latest_updates</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>]]</code> | latest_updates block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.library">library</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>]]</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.notification">notification</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>]]</code> | notification block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">photon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">photon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.restartWindow">restart_window</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | restart_window block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.rootPath">root_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.rootPath">root_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAs">run_as</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | run_as block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">serverless</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">storage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#storage Pipeline#storage}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#tags Pipeline#tags}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#target Pipeline#target}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">run_as_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">serverless</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">storage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#target Pipeline#target}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.trigger">trigger</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | trigger block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -4344,7 +4353,7 @@ allow_duplicate_names: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
 ---
 
@@ -4356,7 +4365,7 @@ budget_policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
 
 ---
 
@@ -4368,7 +4377,7 @@ catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -4380,7 +4389,7 @@ cause: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cause Pipeline#cause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}.
 
 ---
 
@@ -4392,7 +4401,7 @@ channel: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#channel Pipeline#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}.
 
 ---
 
@@ -4406,7 +4415,7 @@ cluster: typing.Union[IResolvable, typing.List[PipelineCluster]]
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster Pipeline#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster Pipeline#cluster}
 
 ---
 
@@ -4418,7 +4427,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 
 ---
 
@@ -4430,7 +4439,7 @@ configuration: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#configuration Pipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 
 ---
 
@@ -4442,7 +4451,7 @@ continuous: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 
 ---
 
@@ -4454,7 +4463,7 @@ creator_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 
 ---
 
@@ -4468,7 +4477,7 @@ deployment: PipelineDeployment
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deployment Pipeline#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deployment Pipeline#deployment}
 
 ---
 
@@ -4480,7 +4489,7 @@ development: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#development Pipeline#development}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}.
 
 ---
 
@@ -4492,7 +4501,7 @@ edition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#edition Pipeline#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}.
 
 ---
 
@@ -4506,7 +4515,7 @@ environment: PipelineEnvironment
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#environment Pipeline#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#environment Pipeline#environment}
 
 ---
 
@@ -4520,7 +4529,7 @@ event_log: PipelineEventLog
 
 event_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#event_log Pipeline#event_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#event_log Pipeline#event_log}
 
 ---
 
@@ -4532,7 +4541,7 @@ expected_last_modified: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 
 ---
 
@@ -4546,7 +4555,7 @@ filters: PipelineFilters
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#filters Pipeline#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#filters Pipeline#filters}
 
 ---
 
@@ -4560,7 +4569,7 @@ gateway_definition: PipelineGatewayDefinition
 
 gateway_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
 
 ---
 
@@ -4572,7 +4581,7 @@ health: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#health Pipeline#health}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#health Pipeline#health}.
 
 ---
 
@@ -4584,7 +4593,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#id Pipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4601,7 +4610,7 @@ ingestion_definition: PipelineIngestionDefinition
 
 ingestion_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
 
 ---
 
@@ -4613,7 +4622,7 @@ last_modified: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
 
 ---
 
@@ -4627,7 +4636,7 @@ latest_updates: typing.Union[IResolvable, typing.List[PipelineLatestUpdates]]
 
 latest_updates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 
 ---
 
@@ -4641,7 +4650,7 @@ library: typing.Union[IResolvable, typing.List[PipelineLibrary]]
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#library Pipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#library Pipeline#library}
 
 ---
 
@@ -4653,7 +4662,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -4667,7 +4676,7 @@ notification: typing.Union[IResolvable, typing.List[PipelineNotification]]
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#notification Pipeline#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#notification Pipeline#notification}
 
 ---
 
@@ -4679,7 +4688,7 @@ photon: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#photon Pipeline#photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}.
 
 ---
 
@@ -4693,7 +4702,7 @@ restart_window: PipelineRestartWindow
 
 restart_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
 
 ---
 
@@ -4705,7 +4714,7 @@ root_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#root_path Pipeline#root_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}.
 
 ---
 
@@ -4719,7 +4728,7 @@ run_as: PipelineRunAs
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as Pipeline#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as Pipeline#run_as}
 
 ---
 
@@ -4731,7 +4740,7 @@ run_as_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 
 ---
 
@@ -4743,7 +4752,7 @@ schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -4755,7 +4764,7 @@ serverless: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 
 ---
 
@@ -4767,7 +4776,7 @@ state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -4779,7 +4788,7 @@ storage: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#storage Pipeline#storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}.
 
 ---
 
@@ -4791,7 +4800,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#tags Pipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}.
 
 ---
 
@@ -4803,7 +4812,7 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#target Pipeline#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#target Pipeline#target}.
 
 ---
 
@@ -4817,7 +4826,7 @@ timeouts: PipelineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
 
 ---
 
@@ -4831,7 +4840,7 @@ trigger: PipelineTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#trigger Pipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#trigger Pipeline#trigger}
 
 ---
 
@@ -4843,7 +4852,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -4864,8 +4873,8 @@ pipeline.PipelineDeployment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kind Pipeline#kind}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">metadata_file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kind Pipeline#kind}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">metadata_file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
 
 ---
 
@@ -4877,7 +4886,7 @@ kind: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kind Pipeline#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kind Pipeline#kind}.
 
 ---
 
@@ -4889,7 +4898,7 @@ metadata_file_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
 
 ---
 
@@ -4909,7 +4918,7 @@ pipeline.PipelineEnvironment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment.property.dependencies">dependencies</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dependencies Pipeline#dependencies}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment.property.dependencies">dependencies</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dependencies Pipeline#dependencies}. |
 
 ---
 
@@ -4921,7 +4930,7 @@ dependencies: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
 
 ---
 
@@ -4943,9 +4952,9 @@ pipeline.PipelineEventLog(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}. |
 
 ---
 
@@ -4957,7 +4966,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -4969,7 +4978,7 @@ catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -4981,7 +4990,7 @@ schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -5002,8 +5011,8 @@ pipeline.PipelineFilters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.exclude">exclude</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.include">include</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.exclude">exclude</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.include">include</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -5015,7 +5024,7 @@ exclude: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude Pipeline#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude Pipeline#exclude}.
 
 ---
 
@@ -5027,7 +5036,7 @@ include: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -5051,11 +5060,11 @@ pipeline.PipelineGatewayDefinition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionName">connection_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">gateway_storage_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">gateway_storage_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">gateway_storage_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionName">connection_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">gateway_storage_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">gateway_storage_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">gateway_storage_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
 
 ---
 
@@ -5067,7 +5076,7 @@ connection_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -5079,7 +5088,7 @@ gateway_storage_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
 
 ---
 
@@ -5091,7 +5100,7 @@ gateway_storage_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
 
 ---
 
@@ -5103,7 +5112,7 @@ connection_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
 
 ---
 
@@ -5115,7 +5124,7 @@ gateway_storage_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
 
 ---
 
@@ -5129,6 +5138,7 @@ from cdktf_cdktf_provider_databricks import pipeline
 pipeline.PipelineIngestionDefinition(
   connection_name: str = None,
   ingestion_gateway_id: str = None,
+  netsuite_jar_path: str = None,
   objects: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjects]] = None,
   source_configurations: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionSourceConfigurations]] = None,
   source_type: str = None,
@@ -5140,11 +5150,12 @@ pipeline.PipelineIngestionDefinition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">connection_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">ingestion_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">connection_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">ingestion_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath">netsuite_jar_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects">objects</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>]]</code> | objects block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceConfigurations">source_configurations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>]]</code> | source_configurations block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.tableConfiguration">table_configuration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5157,7 +5168,7 @@ connection_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -5169,7 +5180,19 @@ ingestion_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+
+---
+
+##### `netsuite_jar_path`<sup>Optional</sup> <a name="netsuite_jar_path" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath"></a>
+
+```python
+netsuite_jar_path: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}.
 
 ---
 
@@ -5183,7 +5206,7 @@ objects: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObject
 
 objects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#objects Pipeline#objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#objects Pipeline#objects}
 
 ---
 
@@ -5197,7 +5220,7 @@ source_configurations: typing.Union[IResolvable, typing.List[PipelineIngestionDe
 
 source_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
 
 ---
 
@@ -5209,7 +5232,7 @@ source_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_type Pipeline#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_type Pipeline#source_type}.
 
 ---
 
@@ -5223,7 +5246,7 @@ table_configuration: PipelineIngestionDefinitionTableConfiguration
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5261,7 +5284,7 @@ report: PipelineIngestionDefinitionObjectsReport
 
 report block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#report Pipeline#report}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report Pipeline#report}
 
 ---
 
@@ -5275,7 +5298,7 @@ schema: PipelineIngestionDefinitionObjectsSchema
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}
 
 ---
 
@@ -5289,7 +5312,7 @@ table: PipelineIngestionDefinitionObjectsTable
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table Pipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table Pipeline#table}
 
 ---
 
@@ -5313,10 +5336,10 @@ pipeline.PipelineIngestionDefinitionObjectsReport(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationCatalog">destination_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationSchema">destination_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_url Pipeline#source_url}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationTable">destination_table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationCatalog">destination_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationSchema">destination_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_url Pipeline#source_url}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationTable">destination_table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.tableConfiguration">table_configuration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration">PipelineIngestionDefinitionObjectsReportTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5329,7 +5352,7 @@ destination_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -5341,7 +5364,7 @@ destination_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -5353,7 +5376,7 @@ source_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_url Pipeline#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_url Pipeline#source_url}.
 
 ---
 
@@ -5365,7 +5388,7 @@ destination_table: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -5379,7 +5402,7 @@ table_configuration: PipelineIngestionDefinitionObjectsReportTableConfiguration
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5397,7 +5420,8 @@ pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration(
   query_based_connector_config: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters = None
 )
 ```
 
@@ -5405,13 +5429,14 @@ pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -5423,7 +5448,7 @@ exclude_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -5435,7 +5460,7 @@ include_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -5447,7 +5472,7 @@ primary_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -5461,7 +5486,7 @@ query_based_connector_config: PipelineIngestionDefinitionObjectsReportTableConfi
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -5473,7 +5498,7 @@ salesforce_include_formula_fields: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -5485,7 +5510,7 @@ scd_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -5497,7 +5522,21 @@ sequence_by: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -5519,9 +5558,9 @@ pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -5533,7 +5572,7 @@ cursor_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -5545,7 +5584,7 @@ deletion_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -5557,7 +5596,115 @@ hard_deletion_sync_min_interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters">report_parameters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | report_parameters block. |
+
+---
+
+##### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```python
+report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters(
+  key: str = None,
+  value: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -5581,10 +5728,10 @@ pipeline.PipelineIngestionDefinitionObjectsSchema(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">destination_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">destination_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">source_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">source_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">destination_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">destination_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">source_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">source_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.tableConfiguration">table_configuration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5597,7 +5744,7 @@ destination_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -5609,7 +5756,7 @@ destination_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -5621,7 +5768,7 @@ source_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -5633,7 +5780,7 @@ source_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -5647,7 +5794,7 @@ table_configuration: PipelineIngestionDefinitionObjectsSchemaTableConfiguration
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5665,7 +5812,8 @@ pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration(
   query_based_connector_config: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters = None
 )
 ```
 
@@ -5673,13 +5821,14 @@ pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -5691,7 +5840,7 @@ exclude_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -5703,7 +5852,7 @@ include_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -5715,7 +5864,7 @@ primary_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -5729,7 +5878,7 @@ query_based_connector_config: PipelineIngestionDefinitionObjectsSchemaTableConfi
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -5741,7 +5890,7 @@ salesforce_include_formula_fields: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -5753,7 +5902,7 @@ scd_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -5765,7 +5914,21 @@ sequence_by: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -5787,9 +5950,9 @@ pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -5801,7 +5964,7 @@ cursor_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -5813,7 +5976,7 @@ deletion_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -5825,7 +5988,115 @@ hard_deletion_sync_min_interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters">report_parameters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | report_parameters block. |
+
+---
+
+##### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```python
+report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters(
+  key: str = None,
+  value: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -5851,12 +6122,12 @@ pipeline.PipelineIngestionDefinitionObjectsTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">destination_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">destination_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">source_table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">destination_table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">source_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">source_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">destination_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">destination_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">source_table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">destination_table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">source_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">source_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.tableConfiguration">table_configuration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5869,7 +6140,7 @@ destination_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -5881,7 +6152,7 @@ destination_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -5893,7 +6164,7 @@ source_table: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_table Pipeline#source_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_table Pipeline#source_table}.
 
 ---
 
@@ -5905,7 +6176,7 @@ destination_table: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -5917,7 +6188,7 @@ source_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -5929,7 +6200,7 @@ source_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -5943,7 +6214,7 @@ table_configuration: PipelineIngestionDefinitionObjectsTableTableConfiguration
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5961,7 +6232,8 @@ pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration(
   query_based_connector_config: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters = None
 )
 ```
 
@@ -5969,13 +6241,14 @@ pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -5987,7 +6260,7 @@ exclude_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -5999,7 +6272,7 @@ include_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -6011,7 +6284,7 @@ primary_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -6025,7 +6298,7 @@ query_based_connector_config: PipelineIngestionDefinitionObjectsTableTableConfig
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -6037,7 +6310,7 @@ salesforce_include_formula_fields: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -6049,7 +6322,7 @@ scd_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -6061,7 +6334,21 @@ sequence_by: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -6083,9 +6370,9 @@ pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -6097,7 +6384,7 @@ cursor_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -6109,7 +6396,7 @@ deletion_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -6121,7 +6408,115 @@ hard_deletion_sync_min_interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters">report_parameters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | report_parameters block. |
+
+---
+
+##### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```python
+report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters(
+  key: str = None,
+  value: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -6155,7 +6550,7 @@ catalog: PipelineIngestionDefinitionSourceConfigurationsCatalog
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}
 
 ---
 
@@ -6177,7 +6572,7 @@ pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.postgres">postgres</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres">PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres</a></code> | postgres block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.sourceCatalog">source_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.sourceCatalog">source_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 
 ---
 
@@ -6191,7 +6586,7 @@ postgres: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres
 
 postgres block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#postgres Pipeline#postgres}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#postgres Pipeline#postgres}
 
 ---
 
@@ -6203,7 +6598,7 @@ source_catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -6237,7 +6632,7 @@ slot_config: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotC
 
 slot_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
 
 ---
 
@@ -6258,8 +6653,8 @@ pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.publicationName">publication_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#publication_name Pipeline#publication_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.slotName">slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_name Pipeline#slot_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.publicationName">publication_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#publication_name Pipeline#publication_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.slotName">slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_name Pipeline#slot_name}. |
 
 ---
 
@@ -6271,7 +6666,7 @@ publication_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
 
 ---
 
@@ -6283,7 +6678,7 @@ slot_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
 
 ---
 
@@ -6301,7 +6696,8 @@ pipeline.PipelineIngestionDefinitionTableConfiguration(
   query_based_connector_config: PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters = None
 )
 ```
 
@@ -6309,13 +6705,14 @@ pipeline.PipelineIngestionDefinitionTableConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">salesforce_include_formula_fields</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">scd_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">sequence_by</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -6327,7 +6724,7 @@ exclude_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -6339,7 +6736,7 @@ include_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -6351,7 +6748,7 @@ primary_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -6365,7 +6762,7 @@ query_based_connector_config: PipelineIngestionDefinitionTableConfigurationQuery
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -6377,7 +6774,7 @@ salesforce_include_formula_fields: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -6389,7 +6786,7 @@ scd_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -6401,7 +6798,21 @@ sequence_by: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -6423,9 +6834,9 @@ pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursor_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletion_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hard_deletion_sync_min_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -6437,7 +6848,7 @@ cursor_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -6449,7 +6860,7 @@ deletion_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -6461,7 +6872,115 @@ hard_deletion_sync_min_interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters">report_parameters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | report_parameters block. |
+
+---
+
+##### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```python
+report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters(
+  key: str = None,
+  value: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -6483,9 +7002,9 @@ pipeline.PipelineLatestUpdates(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">creation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">update_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">creation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">update_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
 
 ---
 
@@ -6497,7 +7016,7 @@ creation_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
 
 ---
 
@@ -6509,7 +7028,7 @@ state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -6521,7 +7040,7 @@ update_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#update_id Pipeline#update_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#update_id Pipeline#update_id}.
 
 ---
 
@@ -6548,10 +7067,10 @@ pipeline.PipelineLibrary(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.file">file</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile">PipelineLibraryFile</a></code> | file block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.glob">glob</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryGlob">PipelineLibraryGlob</a></code> | glob block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.jar">jar</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#jar Pipeline#jar}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.jar">jar</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#jar Pipeline#jar}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.maven">maven</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven">PipelineLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.notebook">notebook</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook">PipelineLibraryNotebook</a></code> | notebook block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.whl">whl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#whl Pipeline#whl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.whl">whl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#whl Pipeline#whl}. |
 
 ---
 
@@ -6565,7 +7084,7 @@ file: PipelineLibraryFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -6579,7 +7098,7 @@ glob: PipelineLibraryGlob
 
 glob block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#glob Pipeline#glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#glob Pipeline#glob}
 
 ---
 
@@ -6591,7 +7110,7 @@ jar: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#jar Pipeline#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#jar Pipeline#jar}.
 
 ---
 
@@ -6605,7 +7124,7 @@ maven: PipelineLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#maven Pipeline#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#maven Pipeline#maven}
 
 ---
 
@@ -6619,7 +7138,7 @@ notebook: PipelineLibraryNotebook
 
 notebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#notebook Pipeline#notebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#notebook Pipeline#notebook}
 
 ---
 
@@ -6631,7 +7150,7 @@ whl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#whl Pipeline#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#whl Pipeline#whl}.
 
 ---
 
@@ -6651,7 +7170,7 @@ pipeline.PipelineLibraryFile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
@@ -6663,7 +7182,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -6683,7 +7202,7 @@ pipeline.PipelineLibraryGlob(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryGlob.property.include">include</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryGlob.property.include">include</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -6695,7 +7214,7 @@ include: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -6717,9 +7236,9 @@ pipeline.PipelineLibraryMaven(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">coordinates</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">exclusions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#repo Pipeline#repo}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">coordinates</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">exclusions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">repo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#repo Pipeline#repo}. |
 
 ---
 
@@ -6731,7 +7250,7 @@ coordinates: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
 
 ---
 
@@ -6743,7 +7262,7 @@ exclusions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
 
 ---
 
@@ -6755,7 +7274,7 @@ repo: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#repo Pipeline#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#repo Pipeline#repo}.
 
 ---
 
@@ -6775,7 +7294,7 @@ pipeline.PipelineLibraryNotebook(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
@@ -6787,7 +7306,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -6808,8 +7327,8 @@ pipeline.PipelineNotification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts">alerts</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">email_recipients</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts">alerts</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">email_recipients</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
 
 ---
 
@@ -6821,7 +7340,7 @@ alerts: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#alerts Pipeline#alerts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#alerts Pipeline#alerts}.
 
 ---
 
@@ -6833,7 +7352,7 @@ email_recipients: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
 
 ---
 
@@ -6855,9 +7374,9 @@ pipeline.PipelineRestartWindow(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.startHour">start_hour</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.daysOfWeek">days_of_week</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.timeZoneId">time_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.startHour">start_hour</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.daysOfWeek">days_of_week</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.timeZoneId">time_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
 
 ---
 
@@ -6869,7 +7388,7 @@ start_hour: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
 
 ---
 
@@ -6881,7 +7400,7 @@ days_of_week: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
 
 ---
 
@@ -6893,7 +7412,7 @@ time_zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
 
 ---
 
@@ -6914,8 +7433,8 @@ pipeline.PipelineRunAs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#user_name Pipeline#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#user_name Pipeline#user_name}. |
 
 ---
 
@@ -6927,7 +7446,7 @@ service_principal_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
 
 ---
 
@@ -6939,7 +7458,7 @@ user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#user_name Pipeline#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#user_name Pipeline#user_name}.
 
 ---
 
@@ -6959,7 +7478,7 @@ pipeline.PipelineTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#default Pipeline#default}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#default Pipeline#default}. |
 
 ---
 
@@ -6971,7 +7490,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#default Pipeline#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#default Pipeline#default}.
 
 ---
 
@@ -7007,7 +7526,7 @@ cron: PipelineTriggerCron
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cron Pipeline#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cron Pipeline#cron}
 
 ---
 
@@ -7021,7 +7540,7 @@ manual: PipelineTriggerManual
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#manual Pipeline#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#manual Pipeline#manual}
 
 ---
 
@@ -7042,8 +7561,8 @@ pipeline.PipelineTriggerCron(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">quartz_cron_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">quartz_cron_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
 
 ---
 
@@ -7055,7 +7574,7 @@ quartz_cron_schedule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
 
 ---
 
@@ -7067,7 +7586,7 @@ timezone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
 
 ---
 
@@ -8573,7 +9092,7 @@ def put_log_analytics_info(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
 
 ---
 
@@ -8581,7 +9100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
 
 ---
 
@@ -9285,7 +9804,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -9307,7 +9826,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -9315,7 +9834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -9323,7 +9842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -9331,7 +9850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -9339,7 +9858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -9347,7 +9866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -9355,7 +9874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -9371,7 +9890,7 @@ def put_volumes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12318,7 +12837,7 @@ def put_abfss(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12334,7 +12853,7 @@ def put_dbfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12350,7 +12869,7 @@ def put_file(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12366,7 +12885,7 @@ def put_gcs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12388,7 +12907,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12396,7 +12915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -12404,7 +12923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -12412,7 +12931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -12420,7 +12939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -12428,7 +12947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -12436,7 +12955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -12452,7 +12971,7 @@ def put_volumes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -12468,7 +12987,7 @@ def put_workspace(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -14233,7 +14752,7 @@ def put_autoscale(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
 
 ---
 
@@ -14241,7 +14760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
 
 ---
 
@@ -14249,7 +14768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#mode Pipeline#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#mode Pipeline#mode}.
 
 ---
 
@@ -14274,7 +14793,7 @@ def put_aws_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -14282,7 +14801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
 
 ---
 
@@ -14290,7 +14809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
 
 ---
 
@@ -14298,7 +14817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
 
 ---
 
@@ -14306,7 +14825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
 
 ---
 
@@ -14314,7 +14833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
 
 ---
 
@@ -14322,7 +14841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -14330,7 +14849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
 
 ---
 
@@ -14338,7 +14857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
 
 ---
 
@@ -14346,7 +14865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -14365,7 +14884,7 @@ def put_azure_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -14373,7 +14892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -14383,7 +14902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
 
 ---
 
@@ -14391,7 +14910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
 
 ---
 
@@ -14411,7 +14930,7 @@ def put_cluster_log_conf(
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -14421,7 +14940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -14431,7 +14950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -14451,7 +14970,7 @@ def put_gcp_attributes(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -14459,7 +14978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -14467,7 +14986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
 
 ---
 
@@ -14475,7 +14994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
 
 ---
 
@@ -14483,7 +15002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -17231,7 +17750,7 @@ def put_report(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -17239,7 +17758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -17247,7 +17766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_url Pipeline#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_url Pipeline#source_url}.
 
 ---
 
@@ -17255,7 +17774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -17265,7 +17784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -17285,7 +17804,7 @@ def put_schema(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -17293,7 +17812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -17301,7 +17820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -17309,7 +17828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -17319,7 +17838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -17341,7 +17860,7 @@ def put_table(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -17349,7 +17868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -17357,7 +17876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_table Pipeline#source_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_table Pipeline#source_table}.
 
 ---
 
@@ -17365,7 +17884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -17373,7 +17892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -17381,7 +17900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -17391,7 +17910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -17766,7 +18285,8 @@ def put_table_configuration(
   query_based_connector_config: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters = None
 ) -> None
 ```
 
@@ -17774,7 +18294,7 @@ def put_table_configuration(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -17782,7 +18302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -17790,7 +18310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -17800,7 +18320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -17808,7 +18328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -17816,7 +18336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -17824,7 +18344,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+###### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportOutputReference.putTableConfiguration.parameter.workdayReportParameters"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -18050,6 +18580,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putQueryBasedConnectorConfig">put_query_based_connector_config</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters">put_workday_report_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetExcludeColumns">reset_exclude_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetIncludeColumns">reset_include_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetPrimaryKeys">reset_primary_keys</a></code> | *No description.* |
@@ -18057,6 +18588,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">reset_salesforce_include_formula_fields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetScdType">reset_scd_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetSequenceBy">reset_sequence_by</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetWorkdayReportParameters">reset_workday_report_parameters</a></code> | *No description.* |
 
 ---
 
@@ -18246,7 +18778,7 @@ def put_query_based_connector_config(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -18254,7 +18786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -18262,7 +18794,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+##### `put_workday_report_parameters` <a name="put_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```python
+def put_workday_report_parameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]] = None
+) -> None
+```
+
+###### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters.parameter.incremental"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+###### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters.parameter.parameters"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+###### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters.parameter.reportParameters"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -18308,6 +18876,12 @@ def reset_scd_type() -> None
 def reset_sequence_by() -> None
 ```
 
+##### `reset_workday_report_parameters` <a name="reset_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```python
+def reset_workday_report_parameters() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -18316,6 +18890,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.excludeColumnsInput">exclude_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.includeColumnsInput">include_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.primaryKeysInput">primary_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -18323,6 +18898,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforce_include_formula_fields_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.scdTypeInput">scd_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.sequenceByInput">sequence_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParametersInput">workday_report_parameters_input</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -18364,6 +18940,16 @@ query_based_connector_config: PipelineIngestionDefinitionObjectsReportTableConfi
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `workday_report_parameters`<sup>Required</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -18434,6 +19020,16 @@ sequence_by_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `workday_report_parameters_input`<sup>Optional</sup> <a name="workday_report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```python
+workday_report_parameters_input: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -18869,6 +19465,904 @@ internal_value: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryB
 ---
 
 
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">put_report_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">reset_incremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">reset_report_parameters</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_report_parameters` <a name="put_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```python
+def put_report_parameters(
+  value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `reset_incremental` <a name="reset_incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```python
+def reset_incremental() -> None
+```
+
+##### `reset_parameters` <a name="reset_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```python
+def reset_parameters() -> None
+```
+
+##### `reset_report_parameters` <a name="reset_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```python
+def reset_report_parameters() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">incremental_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">report_parameters_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `report_parameters`<sup>Required</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```python
+report_parameters: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `incremental_input`<sup>Optional</sup> <a name="incremental_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```python
+incremental_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```python
+parameters_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `report_parameters_input`<sup>Optional</sup> <a name="report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```python
+report_parameters_input: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `incremental`<sup>Required</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>]
+
+---
+
+
 ### PipelineIngestionDefinitionObjectsSchemaOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer"></a>
@@ -19110,7 +20604,8 @@ def put_table_configuration(
   query_based_connector_config: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters = None
 ) -> None
 ```
 
@@ -19118,7 +20613,7 @@ def put_table_configuration(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -19126,7 +20621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -19134,7 +20629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -19144,7 +20639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -19152,7 +20647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -19160,7 +20655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -19168,7 +20663,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+###### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putTableConfiguration.parameter.workdayReportParameters"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -19394,6 +20899,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putQueryBasedConnectorConfig">put_query_based_connector_config</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters">put_workday_report_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetExcludeColumns">reset_exclude_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetIncludeColumns">reset_include_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetPrimaryKeys">reset_primary_keys</a></code> | *No description.* |
@@ -19401,6 +20907,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">reset_salesforce_include_formula_fields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetScdType">reset_scd_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetSequenceBy">reset_sequence_by</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetWorkdayReportParameters">reset_workday_report_parameters</a></code> | *No description.* |
 
 ---
 
@@ -19590,7 +21097,7 @@ def put_query_based_connector_config(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -19598,7 +21105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -19606,7 +21113,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+##### `put_workday_report_parameters` <a name="put_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```python
+def put_workday_report_parameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]] = None
+) -> None
+```
+
+###### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters.parameter.incremental"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+###### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters.parameter.parameters"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+###### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters.parameter.reportParameters"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -19652,6 +21195,12 @@ def reset_scd_type() -> None
 def reset_sequence_by() -> None
 ```
 
+##### `reset_workday_report_parameters` <a name="reset_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```python
+def reset_workday_report_parameters() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -19660,6 +21209,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.excludeColumnsInput">exclude_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.includeColumnsInput">include_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeysInput">primary_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -19667,6 +21217,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforce_include_formula_fields_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdTypeInput">scd_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.sequenceByInput">sequence_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParametersInput">workday_report_parameters_input</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -19708,6 +21259,16 @@ query_based_connector_config: PipelineIngestionDefinitionObjectsSchemaTableConfi
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `workday_report_parameters`<sup>Required</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -19778,6 +21339,16 @@ sequence_by_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `workday_report_parameters_input`<sup>Optional</sup> <a name="workday_report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```python
+workday_report_parameters_input: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -20213,6 +21784,904 @@ internal_value: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryB
 ---
 
 
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">put_report_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">reset_incremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">reset_report_parameters</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_report_parameters` <a name="put_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```python
+def put_report_parameters(
+  value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `reset_incremental` <a name="reset_incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```python
+def reset_incremental() -> None
+```
+
+##### `reset_parameters` <a name="reset_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```python
+def reset_parameters() -> None
+```
+
+##### `reset_report_parameters` <a name="reset_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```python
+def reset_report_parameters() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">incremental_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">report_parameters_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `report_parameters`<sup>Required</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```python
+report_parameters: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `incremental_input`<sup>Optional</sup> <a name="incremental_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```python
+incremental_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```python
+parameters_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `report_parameters_input`<sup>Optional</sup> <a name="report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```python
+report_parameters_input: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `incremental`<sup>Required</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>]
+
+---
+
+
 ### PipelineIngestionDefinitionObjectsTableOutputReference <a name="PipelineIngestionDefinitionObjectsTableOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer"></a>
@@ -20456,7 +22925,8 @@ def put_table_configuration(
   query_based_connector_config: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters = None
 ) -> None
 ```
 
@@ -20464,7 +22934,7 @@ def put_table_configuration(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -20472,7 +22942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -20480,7 +22950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -20490,7 +22960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -20498,7 +22968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -20506,7 +22976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -20514,7 +22984,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+###### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.putTableConfiguration.parameter.workdayReportParameters"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -20796,6 +23276,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putQueryBasedConnectorConfig">put_query_based_connector_config</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters">put_workday_report_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetExcludeColumns">reset_exclude_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetIncludeColumns">reset_include_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetPrimaryKeys">reset_primary_keys</a></code> | *No description.* |
@@ -20803,6 +23284,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">reset_salesforce_include_formula_fields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetScdType">reset_scd_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetSequenceBy">reset_sequence_by</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetWorkdayReportParameters">reset_workday_report_parameters</a></code> | *No description.* |
 
 ---
 
@@ -20992,7 +23474,7 @@ def put_query_based_connector_config(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -21000,7 +23482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -21008,7 +23490,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+##### `put_workday_report_parameters` <a name="put_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```python
+def put_workday_report_parameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]] = None
+) -> None
+```
+
+###### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters.parameter.incremental"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+###### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters.parameter.parameters"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+###### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters.parameter.reportParameters"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -21054,6 +23572,12 @@ def reset_scd_type() -> None
 def reset_sequence_by() -> None
 ```
 
+##### `reset_workday_report_parameters` <a name="reset_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```python
+def reset_workday_report_parameters() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -21062,6 +23586,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.excludeColumnsInput">exclude_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.includeColumnsInput">include_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeysInput">primary_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -21069,6 +23594,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforce_include_formula_fields_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdTypeInput">scd_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.sequenceByInput">sequence_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParametersInput">workday_report_parameters_input</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -21110,6 +23636,16 @@ query_based_connector_config: PipelineIngestionDefinitionObjectsTableTableConfig
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `workday_report_parameters`<sup>Required</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -21180,6 +23716,16 @@ sequence_by_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `workday_report_parameters_input`<sup>Optional</sup> <a name="workday_report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```python
+workday_report_parameters_input: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -21615,6 +24161,904 @@ internal_value: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBa
 ---
 
 
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">put_report_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">reset_incremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">reset_report_parameters</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_report_parameters` <a name="put_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```python
+def put_report_parameters(
+  value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `reset_incremental` <a name="reset_incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```python
+def reset_incremental() -> None
+```
+
+##### `reset_parameters` <a name="reset_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```python
+def reset_parameters() -> None
+```
+
+##### `reset_report_parameters` <a name="reset_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```python
+def reset_report_parameters() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">incremental_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">report_parameters_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `report_parameters`<sup>Required</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```python
+report_parameters: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `incremental_input`<sup>Optional</sup> <a name="incremental_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```python
+incremental_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```python
+parameters_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `report_parameters_input`<sup>Optional</sup> <a name="report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```python
+report_parameters_input: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `incremental`<sup>Required</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>]
+
+---
+
+
 ### PipelineIngestionDefinitionOutputReference <a name="PipelineIngestionDefinitionOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer"></a>
@@ -21673,6 +25117,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putTableConfiguration">put_table_configuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetConnectionName">reset_connection_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetIngestionGatewayId">reset_ingestion_gateway_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetNetsuiteJarPath">reset_netsuite_jar_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetObjects">reset_objects</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetSourceConfigurations">reset_source_configurations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetSourceType">reset_source_type</a></code> | *No description.* |
@@ -21890,7 +25335,8 @@ def put_table_configuration(
   query_based_connector_config: PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig = None,
   salesforce_include_formula_fields: typing.Union[bool, IResolvable] = None,
   scd_type: str = None,
-  sequence_by: typing.List[str] = None
+  sequence_by: typing.List[str] = None,
+  workday_report_parameters: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters = None
 ) -> None
 ```
 
@@ -21898,7 +25344,7 @@ def put_table_configuration(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -21906,7 +25352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -21914,7 +25360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -21924,7 +25370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -21932,7 +25378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -21940,7 +25386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -21948,7 +25394,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+###### `workday_report_parameters`<sup>Optional</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putTableConfiguration.parameter.workdayReportParameters"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -21962,6 +25418,12 @@ def reset_connection_name() -> None
 
 ```python
 def reset_ingestion_gateway_id() -> None
+```
+
+##### `reset_netsuite_jar_path` <a name="reset_netsuite_jar_path" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetNetsuiteJarPath"></a>
+
+```python
+def reset_netsuite_jar_path() -> None
 ```
 
 ##### `reset_objects` <a name="reset_objects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetObjects"></a>
@@ -22000,12 +25462,14 @@ def reset_table_configuration() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfiguration">table_configuration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference">PipelineIngestionDefinitionTableConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionNameInput">connection_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayIdInput">ingestion_gateway_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPathInput">netsuite_jar_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput">objects_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceConfigurationsInput">source_configurations_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceTypeInput">source_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfigurationInput">table_configuration_input</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionName">connection_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayId">ingestion_gateway_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPath">netsuite_jar_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceType">source_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | *No description.* |
 
@@ -22085,6 +25549,16 @@ ingestion_gateway_id_input: str
 
 ---
 
+##### `netsuite_jar_path_input`<sup>Optional</sup> <a name="netsuite_jar_path_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPathInput"></a>
+
+```python
+netsuite_jar_path_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `objects_input`<sup>Optional</sup> <a name="objects_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput"></a>
 
 ```python
@@ -22139,6 +25613,16 @@ connection_name: str
 
 ```python
 ingestion_gateway_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `netsuite_jar_path`<sup>Required</sup> <a name="netsuite_jar_path" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPath"></a>
+
+```python
+netsuite_jar_path: str
 ```
 
 - *Type:* str
@@ -22411,7 +25895,7 @@ def put_postgres(
 
 slot_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
 
 ---
 
@@ -22760,7 +26244,7 @@ def put_slot_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
 
 ---
 
@@ -22768,7 +26252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
 
 ---
 
@@ -23613,7 +27097,7 @@ def put_catalog(
 
 postgres block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#postgres Pipeline#postgres}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#postgres Pipeline#postgres}
 
 ---
 
@@ -23621,7 +27105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -23753,6 +27237,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putQueryBasedConnectorConfig">put_query_based_connector_config</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters">put_workday_report_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetExcludeColumns">reset_exclude_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetIncludeColumns">reset_include_columns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetPrimaryKeys">reset_primary_keys</a></code> | *No description.* |
@@ -23760,6 +27245,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">reset_salesforce_include_formula_fields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetScdType">reset_scd_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetSequenceBy">reset_sequence_by</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetWorkdayReportParameters">reset_workday_report_parameters</a></code> | *No description.* |
 
 ---
 
@@ -23949,7 +27435,7 @@ def put_query_based_connector_config(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -23957,7 +27443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -23965,7 +27451,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+##### `put_workday_report_parameters` <a name="put_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```python
+def put_workday_report_parameters(
+  incremental: typing.Union[bool, IResolvable] = None,
+  parameters: typing.Mapping[str] = None,
+  report_parameters: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]] = None
+) -> None
+```
+
+###### `incremental`<sup>Optional</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters.parameter.incremental"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+###### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters.parameter.parameters"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+###### `report_parameters`<sup>Optional</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters.parameter.reportParameters"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -24011,6 +27533,12 @@ def reset_scd_type() -> None
 def reset_sequence_by() -> None
 ```
 
+##### `reset_workday_report_parameters` <a name="reset_workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```python
+def reset_workday_report_parameters() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -24019,6 +27547,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.queryBasedConnectorConfig">query_based_connector_config</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParameters">workday_report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.excludeColumnsInput">exclude_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.includeColumnsInput">include_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeysInput">primary_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -24026,6 +27555,7 @@ def reset_sequence_by() -> None
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">salesforce_include_formula_fields_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdTypeInput">scd_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.sequenceByInput">sequence_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParametersInput">workday_report_parameters_input</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.excludeColumns">exclude_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.includeColumns">include_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeys">primary_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -24067,6 +27597,16 @@ query_based_connector_config: PipelineIngestionDefinitionTableConfigurationQuery
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `workday_report_parameters`<sup>Required</sup> <a name="workday_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```python
+workday_report_parameters: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -24137,6 +27677,16 @@ sequence_by_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `workday_report_parameters_input`<sup>Optional</sup> <a name="workday_report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```python
+workday_report_parameters_input: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -24568,6 +28118,904 @@ internal_value: PipelineIngestionDefinitionTableConfigurationQueryBasedConnector
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a>
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">put_report_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">reset_incremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">reset_report_parameters</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_report_parameters` <a name="put_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```python
+def put_report_parameters(
+  value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `reset_incremental` <a name="reset_incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```python
+def reset_incremental() -> None
+```
+
+##### `reset_parameters` <a name="reset_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```python
+def reset_parameters() -> None
+```
+
+##### `reset_report_parameters` <a name="reset_report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```python
+def reset_report_parameters() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">report_parameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">incremental_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">report_parameters_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental">incremental</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `report_parameters`<sup>Required</sup> <a name="report_parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```python
+report_parameters: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `incremental_input`<sup>Optional</sup> <a name="incremental_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```python
+incremental_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```python
+parameters_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `report_parameters_input`<sup>Optional</sup> <a name="report_parameters_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```python
+report_parameters_input: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+##### `incremental`<sup>Required</sup> <a name="incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```python
+incremental: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]]
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_databricks import pipeline
+
+pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>]
 
 ---
 
@@ -26805,7 +31253,7 @@ def put_file(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -26821,7 +31269,7 @@ def put_glob(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -26839,7 +31287,7 @@ def put_maven(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
 
 ---
 
@@ -26847,7 +31295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
 
 ---
 
@@ -26855,7 +31303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#repo Pipeline#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#repo Pipeline#repo}.
 
 ---
 
@@ -26871,7 +31319,7 @@ def put_notebook(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -29451,7 +33899,7 @@ def put_cron(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
 
 ---
 
@@ -29459,7 +33907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
 
 ---
 

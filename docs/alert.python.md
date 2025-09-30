@@ -4,7 +4,7 @@
 
 ### Alert <a name="Alert" id="@cdktf/provider-databricks.alert.Alert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert databricks_alert}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert databricks_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.alert.Alert.Initializer"></a>
 
@@ -45,14 +45,14 @@ alert.Alert(
 | <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-databricks.alert.AlertCondition">AlertCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#display_name Alert#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.queryId">query_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#query_id Alert#query_id}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.customBody">custom_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_body Alert#custom_body}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.customSubject">custom_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_subject Alert#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.notifyOnOk">notify_on_ok</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.ownerUserName">owner_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#owner_user_name Alert#owner_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#parent_path Alert#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.secondsToRetrigger">seconds_to_retrigger</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#display_name Alert#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.queryId">query_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#query_id Alert#query_id}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.customBody">custom_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_body Alert#custom_body}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.customSubject">custom_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_subject Alert#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.notifyOnOk">notify_on_ok</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.ownerUserName">owner_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#owner_user_name Alert#owner_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#parent_path Alert#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.alert.Alert.Initializer.parameter.secondsToRetrigger">seconds_to_retrigger</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#condition Alert#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#condition Alert#condition}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#display_name Alert#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#display_name Alert#display_name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#query_id Alert#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#query_id Alert#query_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_body Alert#custom_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_body Alert#custom_body}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_subject Alert#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_subject Alert#custom_subject}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#owner_user_name Alert#owner_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#owner_user_name Alert#owner_user_name}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#parent_path Alert#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#parent_path Alert#parent_path}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}.
 
 ---
 
@@ -567,7 +567,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#op Alert#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#op Alert#op}.
 
 ---
 
@@ -577,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 operand block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#operand Alert#operand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#operand Alert#operand}
 
 ---
 
@@ -585,7 +585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#empty_result_state Alert#empty_result_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#empty_result_state Alert#empty_result_state}.
 
 ---
 
@@ -595,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#threshold Alert#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#threshold Alert#threshold}
 
 ---
 
@@ -749,7 +749,7 @@ The construct id used in the generated config for the Alert to import.
 
 The id of the existing Alert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1227,9 +1227,9 @@ alert.AlertCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertCondition.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#op Alert#op}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertCondition.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#op Alert#op}. |
 | <code><a href="#@cdktf/provider-databricks.alert.AlertCondition.property.operand">operand</a></code> | <code><a href="#@cdktf/provider-databricks.alert.AlertConditionOperand">AlertConditionOperand</a></code> | operand block. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertCondition.property.emptyResultState">empty_result_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#empty_result_state Alert#empty_result_state}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertCondition.property.emptyResultState">empty_result_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#empty_result_state Alert#empty_result_state}. |
 | <code><a href="#@cdktf/provider-databricks.alert.AlertCondition.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThreshold">AlertConditionThreshold</a></code> | threshold block. |
 
 ---
@@ -1242,7 +1242,7 @@ op: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#op Alert#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#op Alert#op}.
 
 ---
 
@@ -1256,7 +1256,7 @@ operand: AlertConditionOperand
 
 operand block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#operand Alert#operand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#operand Alert#operand}
 
 ---
 
@@ -1268,7 +1268,7 @@ empty_result_state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#empty_result_state Alert#empty_result_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#empty_result_state Alert#empty_result_state}.
 
 ---
 
@@ -1282,7 +1282,7 @@ threshold: AlertConditionThreshold
 
 threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#threshold Alert#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#threshold Alert#threshold}
 
 ---
 
@@ -1316,7 +1316,7 @@ column: AlertConditionOperandColumn
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#column Alert#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#column Alert#column}
 
 ---
 
@@ -1336,7 +1336,7 @@ alert.AlertConditionOperandColumn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionOperandColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#name Alert#name}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionOperandColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#name Alert#name}. |
 
 ---
 
@@ -1348,7 +1348,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#name Alert#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#name Alert#name}.
 
 ---
 
@@ -1382,7 +1382,7 @@ value: AlertConditionThresholdValue
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#value Alert#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#value Alert#value}
 
 ---
 
@@ -1404,9 +1404,9 @@ alert.AlertConditionThresholdValue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThresholdValue.property.boolValue">bool_value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#bool_value Alert#bool_value}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThresholdValue.property.doubleValue">double_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#double_value Alert#double_value}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThresholdValue.property.stringValue">string_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#string_value Alert#string_value}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThresholdValue.property.boolValue">bool_value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#bool_value Alert#bool_value}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThresholdValue.property.doubleValue">double_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#double_value Alert#double_value}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConditionThresholdValue.property.stringValue">string_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#string_value Alert#string_value}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ bool_value: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#bool_value Alert#bool_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#bool_value Alert#bool_value}.
 
 ---
 
@@ -1430,7 +1430,7 @@ double_value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#double_value Alert#double_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#double_value Alert#double_value}.
 
 ---
 
@@ -1442,7 +1442,7 @@ string_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#string_value Alert#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#string_value Alert#string_value}.
 
 ---
 
@@ -1485,14 +1485,14 @@ alert.AlertConfig(
 | <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-databricks.alert.AlertCondition">AlertCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#display_name Alert#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.queryId">query_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#query_id Alert#query_id}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.customBody">custom_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_body Alert#custom_body}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.customSubject">custom_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_subject Alert#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.notifyOnOk">notify_on_ok</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.ownerUserName">owner_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#owner_user_name Alert#owner_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#parent_path Alert#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.secondsToRetrigger">seconds_to_retrigger</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#display_name Alert#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.queryId">query_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#query_id Alert#query_id}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.customBody">custom_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_body Alert#custom_body}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.customSubject">custom_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_subject Alert#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.notifyOnOk">notify_on_ok</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.ownerUserName">owner_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#owner_user_name Alert#owner_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#parent_path Alert#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.alert.AlertConfig.property.secondsToRetrigger">seconds_to_retrigger</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}. |
 
 ---
 
@@ -1576,7 +1576,7 @@ condition: AlertCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#condition Alert#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#condition Alert#condition}
 
 ---
 
@@ -1588,7 +1588,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#display_name Alert#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#display_name Alert#display_name}.
 
 ---
 
@@ -1600,7 +1600,7 @@ query_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#query_id Alert#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#query_id Alert#query_id}.
 
 ---
 
@@ -1612,7 +1612,7 @@ custom_body: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_body Alert#custom_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_body Alert#custom_body}.
 
 ---
 
@@ -1624,7 +1624,7 @@ custom_subject: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#custom_subject Alert#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#custom_subject Alert#custom_subject}.
 
 ---
 
@@ -1636,7 +1636,7 @@ notify_on_ok: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}.
 
 ---
 
@@ -1648,7 +1648,7 @@ owner_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#owner_user_name Alert#owner_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#owner_user_name Alert#owner_user_name}.
 
 ---
 
@@ -1660,7 +1660,7 @@ parent_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#parent_path Alert#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#parent_path Alert#parent_path}.
 
 ---
 
@@ -1672,7 +1672,7 @@ seconds_to_retrigger: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}.
 
 ---
 
@@ -2215,7 +2215,7 @@ def put_column(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#name Alert#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#name Alert#name}.
 
 ---
 
@@ -2533,7 +2533,7 @@ def put_operand(
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#column Alert#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#column Alert#column}
 
 ---
 
@@ -2551,7 +2551,7 @@ def put_threshold(
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#value Alert#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#value Alert#value}
 
 ---
 
@@ -2944,7 +2944,7 @@ def put_value(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#bool_value Alert#bool_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#bool_value Alert#bool_value}.
 
 ---
 
@@ -2952,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#double_value Alert#double_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#double_value Alert#double_value}.
 
 ---
 
@@ -2960,7 +2960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/alert#string_value Alert#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/alert#string_value Alert#string_value}.
 
 ---
 

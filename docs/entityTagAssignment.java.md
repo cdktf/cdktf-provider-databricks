@@ -4,7 +4,7 @@
 
 ### EntityTagAssignment <a name="EntityTagAssignment" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer"></a>
 
@@ -27,7 +27,6 @@ EntityTagAssignment.Builder.create(Construct scope, java.lang.String id)
     .entityType(java.lang.String)
     .tagKey(java.lang.String)
 //  .tagValue(java.lang.String)
-//  .workspaceId(java.lang.String)
     .build();
 ```
 
@@ -42,11 +41,10 @@ EntityTagAssignment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.entityName">entityName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.tagKey">tagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.tagValue">tagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.entityName">entityName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.tagKey">tagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.tagValue">tagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}. |
 
 ---
 
@@ -114,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
 
 ---
 
@@ -122,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
 
 ---
 
@@ -130,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
 
 ---
 
@@ -138,15 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
-
----
-
-##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer.parameter.workspaceId"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
 
 ---
 
@@ -178,7 +168,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.resetTagValue">resetTagValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -478,12 +467,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetTagValue()
 ```
 
-##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.resetWorkspaceId"></a>
-
-```java
-public void resetWorkspaceId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -587,7 +570,7 @@ The construct id used in the generated config for the EntityTagAssignment to imp
 
 The id of the existing EntityTagAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,12 +604,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.entityTypeInput">entityTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.tagKeyInput">tagKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.tagValueInput">tagValueInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.workspaceIdInput">workspaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.entityName">entityName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.entityType">entityType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.tagKey">tagKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.tagValue">tagValue</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -812,16 +793,6 @@ public java.lang.String getTagValueInput();
 
 ---
 
-##### `workspaceIdInput`<sup>Optional</sup> <a name="workspaceIdInput" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.workspaceIdInput"></a>
-
-```java
-public java.lang.String getWorkspaceIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `entityName`<sup>Required</sup> <a name="entityName" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.entityName"></a>
 
 ```java
@@ -856,16 +827,6 @@ public java.lang.String getTagKey();
 
 ```java
 public java.lang.String getTagValue();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignment.property.workspaceId"></a>
-
-```java
-public java.lang.String getWorkspaceId();
 ```
 
 - *Type:* java.lang.String
@@ -915,7 +876,6 @@ EntityTagAssignmentConfig.builder()
     .entityType(java.lang.String)
     .tagKey(java.lang.String)
 //  .tagValue(java.lang.String)
-//  .workspaceId(java.lang.String)
     .build();
 ```
 
@@ -930,11 +890,10 @@ EntityTagAssignmentConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityName">entityName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagKey">tagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagValue">tagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}. |
-| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityName">entityName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagKey">tagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}. |
+| <code><a href="#@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagValue">tagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}. |
 
 ---
 
@@ -1016,7 +975,7 @@ public java.lang.String getEntityName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
 
 ---
 
@@ -1028,7 +987,7 @@ public java.lang.String getEntityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
 
 ---
 
@@ -1040,7 +999,7 @@ public java.lang.String getTagKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
 
 ---
 
@@ -1052,19 +1011,7 @@ public java.lang.String getTagValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
-
----
-
-##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktf/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.workspaceId"></a>
-
-```java
-public java.lang.String getWorkspaceId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Pipeline <a name="Pipeline" id="@cdktf/provider-databricks.pipeline.Pipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline databricks_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline databricks_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.Pipeline.Initializer"></a>
 
@@ -929,7 +929,7 @@ The construct id used in the generated config for the Pipeline to import.
 
 The id of the existing Pipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2038,25 +2038,25 @@ new PipelineCluster {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale">PipelineClusterAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes">PipelineClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes">PipelineClusterAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConf">PipelineClusterClusterLogConf</a></code> | cluster_log_conf block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes">PipelineClusterGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.initScripts">InitScripts</a></code> | <code>object</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">InstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#label Pipeline#label}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.numWorkers">NumWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkConf">SparkConf</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">InstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#label Pipeline#label}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.numWorkers">NumWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkConf">SparkConf</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
 
 ---
 
@@ -2068,7 +2068,7 @@ public object ApplyPolicyDefaultValues { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
 
 ---
 
@@ -2082,7 +2082,7 @@ public PipelineClusterAutoscale Autoscale { get; set; }
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
 
 ---
 
@@ -2096,7 +2096,7 @@ public PipelineClusterAwsAttributes AwsAttributes { get; set; }
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
 
 ---
 
@@ -2110,7 +2110,7 @@ public PipelineClusterAzureAttributes AzureAttributes { get; set; }
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
 
 ---
 
@@ -2124,7 +2124,7 @@ public PipelineClusterClusterLogConf ClusterLogConf { get; set; }
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
 
 ---
 
@@ -2136,7 +2136,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomTags { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
 
 ---
 
@@ -2148,7 +2148,7 @@ public string DriverInstancePoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
 
 ---
 
@@ -2160,7 +2160,7 @@ public string DriverNodeTypeId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
 
 ---
 
@@ -2172,7 +2172,7 @@ public object EnableLocalDiskEncryption { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
 
 ---
 
@@ -2186,7 +2186,7 @@ public PipelineClusterGcpAttributes GcpAttributes { get; set; }
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
 
 ---
 
@@ -2200,7 +2200,7 @@ public object InitScripts { get; set; }
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
 
 ---
 
@@ -2212,7 +2212,7 @@ public string InstancePoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
 
 ---
 
@@ -2224,7 +2224,7 @@ public string Label { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#label Pipeline#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#label Pipeline#label}.
 
 ---
 
@@ -2236,7 +2236,7 @@ public string NodeTypeId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
 
 ---
 
@@ -2248,7 +2248,7 @@ public double NumWorkers { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
 
 ---
 
@@ -2260,7 +2260,7 @@ public string PolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
 
 ---
 
@@ -2272,7 +2272,7 @@ public System.Collections.Generic.IDictionary<string, string> SparkConf { get; s
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
 
 ---
 
@@ -2284,7 +2284,7 @@ public System.Collections.Generic.IDictionary<string, string> SparkEnvVars { get
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
 
 ---
 
@@ -2296,7 +2296,7 @@ public string[] SshPublicKeys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
 
 ---
 
@@ -2318,9 +2318,9 @@ new PipelineClusterAutoscale {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#mode Pipeline#mode}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#mode Pipeline#mode}. |
 
 ---
 
@@ -2332,7 +2332,7 @@ public double MaxWorkers { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
 
 ---
 
@@ -2344,7 +2344,7 @@ public double MinWorkers { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
 
 ---
 
@@ -2356,7 +2356,7 @@ public string Mode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#mode Pipeline#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#mode Pipeline#mode}.
 
 ---
 
@@ -2385,16 +2385,16 @@ new PipelineClusterAwsAttributes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">Availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">EbsVolumeIops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">EbsVolumeThroughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">Availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">EbsVolumeIops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">EbsVolumeThroughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -2406,7 +2406,7 @@ public string Availability { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -2418,7 +2418,7 @@ public double EbsVolumeCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
 
 ---
 
@@ -2430,7 +2430,7 @@ public double EbsVolumeIops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
 
 ---
 
@@ -2442,7 +2442,7 @@ public double EbsVolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
 
 ---
 
@@ -2454,7 +2454,7 @@ public double EbsVolumeThroughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
 
 ---
 
@@ -2466,7 +2466,7 @@ public string EbsVolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
 
 ---
 
@@ -2478,7 +2478,7 @@ public double FirstOnDemand { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -2490,7 +2490,7 @@ public string InstanceProfileArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
 
 ---
 
@@ -2502,7 +2502,7 @@ public double SpotBidPricePercent { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
 
 ---
 
@@ -2514,7 +2514,7 @@ public string ZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -2537,10 +2537,10 @@ new PipelineClusterAzureAttributes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">Availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">Availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.logAnalyticsInfo">LogAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
 
 ---
 
@@ -2552,7 +2552,7 @@ public string Availability { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -2564,7 +2564,7 @@ public double FirstOnDemand { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -2578,7 +2578,7 @@ public PipelineClusterAzureAttributesLogAnalyticsInfo LogAnalyticsInfo { get; se
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
 
 ---
 
@@ -2590,7 +2590,7 @@ public double SpotBidMaxPrice { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
 
 ---
 
@@ -2611,8 +2611,8 @@ new PipelineClusterAzureAttributesLogAnalyticsInfo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">LogAnalyticsPrimaryKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">LogAnalyticsWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">LogAnalyticsPrimaryKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">LogAnalyticsWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
 
 ---
 
@@ -2624,7 +2624,7 @@ public string LogAnalyticsPrimaryKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
 
 ---
 
@@ -2636,7 +2636,7 @@ public string LogAnalyticsWorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
 
 ---
 
@@ -2674,7 +2674,7 @@ public PipelineClusterClusterLogConfDbfs Dbfs { get; set; }
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -2688,7 +2688,7 @@ public PipelineClusterClusterLogConfS3 S3 { get; set; }
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -2702,7 +2702,7 @@ public PipelineClusterClusterLogConfVolumes Volumes { get; set; }
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -2722,7 +2722,7 @@ new PipelineClusterClusterLogConfDbfs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2734,7 +2734,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2760,13 +2760,13 @@ new PipelineClusterClusterLogConfS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -2778,7 +2778,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2790,7 +2790,7 @@ public string CannedAcl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -2802,7 +2802,7 @@ public object EnableEncryption { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -2814,7 +2814,7 @@ public string EncryptionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -2826,7 +2826,7 @@ public string Endpoint { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -2838,7 +2838,7 @@ public string KmsKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -2850,7 +2850,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -2870,7 +2870,7 @@ new PipelineClusterClusterLogConfVolumes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -2882,7 +2882,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -2906,11 +2906,11 @@ new PipelineClusterGcpAttributes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">Availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">Availability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -2922,7 +2922,7 @@ public string Availability { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -2934,7 +2934,7 @@ public double FirstOnDemand { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -2946,7 +2946,7 @@ public string GoogleServiceAccount { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
 
 ---
 
@@ -2958,7 +2958,7 @@ public double LocalSsdCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
 
 ---
 
@@ -2970,7 +2970,7 @@ public string ZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -3016,7 +3016,7 @@ public PipelineClusterInitScriptsAbfss Abfss { get; set; }
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#abfss Pipeline#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#abfss Pipeline#abfss}
 
 ---
 
@@ -3030,7 +3030,7 @@ public PipelineClusterInitScriptsDbfs Dbfs { get; set; }
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -3044,7 +3044,7 @@ public PipelineClusterInitScriptsFile File { get; set; }
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -3058,7 +3058,7 @@ public PipelineClusterInitScriptsGcs Gcs { get; set; }
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gcs Pipeline#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gcs Pipeline#gcs}
 
 ---
 
@@ -3072,7 +3072,7 @@ public PipelineClusterInitScriptsS3 S3 { get; set; }
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -3086,7 +3086,7 @@ public PipelineClusterInitScriptsVolumes Volumes { get; set; }
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -3100,7 +3100,7 @@ public PipelineClusterInitScriptsWorkspace Workspace { get; set; }
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#workspace Pipeline#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workspace Pipeline#workspace}
 
 ---
 
@@ -3120,7 +3120,7 @@ new PipelineClusterInitScriptsAbfss {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3132,7 +3132,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3152,7 +3152,7 @@ new PipelineClusterInitScriptsDbfs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3164,7 +3164,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3184,7 +3184,7 @@ new PipelineClusterInitScriptsFile {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3196,7 +3196,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3216,7 +3216,7 @@ new PipelineClusterInitScriptsGcs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3228,7 +3228,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3254,13 +3254,13 @@ new PipelineClusterInitScriptsS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -3272,7 +3272,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3284,7 +3284,7 @@ public string CannedAcl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -3296,7 +3296,7 @@ public object EnableEncryption { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -3308,7 +3308,7 @@ public string EncryptionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -3320,7 +3320,7 @@ public string Endpoint { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -3332,7 +3332,7 @@ public string KmsKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -3344,7 +3344,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -3364,7 +3364,7 @@ new PipelineClusterInitScriptsVolumes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3376,7 +3376,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3396,7 +3396,7 @@ new PipelineClusterInitScriptsWorkspace {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3408,7 +3408,7 @@ public string Destination { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3481,46 +3481,46 @@ new PipelineConfig {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">AllowDuplicateNames</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause">Cause</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cause Pipeline#cause}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">Channel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#channel Pipeline#channel}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">AllowDuplicateNames</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause">Cause</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">Channel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cluster">Cluster</a></code> | <code>object</code> | cluster block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">Configuration</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">Continuous</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">CreatorUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">Configuration</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">Continuous</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">CreatorUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.deployment">Deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">Development</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#development Pipeline#development}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">Edition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">Development</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">Edition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.environment">Environment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.eventLog">EventLog</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | event_log block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">ExpectedLastModified</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">ExpectedLastModified</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.filters">Filters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | filters block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.gatewayDefinition">GatewayDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | gateway_definition block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.health">Health</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#health Pipeline#health}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.health">Health</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#health Pipeline#health}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.ingestionDefinition">IngestionDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified">LastModified</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified">LastModified</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates">LatestUpdates</a></code> | <code>object</code> | latest_updates block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.library">Library</a></code> | <code>object</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.notification">Notification</a></code> | <code>object</code> | notification block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">Photon</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">Photon</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.restartWindow">RestartWindow</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | restart_window block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.rootPath">RootPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.rootPath">RootPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAs">RunAs</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | run_as block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">RunAsUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">Serverless</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">Storage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#storage Pipeline#storage}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#tags Pipeline#tags}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#target Pipeline#target}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">RunAsUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">Serverless</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">Storage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#target Pipeline#target}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.trigger">Trigger</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | trigger block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -3602,7 +3602,7 @@ public object AllowDuplicateNames { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
 ---
 
@@ -3614,7 +3614,7 @@ public string BudgetPolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
 
 ---
 
@@ -3626,7 +3626,7 @@ public string Catalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -3638,7 +3638,7 @@ public string Cause { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cause Pipeline#cause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}.
 
 ---
 
@@ -3650,7 +3650,7 @@ public string Channel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#channel Pipeline#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}.
 
 ---
 
@@ -3664,7 +3664,7 @@ public object Cluster { get; set; }
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster Pipeline#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster Pipeline#cluster}
 
 ---
 
@@ -3676,7 +3676,7 @@ public string ClusterId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 
 ---
 
@@ -3688,7 +3688,7 @@ public System.Collections.Generic.IDictionary<string, string> Configuration { ge
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#configuration Pipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 
 ---
 
@@ -3700,7 +3700,7 @@ public object Continuous { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 
 ---
 
@@ -3712,7 +3712,7 @@ public string CreatorUserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 
 ---
 
@@ -3726,7 +3726,7 @@ public PipelineDeployment Deployment { get; set; }
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deployment Pipeline#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deployment Pipeline#deployment}
 
 ---
 
@@ -3738,7 +3738,7 @@ public object Development { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#development Pipeline#development}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}.
 
 ---
 
@@ -3750,7 +3750,7 @@ public string Edition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#edition Pipeline#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}.
 
 ---
 
@@ -3764,7 +3764,7 @@ public PipelineEnvironment Environment { get; set; }
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#environment Pipeline#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#environment Pipeline#environment}
 
 ---
 
@@ -3778,7 +3778,7 @@ public PipelineEventLog EventLog { get; set; }
 
 event_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#event_log Pipeline#event_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#event_log Pipeline#event_log}
 
 ---
 
@@ -3790,7 +3790,7 @@ public double ExpectedLastModified { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 
 ---
 
@@ -3804,7 +3804,7 @@ public PipelineFilters Filters { get; set; }
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#filters Pipeline#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#filters Pipeline#filters}
 
 ---
 
@@ -3818,7 +3818,7 @@ public PipelineGatewayDefinition GatewayDefinition { get; set; }
 
 gateway_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
 
 ---
 
@@ -3830,7 +3830,7 @@ public string Health { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#health Pipeline#health}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#health Pipeline#health}.
 
 ---
 
@@ -3842,7 +3842,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#id Pipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3859,7 +3859,7 @@ public PipelineIngestionDefinition IngestionDefinition { get; set; }
 
 ingestion_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
 
 ---
 
@@ -3871,7 +3871,7 @@ public double LastModified { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
 
 ---
 
@@ -3885,7 +3885,7 @@ public object LatestUpdates { get; set; }
 
 latest_updates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 
 ---
 
@@ -3899,7 +3899,7 @@ public object Library { get; set; }
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#library Pipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#library Pipeline#library}
 
 ---
 
@@ -3911,7 +3911,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -3925,7 +3925,7 @@ public object Notification { get; set; }
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#notification Pipeline#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#notification Pipeline#notification}
 
 ---
 
@@ -3937,7 +3937,7 @@ public object Photon { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#photon Pipeline#photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}.
 
 ---
 
@@ -3951,7 +3951,7 @@ public PipelineRestartWindow RestartWindow { get; set; }
 
 restart_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
 
 ---
 
@@ -3963,7 +3963,7 @@ public string RootPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#root_path Pipeline#root_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}.
 
 ---
 
@@ -3977,7 +3977,7 @@ public PipelineRunAs RunAs { get; set; }
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as Pipeline#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as Pipeline#run_as}
 
 ---
 
@@ -3989,7 +3989,7 @@ public string RunAsUserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 
 ---
 
@@ -4001,7 +4001,7 @@ public string Schema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -4013,7 +4013,7 @@ public object Serverless { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 
 ---
 
@@ -4025,7 +4025,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -4037,7 +4037,7 @@ public string Storage { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#storage Pipeline#storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}.
 
 ---
 
@@ -4049,7 +4049,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#tags Pipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}.
 
 ---
 
@@ -4061,7 +4061,7 @@ public string Target { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#target Pipeline#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#target Pipeline#target}.
 
 ---
 
@@ -4075,7 +4075,7 @@ public PipelineTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
 
 ---
 
@@ -4089,7 +4089,7 @@ public PipelineTrigger Trigger { get; set; }
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#trigger Pipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#trigger Pipeline#trigger}
 
 ---
 
@@ -4101,7 +4101,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -4122,8 +4122,8 @@ new PipelineDeployment {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kind Pipeline#kind}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">MetadataFilePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kind Pipeline#kind}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">MetadataFilePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
 
 ---
 
@@ -4135,7 +4135,7 @@ public string Kind { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#kind Pipeline#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kind Pipeline#kind}.
 
 ---
 
@@ -4147,7 +4147,7 @@ public string MetadataFilePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
 
 ---
 
@@ -4167,7 +4167,7 @@ new PipelineEnvironment {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment.property.dependencies">Dependencies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dependencies Pipeline#dependencies}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment.property.dependencies">Dependencies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dependencies Pipeline#dependencies}. |
 
 ---
 
@@ -4179,7 +4179,7 @@ public string[] Dependencies { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
 
 ---
 
@@ -4201,9 +4201,9 @@ new PipelineEventLog {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}. |
 
 ---
 
@@ -4215,7 +4215,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -4227,7 +4227,7 @@ public string Catalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -4239,7 +4239,7 @@ public string Schema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -4260,8 +4260,8 @@ new PipelineFilters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.exclude">Exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.include">Include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.exclude">Exclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineFilters.property.include">Include</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -4273,7 +4273,7 @@ public string[] Exclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude Pipeline#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude Pipeline#exclude}.
 
 ---
 
@@ -4285,7 +4285,7 @@ public string[] Include { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -4309,11 +4309,11 @@ new PipelineGatewayDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">GatewayStorageCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">GatewayStorageSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">ConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">GatewayStorageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">GatewayStorageCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">GatewayStorageSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">ConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">GatewayStorageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
 
 ---
 
@@ -4325,7 +4325,7 @@ public string ConnectionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -4337,7 +4337,7 @@ public string GatewayStorageCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
 
 ---
 
@@ -4349,7 +4349,7 @@ public string GatewayStorageSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
 
 ---
 
@@ -4361,7 +4361,7 @@ public string ConnectionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
 
 ---
 
@@ -4373,7 +4373,7 @@ public string GatewayStorageName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
 
 ---
 
@@ -4387,6 +4387,7 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new PipelineIngestionDefinition {
     string ConnectionName = null,
     string IngestionGatewayId = null,
+    string NetsuiteJarPath = null,
     object Objects = null,
     object SourceConfigurations = null,
     string SourceType = null,
@@ -4398,11 +4399,12 @@ new PipelineIngestionDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">IngestionGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">IngestionGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath">NetsuiteJarPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects">Objects</a></code> | <code>object</code> | objects block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceConfigurations">SourceConfigurations</a></code> | <code>object</code> | source_configurations block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">SourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">SourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.tableConfiguration">TableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -4415,7 +4417,7 @@ public string ConnectionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -4427,7 +4429,19 @@ public string IngestionGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+
+---
+
+##### `NetsuiteJarPath`<sup>Optional</sup> <a name="NetsuiteJarPath" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath"></a>
+
+```csharp
+public string NetsuiteJarPath { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}.
 
 ---
 
@@ -4441,7 +4455,7 @@ public object Objects { get; set; }
 
 objects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#objects Pipeline#objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#objects Pipeline#objects}
 
 ---
 
@@ -4455,7 +4469,7 @@ public object SourceConfigurations { get; set; }
 
 source_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
 
 ---
 
@@ -4467,7 +4481,7 @@ public string SourceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_type Pipeline#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_type Pipeline#source_type}.
 
 ---
 
@@ -4481,7 +4495,7 @@ public PipelineIngestionDefinitionTableConfiguration TableConfiguration { get; s
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -4519,7 +4533,7 @@ public PipelineIngestionDefinitionObjectsReport Report { get; set; }
 
 report block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#report Pipeline#report}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report Pipeline#report}
 
 ---
 
@@ -4533,7 +4547,7 @@ public PipelineIngestionDefinitionObjectsSchema Schema { get; set; }
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#schema Pipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}
 
 ---
 
@@ -4547,7 +4561,7 @@ public PipelineIngestionDefinitionObjectsTable Table { get; set; }
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table Pipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table Pipeline#table}
 
 ---
 
@@ -4571,10 +4585,10 @@ new PipelineIngestionDefinitionObjectsReport {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationCatalog">DestinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationSchema">DestinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.sourceUrl">SourceUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_url Pipeline#source_url}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationTable">DestinationTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationCatalog">DestinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationSchema">DestinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.sourceUrl">SourceUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_url Pipeline#source_url}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationTable">DestinationTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.tableConfiguration">TableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration">PipelineIngestionDefinitionObjectsReportTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -4587,7 +4601,7 @@ public string DestinationCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -4599,7 +4613,7 @@ public string DestinationSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -4611,7 +4625,7 @@ public string SourceUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_url Pipeline#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_url Pipeline#source_url}.
 
 ---
 
@@ -4623,7 +4637,7 @@ public string DestinationTable { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -4637,7 +4651,7 @@ public PipelineIngestionDefinitionObjectsReportTableConfiguration TableConfigura
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -4655,7 +4669,8 @@ new PipelineIngestionDefinitionObjectsReportTableConfiguration {
     PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
     object SalesforceIncludeFormulaFields = null,
     string ScdType = null,
-    string[] SequenceBy = null
+    string[] SequenceBy = null,
+    PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
 };
 ```
 
@@ -4663,13 +4678,14 @@ new PipelineIngestionDefinitionObjectsReportTableConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -4681,7 +4697,7 @@ public string[] ExcludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -4693,7 +4709,7 @@ public string[] IncludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -4705,7 +4721,7 @@ public string[] PrimaryKeys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -4719,7 +4735,7 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConne
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -4731,7 +4747,7 @@ public object SalesforceIncludeFormulaFields { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -4743,7 +4759,7 @@ public string ScdType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -4755,7 +4771,21 @@ public string[] SequenceBy { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `WorkdayReportParameters`<sup>Optional</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters WorkdayReportParameters { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -4777,9 +4807,9 @@ new PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnecto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -4791,7 +4821,7 @@ public string[] CursorColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -4803,7 +4833,7 @@ public string DeletionCondition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -4815,7 +4845,115 @@ public double HardDeletionSyncMinIntervalInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters {
+    object Incremental = null,
+    System.Collections.Generic.IDictionary<string, string> Parameters = null,
+    object ReportParameters = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+
+---
+
+##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```csharp
+public object Incremental { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `Parameters`<sup>Optional</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```csharp
+public object ReportParameters { get; set; }
+```
+
+- *Type:* object
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters {
+    string Key = null,
+    string Value = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```csharp
+public string Key { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```csharp
+public string Value { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -4839,10 +4977,10 @@ new PipelineIngestionDefinitionObjectsSchema {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">DestinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">DestinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">SourceSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">SourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">DestinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">DestinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">SourceSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">SourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.tableConfiguration">TableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -4855,7 +4993,7 @@ public string DestinationCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -4867,7 +5005,7 @@ public string DestinationSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -4879,7 +5017,7 @@ public string SourceSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -4891,7 +5029,7 @@ public string SourceCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -4905,7 +5043,7 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfiguration TableConfigura
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -4923,7 +5061,8 @@ new PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
     PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
     object SalesforceIncludeFormulaFields = null,
     string ScdType = null,
-    string[] SequenceBy = null
+    string[] SequenceBy = null,
+    PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
 };
 ```
 
@@ -4931,13 +5070,14 @@ new PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -4949,7 +5089,7 @@ public string[] ExcludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -4961,7 +5101,7 @@ public string[] IncludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -4973,7 +5113,7 @@ public string[] PrimaryKeys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -4987,7 +5127,7 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConne
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -4999,7 +5139,7 @@ public object SalesforceIncludeFormulaFields { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -5011,7 +5151,7 @@ public string ScdType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -5023,7 +5163,21 @@ public string[] SequenceBy { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `WorkdayReportParameters`<sup>Optional</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters WorkdayReportParameters { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -5045,9 +5199,9 @@ new PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnecto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -5059,7 +5213,7 @@ public string[] CursorColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -5071,7 +5225,7 @@ public string DeletionCondition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -5083,7 +5237,115 @@ public double HardDeletionSyncMinIntervalInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters {
+    object Incremental = null,
+    System.Collections.Generic.IDictionary<string, string> Parameters = null,
+    object ReportParameters = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+
+---
+
+##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```csharp
+public object Incremental { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `Parameters`<sup>Optional</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```csharp
+public object ReportParameters { get; set; }
+```
+
+- *Type:* object
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters {
+    string Key = null,
+    string Value = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```csharp
+public string Key { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```csharp
+public string Value { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -5109,12 +5371,12 @@ new PipelineIngestionDefinitionObjectsTable {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">DestinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">DestinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">SourceTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">DestinationTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">SourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">SourceSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">DestinationCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">DestinationSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">SourceTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">DestinationTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">SourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">SourceSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.tableConfiguration">TableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5127,7 +5389,7 @@ public string DestinationCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -5139,7 +5401,7 @@ public string DestinationSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -5151,7 +5413,7 @@ public string SourceTable { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_table Pipeline#source_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_table Pipeline#source_table}.
 
 ---
 
@@ -5163,7 +5425,7 @@ public string DestinationTable { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -5175,7 +5437,7 @@ public string SourceCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -5187,7 +5449,7 @@ public string SourceSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -5201,7 +5463,7 @@ public PipelineIngestionDefinitionObjectsTableTableConfiguration TableConfigurat
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5219,7 +5481,8 @@ new PipelineIngestionDefinitionObjectsTableTableConfiguration {
     PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
     object SalesforceIncludeFormulaFields = null,
     string ScdType = null,
-    string[] SequenceBy = null
+    string[] SequenceBy = null,
+    PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
 };
 ```
 
@@ -5227,13 +5490,14 @@ new PipelineIngestionDefinitionObjectsTableTableConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -5245,7 +5509,7 @@ public string[] ExcludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -5257,7 +5521,7 @@ public string[] IncludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -5269,7 +5533,7 @@ public string[] PrimaryKeys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -5283,7 +5547,7 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnec
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -5295,7 +5559,7 @@ public object SalesforceIncludeFormulaFields { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -5307,7 +5571,7 @@ public string ScdType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -5319,7 +5583,21 @@ public string[] SequenceBy { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `WorkdayReportParameters`<sup>Optional</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters WorkdayReportParameters { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -5341,9 +5619,9 @@ new PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnector
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -5355,7 +5633,7 @@ public string[] CursorColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -5367,7 +5645,7 @@ public string DeletionCondition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -5379,7 +5657,115 @@ public double HardDeletionSyncMinIntervalInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters {
+    object Incremental = null,
+    System.Collections.Generic.IDictionary<string, string> Parameters = null,
+    object ReportParameters = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+
+---
+
+##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```csharp
+public object Incremental { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `Parameters`<sup>Optional</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```csharp
+public object ReportParameters { get; set; }
+```
+
+- *Type:* object
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters {
+    string Key = null,
+    string Value = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```csharp
+public string Key { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```csharp
+public string Value { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -5413,7 +5799,7 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalog Catalog { get; set
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#catalog Pipeline#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}
 
 ---
 
@@ -5435,7 +5821,7 @@ new PipelineIngestionDefinitionSourceConfigurationsCatalog {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.postgres">Postgres</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres">PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres</a></code> | postgres block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.sourceCatalog">SourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.sourceCatalog">SourceCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 
 ---
 
@@ -5449,7 +5835,7 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres Postgres {
 
 postgres block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#postgres Pipeline#postgres}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#postgres Pipeline#postgres}
 
 ---
 
@@ -5461,7 +5847,7 @@ public string SourceCatalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -5495,7 +5881,7 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig 
 
 slot_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
 
 ---
 
@@ -5516,8 +5902,8 @@ new PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.publicationName">PublicationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#publication_name Pipeline#publication_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.slotName">SlotName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_name Pipeline#slot_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.publicationName">PublicationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#publication_name Pipeline#publication_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.slotName">SlotName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_name Pipeline#slot_name}. |
 
 ---
 
@@ -5529,7 +5915,7 @@ public string PublicationName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
 
 ---
 
@@ -5541,7 +5927,7 @@ public string SlotName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
 
 ---
 
@@ -5559,7 +5945,8 @@ new PipelineIngestionDefinitionTableConfiguration {
     PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
     object SalesforceIncludeFormulaFields = null,
     string ScdType = null,
-    string[] SequenceBy = null
+    string[] SequenceBy = null,
+    PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
 };
 ```
 
@@ -5567,13 +5954,14 @@ new PipelineIngestionDefinitionTableConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
 
@@ -5585,7 +5973,7 @@ public string[] ExcludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -5597,7 +5985,7 @@ public string[] IncludeColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -5609,7 +5997,7 @@ public string[] PrimaryKeys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -5623,7 +6011,7 @@ public PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig Qu
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -5635,7 +6023,7 @@ public object SalesforceIncludeFormulaFields { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -5647,7 +6035,7 @@ public string ScdType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -5659,7 +6047,21 @@ public string[] SequenceBy { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+
+---
+
+##### `WorkdayReportParameters`<sup>Optional</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters WorkdayReportParameters { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
+
+workday_report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -5681,9 +6083,9 @@ new PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">CursorColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">DeletionCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">HardDeletionSyncMinIntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -5695,7 +6097,7 @@ public string[] CursorColumns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -5707,7 +6109,7 @@ public string DeletionCondition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -5719,7 +6121,115 @@ public double HardDeletionSyncMinIntervalInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+
+---
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters {
+    object Incremental = null,
+    System.Collections.Generic.IDictionary<string, string> Parameters = null,
+    object ReportParameters = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+
+---
+
+##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental"></a>
+
+```csharp
+public object Incremental { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+
+---
+
+##### `Parameters`<sup>Optional</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+
+---
+
+##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
+
+```csharp
+public object ReportParameters { get; set; }
+```
+
+- *Type:* object
+
+report_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+
+---
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters {
+    string Key = null,
+    string Value = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}. |
+
+---
+
+##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.key"></a>
+
+```csharp
+public string Key { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#key Pipeline#key}.
+
+---
+
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.value"></a>
+
+```csharp
+public string Value { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -5741,9 +6251,9 @@ new PipelineLatestUpdates {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">CreationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">UpdateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">CreationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">UpdateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
 
 ---
 
@@ -5755,7 +6265,7 @@ public string CreationTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
 
 ---
 
@@ -5767,7 +6277,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -5779,7 +6289,7 @@ public string UpdateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#update_id Pipeline#update_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#update_id Pipeline#update_id}.
 
 ---
 
@@ -5806,10 +6316,10 @@ new PipelineLibrary {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.file">File</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile">PipelineLibraryFile</a></code> | file block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.glob">Glob</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryGlob">PipelineLibraryGlob</a></code> | glob block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.jar">Jar</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#jar Pipeline#jar}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.jar">Jar</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#jar Pipeline#jar}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven">PipelineLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.notebook">Notebook</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook">PipelineLibraryNotebook</a></code> | notebook block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.whl">Whl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#whl Pipeline#whl}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary.property.whl">Whl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#whl Pipeline#whl}. |
 
 ---
 
@@ -5823,7 +6333,7 @@ public PipelineLibraryFile File { get; set; }
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -5837,7 +6347,7 @@ public PipelineLibraryGlob Glob { get; set; }
 
 glob block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#glob Pipeline#glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#glob Pipeline#glob}
 
 ---
 
@@ -5849,7 +6359,7 @@ public string Jar { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#jar Pipeline#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#jar Pipeline#jar}.
 
 ---
 
@@ -5863,7 +6373,7 @@ public PipelineLibraryMaven Maven { get; set; }
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#maven Pipeline#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#maven Pipeline#maven}
 
 ---
 
@@ -5877,7 +6387,7 @@ public PipelineLibraryNotebook Notebook { get; set; }
 
 notebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#notebook Pipeline#notebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#notebook Pipeline#notebook}
 
 ---
 
@@ -5889,7 +6399,7 @@ public string Whl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#whl Pipeline#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#whl Pipeline#whl}.
 
 ---
 
@@ -5909,7 +6419,7 @@ new PipelineLibraryFile {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryFile.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
@@ -5921,7 +6431,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -5941,7 +6451,7 @@ new PipelineLibraryGlob {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryGlob.property.include">Include</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryGlob.property.include">Include</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -5953,7 +6463,7 @@ public string Include { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -5975,9 +6485,9 @@ new PipelineLibraryMaven {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">Coordinates</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">Exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">Repo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#repo Pipeline#repo}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">Coordinates</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">Exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">Repo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#repo Pipeline#repo}. |
 
 ---
 
@@ -5989,7 +6499,7 @@ public string Coordinates { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
 
 ---
 
@@ -6001,7 +6511,7 @@ public string[] Exclusions { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
 
 ---
 
@@ -6013,7 +6523,7 @@ public string Repo { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#repo Pipeline#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#repo Pipeline#repo}.
 
 ---
 
@@ -6033,7 +6543,7 @@ new PipelineLibraryNotebook {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
@@ -6045,7 +6555,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -6066,8 +6576,8 @@ new PipelineNotification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts">Alerts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">EmailRecipients</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.alerts">Alerts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">EmailRecipients</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
 
 ---
 
@@ -6079,7 +6589,7 @@ public string[] Alerts { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#alerts Pipeline#alerts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#alerts Pipeline#alerts}.
 
 ---
 
@@ -6091,7 +6601,7 @@ public string[] EmailRecipients { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
 
 ---
 
@@ -6113,9 +6623,9 @@ new PipelineRestartWindow {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.startHour">StartHour</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.daysOfWeek">DaysOfWeek</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.timeZoneId">TimeZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.startHour">StartHour</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.daysOfWeek">DaysOfWeek</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow.property.timeZoneId">TimeZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
 
 ---
 
@@ -6127,7 +6637,7 @@ public double StartHour { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
 
 ---
 
@@ -6139,7 +6649,7 @@ public string[] DaysOfWeek { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
 
 ---
 
@@ -6151,7 +6661,7 @@ public string TimeZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
 
 ---
 
@@ -6172,8 +6682,8 @@ new PipelineRunAs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.servicePrincipalName">ServicePrincipalName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#user_name Pipeline#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.servicePrincipalName">ServicePrincipalName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#user_name Pipeline#user_name}. |
 
 ---
 
@@ -6185,7 +6695,7 @@ public string ServicePrincipalName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
 
 ---
 
@@ -6197,7 +6707,7 @@ public string UserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#user_name Pipeline#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#user_name Pipeline#user_name}.
 
 ---
 
@@ -6217,7 +6727,7 @@ new PipelineTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#default Pipeline#default}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#default Pipeline#default}. |
 
 ---
 
@@ -6229,7 +6739,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#default Pipeline#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#default Pipeline#default}.
 
 ---
 
@@ -6265,7 +6775,7 @@ public PipelineTriggerCron Cron { get; set; }
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#cron Pipeline#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cron Pipeline#cron}
 
 ---
 
@@ -6279,7 +6789,7 @@ public PipelineTriggerManual Manual { get; set; }
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#manual Pipeline#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#manual Pipeline#manual}
 
 ---
 
@@ -6300,8 +6810,8 @@ new PipelineTriggerCron {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">QuartzCronSchedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">TimezoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">QuartzCronSchedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">TimezoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
 
 ---
 
@@ -6313,7 +6823,7 @@ public string QuartzCronSchedule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
 
 ---
 
@@ -6325,7 +6835,7 @@ public string TimezoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
 
 ---
 
@@ -16071,6 +16581,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putQueryBasedConnectorConfig">PutQueryBasedConnectorConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters">PutWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetExcludeColumns">ResetExcludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetIncludeColumns">ResetIncludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetPrimaryKeys">ResetPrimaryKeys</a></code> | *No description.* |
@@ -16078,6 +16589,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">ResetSalesforceIncludeFormulaFields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetScdType">ResetScdType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetSequenceBy">ResetSequenceBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetWorkdayReportParameters">ResetWorkdayReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -16243,6 +16755,18 @@ private void PutQueryBasedConnectorConfig(PipelineIngestionDefinitionObjectsRepo
 
 ---
 
+##### `PutWorkdayReportParameters` <a name="PutWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```csharp
+private void PutWorkdayReportParameters(PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.putWorkdayReportParameters.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
+
+---
+
 ##### `ResetExcludeColumns` <a name="ResetExcludeColumns" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetExcludeColumns"></a>
 
 ```csharp
@@ -16285,6 +16809,12 @@ private void ResetScdType()
 private void ResetSequenceBy()
 ```
 
+##### `ResetWorkdayReportParameters` <a name="ResetWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```csharp
+private void ResetWorkdayReportParameters()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -16293,6 +16823,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.excludeColumnsInput">ExcludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
@@ -16300,6 +16831,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
@@ -16341,6 +16873,16 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConne
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `WorkdayReportParameters`<sup>Required</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference WorkdayReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -16411,6 +16953,16 @@ public string[] SequenceByInput { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `WorkdayReportParametersInput`<sup>Optional</sup> <a name="WorkdayReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters WorkdayReportParametersInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -16817,6 +17369,840 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConne
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">PutReportParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">ResetIncremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">ResetReportParameters</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```csharp
+private void PutReportParameters(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetIncremental` <a name="ResetIncremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```csharp
+private void ResetIncremental()
+```
+
+##### `ResetParameters` <a name="ResetParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```csharp
+private void ResetParameters()
+```
+
+##### `ResetReportParameters` <a name="ResetReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```csharp
+private void ResetReportParameters()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReportParameters`<sup>Required</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList ReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```csharp
+public object IncrementalInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `ParametersInput`<sup>Optional</sup> <a name="ParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ParametersInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```csharp
+public object ReportParametersInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```csharp
+public object Incremental { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```csharp
+private PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">ResetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">ResetValue</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetKey` <a name="ResetKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```csharp
+private void ResetKey()
+```
+
+##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```csharp
+private void ResetValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```csharp
+public string KeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```csharp
+public string ValueInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -17258,6 +18644,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putQueryBasedConnectorConfig">PutQueryBasedConnectorConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters">PutWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetExcludeColumns">ResetExcludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetIncludeColumns">ResetIncludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetPrimaryKeys">ResetPrimaryKeys</a></code> | *No description.* |
@@ -17265,6 +18652,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">ResetSalesforceIncludeFormulaFields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetScdType">ResetScdType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetSequenceBy">ResetSequenceBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetWorkdayReportParameters">ResetWorkdayReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -17430,6 +18818,18 @@ private void PutQueryBasedConnectorConfig(PipelineIngestionDefinitionObjectsSche
 
 ---
 
+##### `PutWorkdayReportParameters` <a name="PutWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```csharp
+private void PutWorkdayReportParameters(PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.putWorkdayReportParameters.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
+
+---
+
 ##### `ResetExcludeColumns` <a name="ResetExcludeColumns" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetExcludeColumns"></a>
 
 ```csharp
@@ -17472,6 +18872,12 @@ private void ResetScdType()
 private void ResetSequenceBy()
 ```
 
+##### `ResetWorkdayReportParameters` <a name="ResetWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```csharp
+private void ResetWorkdayReportParameters()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -17480,6 +18886,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.excludeColumnsInput">ExcludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
@@ -17487,6 +18894,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
@@ -17528,6 +18936,16 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConne
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `WorkdayReportParameters`<sup>Required</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference WorkdayReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -17598,6 +19016,16 @@ public string[] SequenceByInput { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `WorkdayReportParametersInput`<sup>Optional</sup> <a name="WorkdayReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters WorkdayReportParametersInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -18004,6 +19432,840 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConne
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">PutReportParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">ResetIncremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">ResetReportParameters</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```csharp
+private void PutReportParameters(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetIncremental` <a name="ResetIncremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```csharp
+private void ResetIncremental()
+```
+
+##### `ResetParameters` <a name="ResetParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```csharp
+private void ResetParameters()
+```
+
+##### `ResetReportParameters` <a name="ResetReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```csharp
+private void ResetReportParameters()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReportParameters`<sup>Required</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList ReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```csharp
+public object IncrementalInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `ParametersInput`<sup>Optional</sup> <a name="ParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ParametersInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```csharp
+public object ReportParametersInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```csharp
+public object Incremental { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```csharp
+private PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">ResetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">ResetValue</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetKey` <a name="ResetKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```csharp
+private void ResetKey()
+```
+
+##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```csharp
+private void ResetValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```csharp
+public string KeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```csharp
+public string ValueInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -18503,6 +20765,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putQueryBasedConnectorConfig">PutQueryBasedConnectorConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters">PutWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetExcludeColumns">ResetExcludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetIncludeColumns">ResetIncludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetPrimaryKeys">ResetPrimaryKeys</a></code> | *No description.* |
@@ -18510,6 +20773,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">ResetSalesforceIncludeFormulaFields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetScdType">ResetScdType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetSequenceBy">ResetSequenceBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetWorkdayReportParameters">ResetWorkdayReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -18675,6 +20939,18 @@ private void PutQueryBasedConnectorConfig(PipelineIngestionDefinitionObjectsTabl
 
 ---
 
+##### `PutWorkdayReportParameters` <a name="PutWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```csharp
+private void PutWorkdayReportParameters(PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.putWorkdayReportParameters.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
+
+---
+
 ##### `ResetExcludeColumns` <a name="ResetExcludeColumns" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetExcludeColumns"></a>
 
 ```csharp
@@ -18717,6 +20993,12 @@ private void ResetScdType()
 private void ResetSequenceBy()
 ```
 
+##### `ResetWorkdayReportParameters` <a name="ResetWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```csharp
+private void ResetWorkdayReportParameters()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -18725,6 +21007,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.excludeColumnsInput">ExcludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
@@ -18732,6 +21015,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
@@ -18773,6 +21057,16 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnec
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `WorkdayReportParameters`<sup>Required</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference WorkdayReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -18843,6 +21137,16 @@ public string[] SequenceByInput { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `WorkdayReportParametersInput`<sup>Optional</sup> <a name="WorkdayReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters WorkdayReportParametersInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -19253,6 +21557,840 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnec
 ---
 
 
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">PutReportParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">ResetIncremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">ResetReportParameters</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```csharp
+private void PutReportParameters(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetIncremental` <a name="ResetIncremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```csharp
+private void ResetIncremental()
+```
+
+##### `ResetParameters` <a name="ResetParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```csharp
+private void ResetParameters()
+```
+
+##### `ResetReportParameters` <a name="ResetReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```csharp
+private void ResetReportParameters()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReportParameters`<sup>Required</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList ReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```csharp
+public object IncrementalInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `ParametersInput`<sup>Optional</sup> <a name="ParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ParametersInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```csharp
+public object ReportParametersInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```csharp
+public object Incremental { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```csharp
+private PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">ResetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">ResetValue</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetKey` <a name="ResetKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```csharp
+private void ResetKey()
+```
+
+##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```csharp
+private void ResetValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```csharp
+public string KeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```csharp
+public string ValueInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
 ### PipelineIngestionDefinitionOutputReference <a name="PipelineIngestionDefinitionOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer"></a>
@@ -19308,6 +22446,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putTableConfiguration">PutTableConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetConnectionName">ResetConnectionName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetIngestionGatewayId">ResetIngestionGatewayId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetNetsuiteJarPath">ResetNetsuiteJarPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetObjects">ResetObjects</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetSourceConfigurations">ResetSourceConfigurations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetSourceType">ResetSourceType</a></code> | *No description.* |
@@ -19513,6 +22652,12 @@ private void ResetConnectionName()
 private void ResetIngestionGatewayId()
 ```
 
+##### `ResetNetsuiteJarPath` <a name="ResetNetsuiteJarPath" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetNetsuiteJarPath"></a>
+
+```csharp
+private void ResetNetsuiteJarPath()
+```
+
 ##### `ResetObjects` <a name="ResetObjects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.resetObjects"></a>
 
 ```csharp
@@ -19549,12 +22694,14 @@ private void ResetTableConfiguration()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfiguration">TableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference">PipelineIngestionDefinitionTableConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionNameInput">ConnectionNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayIdInput">IngestionGatewayIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPathInput">NetsuiteJarPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput">ObjectsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceConfigurationsInput">SourceConfigurationsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceTypeInput">SourceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfigurationInput">TableConfigurationInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionName">ConnectionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayId">IngestionGatewayId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPath">NetsuiteJarPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceType">SourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | *No description.* |
 
@@ -19634,6 +22781,16 @@ public string IngestionGatewayIdInput { get; }
 
 ---
 
+##### `NetsuiteJarPathInput`<sup>Optional</sup> <a name="NetsuiteJarPathInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPathInput"></a>
+
+```csharp
+public string NetsuiteJarPathInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ObjectsInput`<sup>Optional</sup> <a name="ObjectsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput"></a>
 
 ```csharp
@@ -19688,6 +22845,16 @@ public string ConnectionName { get; }
 
 ```csharp
 public string IngestionGatewayId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NetsuiteJarPath`<sup>Required</sup> <a name="NetsuiteJarPath" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPath"></a>
+
+```csharp
+public string NetsuiteJarPath { get; }
 ```
 
 - *Type:* string
@@ -21153,6 +24320,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putQueryBasedConnectorConfig">PutQueryBasedConnectorConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters">PutWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetExcludeColumns">ResetExcludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetIncludeColumns">ResetIncludeColumns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetPrimaryKeys">ResetPrimaryKeys</a></code> | *No description.* |
@@ -21160,6 +24328,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetSalesforceIncludeFormulaFields">ResetSalesforceIncludeFormulaFields</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetScdType">ResetScdType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetSequenceBy">ResetSequenceBy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetWorkdayReportParameters">ResetWorkdayReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -21325,6 +24494,18 @@ private void PutQueryBasedConnectorConfig(PipelineIngestionDefinitionTableConfig
 
 ---
 
+##### `PutWorkdayReportParameters` <a name="PutWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters"></a>
+
+```csharp
+private void PutWorkdayReportParameters(PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.putWorkdayReportParameters.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
+
+---
+
 ##### `ResetExcludeColumns` <a name="ResetExcludeColumns" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetExcludeColumns"></a>
 
 ```csharp
@@ -21367,6 +24548,12 @@ private void ResetScdType()
 private void ResetSequenceBy()
 ```
 
+##### `ResetWorkdayReportParameters` <a name="ResetWorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.resetWorkdayReportParameters"></a>
+
+```csharp
+private void ResetWorkdayReportParameters()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -21375,6 +24562,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.excludeColumnsInput">ExcludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
@@ -21382,6 +24570,7 @@ private void ResetSequenceBy()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
@@ -21423,6 +24612,16 @@ public PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOut
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference</a>
+
+---
+
+##### `WorkdayReportParameters`<sup>Required</sup> <a name="WorkdayReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference WorkdayReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference</a>
 
 ---
 
@@ -21493,6 +24692,16 @@ public string[] SequenceByInput { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `WorkdayReportParametersInput`<sup>Optional</sup> <a name="WorkdayReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParametersInput"></a>
+
+```csharp
+public PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters WorkdayReportParametersInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
 
 ---
 
@@ -21899,6 +25108,840 @@ public PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig In
 ```
 
 - *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a>
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters">PutReportParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetIncremental">ResetIncremental</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters">ResetReportParameters</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
+
+```csharp
+private void PutReportParameters(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetIncremental` <a name="ResetIncremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetIncremental"></a>
+
+```csharp
+private void ResetIncremental()
+```
+
+##### `ResetParameters` <a name="ResetParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetParameters"></a>
+
+```csharp
+private void ResetParameters()
+```
+
+##### `ResetReportParameters` <a name="ResetReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.resetReportParameters"></a>
+
+```csharp
+private void ResetReportParameters()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReportParameters`<sup>Required</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters"></a>
+
+```csharp
+public PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList ReportParameters { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList</a>
+
+---
+
+##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
+
+```csharp
+public object IncrementalInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `ParametersInput`<sup>Optional</sup> <a name="ParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ParametersInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
+
+```csharp
+public object ReportParametersInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
+
+```csharp
+public object Incremental { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parameters"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Parameters { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a>
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.get"></a>
+
+```csharp
+private PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference <a name="PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Databricks;
+
+new PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey">ResetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue">ResetValue</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetKey` <a name="ResetKey" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetKey"></a>
+
+```csharp
+private void ResetKey()
+```
+
+##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.resetValue"></a>
+
+```csharp
+private void ResetValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.keyInput"></a>
+
+```csharp
+public string KeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput"></a>
+
+```csharp
+public string ValueInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 

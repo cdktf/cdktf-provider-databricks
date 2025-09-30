@@ -4,7 +4,7 @@
 
 ### RecipientFederationPolicy <a name="RecipientFederationPolicy" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy databricks_recipient_federation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.resetOidcPolicy">ResetOidcPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -399,12 +398,6 @@ private void ResetName()
 private void ResetOidcPolicy()
 ```
 
-##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.resetWorkspaceId"></a>
-
-```csharp
-private void ResetWorkspaceId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -508,7 +501,7 @@ The construct id used in the generated config for the RecipientFederationPolicy 
 
 The id of the existing RecipientFederationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -545,10 +538,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.oidcPolicyInput">OidcPolicyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -764,16 +755,6 @@ public object OidcPolicyInput { get; }
 
 ---
 
-##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.workspaceIdInput"></a>
-
-```csharp
-public string WorkspaceIdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.comment"></a>
 
 ```csharp
@@ -788,16 +769,6 @@ public string Comment { get; }
 
 ```csharp
 public string Name { get; }
-```
-
-- *Type:* string
-
----
-
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicy.property.workspaceId"></a>
-
-```csharp
-public string WorkspaceId { get; }
 ```
 
 - *Type:* string
@@ -841,8 +812,7 @@ new RecipientFederationPolicyConfig {
     object[] Provisioners = null,
     string Comment = null,
     string Name = null,
-    RecipientFederationPolicyOidcPolicy OidcPolicy = null,
-    string WorkspaceId = null
+    RecipientFederationPolicyOidcPolicy OidcPolicy = null
 };
 ```
 
@@ -857,10 +827,9 @@ new RecipientFederationPolicyConfig {
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#comment RecipientFederationPolicy#comment}. |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#name RecipientFederationPolicy#name}. |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.oidcPolicy">OidcPolicy</a></code> | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy">RecipientFederationPolicyOidcPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#oidc_policy RecipientFederationPolicy#oidc_policy}. |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#workspace_id RecipientFederationPolicy#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#comment RecipientFederationPolicy#comment}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#name RecipientFederationPolicy#name}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.oidcPolicy">OidcPolicy</a></code> | <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy">RecipientFederationPolicyOidcPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#oidc_policy RecipientFederationPolicy#oidc_policy}. |
 
 ---
 
@@ -942,7 +911,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#comment RecipientFederationPolicy#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#comment RecipientFederationPolicy#comment}.
 
 ---
 
@@ -954,7 +923,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#name RecipientFederationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#name RecipientFederationPolicy#name}.
 
 ---
 
@@ -966,19 +935,7 @@ public RecipientFederationPolicyOidcPolicy OidcPolicy { get; set; }
 
 - *Type:* <a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy">RecipientFederationPolicyOidcPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#oidc_policy RecipientFederationPolicy#oidc_policy}.
-
----
-
-##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyConfig.property.workspaceId"></a>
-
-```csharp
-public string WorkspaceId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#workspace_id RecipientFederationPolicy#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#oidc_policy RecipientFederationPolicy#oidc_policy}.
 
 ---
 
@@ -1001,10 +958,10 @@ new RecipientFederationPolicyOidcPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.issuer">Issuer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}. |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}. |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.subjectClaim">SubjectClaim</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}. |
-| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.audiences">Audiences</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.issuer">Issuer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.subjectClaim">SubjectClaim</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}. |
+| <code><a href="#@cdktf/provider-databricks.recipientFederationPolicy.RecipientFederationPolicyOidcPolicy.property.audiences">Audiences</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}. |
 
 ---
 
@@ -1016,7 +973,7 @@ public string Issuer { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#issuer RecipientFederationPolicy#issuer}.
 
 ---
 
@@ -1028,7 +985,7 @@ public string Subject { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#subject RecipientFederationPolicy#subject}.
 
 ---
 
@@ -1040,7 +997,7 @@ public string SubjectClaim { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#subject_claim RecipientFederationPolicy#subject_claim}.
 
 ---
 
@@ -1052,7 +1009,7 @@ public string[] Audiences { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.90.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/recipient_federation_policy#audiences RecipientFederationPolicy#audiences}.
 
 ---
 
