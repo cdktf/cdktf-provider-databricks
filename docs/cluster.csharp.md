@@ -322,7 +322,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-databricks.cluster.Cluster.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-databricks.cluster.Cluster.importFrom"></a>
@@ -376,7 +376,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-databricks.cluster.Cluster.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -391,7 +391,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-databricks.cluster.Cluster.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -464,12 +464,12 @@ private void PutClusterLogConf(ClusterClusterLogConf Value)
 ##### `PutClusterMountInfo` <a name="PutClusterMountInfo" id="@cdktf/provider-databricks.cluster.Cluster.putClusterMountInfo"></a>
 
 ```csharp
-private void PutClusterMountInfo(object Value)
+private void PutClusterMountInfo(IResolvable|ClusterClusterMountInfo[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.cluster.Cluster.putClusterMountInfo.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]
 
 ---
 
@@ -500,24 +500,24 @@ private void PutGcpAttributes(ClusterGcpAttributes Value)
 ##### `PutInitScripts` <a name="PutInitScripts" id="@cdktf/provider-databricks.cluster.Cluster.putInitScripts"></a>
 
 ```csharp
-private void PutInitScripts(object Value)
+private void PutInitScripts(IResolvable|ClusterInitScripts[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.cluster.Cluster.putInitScripts.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]
 
 ---
 
 ##### `PutLibrary` <a name="PutLibrary" id="@cdktf/provider-databricks.cluster.Cluster.putLibrary"></a>
 
 ```csharp
-private void PutLibrary(object Value)
+private void PutLibrary(IResolvable|ClusterLibrary[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.cluster.Cluster.putLibrary.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]
 
 ---
 
@@ -899,13 +899,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscaleOutputReference">ClusterAutoscaleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributesOutputReference">ClusterAwsAttributesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributesOutputReference">ClusterAzureAttributesOutputReference</a></code> | *No description.* |
@@ -921,32 +921,32 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference">ClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeOutputReference">ClusterWorkloadTypeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValuesInput">ApplyPolicyDefaultValuesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValuesInput">ApplyPolicyDefaultValuesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.autoscaleInput">AutoscaleInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale">ClusterAutoscale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.autoterminationMinutesInput">AutoterminationMinutesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.awsAttributesInput">AwsAttributesInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes">ClusterAwsAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.azureAttributesInput">AzureAttributesInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes">ClusterAzureAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.clusterLogConfInput">ClusterLogConfInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConf">ClusterClusterLogConf</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.clusterMountInfoInput">ClusterMountInfoInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.clusterMountInfoInput">ClusterMountInfoInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.clusterNameInput">ClusterNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.customTagsInput">CustomTagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.dataSecurityModeInput">DataSecurityModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.dockerImageInput">DockerImageInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImage">ClusterDockerImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.driverInstancePoolIdInput">DriverInstancePoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.driverNodeTypeIdInput">DriverNodeTypeIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableElasticDiskInput">EnableElasticDiskInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableLocalDiskEncryptionInput">EnableLocalDiskEncryptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableElasticDiskInput">EnableElasticDiskInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableLocalDiskEncryptionInput">EnableLocalDiskEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.gcpAttributesInput">GcpAttributesInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes">ClusterGcpAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.idempotencyTokenInput">IdempotencyTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.initScriptsInput">InitScriptsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.initScriptsInput">InitScriptsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.instancePoolIdInput">InstancePoolIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isPinnedInput">IsPinnedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isSingleNodeInput">IsSingleNodeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isPinnedInput">IsPinnedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isSingleNodeInput">IsSingleNodeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.kindInput">KindInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.libraryInput">LibraryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.libraryInput">LibraryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.nodeTypeIdInput">NodeTypeIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.noWaitInput">NoWaitInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.noWaitInput">NoWaitInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.numWorkersInput">NumWorkersInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.policyIdInput">PolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.remoteDiskThroughputInput">RemoteDiskThroughputInput</a></code> | <code>double</code> | *No description.* |
@@ -956,27 +956,27 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sparkEnvVarsInput">SparkEnvVarsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sparkVersionInput">SparkVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sshPublicKeysInput">SshPublicKeysInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.totalInitialRemoteDiskSizeInput">TotalInitialRemoteDiskSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.useMlRuntimeInput">UseMlRuntimeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.useMlRuntimeInput">UseMlRuntimeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.workloadTypeInput">WorkloadTypeInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadType">ClusterWorkloadType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.clusterName">ClusterName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.instancePoolId">InstancePoolId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isPinned">IsPinned</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isSingleNode">IsSingleNode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isPinned">IsPinned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.isSingleNode">IsSingleNode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.kind">Kind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.nodeTypeId">NodeTypeId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.noWait">NoWait</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.noWait">NoWait</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.numWorkers">NumWorkers</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.policyId">PolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.remoteDiskThroughput">RemoteDiskThroughput</a></code> | <code>double</code> | *No description.* |
@@ -987,7 +987,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sparkVersion">SparkVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.totalInitialRemoteDiskSize">TotalInitialRemoteDiskSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.useMlRuntime">UseMlRuntime</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.Cluster.property.useMlRuntime">UseMlRuntime</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1066,20 +1066,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-databricks.cluster.Cluster.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-databricks.cluster.Cluster.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1126,10 +1126,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-databricks.cluster.Cluster.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1286,10 +1286,10 @@ public ClusterWorkloadTypeOutputReference WorkloadType { get; }
 ##### `ApplyPolicyDefaultValuesInput`<sup>Optional</sup> <a name="ApplyPolicyDefaultValuesInput" id="@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValuesInput"></a>
 
 ```csharp
-public object ApplyPolicyDefaultValuesInput { get; }
+public bool|IResolvable ApplyPolicyDefaultValuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1346,10 +1346,10 @@ public ClusterClusterLogConf ClusterLogConfInput { get; }
 ##### `ClusterMountInfoInput`<sup>Optional</sup> <a name="ClusterMountInfoInput" id="@cdktf/provider-databricks.cluster.Cluster.property.clusterMountInfoInput"></a>
 
 ```csharp
-public object ClusterMountInfoInput { get; }
+public IResolvable|ClusterClusterMountInfo[] ClusterMountInfoInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]
 
 ---
 
@@ -1416,20 +1416,20 @@ public string DriverNodeTypeIdInput { get; }
 ##### `EnableElasticDiskInput`<sup>Optional</sup> <a name="EnableElasticDiskInput" id="@cdktf/provider-databricks.cluster.Cluster.property.enableElasticDiskInput"></a>
 
 ```csharp
-public object EnableElasticDiskInput { get; }
+public bool|IResolvable EnableElasticDiskInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableLocalDiskEncryptionInput`<sup>Optional</sup> <a name="EnableLocalDiskEncryptionInput" id="@cdktf/provider-databricks.cluster.Cluster.property.enableLocalDiskEncryptionInput"></a>
 
 ```csharp
-public object EnableLocalDiskEncryptionInput { get; }
+public bool|IResolvable EnableLocalDiskEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1466,10 +1466,10 @@ public string IdInput { get; }
 ##### `InitScriptsInput`<sup>Optional</sup> <a name="InitScriptsInput" id="@cdktf/provider-databricks.cluster.Cluster.property.initScriptsInput"></a>
 
 ```csharp
-public object InitScriptsInput { get; }
+public IResolvable|ClusterInitScripts[] InitScriptsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]
 
 ---
 
@@ -1486,20 +1486,20 @@ public string InstancePoolIdInput { get; }
 ##### `IsPinnedInput`<sup>Optional</sup> <a name="IsPinnedInput" id="@cdktf/provider-databricks.cluster.Cluster.property.isPinnedInput"></a>
 
 ```csharp
-public object IsPinnedInput { get; }
+public bool|IResolvable IsPinnedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsSingleNodeInput`<sup>Optional</sup> <a name="IsSingleNodeInput" id="@cdktf/provider-databricks.cluster.Cluster.property.isSingleNodeInput"></a>
 
 ```csharp
-public object IsSingleNodeInput { get; }
+public bool|IResolvable IsSingleNodeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1516,10 +1516,10 @@ public string KindInput { get; }
 ##### `LibraryInput`<sup>Optional</sup> <a name="LibraryInput" id="@cdktf/provider-databricks.cluster.Cluster.property.libraryInput"></a>
 
 ```csharp
-public object LibraryInput { get; }
+public IResolvable|ClusterLibrary[] LibraryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]
 
 ---
 
@@ -1536,10 +1536,10 @@ public string NodeTypeIdInput { get; }
 ##### `NoWaitInput`<sup>Optional</sup> <a name="NoWaitInput" id="@cdktf/provider-databricks.cluster.Cluster.property.noWaitInput"></a>
 
 ```csharp
-public object NoWaitInput { get; }
+public bool|IResolvable NoWaitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1636,10 +1636,10 @@ public string[] SshPublicKeysInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-databricks.cluster.Cluster.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|ClusterTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>
 
 ---
 
@@ -1656,10 +1656,10 @@ public double TotalInitialRemoteDiskSizeInput { get; }
 ##### `UseMlRuntimeInput`<sup>Optional</sup> <a name="UseMlRuntimeInput" id="@cdktf/provider-databricks.cluster.Cluster.property.useMlRuntimeInput"></a>
 
 ```csharp
-public object UseMlRuntimeInput { get; }
+public bool|IResolvable UseMlRuntimeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1676,10 +1676,10 @@ public ClusterWorkloadType WorkloadTypeInput { get; }
 ##### `ApplyPolicyDefaultValues`<sup>Required</sup> <a name="ApplyPolicyDefaultValues" id="@cdktf/provider-databricks.cluster.Cluster.property.applyPolicyDefaultValues"></a>
 
 ```csharp
-public object ApplyPolicyDefaultValues { get; }
+public bool|IResolvable ApplyPolicyDefaultValues { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1746,20 +1746,20 @@ public string DriverNodeTypeId { get; }
 ##### `EnableElasticDisk`<sup>Required</sup> <a name="EnableElasticDisk" id="@cdktf/provider-databricks.cluster.Cluster.property.enableElasticDisk"></a>
 
 ```csharp
-public object EnableElasticDisk { get; }
+public bool|IResolvable EnableElasticDisk { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableLocalDiskEncryption`<sup>Required</sup> <a name="EnableLocalDiskEncryption" id="@cdktf/provider-databricks.cluster.Cluster.property.enableLocalDiskEncryption"></a>
 
 ```csharp
-public object EnableLocalDiskEncryption { get; }
+public bool|IResolvable EnableLocalDiskEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1796,20 +1796,20 @@ public string InstancePoolId { get; }
 ##### `IsPinned`<sup>Required</sup> <a name="IsPinned" id="@cdktf/provider-databricks.cluster.Cluster.property.isPinned"></a>
 
 ```csharp
-public object IsPinned { get; }
+public bool|IResolvable IsPinned { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsSingleNode`<sup>Required</sup> <a name="IsSingleNode" id="@cdktf/provider-databricks.cluster.Cluster.property.isSingleNode"></a>
 
 ```csharp
-public object IsSingleNode { get; }
+public bool|IResolvable IsSingleNode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1836,10 +1836,10 @@ public string NodeTypeId { get; }
 ##### `NoWait`<sup>Required</sup> <a name="NoWait" id="@cdktf/provider-databricks.cluster.Cluster.property.noWait"></a>
 
 ```csharp
-public object NoWait { get; }
+public bool|IResolvable NoWait { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1946,10 +1946,10 @@ public double TotalInitialRemoteDiskSize { get; }
 ##### `UseMlRuntime`<sup>Required</sup> <a name="UseMlRuntime" id="@cdktf/provider-databricks.cluster.Cluster.property.useMlRuntime"></a>
 
 ```csharp
-public object UseMlRuntime { get; }
+public bool|IResolvable UseMlRuntime { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2407,7 +2407,7 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new ClusterClusterLogConfS3 {
     string Destination,
     string CannedAcl = null,
-    object EnableEncryption = null,
+    bool|IResolvable EnableEncryption = null,
     string EncryptionType = null,
     string Endpoint = null,
     string KmsKey = null,
@@ -2421,7 +2421,7 @@ new ClusterClusterLogConfS3 {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#destination Cluster#destination}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#canned_acl Cluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#encryption_type Cluster#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#endpoint Cluster#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#kms_key Cluster#kms_key}. |
@@ -2456,10 +2456,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableEncryption`<sup>Optional</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; set; }
+public bool|IResolvable EnableEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}.
 
@@ -2661,40 +2661,40 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new ClusterConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string SparkVersion,
-    object ApplyPolicyDefaultValues = null,
+    bool|IResolvable ApplyPolicyDefaultValues = null,
     ClusterAutoscale Autoscale = null,
     double AutoterminationMinutes = null,
     ClusterAwsAttributes AwsAttributes = null,
     ClusterAzureAttributes AzureAttributes = null,
     ClusterClusterLogConf ClusterLogConf = null,
-    object ClusterMountInfo = null,
+    IResolvable|ClusterClusterMountInfo[] ClusterMountInfo = null,
     string ClusterName = null,
     System.Collections.Generic.IDictionary<string, string> CustomTags = null,
     string DataSecurityMode = null,
     ClusterDockerImage DockerImage = null,
     string DriverInstancePoolId = null,
     string DriverNodeTypeId = null,
-    object EnableElasticDisk = null,
-    object EnableLocalDiskEncryption = null,
+    bool|IResolvable EnableElasticDisk = null,
+    bool|IResolvable EnableLocalDiskEncryption = null,
     ClusterGcpAttributes GcpAttributes = null,
     string Id = null,
     string IdempotencyToken = null,
-    object InitScripts = null,
+    IResolvable|ClusterInitScripts[] InitScripts = null,
     string InstancePoolId = null,
-    object IsPinned = null,
-    object IsSingleNode = null,
+    bool|IResolvable IsPinned = null,
+    bool|IResolvable IsSingleNode = null,
     string Kind = null,
-    object Library = null,
+    IResolvable|ClusterLibrary[] Library = null,
     string NodeTypeId = null,
-    object NoWait = null,
+    bool|IResolvable NoWait = null,
     double NumWorkers = null,
     string PolicyId = null,
     double RemoteDiskThroughput = null,
@@ -2705,7 +2705,7 @@ new ClusterConfig {
     string[] SshPublicKeys = null,
     ClusterTimeouts Timeouts = null,
     double TotalInitialRemoteDiskSize = null,
-    object UseMlRuntime = null,
+    bool|IResolvable UseMlRuntime = null,
     ClusterWorkloadType WorkloadType = null
 };
 ```
@@ -2714,40 +2714,40 @@ new ClusterConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sparkVersion">SparkVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#spark_version Cluster#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAutoscale">ClusterAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAwsAttributes">ClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterAzureAttributes">ClusterAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConf">ClusterClusterLogConf</a></code> | cluster_log_conf block. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>object</code> | cluster_mount_info block. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]</code> | cluster_mount_info block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterName">ClusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#cluster_name Cluster#cluster_name}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#custom_tags Cluster#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.dataSecurityMode">DataSecurityMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#data_security_mode Cluster#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.dockerImage">DockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterDockerImage">ClusterDockerImage</a></code> | docker_image block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes">ClusterGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#id Cluster#id}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.idempotencyToken">IdempotencyToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#idempotency_token Cluster#idempotency_token}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.initScripts">InitScripts</a></code> | <code>object</code> | init_scripts block. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.initScripts">InitScripts</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]</code> | init_scripts block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.instancePoolId">InstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.isPinned">IsPinned</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#is_pinned Cluster#is_pinned}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.isSingleNode">IsSingleNode</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#is_single_node Cluster#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.isPinned">IsPinned</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#is_pinned Cluster#is_pinned}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.isSingleNode">IsSingleNode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#is_single_node Cluster#is_single_node}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#kind Cluster#kind}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.library">Library</a></code> | <code>object</code> | library block. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.library">Library</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]</code> | library block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.nodeTypeId">NodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#node_type_id Cluster#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.noWait">NoWait</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#no_wait Cluster#no_wait}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.noWait">NoWait</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#no_wait Cluster#no_wait}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.numWorkers">NumWorkers</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#num_workers Cluster#num_workers}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#policy_id Cluster#policy_id}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.remoteDiskThroughput">RemoteDiskThroughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#remote_disk_throughput Cluster#remote_disk_throughput}. |
@@ -2758,7 +2758,7 @@ new ClusterConfig {
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.sshPublicKeys">SshPublicKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.totalInitialRemoteDiskSize">TotalInitialRemoteDiskSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#total_initial_remote_disk_size Cluster#total_initial_remote_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.useMlRuntime">UseMlRuntime</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#use_ml_runtime Cluster#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.useMlRuntime">UseMlRuntime</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#use_ml_runtime Cluster#use_ml_runtime}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterConfig.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadType">ClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -2766,20 +2766,20 @@ new ClusterConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2826,10 +2826,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2848,10 +2848,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `ApplyPolicyDefaultValues`<sup>Optional</sup> <a name="ApplyPolicyDefaultValues" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.applyPolicyDefaultValues"></a>
 
 ```csharp
-public object ApplyPolicyDefaultValues { get; set; }
+public bool|IResolvable ApplyPolicyDefaultValues { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}.
 
@@ -2928,10 +2928,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `ClusterMountInfo`<sup>Optional</sup> <a name="ClusterMountInfo" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.clusterMountInfo"></a>
 
 ```csharp
-public object ClusterMountInfo { get; set; }
+public IResolvable|ClusterClusterMountInfo[] ClusterMountInfo { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]
 
 cluster_mount_info block.
 
@@ -3016,10 +3016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableElasticDisk`<sup>Optional</sup> <a name="EnableElasticDisk" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.enableElasticDisk"></a>
 
 ```csharp
-public object EnableElasticDisk { get; set; }
+public bool|IResolvable EnableElasticDisk { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}.
 
@@ -3028,10 +3028,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableLocalDiskEncryption`<sup>Optional</sup> <a name="EnableLocalDiskEncryption" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.enableLocalDiskEncryption"></a>
 
 ```csharp
-public object EnableLocalDiskEncryption { get; set; }
+public bool|IResolvable EnableLocalDiskEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}.
 
@@ -3081,10 +3081,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `InitScripts`<sup>Optional</sup> <a name="InitScripts" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.initScripts"></a>
 
 ```csharp
-public object InitScripts { get; set; }
+public IResolvable|ClusterInitScripts[] InitScripts { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]
 
 init_scripts block.
 
@@ -3107,10 +3107,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `IsPinned`<sup>Optional</sup> <a name="IsPinned" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.isPinned"></a>
 
 ```csharp
-public object IsPinned { get; set; }
+public bool|IResolvable IsPinned { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#is_pinned Cluster#is_pinned}.
 
@@ -3119,10 +3119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `IsSingleNode`<sup>Optional</sup> <a name="IsSingleNode" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.isSingleNode"></a>
 
 ```csharp
-public object IsSingleNode { get; set; }
+public bool|IResolvable IsSingleNode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#is_single_node Cluster#is_single_node}.
 
@@ -3143,10 +3143,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Library`<sup>Optional</sup> <a name="Library" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.library"></a>
 
 ```csharp
-public object Library { get; set; }
+public IResolvable|ClusterLibrary[] Library { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]
 
 library block.
 
@@ -3169,10 +3169,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `NoWait`<sup>Optional</sup> <a name="NoWait" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.noWait"></a>
 
 ```csharp
-public object NoWait { get; set; }
+public bool|IResolvable NoWait { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#no_wait Cluster#no_wait}.
 
@@ -3303,10 +3303,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `UseMlRuntime`<sup>Optional</sup> <a name="UseMlRuntime" id="@cdktf/provider-databricks.cluster.ClusterConfig.property.useMlRuntime"></a>
 
 ```csharp
-public object UseMlRuntime { get; set; }
+public bool|IResolvable UseMlRuntime { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#use_ml_runtime Cluster#use_ml_runtime}.
 
@@ -3433,7 +3433,7 @@ new ClusterGcpAttributes {
     double FirstOnDemand = null,
     string GoogleServiceAccount = null,
     double LocalSsdCount = null,
-    object UsePreemptibleExecutors = null,
+    bool|IResolvable UsePreemptibleExecutors = null,
     string ZoneId = null
 };
 ```
@@ -3447,7 +3447,7 @@ new ClusterGcpAttributes {
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#google_service_account Cluster#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#zone_id Cluster#zone_id}. |
 
 ---
@@ -3515,10 +3515,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `UsePreemptibleExecutors`<sup>Optional</sup> <a name="UsePreemptibleExecutors" id="@cdktf/provider-databricks.cluster.ClusterGcpAttributes.property.usePreemptibleExecutors"></a>
 
 ```csharp
-public object UsePreemptibleExecutors { get; set; }
+public bool|IResolvable UsePreemptibleExecutors { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}.
 
@@ -3804,7 +3804,7 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new ClusterInitScriptsS3 {
     string Destination,
     string CannedAcl = null,
-    object EnableEncryption = null,
+    bool|IResolvable EnableEncryption = null,
     string EncryptionType = null,
     string Endpoint = null,
     string KmsKey = null,
@@ -3818,7 +3818,7 @@ new ClusterInitScriptsS3 {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#destination Cluster#destination}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#canned_acl Cluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#encryption_type Cluster#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#endpoint Cluster#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#kms_key Cluster#kms_key}. |
@@ -3853,10 +3853,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableEncryption`<sup>Optional</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsS3.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; set; }
+public bool|IResolvable EnableEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}.
 
@@ -4350,8 +4350,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new ClusterWorkloadTypeClients {
-    object Jobs = null,
-    object Notebooks = null
+    bool|IResolvable Jobs = null,
+    bool|IResolvable Notebooks = null
 };
 ```
 
@@ -4359,18 +4359,18 @@ new ClusterWorkloadTypeClients {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#jobs Cluster#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#notebooks Cluster#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#jobs Cluster#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#notebooks Cluster#notebooks}. |
 
 ---
 
 ##### `Jobs`<sup>Optional</sup> <a name="Jobs" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.jobs"></a>
 
 ```csharp
-public object Jobs { get; set; }
+public bool|IResolvable Jobs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#jobs Cluster#jobs}.
 
@@ -4379,10 +4379,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Notebooks`<sup>Optional</sup> <a name="Notebooks" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients.property.notebooks"></a>
 
 ```csharp
-public object Notebooks { get; set; }
+public bool|IResolvable Notebooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/cluster#notebooks Cluster#notebooks}.
 
@@ -6821,14 +6821,14 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.cannedAclInput">CannedAclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.encryptionTypeInput">EncryptionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.endpointInput">EndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.kmsKeyInput">KmsKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.encryptionType">EncryptionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.kmsKey">KmsKey</a></code> | <code>string</code> | *No description.* |
@@ -6884,10 +6884,10 @@ public string DestinationInput { get; }
 ##### `EnableEncryptionInput`<sup>Optional</sup> <a name="EnableEncryptionInput" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.enableEncryptionInput"></a>
 
 ```csharp
-public object EnableEncryptionInput { get; }
+public bool|IResolvable EnableEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6954,10 +6954,10 @@ public string Destination { get; }
 ##### `EnableEncryption`<sup>Required</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.cluster.ClusterClusterLogConfS3OutputReference.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; }
+public bool|IResolvable EnableEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7404,7 +7404,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]</code> | *No description.* |
 
 ---
 
@@ -7435,10 +7435,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterClusterMountInfo[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>[]
 
 ---
 
@@ -7997,7 +7997,7 @@ private void ResetRemoteMountDirPath()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.remoteMountDirPathInput">RemoteMountDirPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.localMountDirPath">LocalMountDirPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -8088,10 +8088,10 @@ public string RemoteMountDirPath { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterClusterMountInfo InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterClusterMountInfo">ClusterClusterMountInfo</a>
 
 ---
 
@@ -8966,14 +8966,14 @@ private void ResetZoneId()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.firstOnDemandInput">FirstOnDemandInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.googleServiceAccountInput">GoogleServiceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.localSsdCountInput">LocalSsdCountInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">UsePreemptibleExecutorsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">UsePreemptibleExecutorsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.zoneIdInput">ZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.availability">Availability</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.bootDiskSize">BootDiskSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.firstOnDemand">FirstOnDemand</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.localSsdCount">LocalSsdCount</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.zoneId">ZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterGcpAttributes">ClusterGcpAttributes</a></code> | *No description.* |
 
@@ -9056,10 +9056,10 @@ public double LocalSsdCountInput { get; }
 ##### `UsePreemptibleExecutorsInput`<sup>Optional</sup> <a name="UsePreemptibleExecutorsInput" id="@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.usePreemptibleExecutorsInput"></a>
 
 ```csharp
-public object UsePreemptibleExecutorsInput { get; }
+public bool|IResolvable UsePreemptibleExecutorsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9126,10 +9126,10 @@ public double LocalSsdCount { get; }
 ##### `UsePreemptibleExecutors`<sup>Required</sup> <a name="UsePreemptibleExecutors" id="@cdktf/provider-databricks.cluster.ClusterGcpAttributesOutputReference.property.usePreemptibleExecutors"></a>
 
 ```csharp
-public object UsePreemptibleExecutors { get; }
+public bool|IResolvable UsePreemptibleExecutors { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -10359,7 +10359,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]</code> | *No description.* |
 
 ---
 
@@ -10390,10 +10390,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterInitScripts[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>[]
 
 ---
 
@@ -10780,7 +10780,7 @@ private void ResetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.s3Input">S3Input</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3">ClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.volumesInput">VolumesInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsVolumes">ClusterInitScriptsVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.workspaceInput">WorkspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsWorkspace">ClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -10951,10 +10951,10 @@ public ClusterInitScriptsWorkspace WorkspaceInput { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterInitScripts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterInitScripts">ClusterInitScripts</a>
 
 ---
 
@@ -11213,14 +11213,14 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.cannedAclInput">CannedAclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.encryptionTypeInput">EncryptionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.endpointInput">EndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.kmsKeyInput">KmsKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.encryptionType">EncryptionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.kmsKey">KmsKey</a></code> | <code>string</code> | *No description.* |
@@ -11276,10 +11276,10 @@ public string DestinationInput { get; }
 ##### `EnableEncryptionInput`<sup>Optional</sup> <a name="EnableEncryptionInput" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.enableEncryptionInput"></a>
 
 ```csharp
-public object EnableEncryptionInput { get; }
+public bool|IResolvable EnableEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11346,10 +11346,10 @@ public string Destination { get; }
 ##### `EnableEncryption`<sup>Required</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.cluster.ClusterInitScriptsS3OutputReference.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; }
+public bool|IResolvable EnableEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12367,7 +12367,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]</code> | *No description.* |
 
 ---
 
@@ -12398,10 +12398,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterLibraryList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterLibrary[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>[]
 
 ---
 
@@ -13065,7 +13065,7 @@ private void ResetWhl()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.jar">Jar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.requirements">Requirements</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.whl">Whl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a></code> | *No description.* |
 
 ---
 
@@ -13236,10 +13236,10 @@ public string Whl { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterLibraryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterLibrary InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterLibrary">ClusterLibrary</a>
 
 ---
 
@@ -13781,7 +13781,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -13872,10 +13872,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.cluster.ClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ClusterTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.cluster.ClusterTimeouts">ClusterTimeouts</a>
 
 ---
 
@@ -14104,10 +14104,10 @@ private void ResetNotebooks()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.jobsInput">JobsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.notebooksInput">NotebooksInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.jobs">Jobs</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.notebooks">Notebooks</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.jobsInput">JobsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.notebooksInput">NotebooksInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.jobs">Jobs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.notebooks">Notebooks</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClients">ClusterWorkloadTypeClients</a></code> | *No description.* |
 
 ---
@@ -14139,40 +14139,40 @@ public string Fqn { get; }
 ##### `JobsInput`<sup>Optional</sup> <a name="JobsInput" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.jobsInput"></a>
 
 ```csharp
-public object JobsInput { get; }
+public bool|IResolvable JobsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NotebooksInput`<sup>Optional</sup> <a name="NotebooksInput" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.notebooksInput"></a>
 
 ```csharp
-public object NotebooksInput { get; }
+public bool|IResolvable NotebooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Jobs`<sup>Required</sup> <a name="Jobs" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.jobs"></a>
 
 ```csharp
-public object Jobs { get; }
+public bool|IResolvable Jobs { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Notebooks`<sup>Required</sup> <a name="Notebooks" id="@cdktf/provider-databricks.cluster.ClusterWorkloadTypeClientsOutputReference.property.notebooks"></a>
 
 ```csharp
-public object Notebooks { get; }
+public bool|IResolvable Notebooks { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

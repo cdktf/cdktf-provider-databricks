@@ -12,20 +12,15 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframework;
 
 DataDatabricksClusterPluginframework.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .clusterId(java.lang.String)
-//  .clusterInfo(IResolvable)
-//  .clusterInfo(java.util.List<DataDatabricksClusterPluginframeworkClusterInfo>)
+//  .clusterInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfo>)
 //  .clusterName(java.lang.String)
     .build();
 ```
@@ -34,15 +29,15 @@ DataDatabricksClusterPluginframework.Builder.create(Construct scope, java.lang.S
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.clusterInfo">clusterInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.clusterInfo">clusterInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}. |
 
 ---
@@ -67,13 +62,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -103,7 +98,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -117,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `clusterInfo`<sup>Optional</sup> <a name="clusterInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.Initializer.parameter.clusterInfo"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}.
 
@@ -354,12 +349,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ##### `putClusterInfo` <a name="putClusterInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.putClusterInfo"></a>
 
 ```java
-public void putClusterInfo(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfo> value)
+public void putClusterInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfo> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.putClusterInfo.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
 
 ---
 
@@ -507,14 +502,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterInfo">clusterInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoList">DataDatabricksClusterPluginframeworkClusterInfoList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterIdInput">clusterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterInfoInput">clusterInfoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterInfoInput">clusterInfoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterNameInput">clusterNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -596,10 +591,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -666,10 +661,10 @@ public java.lang.String getClusterIdInput();
 ##### `clusterInfoInput`<sup>Optional</sup> <a name="clusterInfoInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframework.property.clusterInfoInput"></a>
 
 ```java
-public java.lang.Object getClusterInfoInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfo> getClusterInfoInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
 
 ---
 
@@ -731,19 +726,14 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfo;
 
 DataDatabricksClusterPluginframeworkClusterInfo.builder()
-//  .autoscale(IResolvable)
-//  .autoscale(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale>)
+//  .autoscale(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale>)
 //  .autoterminationMinutes(java.lang.Number)
-//  .awsAttributes(IResolvable)
-//  .awsAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes>)
-//  .azureAttributes(IResolvable)
-//  .azureAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes>)
+//  .awsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes>)
+//  .azureAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes>)
 //  .clusterCores(java.lang.Number)
 //  .clusterId(java.lang.String)
-//  .clusterLogConf(IResolvable)
-//  .clusterLogConf(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf>)
-//  .clusterLogStatus(IResolvable)
-//  .clusterLogStatus(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus>)
+//  .clusterLogConf(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf>)
+//  .clusterLogStatus(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus>)
 //  .clusterMemoryMb(java.lang.Number)
 //  .clusterName(java.lang.String)
 //  .clusterSource(java.lang.String)
@@ -751,25 +741,17 @@ DataDatabricksClusterPluginframeworkClusterInfo.builder()
 //  .customTags(java.util.Map<java.lang.String, java.lang.String>)
 //  .dataSecurityMode(java.lang.String)
 //  .defaultTags(java.util.Map<java.lang.String, java.lang.String>)
-//  .dockerImage(IResolvable)
-//  .dockerImage(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage>)
-//  .driver(IResolvable)
-//  .driver(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver>)
+//  .dockerImage(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage>)
+//  .driver(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver>)
 //  .driverInstancePoolId(java.lang.String)
 //  .driverNodeTypeId(java.lang.String)
-//  .enableElasticDisk(java.lang.Boolean)
-//  .enableElasticDisk(IResolvable)
-//  .enableLocalDiskEncryption(java.lang.Boolean)
-//  .enableLocalDiskEncryption(IResolvable)
-//  .executors(IResolvable)
-//  .executors(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors>)
-//  .gcpAttributes(IResolvable)
-//  .gcpAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes>)
-//  .initScripts(IResolvable)
-//  .initScripts(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts>)
+//  .enableElasticDisk(java.lang.Boolean|IResolvable)
+//  .enableLocalDiskEncryption(java.lang.Boolean|IResolvable)
+//  .executors(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors>)
+//  .gcpAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes>)
+//  .initScripts(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts>)
 //  .instancePoolId(java.lang.String)
-//  .isSingleNode(java.lang.Boolean)
-//  .isSingleNode(IResolvable)
+//  .isSingleNode(java.lang.Boolean|IResolvable)
 //  .jdbcPort(java.lang.Number)
 //  .kind(java.lang.String)
 //  .lastRestartedTime(java.lang.Number)
@@ -784,20 +766,16 @@ DataDatabricksClusterPluginframeworkClusterInfo.builder()
 //  .sparkContextId(java.lang.Number)
 //  .sparkEnvVars(java.util.Map<java.lang.String, java.lang.String>)
 //  .sparkVersion(java.lang.String)
-//  .spec(IResolvable)
-//  .spec(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec>)
+//  .spec(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec>)
 //  .sshPublicKeys(java.util.List<java.lang.String>)
 //  .startTime(java.lang.Number)
 //  .state(java.lang.String)
 //  .stateMessage(java.lang.String)
 //  .terminatedTime(java.lang.Number)
-//  .terminationReason(IResolvable)
-//  .terminationReason(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason>)
+//  .terminationReason(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason>)
 //  .totalInitialRemoteDiskSize(java.lang.Number)
-//  .useMlRuntime(java.lang.Boolean)
-//  .useMlRuntime(IResolvable)
-//  .workloadType(IResolvable)
-//  .workloadType(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType>)
+//  .useMlRuntime(java.lang.Boolean|IResolvable)
+//  .workloadType(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType>)
     .build();
 ```
 
@@ -805,14 +783,14 @@ DataDatabricksClusterPluginframeworkClusterInfo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.autoscale">autoscale</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.autoscale">autoscale</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.autoterminationMinutes">autoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autotermination_minutes DataDatabricksClusterPluginframework#autotermination_minutes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.awsAttributes">awsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.azureAttributes">azureAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.awsAttributes">awsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.azureAttributes">azureAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterCores">clusterCores</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_cores DataDatabricksClusterPluginframework#cluster_cores}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterLogConf">clusterLogConf</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterLogStatus">clusterLogStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_status DataDatabricksClusterPluginframework#cluster_log_status}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterLogConf">clusterLogConf</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterLogStatus">clusterLogStatus</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_status DataDatabricksClusterPluginframework#cluster_log_status}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterMemoryMb">clusterMemoryMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_memory_mb DataDatabricksClusterPluginframework#cluster_memory_mb}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterSource">clusterSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_source DataDatabricksClusterPluginframework#cluster_source}. |
@@ -820,17 +798,17 @@ DataDatabricksClusterPluginframeworkClusterInfo.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#custom_tags DataDatabricksClusterPluginframework#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#data_security_mode DataDatabricksClusterPluginframework#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.defaultTags">defaultTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#default_tags DataDatabricksClusterPluginframework#default_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.dockerImage">dockerImage</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.driver">driver</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver DataDatabricksClusterPluginframework#driver}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.dockerImage">dockerImage</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.driver">driver</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver DataDatabricksClusterPluginframework#driver}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver_instance_pool_id DataDatabricksClusterPluginframework#driver_instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver_node_type_id DataDatabricksClusterPluginframework#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.executors">executors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#executors DataDatabricksClusterPluginframework#executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.gcpAttributes">gcpAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.initScripts">initScripts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.executors">executors</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#executors DataDatabricksClusterPluginframework#executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.gcpAttributes">gcpAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.initScripts">initScripts</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#instance_pool_id DataDatabricksClusterPluginframework#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_single_node DataDatabricksClusterPluginframework#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_single_node DataDatabricksClusterPluginframework#is_single_node}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.jdbcPort">jdbcPort</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jdbc_port DataDatabricksClusterPluginframework#jdbc_port}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#kind DataDatabricksClusterPluginframework#kind}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.lastRestartedTime">lastRestartedTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#last_restarted_time DataDatabricksClusterPluginframework#last_restarted_time}. |
@@ -845,26 +823,26 @@ DataDatabricksClusterPluginframeworkClusterInfo.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.sparkContextId">sparkContextId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spark_context_id DataDatabricksClusterPluginframework#spark_context_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spark_env_vars DataDatabricksClusterPluginframework#spark_env_vars}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spark_version DataDatabricksClusterPluginframework#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.spec">spec</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spec DataDatabricksClusterPluginframework#spec}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.spec">spec</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spec DataDatabricksClusterPluginframework#spec}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#ssh_public_keys DataDatabricksClusterPluginframework#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.startTime">startTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#start_time DataDatabricksClusterPluginframework#start_time}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#state DataDatabricksClusterPluginframework#state}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.stateMessage">stateMessage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#state_message DataDatabricksClusterPluginframework#state_message}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.terminatedTime">terminatedTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#terminated_time DataDatabricksClusterPluginframework#terminated_time}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.terminationReason">terminationReason</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#termination_reason DataDatabricksClusterPluginframework#termination_reason}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.terminationReason">terminationReason</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#termination_reason DataDatabricksClusterPluginframework#termination_reason}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.totalInitialRemoteDiskSize">totalInitialRemoteDiskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#total_initial_remote_disk_size DataDatabricksClusterPluginframework#total_initial_remote_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_ml_runtime DataDatabricksClusterPluginframework#use_ml_runtime}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.workloadType">workloadType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_ml_runtime DataDatabricksClusterPluginframework#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.workloadType">workloadType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}. |
 
 ---
 
 ##### `autoscale`<sup>Optional</sup> <a name="autoscale" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.autoscale"></a>
 
 ```java
-public java.lang.Object getAutoscale();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale> getAutoscale();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}.
 
@@ -885,10 +863,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `awsAttributes`<sup>Optional</sup> <a name="awsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.awsAttributes"></a>
 
 ```java
-public java.lang.Object getAwsAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes> getAwsAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}.
 
@@ -897,10 +875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `azureAttributes`<sup>Optional</sup> <a name="azureAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.azureAttributes"></a>
 
 ```java
-public java.lang.Object getAzureAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes> getAzureAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}.
 
@@ -933,10 +911,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `clusterLogConf`<sup>Optional</sup> <a name="clusterLogConf" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterLogConf"></a>
 
 ```java
-public java.lang.Object getClusterLogConf();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf> getClusterLogConf();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}.
 
@@ -945,10 +923,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `clusterLogStatus`<sup>Optional</sup> <a name="clusterLogStatus" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.clusterLogStatus"></a>
 
 ```java
-public java.lang.Object getClusterLogStatus();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus> getClusterLogStatus();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_status DataDatabricksClusterPluginframework#cluster_log_status}.
 
@@ -1041,10 +1019,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `dockerImage`<sup>Optional</sup> <a name="dockerImage" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.dockerImage"></a>
 
 ```java
-public java.lang.Object getDockerImage();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage> getDockerImage();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}.
 
@@ -1053,10 +1031,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `driver`<sup>Optional</sup> <a name="driver" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.driver"></a>
 
 ```java
-public java.lang.Object getDriver();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver> getDriver();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver DataDatabricksClusterPluginframework#driver}.
 
@@ -1089,10 +1067,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableElasticDisk`<sup>Optional</sup> <a name="enableElasticDisk" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.enableElasticDisk"></a>
 
 ```java
-public java.lang.Object getEnableElasticDisk();
+public java.lang.Boolean|IResolvable getEnableElasticDisk();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}.
 
@@ -1101,10 +1079,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableLocalDiskEncryption`<sup>Optional</sup> <a name="enableLocalDiskEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.enableLocalDiskEncryption"></a>
 
 ```java
-public java.lang.Object getEnableLocalDiskEncryption();
+public java.lang.Boolean|IResolvable getEnableLocalDiskEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}.
 
@@ -1113,10 +1091,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `executors`<sup>Optional</sup> <a name="executors" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.executors"></a>
 
 ```java
-public java.lang.Object getExecutors();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors> getExecutors();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#executors DataDatabricksClusterPluginframework#executors}.
 
@@ -1125,10 +1103,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `gcpAttributes`<sup>Optional</sup> <a name="gcpAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.gcpAttributes"></a>
 
 ```java
-public java.lang.Object getGcpAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes> getGcpAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}.
 
@@ -1137,10 +1115,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `initScripts`<sup>Optional</sup> <a name="initScripts" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.initScripts"></a>
 
 ```java
-public java.lang.Object getInitScripts();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts> getInitScripts();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}.
 
@@ -1161,10 +1139,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `isSingleNode`<sup>Optional</sup> <a name="isSingleNode" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.isSingleNode"></a>
 
 ```java
-public java.lang.Object getIsSingleNode();
+public java.lang.Boolean|IResolvable getIsSingleNode();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_single_node DataDatabricksClusterPluginframework#is_single_node}.
 
@@ -1341,10 +1319,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `spec`<sup>Optional</sup> <a name="spec" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.spec"></a>
 
 ```java
-public java.lang.Object getSpec();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec> getSpec();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spec DataDatabricksClusterPluginframework#spec}.
 
@@ -1413,10 +1391,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `terminationReason`<sup>Optional</sup> <a name="terminationReason" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.terminationReason"></a>
 
 ```java
-public java.lang.Object getTerminationReason();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason> getTerminationReason();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#termination_reason DataDatabricksClusterPluginframework#termination_reason}.
 
@@ -1437,10 +1415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `useMlRuntime`<sup>Optional</sup> <a name="useMlRuntime" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.useMlRuntime"></a>
 
 ```java
-public java.lang.Object getUseMlRuntime();
+public java.lang.Boolean|IResolvable getUseMlRuntime();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_ml_runtime DataDatabricksClusterPluginframework#use_ml_runtime}.
 
@@ -1449,10 +1427,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `workloadType`<sup>Optional</sup> <a name="workloadType" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo.property.workloadType"></a>
 
 ```java
-public java.lang.Object getWorkloadType();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType> getWorkloadType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}.
 
@@ -1672,8 +1650,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.builder()
 //  .availability(java.lang.String)
 //  .firstOnDemand(java.lang.Number)
-//  .logAnalyticsInfo(IResolvable)
-//  .logAnalyticsInfo(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo>)
+//  .logAnalyticsInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo>)
 //  .spotBidMaxPrice(java.lang.Number)
     .build();
 ```
@@ -1684,7 +1661,7 @@ DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spot_bid_max_price DataDatabricksClusterPluginframework#spot_bid_max_price}. |
 
 ---
@@ -1716,10 +1693,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `logAnalyticsInfo`<sup>Optional</sup> <a name="logAnalyticsInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes.property.logAnalyticsInfo"></a>
 
 ```java
-public java.lang.Object getLogAnalyticsInfo();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo> getLogAnalyticsInfo();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}.
 
@@ -1791,12 +1768,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf;
 
 DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.builder()
-//  .dbfs(IResolvable)
-//  .dbfs(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs>)
-//  .s3(IResolvable)
-//  .s3(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3>)
-//  .volumes(IResolvable)
-//  .volumes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes>)
+//  .dbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs>)
+//  .s3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3>)
+//  .volumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes>)
     .build();
 ```
 
@@ -1804,19 +1778,19 @@ DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
 
 ---
 
 ##### `dbfs`<sup>Optional</sup> <a name="dbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.dbfs"></a>
 
 ```java
-public java.lang.Object getDbfs();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs> getDbfs();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}.
 
@@ -1825,10 +1799,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.s3"></a>
 
 ```java
-public java.lang.Object getS3();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3> getS3();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}.
 
@@ -1837,10 +1811,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `volumes`<sup>Optional</sup> <a name="volumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf.property.volumes"></a>
 
 ```java
-public java.lang.Object getVolumes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes> getVolumes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}.
 
@@ -1888,8 +1862,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.builder()
     .destination(java.lang.String)
 //  .cannedAcl(java.lang.String)
-//  .enableEncryption(java.lang.Boolean)
-//  .enableEncryption(IResolvable)
+//  .enableEncryption(java.lang.Boolean|IResolvable)
 //  .encryptionType(java.lang.String)
 //  .endpoint(java.lang.String)
 //  .kmsKey(java.lang.String)
@@ -1903,7 +1876,7 @@ DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}. |
@@ -1938,10 +1911,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableEncryption`<sup>Optional</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}.
 
@@ -2081,8 +2054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage;
 
 DataDatabricksClusterPluginframeworkClusterInfoDockerImage.builder()
-//  .basicAuth(IResolvable)
-//  .basicAuth(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth>)
+//  .basicAuth(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth>)
 //  .url(java.lang.String)
     .build();
 ```
@@ -2091,7 +2063,7 @@ DataDatabricksClusterPluginframeworkClusterInfoDockerImage.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage.property.basicAuth">basicAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage.property.basicAuth">basicAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#url DataDatabricksClusterPluginframework#url}. |
 
 ---
@@ -2099,10 +2071,10 @@ DataDatabricksClusterPluginframeworkClusterInfoDockerImage.builder()
 ##### `basicAuth`<sup>Optional</sup> <a name="basicAuth" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage.property.basicAuth"></a>
 
 ```java
-public java.lang.Object getBasicAuth();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth> getBasicAuth();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}.
 
@@ -2176,8 +2148,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoDriver.builder()
 //  .hostPrivateIp(java.lang.String)
 //  .instanceId(java.lang.String)
-//  .nodeAwsAttributes(IResolvable)
-//  .nodeAwsAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes>)
+//  .nodeAwsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes>)
 //  .nodeId(java.lang.String)
 //  .privateIp(java.lang.String)
 //  .publicDns(java.lang.String)
@@ -2191,7 +2162,7 @@ DataDatabricksClusterPluginframeworkClusterInfoDriver.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.hostPrivateIp">hostPrivateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#host_private_ip DataDatabricksClusterPluginframework#host_private_ip}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#instance_id DataDatabricksClusterPluginframework#instance_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_id DataDatabricksClusterPluginframework#node_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#private_ip DataDatabricksClusterPluginframework#private_ip}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#public_dns DataDatabricksClusterPluginframework#public_dns}. |
@@ -2226,10 +2197,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `nodeAwsAttributes`<sup>Optional</sup> <a name="nodeAwsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver.property.nodeAwsAttributes"></a>
 
 ```java
-public java.lang.Object getNodeAwsAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes> getNodeAwsAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}.
 
@@ -2291,8 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes;
 
 DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes.builder()
-//  .isSpot(java.lang.Boolean)
-//  .isSpot(IResolvable)
+//  .isSpot(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2300,17 +2270,17 @@ DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}. |
 
 ---
 
 ##### `isSpot`<sup>Optional</sup> <a name="isSpot" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes.property.isSpot"></a>
 
 ```java
-public java.lang.Object getIsSpot();
+public java.lang.Boolean|IResolvable getIsSpot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}.
 
@@ -2326,8 +2296,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoExecutors.builder()
 //  .hostPrivateIp(java.lang.String)
 //  .instanceId(java.lang.String)
-//  .nodeAwsAttributes(IResolvable)
-//  .nodeAwsAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes>)
+//  .nodeAwsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes>)
 //  .nodeId(java.lang.String)
 //  .privateIp(java.lang.String)
 //  .publicDns(java.lang.String)
@@ -2341,7 +2310,7 @@ DataDatabricksClusterPluginframeworkClusterInfoExecutors.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.hostPrivateIp">hostPrivateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#host_private_ip DataDatabricksClusterPluginframework#host_private_ip}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#instance_id DataDatabricksClusterPluginframework#instance_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_id DataDatabricksClusterPluginframework#node_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#private_ip DataDatabricksClusterPluginframework#private_ip}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#public_dns DataDatabricksClusterPluginframework#public_dns}. |
@@ -2376,10 +2345,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `nodeAwsAttributes`<sup>Optional</sup> <a name="nodeAwsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors.property.nodeAwsAttributes"></a>
 
 ```java
-public java.lang.Object getNodeAwsAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes> getNodeAwsAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_aws_attributes DataDatabricksClusterPluginframework#node_aws_attributes}.
 
@@ -2441,8 +2410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes;
 
 DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes.builder()
-//  .isSpot(java.lang.Boolean)
-//  .isSpot(IResolvable)
+//  .isSpot(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2450,17 +2418,17 @@ DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}. |
 
 ---
 
 ##### `isSpot`<sup>Optional</sup> <a name="isSpot" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes.property.isSpot"></a>
 
 ```java
-public java.lang.Object getIsSpot();
+public java.lang.Boolean|IResolvable getIsSpot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_spot DataDatabricksClusterPluginframework#is_spot}.
 
@@ -2479,8 +2447,7 @@ DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.builder()
 //  .firstOnDemand(java.lang.Number)
 //  .googleServiceAccount(java.lang.String)
 //  .localSsdCount(java.lang.Number)
-//  .usePreemptibleExecutors(java.lang.Boolean)
-//  .usePreemptibleExecutors(IResolvable)
+//  .usePreemptibleExecutors(java.lang.Boolean|IResolvable)
 //  .zoneId(java.lang.String)
     .build();
 ```
@@ -2494,7 +2461,7 @@ DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#google_service_account DataDatabricksClusterPluginframework#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#local_ssd_count DataDatabricksClusterPluginframework#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}. |
 
 ---
@@ -2562,10 +2529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `usePreemptibleExecutors`<sup>Optional</sup> <a name="usePreemptibleExecutors" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes.property.usePreemptibleExecutors"></a>
 
 ```java
-public java.lang.Object getUsePreemptibleExecutors();
+public java.lang.Boolean|IResolvable getUsePreemptibleExecutors();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}.
 
@@ -2591,20 +2558,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts;
 
 DataDatabricksClusterPluginframeworkClusterInfoInitScripts.builder()
-//  .abfss(IResolvable)
-//  .abfss(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss>)
-//  .dbfs(IResolvable)
-//  .dbfs(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs>)
-//  .file(IResolvable)
-//  .file(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile>)
-//  .gcs(IResolvable)
-//  .gcs(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs>)
-//  .s3(IResolvable)
-//  .s3(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3>)
-//  .volumes(IResolvable)
-//  .volumes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes>)
-//  .workspace(IResolvable)
-//  .workspace(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace>)
+//  .abfss(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss>)
+//  .dbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs>)
+//  .file(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile>)
+//  .gcs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs>)
+//  .s3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3>)
+//  .volumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes>)
+//  .workspace(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace>)
     .build();
 ```
 
@@ -2612,23 +2572,23 @@ DataDatabricksClusterPluginframeworkClusterInfoInitScripts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.abfss">abfss</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.file">file</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.gcs">gcs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.workspace">workspace</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.abfss">abfss</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.file">file</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.gcs">gcs</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.workspace">workspace</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}. |
 
 ---
 
 ##### `abfss`<sup>Optional</sup> <a name="abfss" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.abfss"></a>
 
 ```java
-public java.lang.Object getAbfss();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss> getAbfss();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}.
 
@@ -2637,10 +2597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `dbfs`<sup>Optional</sup> <a name="dbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.dbfs"></a>
 
 ```java
-public java.lang.Object getDbfs();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs> getDbfs();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}.
 
@@ -2649,10 +2609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.file"></a>
 
 ```java
-public java.lang.Object getFile();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile> getFile();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}.
 
@@ -2661,10 +2621,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `gcs`<sup>Optional</sup> <a name="gcs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.gcs"></a>
 
 ```java
-public java.lang.Object getGcs();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs> getGcs();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}.
 
@@ -2673,10 +2633,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.s3"></a>
 
 ```java
-public java.lang.Object getS3();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3> getS3();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}.
 
@@ -2685,10 +2645,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `volumes`<sup>Optional</sup> <a name="volumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.volumes"></a>
 
 ```java
-public java.lang.Object getVolumes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes> getVolumes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}.
 
@@ -2697,10 +2657,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `workspace`<sup>Optional</sup> <a name="workspace" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts.property.workspace"></a>
 
 ```java
-public java.lang.Object getWorkspace();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace> getWorkspace();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}.
 
@@ -2844,8 +2804,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.builder()
     .destination(java.lang.String)
 //  .cannedAcl(java.lang.String)
-//  .enableEncryption(java.lang.Boolean)
-//  .enableEncryption(IResolvable)
+//  .enableEncryption(java.lang.Boolean|IResolvable)
 //  .encryptionType(java.lang.String)
 //  .endpoint(java.lang.String)
 //  .kmsKey(java.lang.String)
@@ -2859,7 +2818,7 @@ DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}. |
@@ -2894,10 +2853,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableEncryption`<sup>Optional</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}.
 
@@ -3023,35 +2982,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec;
 
 DataDatabricksClusterPluginframeworkClusterInfoSpec.builder()
-//  .applyPolicyDefaultValues(java.lang.Boolean)
-//  .applyPolicyDefaultValues(IResolvable)
-//  .autoscale(IResolvable)
-//  .autoscale(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale>)
+//  .applyPolicyDefaultValues(java.lang.Boolean|IResolvable)
+//  .autoscale(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale>)
 //  .autoterminationMinutes(java.lang.Number)
-//  .awsAttributes(IResolvable)
-//  .awsAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes>)
-//  .azureAttributes(IResolvable)
-//  .azureAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes>)
-//  .clusterLogConf(IResolvable)
-//  .clusterLogConf(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf>)
+//  .awsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes>)
+//  .azureAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes>)
+//  .clusterLogConf(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf>)
 //  .clusterName(java.lang.String)
 //  .customTags(java.util.Map<java.lang.String, java.lang.String>)
 //  .dataSecurityMode(java.lang.String)
-//  .dockerImage(IResolvable)
-//  .dockerImage(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage>)
+//  .dockerImage(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage>)
 //  .driverInstancePoolId(java.lang.String)
 //  .driverNodeTypeId(java.lang.String)
-//  .enableElasticDisk(java.lang.Boolean)
-//  .enableElasticDisk(IResolvable)
-//  .enableLocalDiskEncryption(java.lang.Boolean)
-//  .enableLocalDiskEncryption(IResolvable)
-//  .gcpAttributes(IResolvable)
-//  .gcpAttributes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes>)
-//  .initScripts(IResolvable)
-//  .initScripts(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts>)
+//  .enableElasticDisk(java.lang.Boolean|IResolvable)
+//  .enableLocalDiskEncryption(java.lang.Boolean|IResolvable)
+//  .gcpAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes>)
+//  .initScripts(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts>)
 //  .instancePoolId(java.lang.String)
-//  .isSingleNode(java.lang.Boolean)
-//  .isSingleNode(IResolvable)
+//  .isSingleNode(java.lang.Boolean|IResolvable)
 //  .kind(java.lang.String)
 //  .nodeTypeId(java.lang.String)
 //  .numWorkers(java.lang.Number)
@@ -3064,10 +3012,8 @@ DataDatabricksClusterPluginframeworkClusterInfoSpec.builder()
 //  .sparkVersion(java.lang.String)
 //  .sshPublicKeys(java.util.List<java.lang.String>)
 //  .totalInitialRemoteDiskSize(java.lang.Number)
-//  .useMlRuntime(java.lang.Boolean)
-//  .useMlRuntime(IResolvable)
-//  .workloadType(IResolvable)
-//  .workloadType(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType>)
+//  .useMlRuntime(java.lang.Boolean|IResolvable)
+//  .workloadType(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType>)
     .build();
 ```
 
@@ -3075,24 +3021,24 @@ DataDatabricksClusterPluginframeworkClusterInfoSpec.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#apply_policy_default_values DataDatabricksClusterPluginframework#apply_policy_default_values}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.autoscale">autoscale</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#apply_policy_default_values DataDatabricksClusterPluginframework#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.autoscale">autoscale</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.autoterminationMinutes">autoterminationMinutes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autotermination_minutes DataDatabricksClusterPluginframework#autotermination_minutes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.awsAttributes">awsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.azureAttributes">azureAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.clusterLogConf">clusterLogConf</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.awsAttributes">awsAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.azureAttributes">azureAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.clusterLogConf">clusterLogConf</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#custom_tags DataDatabricksClusterPluginframework#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#data_security_mode DataDatabricksClusterPluginframework#data_security_mode}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.dockerImage">dockerImage</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.dockerImage">dockerImage</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver_instance_pool_id DataDatabricksClusterPluginframework#driver_instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#driver_node_type_id DataDatabricksClusterPluginframework#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.gcpAttributes">gcpAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.initScripts">initScripts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.gcpAttributes">gcpAttributes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.initScripts">initScripts</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#instance_pool_id DataDatabricksClusterPluginframework#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_single_node DataDatabricksClusterPluginframework#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_single_node DataDatabricksClusterPluginframework#is_single_node}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#kind DataDatabricksClusterPluginframework#kind}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#node_type_id DataDatabricksClusterPluginframework#node_type_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#num_workers DataDatabricksClusterPluginframework#num_workers}. |
@@ -3105,18 +3051,18 @@ DataDatabricksClusterPluginframeworkClusterInfoSpec.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spark_version DataDatabricksClusterPluginframework#spark_version}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#ssh_public_keys DataDatabricksClusterPluginframework#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.totalInitialRemoteDiskSize">totalInitialRemoteDiskSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#total_initial_remote_disk_size DataDatabricksClusterPluginframework#total_initial_remote_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_ml_runtime DataDatabricksClusterPluginframework#use_ml_runtime}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.workloadType">workloadType</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_ml_runtime DataDatabricksClusterPluginframework#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.workloadType">workloadType</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}. |
 
 ---
 
 ##### `applyPolicyDefaultValues`<sup>Optional</sup> <a name="applyPolicyDefaultValues" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.applyPolicyDefaultValues"></a>
 
 ```java
-public java.lang.Object getApplyPolicyDefaultValues();
+public java.lang.Boolean|IResolvable getApplyPolicyDefaultValues();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#apply_policy_default_values DataDatabricksClusterPluginframework#apply_policy_default_values}.
 
@@ -3125,10 +3071,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `autoscale`<sup>Optional</sup> <a name="autoscale" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.autoscale"></a>
 
 ```java
-public java.lang.Object getAutoscale();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale> getAutoscale();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#autoscale DataDatabricksClusterPluginframework#autoscale}.
 
@@ -3149,10 +3095,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `awsAttributes`<sup>Optional</sup> <a name="awsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.awsAttributes"></a>
 
 ```java
-public java.lang.Object getAwsAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes> getAwsAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#aws_attributes DataDatabricksClusterPluginframework#aws_attributes}.
 
@@ -3161,10 +3107,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `azureAttributes`<sup>Optional</sup> <a name="azureAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.azureAttributes"></a>
 
 ```java
-public java.lang.Object getAzureAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes> getAzureAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#azure_attributes DataDatabricksClusterPluginframework#azure_attributes}.
 
@@ -3173,10 +3119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `clusterLogConf`<sup>Optional</sup> <a name="clusterLogConf" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.clusterLogConf"></a>
 
 ```java
-public java.lang.Object getClusterLogConf();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf> getClusterLogConf();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_log_conf DataDatabricksClusterPluginframework#cluster_log_conf}.
 
@@ -3221,10 +3167,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `dockerImage`<sup>Optional</sup> <a name="dockerImage" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.dockerImage"></a>
 
 ```java
-public java.lang.Object getDockerImage();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage> getDockerImage();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#docker_image DataDatabricksClusterPluginframework#docker_image}.
 
@@ -3257,10 +3203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableElasticDisk`<sup>Optional</sup> <a name="enableElasticDisk" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.enableElasticDisk"></a>
 
 ```java
-public java.lang.Object getEnableElasticDisk();
+public java.lang.Boolean|IResolvable getEnableElasticDisk();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_elastic_disk DataDatabricksClusterPluginframework#enable_elastic_disk}.
 
@@ -3269,10 +3215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableLocalDiskEncryption`<sup>Optional</sup> <a name="enableLocalDiskEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.enableLocalDiskEncryption"></a>
 
 ```java
-public java.lang.Object getEnableLocalDiskEncryption();
+public java.lang.Boolean|IResolvable getEnableLocalDiskEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_local_disk_encryption DataDatabricksClusterPluginframework#enable_local_disk_encryption}.
 
@@ -3281,10 +3227,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `gcpAttributes`<sup>Optional</sup> <a name="gcpAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.gcpAttributes"></a>
 
 ```java
-public java.lang.Object getGcpAttributes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes> getGcpAttributes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcp_attributes DataDatabricksClusterPluginframework#gcp_attributes}.
 
@@ -3293,10 +3239,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `initScripts`<sup>Optional</sup> <a name="initScripts" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.initScripts"></a>
 
 ```java
-public java.lang.Object getInitScripts();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts> getInitScripts();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#init_scripts DataDatabricksClusterPluginframework#init_scripts}.
 
@@ -3317,10 +3263,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `isSingleNode`<sup>Optional</sup> <a name="isSingleNode" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.isSingleNode"></a>
 
 ```java
-public java.lang.Object getIsSingleNode();
+public java.lang.Boolean|IResolvable getIsSingleNode();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#is_single_node DataDatabricksClusterPluginframework#is_single_node}.
 
@@ -3473,10 +3419,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `useMlRuntime`<sup>Optional</sup> <a name="useMlRuntime" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.useMlRuntime"></a>
 
 ```java
-public java.lang.Object getUseMlRuntime();
+public java.lang.Boolean|IResolvable getUseMlRuntime();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_ml_runtime DataDatabricksClusterPluginframework#use_ml_runtime}.
 
@@ -3485,10 +3431,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `workloadType`<sup>Optional</sup> <a name="workloadType" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec.property.workloadType"></a>
 
 ```java
-public java.lang.Object getWorkloadType();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType> getWorkloadType();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workload_type DataDatabricksClusterPluginframework#workload_type}.
 
@@ -3708,8 +3654,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.builder()
 //  .availability(java.lang.String)
 //  .firstOnDemand(java.lang.Number)
-//  .logAnalyticsInfo(IResolvable)
-//  .logAnalyticsInfo(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo>)
+//  .logAnalyticsInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo>)
 //  .spotBidMaxPrice(java.lang.Number)
     .build();
 ```
@@ -3720,7 +3665,7 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#availability DataDatabricksClusterPluginframework#availability}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#spot_bid_max_price DataDatabricksClusterPluginframework#spot_bid_max_price}. |
 
 ---
@@ -3752,10 +3697,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `logAnalyticsInfo`<sup>Optional</sup> <a name="logAnalyticsInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes.property.logAnalyticsInfo"></a>
 
 ```java
-public java.lang.Object getLogAnalyticsInfo();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo> getLogAnalyticsInfo();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#log_analytics_info DataDatabricksClusterPluginframework#log_analytics_info}.
 
@@ -3827,12 +3772,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf;
 
 DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.builder()
-//  .dbfs(IResolvable)
-//  .dbfs(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs>)
-//  .s3(IResolvable)
-//  .s3(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3>)
-//  .volumes(IResolvable)
-//  .volumes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes>)
+//  .dbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs>)
+//  .s3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3>)
+//  .volumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes>)
     .build();
 ```
 
@@ -3840,19 +3782,19 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
 
 ---
 
 ##### `dbfs`<sup>Optional</sup> <a name="dbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.dbfs"></a>
 
 ```java
-public java.lang.Object getDbfs();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs> getDbfs();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}.
 
@@ -3861,10 +3803,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.s3"></a>
 
 ```java
-public java.lang.Object getS3();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3> getS3();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}.
 
@@ -3873,10 +3815,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `volumes`<sup>Optional</sup> <a name="volumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf.property.volumes"></a>
 
 ```java
-public java.lang.Object getVolumes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes> getVolumes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}.
 
@@ -3924,8 +3866,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.builder()
     .destination(java.lang.String)
 //  .cannedAcl(java.lang.String)
-//  .enableEncryption(java.lang.Boolean)
-//  .enableEncryption(IResolvable)
+//  .enableEncryption(java.lang.Boolean|IResolvable)
 //  .encryptionType(java.lang.String)
 //  .endpoint(java.lang.String)
 //  .kmsKey(java.lang.String)
@@ -3939,7 +3880,7 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}. |
@@ -3974,10 +3915,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableEncryption`<sup>Optional</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}.
 
@@ -4071,8 +4012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage;
 
 DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.builder()
-//  .basicAuth(IResolvable)
-//  .basicAuth(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth>)
+//  .basicAuth(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth>)
 //  .url(java.lang.String)
     .build();
 ```
@@ -4081,7 +4021,7 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.property.basicAuth">basicAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.property.basicAuth">basicAuth</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#url DataDatabricksClusterPluginframework#url}. |
 
 ---
@@ -4089,10 +4029,10 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.builder()
 ##### `basicAuth`<sup>Optional</sup> <a name="basicAuth" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage.property.basicAuth"></a>
 
 ```java
-public java.lang.Object getBasicAuth();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth> getBasicAuth();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#basic_auth DataDatabricksClusterPluginframework#basic_auth}.
 
@@ -4169,8 +4109,7 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.builder()
 //  .firstOnDemand(java.lang.Number)
 //  .googleServiceAccount(java.lang.String)
 //  .localSsdCount(java.lang.Number)
-//  .usePreemptibleExecutors(java.lang.Boolean)
-//  .usePreemptibleExecutors(IResolvable)
+//  .usePreemptibleExecutors(java.lang.Boolean|IResolvable)
 //  .zoneId(java.lang.String)
     .build();
 ```
@@ -4184,7 +4123,7 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.builder()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#first_on_demand DataDatabricksClusterPluginframework#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#google_service_account DataDatabricksClusterPluginframework#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#local_ssd_count DataDatabricksClusterPluginframework#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#zone_id DataDatabricksClusterPluginframework#zone_id}. |
 
 ---
@@ -4252,10 +4191,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `usePreemptibleExecutors`<sup>Optional</sup> <a name="usePreemptibleExecutors" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors"></a>
 
 ```java
-public java.lang.Object getUsePreemptibleExecutors();
+public java.lang.Boolean|IResolvable getUsePreemptibleExecutors();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#use_preemptible_executors DataDatabricksClusterPluginframework#use_preemptible_executors}.
 
@@ -4281,20 +4220,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts;
 
 DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.builder()
-//  .abfss(IResolvable)
-//  .abfss(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss>)
-//  .dbfs(IResolvable)
-//  .dbfs(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs>)
-//  .file(IResolvable)
-//  .file(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile>)
-//  .gcs(IResolvable)
-//  .gcs(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs>)
-//  .s3(IResolvable)
-//  .s3(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3>)
-//  .volumes(IResolvable)
-//  .volumes(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes>)
-//  .workspace(IResolvable)
-//  .workspace(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace>)
+//  .abfss(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss>)
+//  .dbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs>)
+//  .file(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile>)
+//  .gcs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs>)
+//  .s3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3>)
+//  .volumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes>)
+//  .workspace(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace>)
     .build();
 ```
 
@@ -4302,23 +4234,23 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.abfss">abfss</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.file">file</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.gcs">gcs</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.workspace">workspace</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.abfss">abfss</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.dbfs">dbfs</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.file">file</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.gcs">gcs</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.s3">s3</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.volumes">volumes</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.workspace">workspace</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}. |
 
 ---
 
 ##### `abfss`<sup>Optional</sup> <a name="abfss" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.abfss"></a>
 
 ```java
-public java.lang.Object getAbfss();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss> getAbfss();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#abfss DataDatabricksClusterPluginframework#abfss}.
 
@@ -4327,10 +4259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `dbfs`<sup>Optional</sup> <a name="dbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.dbfs"></a>
 
 ```java
-public java.lang.Object getDbfs();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs> getDbfs();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#dbfs DataDatabricksClusterPluginframework#dbfs}.
 
@@ -4339,10 +4271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.file"></a>
 
 ```java
-public java.lang.Object getFile();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile> getFile();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#file DataDatabricksClusterPluginframework#file}.
 
@@ -4351,10 +4283,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `gcs`<sup>Optional</sup> <a name="gcs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.gcs"></a>
 
 ```java
-public java.lang.Object getGcs();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs> getGcs();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#gcs DataDatabricksClusterPluginframework#gcs}.
 
@@ -4363,10 +4295,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.s3"></a>
 
 ```java
-public java.lang.Object getS3();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3> getS3();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#s3 DataDatabricksClusterPluginframework#s3}.
 
@@ -4375,10 +4307,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `volumes`<sup>Optional</sup> <a name="volumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.volumes"></a>
 
 ```java
-public java.lang.Object getVolumes();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes> getVolumes();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#volumes DataDatabricksClusterPluginframework#volumes}.
 
@@ -4387,10 +4319,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `workspace`<sup>Optional</sup> <a name="workspace" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts.property.workspace"></a>
 
 ```java
-public java.lang.Object getWorkspace();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace> getWorkspace();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#workspace DataDatabricksClusterPluginframework#workspace}.
 
@@ -4534,8 +4466,7 @@ import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginfr
 DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.builder()
     .destination(java.lang.String)
 //  .cannedAcl(java.lang.String)
-//  .enableEncryption(java.lang.Boolean)
-//  .enableEncryption(IResolvable)
+//  .enableEncryption(java.lang.Boolean|IResolvable)
 //  .encryptionType(java.lang.String)
 //  .endpoint(java.lang.String)
 //  .kmsKey(java.lang.String)
@@ -4549,7 +4480,7 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#destination DataDatabricksClusterPluginframework#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#canned_acl DataDatabricksClusterPluginframework#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#encryption_type DataDatabricksClusterPluginframework#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#endpoint DataDatabricksClusterPluginframework#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#kms_key DataDatabricksClusterPluginframework#kms_key}. |
@@ -4584,10 +4515,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enableEncryption`<sup>Optional</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#enable_encryption DataDatabricksClusterPluginframework#enable_encryption}.
 
@@ -4713,8 +4644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType;
 
 DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType.builder()
-    .clients(IResolvable)
-    .clients(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients>)
+    .clients(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients>)
     .build();
 ```
 
@@ -4722,17 +4652,17 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType.property.clients">clients</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType.property.clients">clients</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}. |
 
 ---
 
 ##### `clients`<sup>Required</sup> <a name="clients" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType.property.clients"></a>
 
 ```java
-public java.lang.Object getClients();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients> getClients();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}.
 
@@ -4746,10 +4676,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients;
 
 DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.builder()
-//  .jobs(java.lang.Boolean)
-//  .jobs(IResolvable)
-//  .notebooks(java.lang.Boolean)
-//  .notebooks(IResolvable)
+//  .jobs(java.lang.Boolean|IResolvable)
+//  .notebooks(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -4757,18 +4685,18 @@ DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}. |
 
 ---
 
 ##### `jobs`<sup>Optional</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.property.jobs"></a>
 
 ```java
-public java.lang.Object getJobs();
+public java.lang.Boolean|IResolvable getJobs();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}.
 
@@ -4777,10 +4705,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `notebooks`<sup>Optional</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients.property.notebooks"></a>
 
 ```java
-public java.lang.Object getNotebooks();
+public java.lang.Boolean|IResolvable getNotebooks();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}.
 
@@ -4854,8 +4782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType;
 
 DataDatabricksClusterPluginframeworkClusterInfoWorkloadType.builder()
-    .clients(IResolvable)
-    .clients(java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients>)
+    .clients(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients>)
     .build();
 ```
 
@@ -4863,17 +4790,17 @@ DataDatabricksClusterPluginframeworkClusterInfoWorkloadType.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType.property.clients">clients</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType.property.clients">clients</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}. |
 
 ---
 
 ##### `clients`<sup>Required</sup> <a name="clients" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType.property.clients"></a>
 
 ```java
-public java.lang.Object getClients();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients> getClients();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#clients DataDatabricksClusterPluginframework#clients}.
 
@@ -4887,10 +4814,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients;
 
 DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.builder()
-//  .jobs(java.lang.Boolean)
-//  .jobs(IResolvable)
-//  .notebooks(java.lang.Boolean)
-//  .notebooks(IResolvable)
+//  .jobs(java.lang.Boolean|IResolvable)
+//  .notebooks(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -4898,18 +4823,18 @@ DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.property.jobs">jobs</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}. |
 
 ---
 
 ##### `jobs`<sup>Optional</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.property.jobs"></a>
 
 ```java
-public java.lang.Object getJobs();
+public java.lang.Boolean|IResolvable getJobs();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#jobs DataDatabricksClusterPluginframework#jobs}.
 
@@ -4918,10 +4843,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `notebooks`<sup>Optional</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients.property.notebooks"></a>
 
 ```java
-public java.lang.Object getNotebooks();
+public java.lang.Boolean|IResolvable getNotebooks();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#notebooks DataDatabricksClusterPluginframework#notebooks}.
 
@@ -4935,20 +4860,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import com.hashicorp.cdktf.providers.databricks.data_databricks_cluster_pluginframework.DataDatabricksClusterPluginframeworkConfig;
 
 DataDatabricksClusterPluginframeworkConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .clusterId(java.lang.String)
-//  .clusterInfo(IResolvable)
-//  .clusterInfo(java.util.List<DataDatabricksClusterPluginframeworkClusterInfo>)
+//  .clusterInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfo>)
 //  .clusterName(java.lang.String)
     .build();
 ```
@@ -4957,15 +4877,15 @@ DataDatabricksClusterPluginframeworkConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_id DataDatabricksClusterPluginframework#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.clusterInfo">clusterInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.clusterInfo">clusterInfo</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_name DataDatabricksClusterPluginframework#cluster_name}. |
 
 ---
@@ -4973,20 +4893,20 @@ DataDatabricksClusterPluginframeworkConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -5033,10 +4953,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -5055,10 +4975,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `clusterInfo`<sup>Optional</sup> <a name="clusterInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkConfig.property.clusterInfo"></a>
 
 ```java
-public java.lang.Object getClusterInfo();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfo> getClusterInfo();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster_pluginframework#cluster_info DataDatabricksClusterPluginframework#cluster_info}.
 
@@ -5199,7 +5119,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>></code> | *No description.* |
 
 ---
 
@@ -5230,10 +5150,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
 
 ---
 
@@ -5484,7 +5404,7 @@ public void resetMinWorkers()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.property.minWorkersInput">minWorkersInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a></code> | *No description.* |
 
 ---
 
@@ -5555,10 +5475,10 @@ public java.lang.Number getMinWorkers();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscaleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoAutoscale getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>
 
 ---
 
@@ -5684,7 +5604,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -5715,10 +5635,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
 
 ---
 
@@ -6041,7 +5961,7 @@ public void resetZoneId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -6272,10 +6192,10 @@ public java.lang.String getZoneId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>
 
 ---
 
@@ -6401,7 +6321,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -6432,10 +6352,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
 
 ---
 
@@ -6561,7 +6481,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
 
 ---
 
@@ -6592,10 +6512,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
 
 ---
 
@@ -6846,7 +6766,7 @@ public void resetLogAnalyticsWorkspaceId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceIdInput">logAnalyticsWorkspaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a></code> | *No description.* |
 
 ---
 
@@ -6917,10 +6837,10 @@ public java.lang.String getLogAnalyticsWorkspaceId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>
 
 ---
 
@@ -7154,12 +7074,12 @@ Returns a reversible string representation.
 ##### `putLogAnalyticsInfo` <a name="putLogAnalyticsInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.putLogAnalyticsInfo"></a>
 
 ```java
-public void putLogAnalyticsInfo(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo> value)
+public void putLogAnalyticsInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.putLogAnalyticsInfo.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
 
 ---
 
@@ -7197,12 +7117,12 @@ public void resetSpotBidMaxPrice()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfoList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.availabilityInput">availabilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.firstOnDemandInput">firstOnDemandInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.logAnalyticsInfoInput">logAnalyticsInfoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.logAnalyticsInfoInput">logAnalyticsInfoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.spotBidMaxPriceInput">spotBidMaxPriceInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.availability">availability</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a></code> | *No description.* |
 
 ---
 
@@ -7263,10 +7183,10 @@ public java.lang.Number getFirstOnDemandInput();
 ##### `logAnalyticsInfoInput`<sup>Optional</sup> <a name="logAnalyticsInfoInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.logAnalyticsInfoInput"></a>
 
 ```java
-public java.lang.Object getLogAnalyticsInfoInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo> getLogAnalyticsInfoInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesLogAnalyticsInfo</a>>
 
 ---
 
@@ -7313,10 +7233,10 @@ public java.lang.Number getSpotBidMaxPrice();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>
 
 ---
 
@@ -7442,7 +7362,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>></code> | *No description.* |
 
 ---
 
@@ -7473,10 +7393,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
 
 ---
 
@@ -7711,7 +7631,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a></code> | *No description.* |
 
 ---
 
@@ -7762,10 +7682,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>
 
 ---
 
@@ -7891,7 +7811,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>></code> | *No description.* |
 
 ---
 
@@ -7922,10 +7842,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
 
 ---
 
@@ -8160,36 +8080,36 @@ Returns a reversible string representation.
 ##### `putDbfs` <a name="putDbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.putDbfs"></a>
 
 ```java
-public void putDbfs(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs> value)
+public void putDbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.putDbfs.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
 
 ---
 
 ##### `putS3` <a name="putS3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.putS3"></a>
 
 ```java
-public void putS3(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3> value)
+public void putS3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.putS3.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
 
 ---
 
 ##### `putVolumes` <a name="putVolumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.putVolumes"></a>
 
 ```java
-public void putVolumes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes> value)
+public void putVolumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
 
 ---
 
@@ -8221,10 +8141,10 @@ public void resetVolumes()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.dbfs">dbfs</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a></code> | *No description.* |
 
 ---
 
@@ -8285,40 +8205,40 @@ public DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList 
 ##### `dbfsInput`<sup>Optional</sup> <a name="dbfsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.dbfsInput"></a>
 
 ```java
-public java.lang.Object getDbfsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs> getDbfsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfDbfs</a>>
 
 ---
 
 ##### `s3Input`<sup>Optional</sup> <a name="s3Input" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.s3Input"></a>
 
 ```java
-public java.lang.Object getS3Input();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3> getS3Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
 
 ---
 
 ##### `volumesInput`<sup>Optional</sup> <a name="volumesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.volumesInput"></a>
 
 ```java
-public java.lang.Object getVolumesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes> getVolumesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>
 
 ---
 
@@ -8444,7 +8364,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>></code> | *No description.* |
 
 ---
 
@@ -8475,10 +8395,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>>
 
 ---
 
@@ -8755,19 +8675,19 @@ public void resetRegion()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.cannedAclInput">cannedAclInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.encryptionTypeInput">encryptionTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.endpointInput">endpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.kmsKeyInput">kmsKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a></code> | *No description.* |
 
 ---
 
@@ -8818,10 +8738,10 @@ public java.lang.String getDestinationInput();
 ##### `enableEncryptionInput`<sup>Optional</sup> <a name="enableEncryptionInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.enableEncryptionInput"></a>
 
 ```java
-public java.lang.Object getEnableEncryptionInput();
+public java.lang.Boolean|IResolvable getEnableEncryptionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -8888,10 +8808,10 @@ public java.lang.String getDestination();
 ##### `enableEncryption`<sup>Required</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -8938,10 +8858,10 @@ public java.lang.String getRegion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfS3</a>
 
 ---
 
@@ -9067,7 +8987,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>></code> | *No description.* |
 
 ---
 
@@ -9098,10 +9018,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>>
 
 ---
 
@@ -9336,7 +9256,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a></code> | *No description.* |
 
 ---
 
@@ -9387,10 +9307,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConfVolumes</a>
 
 ---
 
@@ -9516,7 +9436,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>></code> | *No description.* |
 
 ---
 
@@ -9547,10 +9467,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
 
 ---
 
@@ -9801,7 +9721,7 @@ public void resetLastException()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.property.lastExceptionInput">lastExceptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.property.lastAttempted">lastAttempted</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.property.lastException">lastException</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a></code> | *No description.* |
 
 ---
 
@@ -9872,10 +9792,10 @@ public java.lang.String getLastException();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatusOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>
 
 ---
 
@@ -10001,7 +9921,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>></code> | *No description.* |
 
 ---
 
@@ -10032,10 +9952,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
 
 ---
 
@@ -10286,7 +10206,7 @@ public void resetUsername()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a></code> | *No description.* |
 
 ---
 
@@ -10357,10 +10277,10 @@ public java.lang.String getUsername();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>
 
 ---
 
@@ -10486,7 +10406,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>></code> | *No description.* |
 
 ---
 
@@ -10517,10 +10437,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
 
 ---
 
@@ -10752,12 +10672,12 @@ Returns a reversible string representation.
 ##### `putBasicAuth` <a name="putBasicAuth" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.putBasicAuth"></a>
 
 ```java
-public void putBasicAuth(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth> value)
+public void putBasicAuth(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.putBasicAuth.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
 
 ---
 
@@ -10781,10 +10701,10 @@ public void resetUrl()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.basicAuthInput">basicAuthInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.basicAuthInput">basicAuthInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a></code> | *No description.* |
 
 ---
 
@@ -10825,10 +10745,10 @@ public DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuthList g
 ##### `basicAuthInput`<sup>Optional</sup> <a name="basicAuthInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.basicAuthInput"></a>
 
 ```java
-public java.lang.Object getBasicAuthInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth> getBasicAuthInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoDockerImageBasicAuth</a>>
 
 ---
 
@@ -10855,10 +10775,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImageOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoDockerImage getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>
 
 ---
 
@@ -10984,7 +10904,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>></code> | *No description.* |
 
 ---
 
@@ -11015,10 +10935,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
 
 ---
 
@@ -11144,7 +11064,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -11175,10 +11095,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
 
 ---
 
@@ -11418,9 +11338,9 @@ public void resetIsSpot()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpotInput">isSpotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpotInput">isSpotInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -11451,30 +11371,30 @@ public java.lang.String getFqn();
 ##### `isSpotInput`<sup>Optional</sup> <a name="isSpotInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpotInput"></a>
 
 ```java
-public java.lang.Object getIsSpotInput();
+public java.lang.Boolean|IResolvable getIsSpotInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isSpot`<sup>Required</sup> <a name="isSpot" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpot"></a>
 
 ```java
-public java.lang.Object getIsSpot();
+public java.lang.Boolean|IResolvable getIsSpot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>
 
 ---
 
@@ -11711,12 +11631,12 @@ Returns a reversible string representation.
 ##### `putNodeAwsAttributes` <a name="putNodeAwsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.putNodeAwsAttributes"></a>
 
 ```java
-public void putNodeAwsAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes> value)
+public void putNodeAwsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.putNodeAwsAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
 
 ---
 
@@ -11772,7 +11692,7 @@ public void resetStartTimestamp()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.hostPrivateIpInput">hostPrivateIpInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.instanceIdInput">instanceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.nodeAwsAttributesInput">nodeAwsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.nodeAwsAttributesInput">nodeAwsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.nodeIdInput">nodeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.privateIpInput">privateIpInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.publicDnsInput">publicDnsInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -11783,7 +11703,7 @@ public void resetStartTimestamp()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a></code> | *No description.* |
 
 ---
 
@@ -11844,10 +11764,10 @@ public java.lang.String getInstanceIdInput();
 ##### `nodeAwsAttributesInput`<sup>Optional</sup> <a name="nodeAwsAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.nodeAwsAttributesInput"></a>
 
 ```java
-public java.lang.Object getNodeAwsAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes> getNodeAwsAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoDriverNodeAwsAttributes</a>>
 
 ---
 
@@ -11954,10 +11874,10 @@ public java.lang.Number getStartTimestamp();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriverOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoDriver getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>
 
 ---
 
@@ -12083,7 +12003,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>></code> | *No description.* |
 
 ---
 
@@ -12114,10 +12034,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
 
 ---
 
@@ -12243,7 +12163,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -12274,10 +12194,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
 
 ---
 
@@ -12517,9 +12437,9 @@ public void resetIsSpot()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpotInput">isSpotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpotInput">isSpotInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpot">isSpot</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -12550,30 +12470,30 @@ public java.lang.String getFqn();
 ##### `isSpotInput`<sup>Optional</sup> <a name="isSpotInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpotInput"></a>
 
 ```java
-public java.lang.Object getIsSpotInput();
+public java.lang.Boolean|IResolvable getIsSpotInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isSpot`<sup>Required</sup> <a name="isSpot" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpot"></a>
 
 ```java
-public java.lang.Object getIsSpot();
+public java.lang.Boolean|IResolvable getIsSpot();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>
 
 ---
 
@@ -12810,12 +12730,12 @@ Returns a reversible string representation.
 ##### `putNodeAwsAttributes` <a name="putNodeAwsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.putNodeAwsAttributes"></a>
 
 ```java
-public void putNodeAwsAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes> value)
+public void putNodeAwsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.putNodeAwsAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
 
 ---
 
@@ -12871,7 +12791,7 @@ public void resetStartTimestamp()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.nodeAwsAttributes">nodeAwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.hostPrivateIpInput">hostPrivateIpInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.instanceIdInput">instanceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.nodeAwsAttributesInput">nodeAwsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.nodeAwsAttributesInput">nodeAwsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.nodeIdInput">nodeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.privateIpInput">privateIpInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.publicDnsInput">publicDnsInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -12882,7 +12802,7 @@ public void resetStartTimestamp()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.privateIp">privateIp</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.publicDns">publicDns</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a></code> | *No description.* |
 
 ---
 
@@ -12943,10 +12863,10 @@ public java.lang.String getInstanceIdInput();
 ##### `nodeAwsAttributesInput`<sup>Optional</sup> <a name="nodeAwsAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.nodeAwsAttributesInput"></a>
 
 ```java
-public java.lang.Object getNodeAwsAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes> getNodeAwsAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoExecutorsNodeAwsAttributes</a>>
 
 ---
 
@@ -13053,10 +12973,10 @@ public java.lang.Number getStartTimestamp();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutorsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoExecutors getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>
 
 ---
 
@@ -13182,7 +13102,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -13213,10 +13133,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
 
 ---
 
@@ -13503,16 +13423,16 @@ public void resetZoneId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.firstOnDemandInput">firstOnDemandInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.googleServiceAccountInput">googleServiceAccountInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">usePreemptibleExecutorsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">usePreemptibleExecutorsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.availability">availability</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.bootDiskSize">bootDiskSize</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a></code> | *No description.* |
 
 ---
 
@@ -13593,10 +13513,10 @@ public java.lang.Number getLocalSsdCountInput();
 ##### `usePreemptibleExecutorsInput`<sup>Optional</sup> <a name="usePreemptibleExecutorsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutorsInput"></a>
 
 ```java
-public java.lang.Object getUsePreemptibleExecutorsInput();
+public java.lang.Boolean|IResolvable getUsePreemptibleExecutorsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -13663,10 +13583,10 @@ public java.lang.Number getLocalSsdCount();
 ##### `usePreemptibleExecutors`<sup>Required</sup> <a name="usePreemptibleExecutors" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutors"></a>
 
 ```java
-public java.lang.Object getUsePreemptibleExecutors();
+public java.lang.Boolean|IResolvable getUsePreemptibleExecutors();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -13683,10 +13603,10 @@ public java.lang.String getZoneId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>
 
 ---
 
@@ -13812,7 +13732,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>></code> | *No description.* |
 
 ---
 
@@ -13843,10 +13763,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
 
 ---
 
@@ -14081,7 +14001,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a></code> | *No description.* |
 
 ---
 
@@ -14132,10 +14052,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfssOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>
 
 ---
 
@@ -14261,7 +14181,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>></code> | *No description.* |
 
 ---
 
@@ -14292,10 +14212,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
 
 ---
 
@@ -14530,7 +14450,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a></code> | *No description.* |
 
 ---
 
@@ -14581,10 +14501,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>
 
 ---
 
@@ -14710,7 +14630,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>></code> | *No description.* |
 
 ---
 
@@ -14741,10 +14661,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
 
 ---
 
@@ -14979,7 +14899,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a></code> | *No description.* |
 
 ---
 
@@ -15030,10 +14950,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFileOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>
 
 ---
 
@@ -15159,7 +15079,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>></code> | *No description.* |
 
 ---
 
@@ -15190,10 +15110,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
 
 ---
 
@@ -15428,7 +15348,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a></code> | *No description.* |
 
 ---
 
@@ -15479,10 +15399,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>
 
 ---
 
@@ -15608,7 +15528,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>></code> | *No description.* |
 
 ---
 
@@ -15639,10 +15559,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
 
 ---
 
@@ -15885,84 +15805,84 @@ Returns a reversible string representation.
 ##### `putAbfss` <a name="putAbfss" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putAbfss"></a>
 
 ```java
-public void putAbfss(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss> value)
+public void putAbfss(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putAbfss.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
 
 ---
 
 ##### `putDbfs` <a name="putDbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putDbfs"></a>
 
 ```java
-public void putDbfs(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs> value)
+public void putDbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putDbfs.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
 
 ---
 
 ##### `putFile` <a name="putFile" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putFile"></a>
 
 ```java
-public void putFile(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile> value)
+public void putFile(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putFile.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
 
 ---
 
 ##### `putGcs` <a name="putGcs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putGcs"></a>
 
 ```java
-public void putGcs(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs> value)
+public void putGcs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putGcs.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
 
 ---
 
 ##### `putS3` <a name="putS3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putS3"></a>
 
 ```java
-public void putS3(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3> value)
+public void putS3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putS3.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
 
 ---
 
 ##### `putVolumes` <a name="putVolumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putVolumes"></a>
 
 ```java
-public void putVolumes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes> value)
+public void putVolumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
 
 ---
 
 ##### `putWorkspace` <a name="putWorkspace" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putWorkspace"></a>
 
 ```java
-public void putWorkspace(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace> value)
+public void putWorkspace(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.putWorkspace.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
 
 ---
 
@@ -16022,14 +15942,14 @@ public void resetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.workspace">workspace</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.abfssInput">abfssInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.fileInput">fileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.abfssInput">abfssInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.fileInput">fileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -16130,80 +16050,80 @@ public DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList g
 ##### `abfssInput`<sup>Optional</sup> <a name="abfssInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.abfssInput"></a>
 
 ```java
-public java.lang.Object getAbfssInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss> getAbfssInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsAbfss</a>>
 
 ---
 
 ##### `dbfsInput`<sup>Optional</sup> <a name="dbfsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.dbfsInput"></a>
 
 ```java
-public java.lang.Object getDbfsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs> getDbfsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsDbfs</a>>
 
 ---
 
 ##### `fileInput`<sup>Optional</sup> <a name="fileInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.fileInput"></a>
 
 ```java
-public java.lang.Object getFileInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile> getFileInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsFile</a>>
 
 ---
 
 ##### `gcsInput`<sup>Optional</sup> <a name="gcsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.gcsInput"></a>
 
 ```java
-public java.lang.Object getGcsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs> getGcsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsGcs</a>>
 
 ---
 
 ##### `s3Input`<sup>Optional</sup> <a name="s3Input" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.s3Input"></a>
 
 ```java
-public java.lang.Object getS3Input();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3> getS3Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
 
 ---
 
 ##### `volumesInput`<sup>Optional</sup> <a name="volumesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.volumesInput"></a>
 
 ```java
-public java.lang.Object getVolumesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes> getVolumesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
 
 ---
 
 ##### `workspaceInput`<sup>Optional</sup> <a name="workspaceInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.workspaceInput"></a>
 
 ```java
-public java.lang.Object getWorkspaceInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace> getWorkspaceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScripts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>
 
 ---
 
@@ -16329,7 +16249,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>></code> | *No description.* |
 
 ---
 
@@ -16360,10 +16280,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>>
 
 ---
 
@@ -16640,19 +16560,19 @@ public void resetRegion()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.cannedAclInput">cannedAclInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.encryptionTypeInput">encryptionTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.endpointInput">endpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.kmsKeyInput">kmsKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a></code> | *No description.* |
 
 ---
 
@@ -16703,10 +16623,10 @@ public java.lang.String getDestinationInput();
 ##### `enableEncryptionInput`<sup>Optional</sup> <a name="enableEncryptionInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.enableEncryptionInput"></a>
 
 ```java
-public java.lang.Object getEnableEncryptionInput();
+public java.lang.Boolean|IResolvable getEnableEncryptionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16773,10 +16693,10 @@ public java.lang.String getDestination();
 ##### `enableEncryption`<sup>Required</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -16823,10 +16743,10 @@ public java.lang.String getRegion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsS3</a>
 
 ---
 
@@ -16952,7 +16872,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>></code> | *No description.* |
 
 ---
 
@@ -16983,10 +16903,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>>
 
 ---
 
@@ -17221,7 +17141,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a></code> | *No description.* |
 
 ---
 
@@ -17272,10 +17192,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsVolumes</a>
 
 ---
 
@@ -17401,7 +17321,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>></code> | *No description.* |
 
 ---
 
@@ -17432,10 +17352,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>>
 
 ---
 
@@ -17670,7 +17590,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a></code> | *No description.* |
 
 ---
 
@@ -17721,10 +17641,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspaceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoInitScriptsWorkspace</a>
 
 ---
 
@@ -17850,7 +17770,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>></code> | *No description.* |
 
 ---
 
@@ -17881,10 +17801,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfo> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>>
 
 ---
 
@@ -18176,156 +18096,156 @@ Returns a reversible string representation.
 ##### `putAutoscale` <a name="putAutoscale" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putAutoscale"></a>
 
 ```java
-public void putAutoscale(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale> value)
+public void putAutoscale(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putAutoscale.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
 
 ---
 
 ##### `putAwsAttributes` <a name="putAwsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putAwsAttributes"></a>
 
 ```java
-public void putAwsAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes> value)
+public void putAwsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putAwsAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
 
 ---
 
 ##### `putAzureAttributes` <a name="putAzureAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putAzureAttributes"></a>
 
 ```java
-public void putAzureAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes> value)
+public void putAzureAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putAzureAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
 
 ---
 
 ##### `putClusterLogConf` <a name="putClusterLogConf" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putClusterLogConf"></a>
 
 ```java
-public void putClusterLogConf(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf> value)
+public void putClusterLogConf(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putClusterLogConf.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
 
 ---
 
 ##### `putClusterLogStatus` <a name="putClusterLogStatus" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putClusterLogStatus"></a>
 
 ```java
-public void putClusterLogStatus(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus> value)
+public void putClusterLogStatus(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putClusterLogStatus.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
 
 ---
 
 ##### `putDockerImage` <a name="putDockerImage" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putDockerImage"></a>
 
 ```java
-public void putDockerImage(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage> value)
+public void putDockerImage(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putDockerImage.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
 
 ---
 
 ##### `putDriver` <a name="putDriver" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putDriver"></a>
 
 ```java
-public void putDriver(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver> value)
+public void putDriver(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putDriver.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
 
 ---
 
 ##### `putExecutors` <a name="putExecutors" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putExecutors"></a>
 
 ```java
-public void putExecutors(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors> value)
+public void putExecutors(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putExecutors.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
 
 ---
 
 ##### `putGcpAttributes` <a name="putGcpAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putGcpAttributes"></a>
 
 ```java
-public void putGcpAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes> value)
+public void putGcpAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putGcpAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
 
 ---
 
 ##### `putInitScripts` <a name="putInitScripts" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putInitScripts"></a>
 
 ```java
-public void putInitScripts(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts> value)
+public void putInitScripts(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putInitScripts.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
 
 ---
 
 ##### `putSpec` <a name="putSpec" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putSpec"></a>
 
 ```java
-public void putSpec(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec> value)
+public void putSpec(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putSpec.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
 
 ---
 
 ##### `putTerminationReason` <a name="putTerminationReason" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putTerminationReason"></a>
 
 ```java
-public void putTerminationReason(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason> value)
+public void putTerminationReason(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putTerminationReason.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
 
 ---
 
 ##### `putWorkloadType` <a name="putWorkloadType" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putWorkloadType"></a>
 
 ```java
-public void putWorkloadType(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType> value)
+public void putWorkloadType(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.putWorkloadType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
 
 ---
 
@@ -18649,14 +18569,14 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecList">DataDatabricksClusterPluginframeworkClusterInfoSpecList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.terminationReason">terminationReason</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList">DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.workloadType">workloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.autoscaleInput">autoscaleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.autoscaleInput">autoscaleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.autoterminationMinutesInput">autoterminationMinutesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.awsAttributesInput">awsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.azureAttributesInput">azureAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.awsAttributesInput">awsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.azureAttributesInput">azureAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterCoresInput">clusterCoresInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterIdInput">clusterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterLogConfInput">clusterLogConfInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterLogStatusInput">clusterLogStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterLogConfInput">clusterLogConfInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterLogStatusInput">clusterLogStatusInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterMemoryMbInput">clusterMemoryMbInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterNameInput">clusterNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterSourceInput">clusterSourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -18664,17 +18584,17 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.customTagsInput">customTagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.dataSecurityModeInput">dataSecurityModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.defaultTagsInput">defaultTagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.dockerImageInput">dockerImageInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverInput">driverInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.dockerImageInput">dockerImageInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverInput">driverInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverInstancePoolIdInput">driverInstancePoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverNodeTypeIdInput">driverNodeTypeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableElasticDiskInput">enableElasticDiskInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableLocalDiskEncryptionInput">enableLocalDiskEncryptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.executorsInput">executorsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.gcpAttributesInput">gcpAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.initScriptsInput">initScriptsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableElasticDiskInput">enableElasticDiskInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableLocalDiskEncryptionInput">enableLocalDiskEncryptionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.executorsInput">executorsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.gcpAttributesInput">gcpAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.initScriptsInput">initScriptsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.instancePoolIdInput">instancePoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.isSingleNodeInput">isSingleNodeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.isSingleNodeInput">isSingleNodeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.jdbcPortInput">jdbcPortInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.kindInput">kindInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.lastRestartedTimeInput">lastRestartedTimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -18689,16 +18609,16 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.sparkContextIdInput">sparkContextIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.sparkEnvVarsInput">sparkEnvVarsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.sparkVersionInput">sparkVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.specInput">specInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.specInput">specInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.sshPublicKeysInput">sshPublicKeysInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.stateMessageInput">stateMessageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.terminatedTimeInput">terminatedTimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.terminationReasonInput">terminationReasonInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.terminationReasonInput">terminationReasonInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.totalInitialRemoteDiskSizeInput">totalInitialRemoteDiskSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.useMlRuntimeInput">useMlRuntimeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.workloadTypeInput">workloadTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.useMlRuntimeInput">useMlRuntimeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.workloadTypeInput">workloadTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.autoterminationMinutes">autoterminationMinutes</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterCores">clusterCores</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -18711,10 +18631,10 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.defaultTags">defaultTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.jdbcPort">jdbcPort</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.kind">kind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.lastRestartedTime">lastRestartedTime</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -18735,8 +18655,8 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.stateMessage">stateMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.terminatedTime">terminatedTime</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.totalInitialRemoteDiskSize">totalInitialRemoteDiskSize</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a></code> | *No description.* |
 
 ---
 
@@ -18897,10 +18817,10 @@ public DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList getWorklo
 ##### `autoscaleInput`<sup>Optional</sup> <a name="autoscaleInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.autoscaleInput"></a>
 
 ```java
-public java.lang.Object getAutoscaleInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAutoscale> getAutoscaleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAutoscale">DataDatabricksClusterPluginframeworkClusterInfoAutoscale</a>>
 
 ---
 
@@ -18917,20 +18837,20 @@ public java.lang.Number getAutoterminationMinutesInput();
 ##### `awsAttributesInput`<sup>Optional</sup> <a name="awsAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.awsAttributesInput"></a>
 
 ```java
-public java.lang.Object getAwsAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes> getAwsAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoAwsAttributes</a>>
 
 ---
 
 ##### `azureAttributesInput`<sup>Optional</sup> <a name="azureAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.azureAttributesInput"></a>
 
 ```java
-public java.lang.Object getAzureAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes> getAzureAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoAzureAttributes</a>>
 
 ---
 
@@ -18957,20 +18877,20 @@ public java.lang.String getClusterIdInput();
 ##### `clusterLogConfInput`<sup>Optional</sup> <a name="clusterLogConfInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterLogConfInput"></a>
 
 ```java
-public java.lang.Object getClusterLogConfInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf> getClusterLogConfInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoClusterLogConf</a>>
 
 ---
 
 ##### `clusterLogStatusInput`<sup>Optional</sup> <a name="clusterLogStatusInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.clusterLogStatusInput"></a>
 
 ```java
-public java.lang.Object getClusterLogStatusInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus> getClusterLogStatusInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus">DataDatabricksClusterPluginframeworkClusterInfoClusterLogStatus</a>>
 
 ---
 
@@ -19047,20 +18967,20 @@ public java.util.Map<java.lang.String, java.lang.String> getDefaultTagsInput();
 ##### `dockerImageInput`<sup>Optional</sup> <a name="dockerImageInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.dockerImageInput"></a>
 
 ```java
-public java.lang.Object getDockerImageInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDockerImage> getDockerImageInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDockerImage">DataDatabricksClusterPluginframeworkClusterInfoDockerImage</a>>
 
 ---
 
 ##### `driverInput`<sup>Optional</sup> <a name="driverInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.driverInput"></a>
 
 ```java
-public java.lang.Object getDriverInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoDriver> getDriverInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoDriver">DataDatabricksClusterPluginframeworkClusterInfoDriver</a>>
 
 ---
 
@@ -19087,50 +19007,50 @@ public java.lang.String getDriverNodeTypeIdInput();
 ##### `enableElasticDiskInput`<sup>Optional</sup> <a name="enableElasticDiskInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableElasticDiskInput"></a>
 
 ```java
-public java.lang.Object getEnableElasticDiskInput();
+public java.lang.Boolean|IResolvable getEnableElasticDiskInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableLocalDiskEncryptionInput`<sup>Optional</sup> <a name="enableLocalDiskEncryptionInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableLocalDiskEncryptionInput"></a>
 
 ```java
-public java.lang.Object getEnableLocalDiskEncryptionInput();
+public java.lang.Boolean|IResolvable getEnableLocalDiskEncryptionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `executorsInput`<sup>Optional</sup> <a name="executorsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.executorsInput"></a>
 
 ```java
-public java.lang.Object getExecutorsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoExecutors> getExecutorsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoExecutors">DataDatabricksClusterPluginframeworkClusterInfoExecutors</a>>
 
 ---
 
 ##### `gcpAttributesInput`<sup>Optional</sup> <a name="gcpAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.gcpAttributesInput"></a>
 
 ```java
-public java.lang.Object getGcpAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes> getGcpAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoGcpAttributes</a>>
 
 ---
 
 ##### `initScriptsInput`<sup>Optional</sup> <a name="initScriptsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.initScriptsInput"></a>
 
 ```java
-public java.lang.Object getInitScriptsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoInitScripts> getInitScriptsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoInitScripts">DataDatabricksClusterPluginframeworkClusterInfoInitScripts</a>>
 
 ---
 
@@ -19147,10 +19067,10 @@ public java.lang.String getInstancePoolIdInput();
 ##### `isSingleNodeInput`<sup>Optional</sup> <a name="isSingleNodeInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.isSingleNodeInput"></a>
 
 ```java
-public java.lang.Object getIsSingleNodeInput();
+public java.lang.Boolean|IResolvable getIsSingleNodeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19297,10 +19217,10 @@ public java.lang.String getSparkVersionInput();
 ##### `specInput`<sup>Optional</sup> <a name="specInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.specInput"></a>
 
 ```java
-public java.lang.Object getSpecInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec> getSpecInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
 
 ---
 
@@ -19357,10 +19277,10 @@ public java.lang.Number getTerminatedTimeInput();
 ##### `terminationReasonInput`<sup>Optional</sup> <a name="terminationReasonInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.terminationReasonInput"></a>
 
 ```java
-public java.lang.Object getTerminationReasonInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason> getTerminationReasonInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
 
 ---
 
@@ -19377,20 +19297,20 @@ public java.lang.Number getTotalInitialRemoteDiskSizeInput();
 ##### `useMlRuntimeInput`<sup>Optional</sup> <a name="useMlRuntimeInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.useMlRuntimeInput"></a>
 
 ```java
-public java.lang.Object getUseMlRuntimeInput();
+public java.lang.Boolean|IResolvable getUseMlRuntimeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `workloadTypeInput`<sup>Optional</sup> <a name="workloadTypeInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.workloadTypeInput"></a>
 
 ```java
-public java.lang.Object getWorkloadTypeInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType> getWorkloadTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
 
 ---
 
@@ -19517,20 +19437,20 @@ public java.lang.String getDriverNodeTypeId();
 ##### `enableElasticDisk`<sup>Required</sup> <a name="enableElasticDisk" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableElasticDisk"></a>
 
 ```java
-public java.lang.Object getEnableElasticDisk();
+public java.lang.Boolean|IResolvable getEnableElasticDisk();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableLocalDiskEncryption`<sup>Required</sup> <a name="enableLocalDiskEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.enableLocalDiskEncryption"></a>
 
 ```java
-public java.lang.Object getEnableLocalDiskEncryption();
+public java.lang.Boolean|IResolvable getEnableLocalDiskEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19547,10 +19467,10 @@ public java.lang.String getInstancePoolId();
 ##### `isSingleNode`<sup>Required</sup> <a name="isSingleNode" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.isSingleNode"></a>
 
 ```java
-public java.lang.Object getIsSingleNode();
+public java.lang.Boolean|IResolvable getIsSingleNode();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -19757,20 +19677,20 @@ public java.lang.Number getTotalInitialRemoteDiskSize();
 ##### `useMlRuntime`<sup>Required</sup> <a name="useMlRuntime" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.useMlRuntime"></a>
 
 ```java
-public java.lang.Object getUseMlRuntime();
+public java.lang.Boolean|IResolvable getUseMlRuntime();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfo getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfo">DataDatabricksClusterPluginframeworkClusterInfo</a>
 
 ---
 
@@ -19896,7 +19816,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>></code> | *No description.* |
 
 ---
 
@@ -19927,10 +19847,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
 
 ---
 
@@ -20181,7 +20101,7 @@ public void resetMinWorkers()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.property.minWorkersInput">minWorkersInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a></code> | *No description.* |
 
 ---
 
@@ -20252,10 +20172,10 @@ public java.lang.Number getMinWorkers();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscaleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>
 
 ---
 
@@ -20381,7 +20301,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -20412,10 +20332,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
 
 ---
 
@@ -20738,7 +20658,7 @@ public void resetZoneId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -20969,10 +20889,10 @@ public java.lang.String getZoneId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>
 
 ---
 
@@ -21098,7 +21018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -21129,10 +21049,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
 
 ---
 
@@ -21258,7 +21178,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
 
 ---
 
@@ -21289,10 +21209,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
 
 ---
 
@@ -21543,7 +21463,7 @@ public void resetLogAnalyticsWorkspaceId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceIdInput">logAnalyticsWorkspaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a></code> | *No description.* |
 
 ---
 
@@ -21614,10 +21534,10 @@ public java.lang.String getLogAnalyticsWorkspaceId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>
 
 ---
 
@@ -21851,12 +21771,12 @@ Returns a reversible string representation.
 ##### `putLogAnalyticsInfo` <a name="putLogAnalyticsInfo" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.putLogAnalyticsInfo"></a>
 
 ```java
-public void putLogAnalyticsInfo(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo> value)
+public void putLogAnalyticsInfo(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.putLogAnalyticsInfo.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
 
 ---
 
@@ -21894,12 +21814,12 @@ public void resetSpotBidMaxPrice()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfoList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.availabilityInput">availabilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.firstOnDemandInput">firstOnDemandInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.logAnalyticsInfoInput">logAnalyticsInfoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.logAnalyticsInfoInput">logAnalyticsInfoInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.spotBidMaxPriceInput">spotBidMaxPriceInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.availability">availability</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a></code> | *No description.* |
 
 ---
 
@@ -21960,10 +21880,10 @@ public java.lang.Number getFirstOnDemandInput();
 ##### `logAnalyticsInfoInput`<sup>Optional</sup> <a name="logAnalyticsInfoInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.logAnalyticsInfoInput"></a>
 
 ```java
-public java.lang.Object getLogAnalyticsInfoInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo> getLogAnalyticsInfoInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesLogAnalyticsInfo</a>>
 
 ---
 
@@ -22010,10 +21930,10 @@ public java.lang.Number getSpotBidMaxPrice();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>
 
 ---
 
@@ -22139,7 +22059,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>></code> | *No description.* |
 
 ---
 
@@ -22170,10 +22090,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
 
 ---
 
@@ -22408,7 +22328,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a></code> | *No description.* |
 
 ---
 
@@ -22459,10 +22379,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>
 
 ---
 
@@ -22588,7 +22508,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>></code> | *No description.* |
 
 ---
 
@@ -22619,10 +22539,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
 
 ---
 
@@ -22857,36 +22777,36 @@ Returns a reversible string representation.
 ##### `putDbfs` <a name="putDbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.putDbfs"></a>
 
 ```java
-public void putDbfs(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs> value)
+public void putDbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.putDbfs.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
 
 ---
 
 ##### `putS3` <a name="putS3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.putS3"></a>
 
 ```java
-public void putS3(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3> value)
+public void putS3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.putS3.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
 
 ---
 
 ##### `putVolumes` <a name="putVolumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.putVolumes"></a>
 
 ```java
-public void putVolumes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes> value)
+public void putVolumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
 
 ---
 
@@ -22918,10 +22838,10 @@ public void resetVolumes()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.dbfs">dbfs</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a></code> | *No description.* |
 
 ---
 
@@ -22982,40 +22902,40 @@ public DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesL
 ##### `dbfsInput`<sup>Optional</sup> <a name="dbfsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.dbfsInput"></a>
 
 ```java
-public java.lang.Object getDbfsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs> getDbfsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfDbfs</a>>
 
 ---
 
 ##### `s3Input`<sup>Optional</sup> <a name="s3Input" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.s3Input"></a>
 
 ```java
-public java.lang.Object getS3Input();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3> getS3Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
 
 ---
 
 ##### `volumesInput`<sup>Optional</sup> <a name="volumesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.volumesInput"></a>
 
 ```java
-public java.lang.Object getVolumesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes> getVolumesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>
 
 ---
 
@@ -23141,7 +23061,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>></code> | *No description.* |
 
 ---
 
@@ -23172,10 +23092,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>>
 
 ---
 
@@ -23452,19 +23372,19 @@ public void resetRegion()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.cannedAclInput">cannedAclInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.encryptionTypeInput">encryptionTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.endpointInput">endpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.kmsKeyInput">kmsKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a></code> | *No description.* |
 
 ---
 
@@ -23515,10 +23435,10 @@ public java.lang.String getDestinationInput();
 ##### `enableEncryptionInput`<sup>Optional</sup> <a name="enableEncryptionInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryptionInput"></a>
 
 ```java
-public java.lang.Object getEnableEncryptionInput();
+public java.lang.Boolean|IResolvable getEnableEncryptionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -23585,10 +23505,10 @@ public java.lang.String getDestination();
 ##### `enableEncryption`<sup>Required</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -23635,10 +23555,10 @@ public java.lang.String getRegion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfS3</a>
 
 ---
 
@@ -23764,7 +23684,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>></code> | *No description.* |
 
 ---
 
@@ -23795,10 +23715,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>>
 
 ---
 
@@ -24033,7 +23953,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a></code> | *No description.* |
 
 ---
 
@@ -24084,10 +24004,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConfVolumes</a>
 
 ---
 
@@ -24213,7 +24133,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>></code> | *No description.* |
 
 ---
 
@@ -24244,10 +24164,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
 
 ---
 
@@ -24498,7 +24418,7 @@ public void resetUsername()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a></code> | *No description.* |
 
 ---
 
@@ -24569,10 +24489,10 @@ public java.lang.String getUsername();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>
 
 ---
 
@@ -24698,7 +24618,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>></code> | *No description.* |
 
 ---
 
@@ -24729,10 +24649,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
 
 ---
 
@@ -24964,12 +24884,12 @@ Returns a reversible string representation.
 ##### `putBasicAuth` <a name="putBasicAuth" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.putBasicAuth"></a>
 
 ```java
-public void putBasicAuth(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth> value)
+public void putBasicAuth(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.putBasicAuth.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
 
 ---
 
@@ -24993,10 +24913,10 @@ public void resetUrl()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.basicAuth">basicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.basicAuthInput">basicAuthInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.basicAuthInput">basicAuthInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a></code> | *No description.* |
 
 ---
 
@@ -25037,10 +24957,10 @@ public DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuthLi
 ##### `basicAuthInput`<sup>Optional</sup> <a name="basicAuthInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.basicAuthInput"></a>
 
 ```java
-public java.lang.Object getBasicAuthInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth> getBasicAuthInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageBasicAuth</a>>
 
 ---
 
@@ -25067,10 +24987,10 @@ public java.lang.String getUrl();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImageOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>
 
 ---
 
@@ -25196,7 +25116,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>></code> | *No description.* |
 
 ---
 
@@ -25227,10 +25147,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
 
 ---
 
@@ -25517,16 +25437,16 @@ public void resetZoneId()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.firstOnDemandInput">firstOnDemandInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.googleServiceAccountInput">googleServiceAccountInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">usePreemptibleExecutorsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">usePreemptibleExecutorsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.zoneIdInput">zoneIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.availability">availability</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.bootDiskSize">bootDiskSize</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutors">usePreemptibleExecutors</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a></code> | *No description.* |
 
 ---
 
@@ -25607,10 +25527,10 @@ public java.lang.Number getLocalSsdCountInput();
 ##### `usePreemptibleExecutorsInput`<sup>Optional</sup> <a name="usePreemptibleExecutorsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutorsInput"></a>
 
 ```java
-public java.lang.Object getUsePreemptibleExecutorsInput();
+public java.lang.Boolean|IResolvable getUsePreemptibleExecutorsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25677,10 +25597,10 @@ public java.lang.Number getLocalSsdCount();
 ##### `usePreemptibleExecutors`<sup>Required</sup> <a name="usePreemptibleExecutors" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutors"></a>
 
 ```java
-public java.lang.Object getUsePreemptibleExecutors();
+public java.lang.Boolean|IResolvable getUsePreemptibleExecutors();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -25697,10 +25617,10 @@ public java.lang.String getZoneId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>
 
 ---
 
@@ -25826,7 +25746,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>></code> | *No description.* |
 
 ---
 
@@ -25857,10 +25777,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
 
 ---
 
@@ -26095,7 +26015,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a></code> | *No description.* |
 
 ---
 
@@ -26146,10 +26066,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfssOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>
 
 ---
 
@@ -26275,7 +26195,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>></code> | *No description.* |
 
 ---
 
@@ -26306,10 +26226,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
 
 ---
 
@@ -26544,7 +26464,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a></code> | *No description.* |
 
 ---
 
@@ -26595,10 +26515,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>
 
 ---
 
@@ -26724,7 +26644,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>></code> | *No description.* |
 
 ---
 
@@ -26755,10 +26675,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
 
 ---
 
@@ -26993,7 +26913,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a></code> | *No description.* |
 
 ---
 
@@ -27044,10 +26964,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFileOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>
 
 ---
 
@@ -27173,7 +27093,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>></code> | *No description.* |
 
 ---
 
@@ -27204,10 +27124,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
 
 ---
 
@@ -27442,7 +27362,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a></code> | *No description.* |
 
 ---
 
@@ -27493,10 +27413,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>
 
 ---
 
@@ -27622,7 +27542,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>></code> | *No description.* |
 
 ---
 
@@ -27653,10 +27573,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
 
 ---
 
@@ -27899,84 +27819,84 @@ Returns a reversible string representation.
 ##### `putAbfss` <a name="putAbfss" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putAbfss"></a>
 
 ```java
-public void putAbfss(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss> value)
+public void putAbfss(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putAbfss.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
 
 ---
 
 ##### `putDbfs` <a name="putDbfs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putDbfs"></a>
 
 ```java
-public void putDbfs(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs> value)
+public void putDbfs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putDbfs.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
 
 ---
 
 ##### `putFile` <a name="putFile" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putFile"></a>
 
 ```java
-public void putFile(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile> value)
+public void putFile(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putFile.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
 
 ---
 
 ##### `putGcs` <a name="putGcs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putGcs"></a>
 
 ```java
-public void putGcs(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs> value)
+public void putGcs(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putGcs.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
 
 ---
 
 ##### `putS3` <a name="putS3" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putS3"></a>
 
 ```java
-public void putS3(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3> value)
+public void putS3(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putS3.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
 
 ---
 
 ##### `putVolumes` <a name="putVolumes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putVolumes"></a>
 
 ```java
-public void putVolumes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes> value)
+public void putVolumes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
 
 ---
 
 ##### `putWorkspace` <a name="putWorkspace" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putWorkspace"></a>
 
 ```java
-public void putWorkspace(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace> value)
+public void putWorkspace(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.putWorkspace.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
 
 ---
 
@@ -28036,14 +27956,14 @@ public void resetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.s3">s3</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.workspace">workspace</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.abfssInput">abfssInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.fileInput">fileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.abfssInput">abfssInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.dbfsInput">dbfsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.fileInput">fileInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.gcsInput">gcsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.s3Input">s3Input</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.volumesInput">volumesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.workspaceInput">workspaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -28144,80 +28064,80 @@ public DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceLi
 ##### `abfssInput`<sup>Optional</sup> <a name="abfssInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.abfssInput"></a>
 
 ```java
-public java.lang.Object getAbfssInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss> getAbfssInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsAbfss</a>>
 
 ---
 
 ##### `dbfsInput`<sup>Optional</sup> <a name="dbfsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.dbfsInput"></a>
 
 ```java
-public java.lang.Object getDbfsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs> getDbfsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsDbfs</a>>
 
 ---
 
 ##### `fileInput`<sup>Optional</sup> <a name="fileInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.fileInput"></a>
 
 ```java
-public java.lang.Object getFileInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile> getFileInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsFile</a>>
 
 ---
 
 ##### `gcsInput`<sup>Optional</sup> <a name="gcsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.gcsInput"></a>
 
 ```java
-public java.lang.Object getGcsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs> getGcsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsGcs</a>>
 
 ---
 
 ##### `s3Input`<sup>Optional</sup> <a name="s3Input" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.s3Input"></a>
 
 ```java
-public java.lang.Object getS3Input();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3> getS3Input();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
 
 ---
 
 ##### `volumesInput`<sup>Optional</sup> <a name="volumesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.volumesInput"></a>
 
 ```java
-public java.lang.Object getVolumesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes> getVolumesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
 
 ---
 
 ##### `workspaceInput`<sup>Optional</sup> <a name="workspaceInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.workspaceInput"></a>
 
 ```java
-public java.lang.Object getWorkspaceInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace> getWorkspaceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>
 
 ---
 
@@ -28343,7 +28263,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>></code> | *No description.* |
 
 ---
 
@@ -28374,10 +28294,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3List.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>>
 
 ---
 
@@ -28654,19 +28574,19 @@ public void resetRegion()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.cannedAclInput">cannedAclInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryptionInput">enableEncryptionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.encryptionTypeInput">encryptionTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.endpointInput">endpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.kmsKeyInput">kmsKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a></code> | *No description.* |
 
 ---
 
@@ -28717,10 +28637,10 @@ public java.lang.String getDestinationInput();
 ##### `enableEncryptionInput`<sup>Optional</sup> <a name="enableEncryptionInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryptionInput"></a>
 
 ```java
-public java.lang.Object getEnableEncryptionInput();
+public java.lang.Boolean|IResolvable getEnableEncryptionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28787,10 +28707,10 @@ public java.lang.String getDestination();
 ##### `enableEncryption`<sup>Required</sup> <a name="enableEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryption"></a>
 
 ```java
-public java.lang.Object getEnableEncryption();
+public java.lang.Boolean|IResolvable getEnableEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -28837,10 +28757,10 @@ public java.lang.String getRegion();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3OutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3 getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsS3</a>
 
 ---
 
@@ -28966,7 +28886,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>></code> | *No description.* |
 
 ---
 
@@ -28997,10 +28917,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>>
 
 ---
 
@@ -29235,7 +29155,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a></code> | *No description.* |
 
 ---
 
@@ -29286,10 +29206,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsVolumes</a>
 
 ---
 
@@ -29415,7 +29335,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>></code> | *No description.* |
 
 ---
 
@@ -29446,10 +29366,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>>
 
 ---
 
@@ -29684,7 +29604,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.property.destinationInput">destinationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.property.destination">destination</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a></code> | *No description.* |
 
 ---
 
@@ -29735,10 +29655,10 @@ public java.lang.String getDestination();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspaceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsWorkspace</a>
 
 ---
 
@@ -29864,7 +29784,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>></code> | *No description.* |
 
 ---
 
@@ -29895,10 +29815,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpec> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>>
 
 ---
 
@@ -30167,96 +30087,96 @@ Returns a reversible string representation.
 ##### `putAutoscale` <a name="putAutoscale" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putAutoscale"></a>
 
 ```java
-public void putAutoscale(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale> value)
+public void putAutoscale(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putAutoscale.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
 
 ---
 
 ##### `putAwsAttributes` <a name="putAwsAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putAwsAttributes"></a>
 
 ```java
-public void putAwsAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes> value)
+public void putAwsAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putAwsAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
 
 ---
 
 ##### `putAzureAttributes` <a name="putAzureAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putAzureAttributes"></a>
 
 ```java
-public void putAzureAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes> value)
+public void putAzureAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putAzureAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
 
 ---
 
 ##### `putClusterLogConf` <a name="putClusterLogConf" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putClusterLogConf"></a>
 
 ```java
-public void putClusterLogConf(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf> value)
+public void putClusterLogConf(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putClusterLogConf.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
 
 ---
 
 ##### `putDockerImage` <a name="putDockerImage" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putDockerImage"></a>
 
 ```java
-public void putDockerImage(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage> value)
+public void putDockerImage(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putDockerImage.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
 
 ---
 
 ##### `putGcpAttributes` <a name="putGcpAttributes" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putGcpAttributes"></a>
 
 ```java
-public void putGcpAttributes(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes> value)
+public void putGcpAttributes(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putGcpAttributes.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
 
 ---
 
 ##### `putInitScripts` <a name="putInitScripts" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putInitScripts"></a>
 
 ```java
-public void putInitScripts(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts> value)
+public void putInitScripts(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putInitScripts.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
 
 ---
 
 ##### `putWorkloadType` <a name="putWorkloadType" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putWorkloadType"></a>
 
 ```java
-public void putWorkloadType(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType> value)
+public void putWorkloadType(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.putWorkloadType.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
 
 ---
 
@@ -30467,24 +30387,24 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.initScripts">initScripts</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScriptsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.workloadType">workloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.applyPolicyDefaultValuesInput">applyPolicyDefaultValuesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.autoscaleInput">autoscaleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.applyPolicyDefaultValuesInput">applyPolicyDefaultValuesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.autoscaleInput">autoscaleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.autoterminationMinutesInput">autoterminationMinutesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.awsAttributesInput">awsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.azureAttributesInput">azureAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.clusterLogConfInput">clusterLogConfInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.awsAttributesInput">awsAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.azureAttributesInput">azureAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.clusterLogConfInput">clusterLogConfInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.clusterNameInput">clusterNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.customTagsInput">customTagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.dataSecurityModeInput">dataSecurityModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.dockerImageInput">dockerImageInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.dockerImageInput">dockerImageInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.driverInstancePoolIdInput">driverInstancePoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.driverNodeTypeIdInput">driverNodeTypeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableElasticDiskInput">enableElasticDiskInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableLocalDiskEncryptionInput">enableLocalDiskEncryptionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.gcpAttributesInput">gcpAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.initScriptsInput">initScriptsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableElasticDiskInput">enableElasticDiskInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableLocalDiskEncryptionInput">enableLocalDiskEncryptionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.gcpAttributesInput">gcpAttributesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.initScriptsInput">initScriptsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.instancePoolIdInput">instancePoolIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.isSingleNodeInput">isSingleNodeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.isSingleNodeInput">isSingleNodeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.kindInput">kindInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.nodeTypeIdInput">nodeTypeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.numWorkersInput">numWorkersInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -30497,19 +30417,19 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.sparkVersionInput">sparkVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.sshPublicKeysInput">sshPublicKeysInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.totalInitialRemoteDiskSizeInput">totalInitialRemoteDiskSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.useMlRuntimeInput">useMlRuntimeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.workloadTypeInput">workloadTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.useMlRuntimeInput">useMlRuntimeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.workloadTypeInput">workloadTypeInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.autoterminationMinutes">autoterminationMinutes</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.clusterName">clusterName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.dataSecurityMode">dataSecurityMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableElasticDisk">enableElasticDisk</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.isSingleNode">isSingleNode</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.kind">kind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -30522,8 +30442,8 @@ public void resetWorkloadType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.sparkVersion">sparkVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.totalInitialRemoteDiskSize">totalInitialRemoteDiskSize</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.useMlRuntime">useMlRuntime</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a></code> | *No description.* |
 
 ---
 
@@ -30634,20 +30554,20 @@ public DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList getWo
 ##### `applyPolicyDefaultValuesInput`<sup>Optional</sup> <a name="applyPolicyDefaultValuesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.applyPolicyDefaultValuesInput"></a>
 
 ```java
-public java.lang.Object getApplyPolicyDefaultValuesInput();
+public java.lang.Boolean|IResolvable getApplyPolicyDefaultValuesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoscaleInput`<sup>Optional</sup> <a name="autoscaleInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.autoscaleInput"></a>
 
 ```java
-public java.lang.Object getAutoscaleInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale> getAutoscaleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale">DataDatabricksClusterPluginframeworkClusterInfoSpecAutoscale</a>>
 
 ---
 
@@ -30664,30 +30584,30 @@ public java.lang.Number getAutoterminationMinutesInput();
 ##### `awsAttributesInput`<sup>Optional</sup> <a name="awsAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.awsAttributesInput"></a>
 
 ```java
-public java.lang.Object getAwsAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes> getAwsAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAwsAttributes</a>>
 
 ---
 
 ##### `azureAttributesInput`<sup>Optional</sup> <a name="azureAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.azureAttributesInput"></a>
 
 ```java
-public java.lang.Object getAzureAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes> getAzureAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecAzureAttributes</a>>
 
 ---
 
 ##### `clusterLogConfInput`<sup>Optional</sup> <a name="clusterLogConfInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.clusterLogConfInput"></a>
 
 ```java
-public java.lang.Object getClusterLogConfInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf> getClusterLogConfInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf">DataDatabricksClusterPluginframeworkClusterInfoSpecClusterLogConf</a>>
 
 ---
 
@@ -30724,10 +30644,10 @@ public java.lang.String getDataSecurityModeInput();
 ##### `dockerImageInput`<sup>Optional</sup> <a name="dockerImageInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.dockerImageInput"></a>
 
 ```java
-public java.lang.Object getDockerImageInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage> getDockerImageInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage">DataDatabricksClusterPluginframeworkClusterInfoSpecDockerImage</a>>
 
 ---
 
@@ -30754,40 +30674,40 @@ public java.lang.String getDriverNodeTypeIdInput();
 ##### `enableElasticDiskInput`<sup>Optional</sup> <a name="enableElasticDiskInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableElasticDiskInput"></a>
 
 ```java
-public java.lang.Object getEnableElasticDiskInput();
+public java.lang.Boolean|IResolvable getEnableElasticDiskInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableLocalDiskEncryptionInput`<sup>Optional</sup> <a name="enableLocalDiskEncryptionInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableLocalDiskEncryptionInput"></a>
 
 ```java
-public java.lang.Object getEnableLocalDiskEncryptionInput();
+public java.lang.Boolean|IResolvable getEnableLocalDiskEncryptionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `gcpAttributesInput`<sup>Optional</sup> <a name="gcpAttributesInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.gcpAttributesInput"></a>
 
 ```java
-public java.lang.Object getGcpAttributesInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes> getGcpAttributesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes">DataDatabricksClusterPluginframeworkClusterInfoSpecGcpAttributes</a>>
 
 ---
 
 ##### `initScriptsInput`<sup>Optional</sup> <a name="initScriptsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.initScriptsInput"></a>
 
 ```java
-public java.lang.Object getInitScriptsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts> getInitScriptsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts">DataDatabricksClusterPluginframeworkClusterInfoSpecInitScripts</a>>
 
 ---
 
@@ -30804,10 +30724,10 @@ public java.lang.String getInstancePoolIdInput();
 ##### `isSingleNodeInput`<sup>Optional</sup> <a name="isSingleNodeInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.isSingleNodeInput"></a>
 
 ```java
-public java.lang.Object getIsSingleNodeInput();
+public java.lang.Boolean|IResolvable getIsSingleNodeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -30934,30 +30854,30 @@ public java.lang.Number getTotalInitialRemoteDiskSizeInput();
 ##### `useMlRuntimeInput`<sup>Optional</sup> <a name="useMlRuntimeInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.useMlRuntimeInput"></a>
 
 ```java
-public java.lang.Object getUseMlRuntimeInput();
+public java.lang.Boolean|IResolvable getUseMlRuntimeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `workloadTypeInput`<sup>Optional</sup> <a name="workloadTypeInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.workloadTypeInput"></a>
 
 ```java
-public java.lang.Object getWorkloadTypeInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType> getWorkloadTypeInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
 
 ---
 
 ##### `applyPolicyDefaultValues`<sup>Required</sup> <a name="applyPolicyDefaultValues" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.applyPolicyDefaultValues"></a>
 
 ```java
-public java.lang.Object getApplyPolicyDefaultValues();
+public java.lang.Boolean|IResolvable getApplyPolicyDefaultValues();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -31024,20 +30944,20 @@ public java.lang.String getDriverNodeTypeId();
 ##### `enableElasticDisk`<sup>Required</sup> <a name="enableElasticDisk" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableElasticDisk"></a>
 
 ```java
-public java.lang.Object getEnableElasticDisk();
+public java.lang.Boolean|IResolvable getEnableElasticDisk();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableLocalDiskEncryption`<sup>Required</sup> <a name="enableLocalDiskEncryption" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.enableLocalDiskEncryption"></a>
 
 ```java
-public java.lang.Object getEnableLocalDiskEncryption();
+public java.lang.Boolean|IResolvable getEnableLocalDiskEncryption();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -31054,10 +30974,10 @@ public java.lang.String getInstancePoolId();
 ##### `isSingleNode`<sup>Required</sup> <a name="isSingleNode" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.isSingleNode"></a>
 
 ```java
-public java.lang.Object getIsSingleNode();
+public java.lang.Boolean|IResolvable getIsSingleNode();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -31184,20 +31104,20 @@ public java.lang.Number getTotalInitialRemoteDiskSize();
 ##### `useMlRuntime`<sup>Required</sup> <a name="useMlRuntime" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.useMlRuntime"></a>
 
 ```java
-public java.lang.Object getUseMlRuntime();
+public java.lang.Boolean|IResolvable getUseMlRuntime();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpec getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpec">DataDatabricksClusterPluginframeworkClusterInfoSpec</a>
 
 ---
 
@@ -31323,7 +31243,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>></code> | *No description.* |
 
 ---
 
@@ -31354,10 +31274,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
 
 ---
 
@@ -31604,10 +31524,10 @@ public void resetNotebooks()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobsInput">jobsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooksInput">notebooksInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobsInput">jobsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooksInput">notebooksInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a></code> | *No description.* |
 
 ---
@@ -31639,40 +31559,40 @@ public java.lang.String getFqn();
 ##### `jobsInput`<sup>Optional</sup> <a name="jobsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobsInput"></a>
 
 ```java
-public java.lang.Object getJobsInput();
+public java.lang.Boolean|IResolvable getJobsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `notebooksInput`<sup>Optional</sup> <a name="notebooksInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooksInput"></a>
 
 ```java
-public java.lang.Object getNotebooksInput();
+public java.lang.Boolean|IResolvable getNotebooksInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `jobs`<sup>Required</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobs"></a>
 
 ```java
-public java.lang.Object getJobs();
+public java.lang.Boolean|IResolvable getJobs();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `notebooks`<sup>Required</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooks"></a>
 
 ```java
-public java.lang.Object getNotebooks();
+public java.lang.Boolean|IResolvable getNotebooks();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -31808,7 +31728,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>></code> | *No description.* |
 
 ---
 
@@ -31839,10 +31759,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>>
 
 ---
 
@@ -32072,12 +31992,12 @@ Returns a reversible string representation.
 ##### `putClients` <a name="putClients" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.putClients"></a>
 
 ```java
-public void putClients(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients> value)
+public void putClients(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.putClients.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
 
 ---
 
@@ -32089,8 +32009,8 @@ public void putClients(IResolvable OR java.util.List<DataDatabricksClusterPlugin
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.clients">clients</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.clientsInput">clientsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.clientsInput">clientsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a></code> | *No description.* |
 
 ---
 
@@ -32131,20 +32051,20 @@ public DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClientsLis
 ##### `clientsInput`<sup>Optional</sup> <a name="clientsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.clientsInput"></a>
 
 ```java
-public java.lang.Object getClientsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients> getClientsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeClients</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoSpecWorkloadType</a>
 
 ---
 
@@ -32270,7 +32190,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>></code> | *No description.* |
 
 ---
 
@@ -32301,10 +32221,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoTerminationReason> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>>
 
 ---
 
@@ -32564,7 +32484,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.property.code">code</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a></code> | *No description.* |
 
 ---
 
@@ -32655,10 +32575,10 @@ public java.lang.String getType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReasonOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoTerminationReason getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoTerminationReason">DataDatabricksClusterPluginframeworkClusterInfoTerminationReason</a>
 
 ---
 
@@ -32784,7 +32704,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>></code> | *No description.* |
 
 ---
 
@@ -32815,10 +32735,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
 
 ---
 
@@ -33065,10 +32985,10 @@ public void resetNotebooks()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.jobsInput">jobsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.notebooksInput">notebooksInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.jobsInput">jobsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.notebooksInput">notebooksInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a></code> | *No description.* |
 
 ---
@@ -33100,40 +33020,40 @@ public java.lang.String getFqn();
 ##### `jobsInput`<sup>Optional</sup> <a name="jobsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.jobsInput"></a>
 
 ```java
-public java.lang.Object getJobsInput();
+public java.lang.Boolean|IResolvable getJobsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `notebooksInput`<sup>Optional</sup> <a name="notebooksInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.notebooksInput"></a>
 
 ```java
-public java.lang.Object getNotebooksInput();
+public java.lang.Boolean|IResolvable getNotebooksInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `jobs`<sup>Required</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.jobs"></a>
 
 ```java
-public java.lang.Object getJobs();
+public java.lang.Boolean|IResolvable getJobs();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `notebooks`<sup>Required</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsOutputReference.property.notebooks"></a>
 
 ```java
-public java.lang.Object getNotebooks();
+public java.lang.Boolean|IResolvable getNotebooks();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -33269,7 +33189,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>></code> | *No description.* |
 
 ---
 
@@ -33300,10 +33220,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadType> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>>
 
 ---
 
@@ -33533,12 +33453,12 @@ Returns a reversible string representation.
 ##### `putClients` <a name="putClients" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.putClients"></a>
 
 ```java
-public void putClients(IResolvable OR java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients> value)
+public void putClients(IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.putClients.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
 
 ---
 
@@ -33550,8 +33470,8 @@ public void putClients(IResolvable OR java.util.List<DataDatabricksClusterPlugin
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.clients">clients</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.clientsInput">clientsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.clientsInput">clientsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a></code> | *No description.* |
 
 ---
 
@@ -33592,20 +33512,20 @@ public DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClientsList ge
 ##### `clientsInput`<sup>Optional</sup> <a name="clientsInput" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.clientsInput"></a>
 
 ```java
-public java.lang.Object getClientsInput();
+public IResolvable|java.util.List<DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients> getClientsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients">DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeClients</a>>
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadTypeOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataDatabricksClusterPluginframeworkClusterInfoWorkloadType getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-databricks.dataDatabricksClusterPluginframework.DataDatabricksClusterPluginframeworkClusterInfoWorkloadType">DataDatabricksClusterPluginframeworkClusterInfoWorkloadType</a>
 
 ---
 

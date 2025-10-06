@@ -284,7 +284,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-databricks.share.Share.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-databricks.share.Share.importFrom"></a>
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-databricks.share.Share.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-databricks.share.Share.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -378,12 +378,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutObject` <a name="PutObject" id="@cdktf/provider-databricks.share.Share.putObject"></a>
 
 ```csharp
-private void PutObject(object Value)
+private void PutObject(IResolvable|ShareObject[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.share.Share.putObject.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]
 
 ---
 
@@ -573,20 +573,20 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.object">Object</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList">ShareObjectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.createdAtInput">CreatedAtInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.createdByInput">CreatedByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.objectInput">ObjectInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.objectInput">ObjectInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.storageLocationInput">StorageLocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.storageRootInput">StorageRootInput</a></code> | <code>string</code> | *No description.* |
@@ -680,20 +680,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-databricks.share.Share.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-databricks.share.Share.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -740,10 +740,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-databricks.share.Share.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -810,10 +810,10 @@ public string NameInput { get; }
 ##### `ObjectInput`<sup>Optional</sup> <a name="ObjectInput" id="@cdktf/provider-databricks.share.Share.property.objectInput"></a>
 
 ```csharp
-public object ObjectInput { get; }
+public IResolvable|ShareObject[] ObjectInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]
 
 ---
 
@@ -995,19 +995,19 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new ShareConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Comment = null,
     double CreatedAt = null,
     string CreatedBy = null,
     string Id = null,
-    object Object = null,
+    IResolvable|ShareObject[] Object = null,
     string Owner = null,
     string StorageLocation = null,
     string StorageRoot = null,
@@ -1020,19 +1020,19 @@ new ShareConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#name Share#name}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.createdAt">CreatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#created_at Share#created_at}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.createdBy">CreatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#created_by Share#created_by}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#id Share#id}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.object">Object</a></code> | <code>object</code> | object block. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.object">Object</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]</code> | object block. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#owner Share#owner}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#storage_location Share#storage_location}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#storage_root Share#storage_root}. |
@@ -1044,20 +1044,20 @@ new ShareConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-databricks.share.ShareConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-databricks.share.ShareConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1104,10 +1104,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-databricks.share.ShareConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1177,10 +1177,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Object`<sup>Optional</sup> <a name="Object" id="@cdktf/provider-databricks.share.ShareConfig.property.object"></a>
 
 ```csharp
-public object Object { get; set; }
+public IResolvable|ShareObject[] Object { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]
 
 object block.
 
@@ -1260,11 +1260,11 @@ new ShareObject {
     string Name,
     double AddedAt = null,
     string AddedBy = null,
-    object CdfEnabled = null,
+    bool|IResolvable CdfEnabled = null,
     string Comment = null,
     string Content = null,
     string HistoryDataSharingStatus = null,
-    object Partition = null,
+    IResolvable|ShareObjectPartition[] Partition = null,
     string SharedAs = null,
     double StartVersion = null,
     string Status = null,
@@ -1280,11 +1280,11 @@ new ShareObject {
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#name Share#name}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.addedAt">AddedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#added_at Share#added_at}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.addedBy">AddedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#added_by Share#added_by}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled">CdfEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#cdf_enabled Share#cdf_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled">CdfEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#cdf_enabled Share#cdf_enabled}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#content Share#content}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.historyDataSharingStatus">HistoryDataSharingStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.partition">Partition</a></code> | <code>object</code> | partition block. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.partition">Partition</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]</code> | partition block. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.sharedAs">SharedAs</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#shared_as Share#shared_as}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.startVersion">StartVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#start_version Share#start_version}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#status Share#status}. |
@@ -1343,10 +1343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `CdfEnabled`<sup>Optional</sup> <a name="CdfEnabled" id="@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled"></a>
 
 ```csharp
-public object CdfEnabled { get; set; }
+public bool|IResolvable CdfEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#cdf_enabled Share#cdf_enabled}.
 
@@ -1391,10 +1391,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Partition`<sup>Optional</sup> <a name="Partition" id="@cdktf/provider-databricks.share.ShareObject.property.partition"></a>
 
 ```csharp
-public object Partition { get; set; }
+public IResolvable|ShareObjectPartition[] Partition { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]
 
 partition block.
 
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new ShareObjectPartition {
-    object Value = null
+    IResolvable|ShareObjectPartitionValue[] Value = null
 };
 ```
 
@@ -1466,17 +1466,17 @@ new ShareObjectPartition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartition.property.value">Value</a></code> | <code>object</code> | value block. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartition.property.value">Value</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]</code> | value block. |
 
 ---
 
 ##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-databricks.share.ShareObjectPartition.property.value"></a>
 
 ```csharp
-public object Value { get; set; }
+public IResolvable|ShareObjectPartitionValue[] Value { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]
 
 value block.
 
@@ -1681,7 +1681,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]</code> | *No description.* |
 
 ---
 
@@ -1712,10 +1712,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.share.ShareObjectList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ShareObject[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>[]
 
 ---
 
@@ -1956,12 +1956,12 @@ Returns a reversible string representation.
 ##### `PutPartition` <a name="PutPartition" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.putPartition"></a>
 
 ```csharp
-private void PutPartition(object Value)
+private void PutPartition(IResolvable|ShareObjectPartition[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.putPartition.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]
 
 ---
 
@@ -2041,20 +2041,20 @@ private void ResetStringSharedAs()
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partition">Partition</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList">ShareObjectPartitionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAtInput">AddedAtInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedByInput">AddedByInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput">CdfEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput">CdfEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.contentInput">ContentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.dataObjectTypeInput">DataObjectTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.historyDataSharingStatusInput">HistoryDataSharingStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput">PartitionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput">PartitionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.sharedAsInput">SharedAsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersionInput">StartVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAsInput">StringSharedAsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAt">AddedAt</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedBy">AddedBy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled">CdfEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled">CdfEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.content">Content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.dataObjectType">DataObjectType</a></code> | <code>string</code> | *No description.* |
@@ -2064,7 +2064,7 @@ private void ResetStringSharedAs()
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersion">StartVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAs">StringSharedAs</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a></code> | *No description.* |
 
 ---
 
@@ -2125,10 +2125,10 @@ public string AddedByInput { get; }
 ##### `CdfEnabledInput`<sup>Optional</sup> <a name="CdfEnabledInput" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput"></a>
 
 ```csharp
-public object CdfEnabledInput { get; }
+public bool|IResolvable CdfEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2185,10 +2185,10 @@ public string NameInput { get; }
 ##### `PartitionInput`<sup>Optional</sup> <a name="PartitionInput" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput"></a>
 
 ```csharp
-public object PartitionInput { get; }
+public IResolvable|ShareObjectPartition[] PartitionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]
 
 ---
 
@@ -2255,10 +2255,10 @@ public string AddedBy { get; }
 ##### `CdfEnabled`<sup>Required</sup> <a name="CdfEnabled" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled"></a>
 
 ```csharp
-public object CdfEnabled { get; }
+public bool|IResolvable CdfEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2355,10 +2355,10 @@ public string StringSharedAs { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ShareObject InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>
 
 ---
 
@@ -2484,7 +2484,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]</code> | *No description.* |
 
 ---
 
@@ -2515,10 +2515,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ShareObjectPartition[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>[]
 
 ---
 
@@ -2749,12 +2749,12 @@ Returns a reversible string representation.
 ##### `PutValue` <a name="PutValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.putValue"></a>
 
 ```csharp
-private void PutValue(object Value)
+private void PutValue(IResolvable|ShareObjectPartitionValue[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.putValue.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]
 
 ---
 
@@ -2772,8 +2772,8 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.value">Value</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList">ShareObjectPartitionValueList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput">ValueInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput">ValueInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a></code> | *No description.* |
 
 ---
 
@@ -2814,20 +2814,20 @@ public ShareObjectPartitionValueList Value { get; }
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput"></a>
 
 ```csharp
-public object ValueInput { get; }
+public IResolvable|ShareObjectPartitionValue[] ValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ShareObjectPartition InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>
 
 ---
 
@@ -2953,7 +2953,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]</code> | *No description.* |
 
 ---
 
@@ -2984,10 +2984,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ShareObjectPartitionValue[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>[]
 
 ---
 
@@ -3242,7 +3242,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.op">Op</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.recipientPropertyKey">RecipientPropertyKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a></code> | *No description.* |
 
 ---
 
@@ -3353,10 +3353,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ShareObjectPartitionValue InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>
 
 ---
 

@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_databricks import data_databricks_cluster
 dataDatabricksCluster.DataDatabricksCluster(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str = None,
   cluster_info: DataDatabricksClusterClusterInfo = None,
   cluster_name: str = None,
@@ -32,13 +32,13 @@ dataDatabricksCluster.DataDatabricksCluster(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterInfo">cluster_info</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo">DataDatabricksClusterClusterInfo</a></code> | cluster_info block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
@@ -66,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -412,13 +412,13 @@ def put_cluster_info(
   driver: DataDatabricksClusterClusterInfoDriver = None,
   driver_instance_pool_id: str = None,
   driver_node_type_id: str = None,
-  enable_elastic_disk: typing.Union[bool, IResolvable] = None,
-  enable_local_disk_encryption: typing.Union[bool, IResolvable] = None,
-  executors: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoExecutors]] = None,
+  enable_elastic_disk: bool | IResolvable = None,
+  enable_local_disk_encryption: bool | IResolvable = None,
+  executors: IResolvable | typing.List[DataDatabricksClusterClusterInfoExecutors] = None,
   gcp_attributes: DataDatabricksClusterClusterInfoGcpAttributes = None,
-  init_scripts: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoInitScripts]] = None,
+  init_scripts: IResolvable | typing.List[DataDatabricksClusterClusterInfoInitScripts] = None,
   instance_pool_id: str = None,
-  is_single_node: typing.Union[bool, IResolvable] = None,
+  is_single_node: bool | IResolvable = None,
   jdbc_port: typing.Union[int, float] = None,
   kind: str = None,
   last_restarted_time: typing.Union[int, float] = None,
@@ -441,7 +441,7 @@ def put_cluster_info(
   terminated_time: typing.Union[int, float] = None,
   termination_reason: DataDatabricksClusterClusterInfoTerminationReason = None,
   total_initial_remote_disk_size: typing.Union[int, float] = None,
-  use_ml_runtime: typing.Union[bool, IResolvable] = None,
+  use_ml_runtime: bool | IResolvable = None,
   workload_type: DataDatabricksClusterClusterInfoWorkloadType = None
 ) -> None
 ```
@@ -614,7 +614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_elastic_disk`<sup>Optional</sup> <a name="enable_elastic_disk" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.putClusterInfo.parameter.enableElasticDisk"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
 
@@ -622,7 +622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_local_disk_encryption`<sup>Optional</sup> <a name="enable_local_disk_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.putClusterInfo.parameter.enableLocalDiskEncryption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
 
@@ -630,7 +630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `executors`<sup>Optional</sup> <a name="executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.putClusterInfo.parameter.executors"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]
 
 executors block.
 
@@ -650,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `init_scripts`<sup>Optional</sup> <a name="init_scripts" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.putClusterInfo.parameter.initScripts"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]
 
 init_scripts block.
 
@@ -668,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `is_single_node`<sup>Optional</sup> <a name="is_single_node" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.putClusterInfo.parameter.isSingleNode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
 
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `use_ml_runtime`<sup>Optional</sup> <a name="use_ml_runtime" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.putClusterInfo.parameter.useMlRuntime"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
 
@@ -1033,7 +1033,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1124,10 +1124,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksCluster.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1298,13 +1298,13 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfo(
   driver: DataDatabricksClusterClusterInfoDriver = None,
   driver_instance_pool_id: str = None,
   driver_node_type_id: str = None,
-  enable_elastic_disk: typing.Union[bool, IResolvable] = None,
-  enable_local_disk_encryption: typing.Union[bool, IResolvable] = None,
-  executors: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoExecutors]] = None,
+  enable_elastic_disk: bool | IResolvable = None,
+  enable_local_disk_encryption: bool | IResolvable = None,
+  executors: IResolvable | typing.List[DataDatabricksClusterClusterInfoExecutors] = None,
   gcp_attributes: DataDatabricksClusterClusterInfoGcpAttributes = None,
-  init_scripts: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoInitScripts]] = None,
+  init_scripts: IResolvable | typing.List[DataDatabricksClusterClusterInfoInitScripts] = None,
   instance_pool_id: str = None,
-  is_single_node: typing.Union[bool, IResolvable] = None,
+  is_single_node: bool | IResolvable = None,
   jdbc_port: typing.Union[int, float] = None,
   kind: str = None,
   last_restarted_time: typing.Union[int, float] = None,
@@ -1327,7 +1327,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfo(
   terminated_time: typing.Union[int, float] = None,
   termination_reason: DataDatabricksClusterClusterInfoTerminationReason = None,
   total_initial_remote_disk_size: typing.Union[int, float] = None,
-  use_ml_runtime: typing.Union[bool, IResolvable] = None,
+  use_ml_runtime: bool | IResolvable = None,
   workload_type: DataDatabricksClusterClusterInfoWorkloadType = None
 )
 ```
@@ -1355,13 +1355,13 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfo(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driver">driver</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver">DataDatabricksClusterClusterInfoDriver</a></code> | driver block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.executors">executors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]</code> | executors block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.executors">executors</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]</code> | executors block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.gcpAttributes">gcp_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes">DataDatabricksClusterClusterInfoGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.initScripts">init_scripts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]</code> | init_scripts block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.initScripts">init_scripts</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]</code> | init_scripts block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.isSingleNode">is_single_node</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.isSingleNode">is_single_node</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.jdbcPort">jdbc_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jdbc_port DataDatabricksCluster#jdbc_port}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.lastRestartedTime">last_restarted_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#last_restarted_time DataDatabricksCluster#last_restarted_time}. |
@@ -1384,7 +1384,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfo(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.terminatedTime">terminated_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#terminated_time DataDatabricksCluster#terminated_time}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.terminationReason">termination_reason</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason">DataDatabricksClusterClusterInfoTerminationReason</a></code> | termination_reason block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.totalInitialRemoteDiskSize">total_initial_remote_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#total_initial_remote_disk_size DataDatabricksCluster#total_initial_remote_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.useMlRuntime">use_ml_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.useMlRuntime">use_ml_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.workloadType">workload_type</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadType">DataDatabricksClusterClusterInfoWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -1634,10 +1634,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_elastic_disk`<sup>Optional</sup> <a name="enable_elastic_disk" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableElasticDisk"></a>
 
 ```python
-enable_elastic_disk: typing.Union[bool, IResolvable]
+enable_elastic_disk: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
 
@@ -1646,10 +1646,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_local_disk_encryption`<sup>Optional</sup> <a name="enable_local_disk_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.enableLocalDiskEncryption"></a>
 
 ```python
-enable_local_disk_encryption: typing.Union[bool, IResolvable]
+enable_local_disk_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
 
@@ -1658,10 +1658,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `executors`<sup>Optional</sup> <a name="executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.executors"></a>
 
 ```python
-executors: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoExecutors]]
+executors: IResolvable | typing.List[DataDatabricksClusterClusterInfoExecutors]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]
 
 executors block.
 
@@ -1686,10 +1686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `init_scripts`<sup>Optional</sup> <a name="init_scripts" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.initScripts"></a>
 
 ```python
-init_scripts: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoInitScripts]]
+init_scripts: IResolvable | typing.List[DataDatabricksClusterClusterInfoInitScripts]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]
 
 init_scripts block.
 
@@ -1712,10 +1712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `is_single_node`<sup>Optional</sup> <a name="is_single_node" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.isSingleNode"></a>
 
 ```python
-is_single_node: typing.Union[bool, IResolvable]
+is_single_node: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
 
@@ -1992,10 +1992,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `use_ml_runtime`<sup>Optional</sup> <a name="use_ml_runtime" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo.property.useMlRuntime"></a>
 
 ```python
-use_ml_runtime: typing.Union[bool, IResolvable]
+use_ml_runtime: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
 
@@ -2449,7 +2449,7 @@ from cdktf_cdktf_provider_databricks import data_databricks_cluster
 dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -2463,7 +2463,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
@@ -2498,10 +2498,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -2853,7 +2853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import data_databricks_cluster
 
 dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes(
-  is_spot: typing.Union[bool, IResolvable] = None
+  is_spot: bool | IResolvable = None
 )
 ```
 
@@ -2861,17 +2861,17 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes.property.isSpot">is_spot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes.property.isSpot">is_spot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
 
 ---
 
 ##### `is_spot`<sup>Optional</sup> <a name="is_spot" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes.property.isSpot"></a>
 
 ```python
-is_spot: typing.Union[bool, IResolvable]
+is_spot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
 
@@ -3003,7 +3003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import data_databricks_cluster
 
 dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes(
-  is_spot: typing.Union[bool, IResolvable] = None
+  is_spot: bool | IResolvable = None
 )
 ```
 
@@ -3011,17 +3011,17 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes.property.isSpot">is_spot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes.property.isSpot">is_spot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}. |
 
 ---
 
 ##### `is_spot`<sup>Optional</sup> <a name="is_spot" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes.property.isSpot"></a>
 
 ```python
-is_spot: typing.Union[bool, IResolvable]
+is_spot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
 
@@ -3040,7 +3040,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes(
   first_on_demand: typing.Union[int, float] = None,
   google_service_account: str = None,
   local_ssd_count: typing.Union[int, float] = None,
-  use_preemptible_executors: typing.Union[bool, IResolvable] = None,
+  use_preemptible_executors: bool | IResolvable = None,
   zone_id: str = None
 )
 ```
@@ -3054,7 +3054,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
 
 ---
@@ -3122,10 +3122,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `use_preemptible_executors`<sup>Optional</sup> <a name="use_preemptible_executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes.property.usePreemptibleExecutors"></a>
 
 ```python
-use_preemptible_executors: typing.Union[bool, IResolvable]
+use_preemptible_executors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
 
@@ -3411,7 +3411,7 @@ from cdktf_cdktf_provider_databricks import data_databricks_cluster
 dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -3425,7 +3425,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
@@ -3460,10 +3460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -3589,27 +3589,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import data_databricks_cluster
 
 dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec(
-  apply_policy_default_values: typing.Union[bool, IResolvable] = None,
+  apply_policy_default_values: bool | IResolvable = None,
   autoscale: DataDatabricksClusterClusterInfoSpecAutoscale = None,
   aws_attributes: DataDatabricksClusterClusterInfoSpecAwsAttributes = None,
   azure_attributes: DataDatabricksClusterClusterInfoSpecAzureAttributes = None,
   cluster_log_conf: DataDatabricksClusterClusterInfoSpecClusterLogConf = None,
-  cluster_mount_info: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]] = None,
+  cluster_mount_info: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo] = None,
   cluster_name: str = None,
   custom_tags: typing.Mapping[str] = None,
   data_security_mode: str = None,
   docker_image: DataDatabricksClusterClusterInfoSpecDockerImage = None,
   driver_instance_pool_id: str = None,
   driver_node_type_id: str = None,
-  enable_elastic_disk: typing.Union[bool, IResolvable] = None,
-  enable_local_disk_encryption: typing.Union[bool, IResolvable] = None,
+  enable_elastic_disk: bool | IResolvable = None,
+  enable_local_disk_encryption: bool | IResolvable = None,
   gcp_attributes: DataDatabricksClusterClusterInfoSpecGcpAttributes = None,
   idempotency_token: str = None,
-  init_scripts: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]] = None,
+  init_scripts: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecInitScripts] = None,
   instance_pool_id: str = None,
-  is_single_node: typing.Union[bool, IResolvable] = None,
+  is_single_node: bool | IResolvable = None,
   kind: str = None,
-  library: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecLibrary]] = None,
+  library: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecLibrary] = None,
   node_type_id: str = None,
   num_workers: typing.Union[int, float] = None,
   policy_id: str = None,
@@ -3621,7 +3621,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec(
   spark_version: str = None,
   ssh_public_keys: typing.List[str] = None,
   total_initial_remote_disk_size: typing.Union[int, float] = None,
-  use_ml_runtime: typing.Union[bool, IResolvable] = None,
+  use_ml_runtime: bool | IResolvable = None,
   workload_type: DataDatabricksClusterClusterInfoSpecWorkloadType = None
 )
 ```
@@ -3630,27 +3630,27 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.autoscale">autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale">DataDatabricksClusterClusterInfoSpecAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.awsAttributes">aws_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes">DataDatabricksClusterClusterInfoSpecAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.azureAttributes">azure_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes">DataDatabricksClusterClusterInfoSpecAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterLogConf">cluster_log_conf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConf">DataDatabricksClusterClusterInfoSpecClusterLogConf</a></code> | cluster_log_conf block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterMountInfo">cluster_mount_info</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]</code> | cluster_mount_info block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterMountInfo">cluster_mount_info</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]</code> | cluster_mount_info block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#custom_tags DataDatabricksCluster#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#data_security_mode DataDatabricksCluster#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.dockerImage">docker_image</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage">DataDatabricksClusterClusterInfoSpecDockerImage</a></code> | docker_image block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#driver_instance_pool_id DataDatabricksCluster#driver_instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#driver_node_type_id DataDatabricksCluster#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.gcpAttributes">gcp_attributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes">DataDatabricksClusterClusterInfoSpecGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#idempotency_token DataDatabricksCluster#idempotency_token}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.initScripts">init_scripts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]</code> | init_scripts block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.initScripts">init_scripts</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]</code> | init_scripts block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#instance_pool_id DataDatabricksCluster#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.isSingleNode">is_single_node</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.isSingleNode">is_single_node</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#kind DataDatabricksCluster#kind}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.library">library</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]</code> | library block. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.library">library</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]</code> | library block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#node_type_id DataDatabricksCluster#node_type_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#num_workers DataDatabricksCluster#num_workers}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#policy_id DataDatabricksCluster#policy_id}. |
@@ -3662,7 +3662,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sparkVersion">spark_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#spark_version DataDatabricksCluster#spark_version}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#ssh_public_keys DataDatabricksCluster#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.totalInitialRemoteDiskSize">total_initial_remote_disk_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#total_initial_remote_disk_size DataDatabricksCluster#total_initial_remote_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.useMlRuntime">use_ml_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.useMlRuntime">use_ml_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.workloadType">workload_type</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadType">DataDatabricksClusterClusterInfoSpecWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -3670,10 +3670,10 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec(
 ##### `apply_policy_default_values`<sup>Optional</sup> <a name="apply_policy_default_values" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.applyPolicyDefaultValues"></a>
 
 ```python
-apply_policy_default_values: typing.Union[bool, IResolvable]
+apply_policy_default_values: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}.
 
@@ -3738,10 +3738,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `cluster_mount_info`<sup>Optional</sup> <a name="cluster_mount_info" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.clusterMountInfo"></a>
 
 ```python
-cluster_mount_info: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]]
+cluster_mount_info: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]
 
 cluster_mount_info block.
 
@@ -3826,10 +3826,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_elastic_disk`<sup>Optional</sup> <a name="enable_elastic_disk" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableElasticDisk"></a>
 
 ```python
-enable_elastic_disk: typing.Union[bool, IResolvable]
+enable_elastic_disk: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
 
@@ -3838,10 +3838,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_local_disk_encryption`<sup>Optional</sup> <a name="enable_local_disk_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.enableLocalDiskEncryption"></a>
 
 ```python
-enable_local_disk_encryption: typing.Union[bool, IResolvable]
+enable_local_disk_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
 
@@ -3876,10 +3876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `init_scripts`<sup>Optional</sup> <a name="init_scripts" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.initScripts"></a>
 
 ```python
-init_scripts: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]]
+init_scripts: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]
 
 init_scripts block.
 
@@ -3902,10 +3902,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `is_single_node`<sup>Optional</sup> <a name="is_single_node" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.isSingleNode"></a>
 
 ```python
-is_single_node: typing.Union[bool, IResolvable]
+is_single_node: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
 
@@ -3926,10 +3926,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `library`<sup>Optional</sup> <a name="library" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.library"></a>
 
 ```python
-library: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecLibrary]]
+library: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecLibrary]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]
 
 library block.
 
@@ -4072,10 +4072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `use_ml_runtime`<sup>Optional</sup> <a name="use_ml_runtime" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec.property.useMlRuntime"></a>
 
 ```python
-use_ml_runtime: typing.Union[bool, IResolvable]
+use_ml_runtime: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
 
@@ -4529,7 +4529,7 @@ from cdktf_cdktf_provider_databricks import data_databricks_cluster
 dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -4543,7 +4543,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
@@ -4578,10 +4578,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -4882,7 +4882,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes(
   first_on_demand: typing.Union[int, float] = None,
   google_service_account: str = None,
   local_ssd_count: typing.Union[int, float] = None,
-  use_preemptible_executors: typing.Union[bool, IResolvable] = None,
+  use_preemptible_executors: bool | IResolvable = None,
   zone_id: str = None
 )
 ```
@@ -4896,7 +4896,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes(
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#first_on_demand DataDatabricksCluster#first_on_demand}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#google_service_account DataDatabricksCluster#google_service_account}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#local_ssd_count DataDatabricksCluster#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#zone_id DataDatabricksCluster#zone_id}. |
 
 ---
@@ -4964,10 +4964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `use_preemptible_executors`<sup>Optional</sup> <a name="use_preemptible_executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes.property.usePreemptibleExecutors"></a>
 
 ```python
-use_preemptible_executors: typing.Union[bool, IResolvable]
+use_preemptible_executors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
 
@@ -5253,7 +5253,7 @@ from cdktf_cdktf_provider_databricks import data_databricks_cluster
 dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -5267,7 +5267,7 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.destination">destination</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#destination DataDatabricksCluster#destination}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#canned_acl DataDatabricksCluster#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#encryption_type DataDatabricksCluster#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#endpoint DataDatabricksCluster#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.kmsKey">kms_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#kms_key DataDatabricksCluster#kms_key}. |
@@ -5302,10 +5302,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -5739,8 +5739,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import data_databricks_cluster
 
 dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients(
-  jobs: typing.Union[bool, IResolvable] = None,
-  notebooks: typing.Union[bool, IResolvable] = None
+  jobs: bool | IResolvable = None,
+  notebooks: bool | IResolvable = None
 )
 ```
 
@@ -5748,18 +5748,18 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.jobs">jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
 
 ---
 
 ##### `jobs`<sup>Optional</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.jobs"></a>
 
 ```python
-jobs: typing.Union[bool, IResolvable]
+jobs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 
@@ -5768,10 +5768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `notebooks`<sup>Optional</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients.property.notebooks"></a>
 
 ```python
-notebooks: typing.Union[bool, IResolvable]
+notebooks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 
@@ -5879,8 +5879,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import data_databricks_cluster
 
 dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients(
-  jobs: typing.Union[bool, IResolvable] = None,
-  notebooks: typing.Union[bool, IResolvable] = None
+  jobs: bool | IResolvable = None,
+  notebooks: bool | IResolvable = None
 )
 ```
 
@@ -5888,18 +5888,18 @@ dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.jobs">jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.notebooks">notebooks</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}. |
 
 ---
 
 ##### `jobs`<sup>Optional</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.jobs"></a>
 
 ```python
-jobs: typing.Union[bool, IResolvable]
+jobs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 
@@ -5908,10 +5908,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `notebooks`<sup>Optional</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients.property.notebooks"></a>
 
 ```python
-notebooks: typing.Union[bool, IResolvable]
+notebooks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 
@@ -5925,13 +5925,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import data_databricks_cluster
 
 dataDatabricksCluster.DataDatabricksClusterConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str = None,
   cluster_info: DataDatabricksClusterClusterInfo = None,
   cluster_name: str = None,
@@ -5943,13 +5943,13 @@ dataDatabricksCluster.DataDatabricksClusterConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#cluster_id DataDatabricksCluster#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterInfo">cluster_info</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo">DataDatabricksClusterClusterInfo</a></code> | cluster_info block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#cluster_name DataDatabricksCluster#cluster_name}. |
@@ -5960,20 +5960,20 @@ dataDatabricksCluster.DataDatabricksClusterConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -6020,10 +6020,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -8278,7 +8278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 def put_s3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -8304,7 +8304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfOutputReference.putS3.parameter.enableEncryption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -8767,14 +8767,14 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.cannedAclInput">canned_acl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.destinationInput">destination_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.encryptionTypeInput">encryption_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.kmsKeyInput">kms_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.cannedAcl">canned_acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.destination">destination</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.kmsKey">kms_key</a></code> | <code>str</code> | *No description.* |
@@ -8830,10 +8830,10 @@ destination_input: str
 ##### `enable_encryption_input`<sup>Optional</sup> <a name="enable_encryption_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.enableEncryptionInput"></a>
 
 ```python
-enable_encryption_input: typing.Union[bool, IResolvable]
+enable_encryption_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8900,10 +8900,10 @@ destination: str
 ##### `enable_encryption`<sup>Required</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoClusterLogConfS3OutputReference.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10518,8 +10518,8 @@ def reset_is_spot() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpotInput">is_spot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpot">is_spot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpotInput">is_spot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpot">is_spot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributes">DataDatabricksClusterClusterInfoDriverNodeAwsAttributes</a></code> | *No description.* |
 
 ---
@@ -10551,20 +10551,20 @@ fqn: str
 ##### `is_spot_input`<sup>Optional</sup> <a name="is_spot_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpotInput"></a>
 
 ```python
-is_spot_input: typing.Union[bool, IResolvable]
+is_spot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_spot`<sup>Required</sup> <a name="is_spot" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverNodeAwsAttributesOutputReference.property.isSpot"></a>
 
 ```python
-is_spot: typing.Union[bool, IResolvable]
+is_spot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10819,13 +10819,13 @@ Returns a reversible string representation.
 
 ```python
 def put_node_aws_attributes(
-  is_spot: typing.Union[bool, IResolvable] = None
+  is_spot: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `is_spot`<sup>Optional</sup> <a name="is_spot" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriverOutputReference.putNodeAwsAttributes.parameter.isSpot"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
 
@@ -11204,7 +11204,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]</code> | *No description.* |
 
 ---
 
@@ -11235,10 +11235,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoExecutors]]
+internal_value: IResolvable | typing.List[DataDatabricksClusterClusterInfoExecutors]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]
 
 ---
 
@@ -11485,8 +11485,8 @@ def reset_is_spot() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpotInput">is_spot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpot">is_spot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpotInput">is_spot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpot">is_spot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes">DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributes</a></code> | *No description.* |
 
 ---
@@ -11518,20 +11518,20 @@ fqn: str
 ##### `is_spot_input`<sup>Optional</sup> <a name="is_spot_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpotInput"></a>
 
 ```python
-is_spot_input: typing.Union[bool, IResolvable]
+is_spot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_spot`<sup>Required</sup> <a name="is_spot" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsNodeAwsAttributesOutputReference.property.isSpot"></a>
 
 ```python
-is_spot: typing.Union[bool, IResolvable]
+is_spot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11806,13 +11806,13 @@ Returns a reversible string representation.
 
 ```python
 def put_node_aws_attributes(
-  is_spot: typing.Union[bool, IResolvable] = None
+  is_spot: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `is_spot`<sup>Optional</sup> <a name="is_spot" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.putNodeAwsAttributes.parameter.isSpot"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_spot DataDatabricksCluster#is_spot}.
 
@@ -11881,7 +11881,7 @@ def reset_start_timestamp() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.property.privateIp">private_ip</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.property.publicDns">public_dns</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.property.startTimestamp">start_timestamp</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a></code> | *No description.* |
 
 ---
 
@@ -12052,10 +12052,10 @@ start_timestamp: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDatabricksClusterClusterInfoExecutors]
+internal_value: IResolvable | DataDatabricksClusterClusterInfoExecutors
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>
 
 ---
 
@@ -12349,14 +12349,14 @@ def reset_zone_id() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.firstOnDemandInput">first_on_demand_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.localSsdCountInput">local_ssd_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">use_preemptible_executors_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">use_preemptible_executors_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.availability">availability</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes">DataDatabricksClusterClusterInfoGcpAttributes</a></code> | *No description.* |
 
@@ -12439,10 +12439,10 @@ local_ssd_count_input: typing.Union[int, float]
 ##### `use_preemptible_executors_input`<sup>Optional</sup> <a name="use_preemptible_executors_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutorsInput"></a>
 
 ```python
-use_preemptible_executors_input: typing.Union[bool, IResolvable]
+use_preemptible_executors_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12509,10 +12509,10 @@ local_ssd_count: typing.Union[int, float]
 ##### `use_preemptible_executors`<sup>Required</sup> <a name="use_preemptible_executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributesOutputReference.property.usePreemptibleExecutors"></a>
 
 ```python
-use_preemptible_executors: typing.Union[bool, IResolvable]
+use_preemptible_executors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13852,7 +13852,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]</code> | *No description.* |
 
 ---
 
@@ -13883,10 +13883,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoInitScripts]]
+internal_value: IResolvable | typing.List[DataDatabricksClusterClusterInfoInitScripts]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]
 
 ---
 
@@ -14223,7 +14223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 def put_s3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -14249,7 +14249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.putS3.parameter.enableEncryption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -14382,7 +14382,7 @@ def reset_workspace() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3">DataDatabricksClusterClusterInfoInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.property.volumesInput">volumes_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsVolumes">DataDatabricksClusterClusterInfoInitScriptsVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.property.workspaceInput">workspace_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsWorkspace">DataDatabricksClusterClusterInfoInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -14553,10 +14553,10 @@ workspace_input: DataDatabricksClusterClusterInfoInitScriptsWorkspace
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDatabricksClusterClusterInfoInitScripts]
+internal_value: IResolvable | DataDatabricksClusterClusterInfoInitScripts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>
 
 ---
 
@@ -14840,14 +14840,14 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.cannedAclInput">canned_acl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.destinationInput">destination_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.encryptionTypeInput">encryption_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.kmsKeyInput">kms_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.cannedAcl">canned_acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.destination">destination</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.kmsKey">kms_key</a></code> | <code>str</code> | *No description.* |
@@ -14903,10 +14903,10 @@ destination_input: str
 ##### `enable_encryption_input`<sup>Optional</sup> <a name="enable_encryption_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.enableEncryptionInput"></a>
 
 ```python
-enable_encryption_input: typing.Union[bool, IResolvable]
+enable_encryption_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -14973,10 +14973,10 @@ destination: str
 ##### `enable_encryption`<sup>Required</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScriptsS3OutputReference.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -16249,13 +16249,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_executors(
-  value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoExecutors]]
+  value: IResolvable | typing.List[DataDatabricksClusterClusterInfoExecutors]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putExecutors.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]
 
 ---
 
@@ -16268,7 +16268,7 @@ def put_gcp_attributes(
   first_on_demand: typing.Union[int, float] = None,
   google_service_account: str = None,
   local_ssd_count: typing.Union[int, float] = None,
-  use_preemptible_executors: typing.Union[bool, IResolvable] = None,
+  use_preemptible_executors: bool | IResolvable = None,
   zone_id: str = None
 ) -> None
 ```
@@ -16315,7 +16315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `use_preemptible_executors`<sup>Optional</sup> <a name="use_preemptible_executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putGcpAttributes.parameter.usePreemptibleExecutors"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
 
@@ -16333,13 +16333,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_init_scripts(
-  value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoInitScripts]]
+  value: IResolvable | typing.List[DataDatabricksClusterClusterInfoInitScripts]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putInitScripts.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]
 
 ---
 
@@ -16347,27 +16347,27 @@ def put_init_scripts(
 
 ```python
 def put_spec(
-  apply_policy_default_values: typing.Union[bool, IResolvable] = None,
+  apply_policy_default_values: bool | IResolvable = None,
   autoscale: DataDatabricksClusterClusterInfoSpecAutoscale = None,
   aws_attributes: DataDatabricksClusterClusterInfoSpecAwsAttributes = None,
   azure_attributes: DataDatabricksClusterClusterInfoSpecAzureAttributes = None,
   cluster_log_conf: DataDatabricksClusterClusterInfoSpecClusterLogConf = None,
-  cluster_mount_info: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]] = None,
+  cluster_mount_info: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo] = None,
   cluster_name: str = None,
   custom_tags: typing.Mapping[str] = None,
   data_security_mode: str = None,
   docker_image: DataDatabricksClusterClusterInfoSpecDockerImage = None,
   driver_instance_pool_id: str = None,
   driver_node_type_id: str = None,
-  enable_elastic_disk: typing.Union[bool, IResolvable] = None,
-  enable_local_disk_encryption: typing.Union[bool, IResolvable] = None,
+  enable_elastic_disk: bool | IResolvable = None,
+  enable_local_disk_encryption: bool | IResolvable = None,
   gcp_attributes: DataDatabricksClusterClusterInfoSpecGcpAttributes = None,
   idempotency_token: str = None,
-  init_scripts: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]] = None,
+  init_scripts: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecInitScripts] = None,
   instance_pool_id: str = None,
-  is_single_node: typing.Union[bool, IResolvable] = None,
+  is_single_node: bool | IResolvable = None,
   kind: str = None,
-  library: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecLibrary]] = None,
+  library: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecLibrary] = None,
   node_type_id: str = None,
   num_workers: typing.Union[int, float] = None,
   policy_id: str = None,
@@ -16379,14 +16379,14 @@ def put_spec(
   spark_version: str = None,
   ssh_public_keys: typing.List[str] = None,
   total_initial_remote_disk_size: typing.Union[int, float] = None,
-  use_ml_runtime: typing.Union[bool, IResolvable] = None,
+  use_ml_runtime: bool | IResolvable = None,
   workload_type: DataDatabricksClusterClusterInfoSpecWorkloadType = None
 ) -> None
 ```
 
 ###### `apply_policy_default_values`<sup>Optional</sup> <a name="apply_policy_default_values" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.applyPolicyDefaultValues"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#apply_policy_default_values DataDatabricksCluster#apply_policy_default_values}.
 
@@ -16434,7 +16434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `cluster_mount_info`<sup>Optional</sup> <a name="cluster_mount_info" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.clusterMountInfo"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]
 
 cluster_mount_info block.
 
@@ -16494,7 +16494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_elastic_disk`<sup>Optional</sup> <a name="enable_elastic_disk" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.enableElasticDisk"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_elastic_disk DataDatabricksCluster#enable_elastic_disk}.
 
@@ -16502,7 +16502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_local_disk_encryption`<sup>Optional</sup> <a name="enable_local_disk_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.enableLocalDiskEncryption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_local_disk_encryption DataDatabricksCluster#enable_local_disk_encryption}.
 
@@ -16528,7 +16528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `init_scripts`<sup>Optional</sup> <a name="init_scripts" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.initScripts"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]
 
 init_scripts block.
 
@@ -16546,7 +16546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `is_single_node`<sup>Optional</sup> <a name="is_single_node" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.isSingleNode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#is_single_node DataDatabricksCluster#is_single_node}.
 
@@ -16562,7 +16562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `library`<sup>Optional</sup> <a name="library" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.library"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]
 
 library block.
 
@@ -16660,7 +16660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `use_ml_runtime`<sup>Optional</sup> <a name="use_ml_runtime" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.putSpec.parameter.useMlRuntime"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_ml_runtime DataDatabricksCluster#use_ml_runtime}.
 
@@ -17067,13 +17067,13 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.driverInput">driver_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoDriver">DataDatabricksClusterClusterInfoDriver</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.driverInstancePoolIdInput">driver_instance_pool_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.driverNodeTypeIdInput">driver_node_type_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableElasticDiskInput">enable_elastic_disk_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableLocalDiskEncryptionInput">enable_local_disk_encryption_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.executorsInput">executors_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableElasticDiskInput">enable_elastic_disk_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableLocalDiskEncryptionInput">enable_local_disk_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.executorsInput">executors_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.gcpAttributesInput">gcp_attributes_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoGcpAttributes">DataDatabricksClusterClusterInfoGcpAttributes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.initScriptsInput">init_scripts_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.initScriptsInput">init_scripts_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.instancePoolIdInput">instance_pool_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.isSingleNodeInput">is_single_node_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.isSingleNodeInput">is_single_node_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.jdbcPortInput">jdbc_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.lastRestartedTimeInput">last_restarted_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -17096,7 +17096,7 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.terminatedTimeInput">terminated_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.terminationReasonInput">termination_reason_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoTerminationReason">DataDatabricksClusterClusterInfoTerminationReason</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.totalInitialRemoteDiskSizeInput">total_initial_remote_disk_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.useMlRuntimeInput">use_ml_runtime_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.useMlRuntimeInput">use_ml_runtime_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.workloadTypeInput">workload_type_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadType">DataDatabricksClusterClusterInfoWorkloadType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.autoterminationMinutes">autotermination_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.clusterCores">cluster_cores</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -17110,10 +17110,10 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.defaultTags">default_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.isSingleNode">is_single_node</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.isSingleNode">is_single_node</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.jdbcPort">jdbc_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.lastRestartedTime">last_restarted_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -17134,7 +17134,7 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.stateMessage">state_message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.terminatedTime">terminated_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.totalInitialRemoteDiskSize">total_initial_remote_disk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.useMlRuntime">use_ml_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.useMlRuntime">use_ml_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfo">DataDatabricksClusterClusterInfo</a></code> | *No description.* |
 
 ---
@@ -17486,30 +17486,30 @@ driver_node_type_id_input: str
 ##### `enable_elastic_disk_input`<sup>Optional</sup> <a name="enable_elastic_disk_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableElasticDiskInput"></a>
 
 ```python
-enable_elastic_disk_input: typing.Union[bool, IResolvable]
+enable_elastic_disk_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_local_disk_encryption_input`<sup>Optional</sup> <a name="enable_local_disk_encryption_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableLocalDiskEncryptionInput"></a>
 
 ```python
-enable_local_disk_encryption_input: typing.Union[bool, IResolvable]
+enable_local_disk_encryption_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `executors_input`<sup>Optional</sup> <a name="executors_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.executorsInput"></a>
 
 ```python
-executors_input: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoExecutors]]
+executors_input: IResolvable | typing.List[DataDatabricksClusterClusterInfoExecutors]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoExecutors">DataDatabricksClusterClusterInfoExecutors</a>]
 
 ---
 
@@ -17526,10 +17526,10 @@ gcp_attributes_input: DataDatabricksClusterClusterInfoGcpAttributes
 ##### `init_scripts_input`<sup>Optional</sup> <a name="init_scripts_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.initScriptsInput"></a>
 
 ```python
-init_scripts_input: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoInitScripts]]
+init_scripts_input: IResolvable | typing.List[DataDatabricksClusterClusterInfoInitScripts]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoInitScripts">DataDatabricksClusterClusterInfoInitScripts</a>]
 
 ---
 
@@ -17546,10 +17546,10 @@ instance_pool_id_input: str
 ##### `is_single_node_input`<sup>Optional</sup> <a name="is_single_node_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.isSingleNodeInput"></a>
 
 ```python
-is_single_node_input: typing.Union[bool, IResolvable]
+is_single_node_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17776,10 +17776,10 @@ total_initial_remote_disk_size_input: typing.Union[int, float]
 ##### `use_ml_runtime_input`<sup>Optional</sup> <a name="use_ml_runtime_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.useMlRuntimeInput"></a>
 
 ```python
-use_ml_runtime_input: typing.Union[bool, IResolvable]
+use_ml_runtime_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17916,20 +17916,20 @@ driver_node_type_id: str
 ##### `enable_elastic_disk`<sup>Required</sup> <a name="enable_elastic_disk" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableElasticDisk"></a>
 
 ```python
-enable_elastic_disk: typing.Union[bool, IResolvable]
+enable_elastic_disk: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_local_disk_encryption`<sup>Required</sup> <a name="enable_local_disk_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.enableLocalDiskEncryption"></a>
 
 ```python
-enable_local_disk_encryption: typing.Union[bool, IResolvable]
+enable_local_disk_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -17946,10 +17946,10 @@ instance_pool_id: str
 ##### `is_single_node`<sup>Required</sup> <a name="is_single_node" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.isSingleNode"></a>
 
 ```python
-is_single_node: typing.Union[bool, IResolvable]
+is_single_node: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -18156,10 +18156,10 @@ total_initial_remote_disk_size: typing.Union[int, float]
 ##### `use_ml_runtime`<sup>Required</sup> <a name="use_ml_runtime" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoOutputReference.property.useMlRuntime"></a>
 
 ```python
-use_ml_runtime: typing.Union[bool, IResolvable]
+use_ml_runtime: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -20370,7 +20370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 def put_s3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -20396,7 +20396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfOutputReference.putS3.parameter.enableEncryption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -20859,14 +20859,14 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.cannedAclInput">canned_acl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.destinationInput">destination_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.encryptionTypeInput">encryption_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.kmsKeyInput">kms_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.cannedAcl">canned_acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.destination">destination</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.kmsKey">kms_key</a></code> | <code>str</code> | *No description.* |
@@ -20922,10 +20922,10 @@ destination_input: str
 ##### `enable_encryption_input`<sup>Optional</sup> <a name="enable_encryption_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryptionInput"></a>
 
 ```python
-enable_encryption_input: typing.Union[bool, IResolvable]
+enable_encryption_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -20992,10 +20992,10 @@ destination: str
 ##### `enable_encryption`<sup>Required</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConfS3OutputReference.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -21477,7 +21477,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]</code> | *No description.* |
 
 ---
 
@@ -21508,10 +21508,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]]
+internal_value: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]
 
 ---
 
@@ -22135,7 +22135,7 @@ def reset_remote_mount_dir_path() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference.property.remoteMountDirPathInput">remote_mount_dir_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference.property.localMountDirPath">local_mount_dir_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference.property.remoteMountDirPath">remote_mount_dir_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a></code> | *No description.* |
 
 ---
 
@@ -22226,10 +22226,10 @@ remote_mount_dir_path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfoOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDatabricksClusterClusterInfoSpecClusterMountInfo]
+internal_value: IResolvable | DataDatabricksClusterClusterInfoSpecClusterMountInfo
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>
 
 ---
 
@@ -23192,14 +23192,14 @@ def reset_zone_id() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.firstOnDemandInput">first_on_demand_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.localSsdCountInput">local_ssd_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">use_preemptible_executors_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutorsInput">use_preemptible_executors_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.availability">availability</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.bootDiskSize">boot_disk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.firstOnDemand">first_on_demand</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutors">use_preemptible_executors</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes">DataDatabricksClusterClusterInfoSpecGcpAttributes</a></code> | *No description.* |
 
@@ -23282,10 +23282,10 @@ local_ssd_count_input: typing.Union[int, float]
 ##### `use_preemptible_executors_input`<sup>Optional</sup> <a name="use_preemptible_executors_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutorsInput"></a>
 
 ```python
-use_preemptible_executors_input: typing.Union[bool, IResolvable]
+use_preemptible_executors_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -23352,10 +23352,10 @@ local_ssd_count: typing.Union[int, float]
 ##### `use_preemptible_executors`<sup>Required</sup> <a name="use_preemptible_executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributesOutputReference.property.usePreemptibleExecutors"></a>
 
 ```python
-use_preemptible_executors: typing.Union[bool, IResolvable]
+use_preemptible_executors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -24695,7 +24695,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]</code> | *No description.* |
 
 ---
 
@@ -24726,10 +24726,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]]
+internal_value: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]
 
 ---
 
@@ -25066,7 +25066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 def put_s3(
   destination: str,
   canned_acl: str = None,
-  enable_encryption: typing.Union[bool, IResolvable] = None,
+  enable_encryption: bool | IResolvable = None,
   encryption_type: str = None,
   endpoint: str = None,
   kms_key: str = None,
@@ -25092,7 +25092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.putS3.parameter.enableEncryption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#enable_encryption DataDatabricksCluster#enable_encryption}.
 
@@ -25225,7 +25225,7 @@ def reset_workspace() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.property.s3Input">s3_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3">DataDatabricksClusterClusterInfoSpecInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.property.volumesInput">volumes_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsVolumes">DataDatabricksClusterClusterInfoSpecInitScriptsVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.property.workspaceInput">workspace_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace">DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -25396,10 +25396,10 @@ workspace_input: DataDatabricksClusterClusterInfoSpecInitScriptsWorkspace
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDatabricksClusterClusterInfoSpecInitScripts]
+internal_value: IResolvable | DataDatabricksClusterClusterInfoSpecInitScripts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>
 
 ---
 
@@ -25683,14 +25683,14 @@ def reset_region() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.cannedAclInput">canned_acl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.destinationInput">destination_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.encryptionTypeInput">encryption_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.kmsKeyInput">kms_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.cannedAcl">canned_acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.destination">destination</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.kmsKey">kms_key</a></code> | <code>str</code> | *No description.* |
@@ -25746,10 +25746,10 @@ destination_input: str
 ##### `enable_encryption_input`<sup>Optional</sup> <a name="enable_encryption_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryptionInput"></a>
 
 ```python
-enable_encryption_input: typing.Union[bool, IResolvable]
+enable_encryption_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -25816,10 +25816,10 @@ destination: str
 ##### `enable_encryption`<sup>Required</sup> <a name="enable_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsS3OutputReference.property.enableEncryption"></a>
 
 ```python
-enable_encryption: typing.Union[bool, IResolvable]
+enable_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -26922,7 +26922,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]</code> | *No description.* |
 
 ---
 
@@ -26953,10 +26953,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecLibrary]]
+internal_value: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecLibrary]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]
 
 ---
 
@@ -27720,7 +27720,7 @@ def reset_whl() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference.property.jar">jar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference.property.requirements">requirements</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference.property.whl">whl</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a></code> | *No description.* |
 
 ---
 
@@ -27891,10 +27891,10 @@ whl: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataDatabricksClusterClusterInfoSpecLibrary]
+internal_value: IResolvable | DataDatabricksClusterClusterInfoSpecLibrary
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>
 
 ---
 
@@ -28707,13 +28707,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_cluster_mount_info(
-  value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]]
+  value: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.putClusterMountInfo.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]
 
 ---
 
@@ -28753,7 +28753,7 @@ def put_gcp_attributes(
   first_on_demand: typing.Union[int, float] = None,
   google_service_account: str = None,
   local_ssd_count: typing.Union[int, float] = None,
-  use_preemptible_executors: typing.Union[bool, IResolvable] = None,
+  use_preemptible_executors: bool | IResolvable = None,
   zone_id: str = None
 ) -> None
 ```
@@ -28800,7 +28800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `use_preemptible_executors`<sup>Optional</sup> <a name="use_preemptible_executors" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.putGcpAttributes.parameter.usePreemptibleExecutors"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#use_preemptible_executors DataDatabricksCluster#use_preemptible_executors}.
 
@@ -28818,13 +28818,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_init_scripts(
-  value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]]
+  value: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.putInitScripts.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]
 
 ---
 
@@ -28832,13 +28832,13 @@ def put_init_scripts(
 
 ```python
 def put_library(
-  value: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecLibrary]]
+  value: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecLibrary]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.putLibrary.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]
 
 ---
 
@@ -29082,27 +29082,27 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.initScripts">init_scripts</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScriptsList">DataDatabricksClusterClusterInfoSpecInitScriptsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.library">library</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibraryList">DataDatabricksClusterClusterInfoSpecLibraryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.workloadType">workload_type</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference">DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.applyPolicyDefaultValuesInput">apply_policy_default_values_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.applyPolicyDefaultValuesInput">apply_policy_default_values_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.autoscaleInput">autoscale_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAutoscale">DataDatabricksClusterClusterInfoSpecAutoscale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.awsAttributesInput">aws_attributes_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAwsAttributes">DataDatabricksClusterClusterInfoSpecAwsAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.azureAttributesInput">azure_attributes_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecAzureAttributes">DataDatabricksClusterClusterInfoSpecAzureAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.clusterLogConfInput">cluster_log_conf_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterLogConf">DataDatabricksClusterClusterInfoSpecClusterLogConf</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.clusterMountInfoInput">cluster_mount_info_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.clusterMountInfoInput">cluster_mount_info_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.clusterNameInput">cluster_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.customTagsInput">custom_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.dataSecurityModeInput">data_security_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.dockerImageInput">docker_image_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecDockerImage">DataDatabricksClusterClusterInfoSpecDockerImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.driverInstancePoolIdInput">driver_instance_pool_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.driverNodeTypeIdInput">driver_node_type_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableElasticDiskInput">enable_elastic_disk_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableLocalDiskEncryptionInput">enable_local_disk_encryption_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableElasticDiskInput">enable_elastic_disk_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableLocalDiskEncryptionInput">enable_local_disk_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.gcpAttributesInput">gcp_attributes_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecGcpAttributes">DataDatabricksClusterClusterInfoSpecGcpAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.idempotencyTokenInput">idempotency_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.initScriptsInput">init_scripts_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.initScriptsInput">init_scripts_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.instancePoolIdInput">instance_pool_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.isSingleNodeInput">is_single_node_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.isSingleNodeInput">is_single_node_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.libraryInput">library_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.libraryInput">library_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.nodeTypeIdInput">node_type_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.numWorkersInput">num_workers_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.policyIdInput">policy_id_input</a></code> | <code>str</code> | *No description.* |
@@ -29114,19 +29114,19 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.sparkVersionInput">spark_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.sshPublicKeysInput">ssh_public_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.totalInitialRemoteDiskSizeInput">total_initial_remote_disk_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.useMlRuntimeInput">use_ml_runtime_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.useMlRuntimeInput">use_ml_runtime_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.workloadTypeInput">workload_type_input</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadType">DataDatabricksClusterClusterInfoSpecWorkloadType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.applyPolicyDefaultValues">apply_policy_default_values</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.clusterName">cluster_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.dataSecurityMode">data_security_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.driverInstancePoolId">driver_instance_pool_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.driverNodeTypeId">driver_node_type_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableElasticDisk">enable_elastic_disk</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableLocalDiskEncryption">enable_local_disk_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.idempotencyToken">idempotency_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.instancePoolId">instance_pool_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.isSingleNode">is_single_node</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.isSingleNode">is_single_node</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.nodeTypeId">node_type_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.numWorkers">num_workers</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -29139,7 +29139,7 @@ def reset_workload_type() -> None
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.sparkVersion">spark_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.sshPublicKeys">ssh_public_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.totalInitialRemoteDiskSize">total_initial_remote_disk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.useMlRuntime">use_ml_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.useMlRuntime">use_ml_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpec">DataDatabricksClusterClusterInfoSpec</a></code> | *No description.* |
 
 ---
@@ -29281,10 +29281,10 @@ workload_type: DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference
 ##### `apply_policy_default_values_input`<sup>Optional</sup> <a name="apply_policy_default_values_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.applyPolicyDefaultValuesInput"></a>
 
 ```python
-apply_policy_default_values_input: typing.Union[bool, IResolvable]
+apply_policy_default_values_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29331,10 +29331,10 @@ cluster_log_conf_input: DataDatabricksClusterClusterInfoSpecClusterLogConf
 ##### `cluster_mount_info_input`<sup>Optional</sup> <a name="cluster_mount_info_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.clusterMountInfoInput"></a>
 
 ```python
-cluster_mount_info_input: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]]
+cluster_mount_info_input: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecClusterMountInfo]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecClusterMountInfo">DataDatabricksClusterClusterInfoSpecClusterMountInfo</a>]
 
 ---
 
@@ -29401,20 +29401,20 @@ driver_node_type_id_input: str
 ##### `enable_elastic_disk_input`<sup>Optional</sup> <a name="enable_elastic_disk_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableElasticDiskInput"></a>
 
 ```python
-enable_elastic_disk_input: typing.Union[bool, IResolvable]
+enable_elastic_disk_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_local_disk_encryption_input`<sup>Optional</sup> <a name="enable_local_disk_encryption_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableLocalDiskEncryptionInput"></a>
 
 ```python
-enable_local_disk_encryption_input: typing.Union[bool, IResolvable]
+enable_local_disk_encryption_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29441,10 +29441,10 @@ idempotency_token_input: str
 ##### `init_scripts_input`<sup>Optional</sup> <a name="init_scripts_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.initScriptsInput"></a>
 
 ```python
-init_scripts_input: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]]
+init_scripts_input: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecInitScripts]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecInitScripts">DataDatabricksClusterClusterInfoSpecInitScripts</a>]
 
 ---
 
@@ -29461,10 +29461,10 @@ instance_pool_id_input: str
 ##### `is_single_node_input`<sup>Optional</sup> <a name="is_single_node_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.isSingleNodeInput"></a>
 
 ```python
-is_single_node_input: typing.Union[bool, IResolvable]
+is_single_node_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29481,10 +29481,10 @@ kind_input: str
 ##### `library_input`<sup>Optional</sup> <a name="library_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.libraryInput"></a>
 
 ```python
-library_input: typing.Union[IResolvable, typing.List[DataDatabricksClusterClusterInfoSpecLibrary]]
+library_input: IResolvable | typing.List[DataDatabricksClusterClusterInfoSpecLibrary]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecLibrary">DataDatabricksClusterClusterInfoSpecLibrary</a>]
 
 ---
 
@@ -29601,10 +29601,10 @@ total_initial_remote_disk_size_input: typing.Union[int, float]
 ##### `use_ml_runtime_input`<sup>Optional</sup> <a name="use_ml_runtime_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.useMlRuntimeInput"></a>
 
 ```python
-use_ml_runtime_input: typing.Union[bool, IResolvable]
+use_ml_runtime_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29621,10 +29621,10 @@ workload_type_input: DataDatabricksClusterClusterInfoSpecWorkloadType
 ##### `apply_policy_default_values`<sup>Required</sup> <a name="apply_policy_default_values" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.applyPolicyDefaultValues"></a>
 
 ```python
-apply_policy_default_values: typing.Union[bool, IResolvable]
+apply_policy_default_values: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29681,20 +29681,20 @@ driver_node_type_id: str
 ##### `enable_elastic_disk`<sup>Required</sup> <a name="enable_elastic_disk" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableElasticDisk"></a>
 
 ```python
-enable_elastic_disk: typing.Union[bool, IResolvable]
+enable_elastic_disk: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_local_disk_encryption`<sup>Required</sup> <a name="enable_local_disk_encryption" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.enableLocalDiskEncryption"></a>
 
 ```python
-enable_local_disk_encryption: typing.Union[bool, IResolvable]
+enable_local_disk_encryption: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29721,10 +29721,10 @@ instance_pool_id: str
 ##### `is_single_node`<sup>Required</sup> <a name="is_single_node" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.isSingleNode"></a>
 
 ```python
-is_single_node: typing.Union[bool, IResolvable]
+is_single_node: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -29851,10 +29851,10 @@ total_initial_remote_disk_size: typing.Union[int, float]
 ##### `use_ml_runtime`<sup>Required</sup> <a name="use_ml_runtime" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecOutputReference.property.useMlRuntime"></a>
 
 ```python
-use_ml_runtime: typing.Union[bool, IResolvable]
+use_ml_runtime: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -30118,10 +30118,10 @@ def reset_notebooks() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobsInput">jobs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooksInput">notebooks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobsInput">jobs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooksInput">notebooks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClients">DataDatabricksClusterClusterInfoSpecWorkloadTypeClients</a></code> | *No description.* |
 
 ---
@@ -30153,40 +30153,40 @@ fqn: str
 ##### `jobs_input`<sup>Optional</sup> <a name="jobs_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobsInput"></a>
 
 ```python
-jobs_input: typing.Union[bool, IResolvable]
+jobs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `notebooks_input`<sup>Optional</sup> <a name="notebooks_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooksInput"></a>
 
 ```python
-notebooks_input: typing.Union[bool, IResolvable]
+notebooks_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jobs`<sup>Required</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.jobs"></a>
 
 ```python
-jobs: typing.Union[bool, IResolvable]
+jobs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `notebooks`<sup>Required</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeClientsOutputReference.property.notebooks"></a>
 
 ```python
-notebooks: typing.Union[bool, IResolvable]
+notebooks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -30434,14 +30434,14 @@ Returns a reversible string representation.
 
 ```python
 def put_clients(
-  jobs: typing.Union[bool, IResolvable] = None,
-  notebooks: typing.Union[bool, IResolvable] = None
+  jobs: bool | IResolvable = None,
+  notebooks: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `jobs`<sup>Optional</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference.putClients.parameter.jobs"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 
@@ -30449,7 +30449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `notebooks`<sup>Optional</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoSpecWorkloadTypeOutputReference.putClients.parameter.notebooks"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 
@@ -31133,10 +31133,10 @@ def reset_notebooks() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.jobsInput">jobs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.notebooksInput">notebooks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.jobsInput">jobs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.notebooksInput">notebooks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.jobs">jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.notebooks">notebooks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClients">DataDatabricksClusterClusterInfoWorkloadTypeClients</a></code> | *No description.* |
 
 ---
@@ -31168,40 +31168,40 @@ fqn: str
 ##### `jobs_input`<sup>Optional</sup> <a name="jobs_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.jobsInput"></a>
 
 ```python
-jobs_input: typing.Union[bool, IResolvable]
+jobs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `notebooks_input`<sup>Optional</sup> <a name="notebooks_input" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.notebooksInput"></a>
 
 ```python
-notebooks_input: typing.Union[bool, IResolvable]
+notebooks_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jobs`<sup>Required</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.jobs"></a>
 
 ```python
-jobs: typing.Union[bool, IResolvable]
+jobs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `notebooks`<sup>Required</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeClientsOutputReference.property.notebooks"></a>
 
 ```python
-notebooks: typing.Union[bool, IResolvable]
+notebooks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -31449,14 +31449,14 @@ Returns a reversible string representation.
 
 ```python
 def put_clients(
-  jobs: typing.Union[bool, IResolvable] = None,
-  notebooks: typing.Union[bool, IResolvable] = None
+  jobs: bool | IResolvable = None,
+  notebooks: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `jobs`<sup>Optional</sup> <a name="jobs" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeOutputReference.putClients.parameter.jobs"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#jobs DataDatabricksCluster#jobs}.
 
@@ -31464,7 +31464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ###### `notebooks`<sup>Optional</sup> <a name="notebooks" id="@cdktf/provider-databricks.dataDatabricksCluster.DataDatabricksClusterClusterInfoWorkloadTypeOutputReference.putClients.parameter.notebooks"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/cluster#notebooks DataDatabricksCluster#notebooks}.
 

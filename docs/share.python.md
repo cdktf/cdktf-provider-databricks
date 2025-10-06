@@ -14,19 +14,19 @@ from cdktf_cdktf_provider_databricks import share
 share.Share(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   comment: str = None,
   created_at: typing.Union[int, float] = None,
   created_by: str = None,
   id: str = None,
-  object: typing.Union[IResolvable, typing.List[ShareObject]] = None,
+  object: IResolvable | typing.List[ShareObject] = None,
   owner: str = None,
   storage_location: str = None,
   storage_root: str = None,
@@ -39,19 +39,19 @@ share.Share(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#name Share#name}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#created_at Share#created_at}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.createdBy">created_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#created_by Share#created_by}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#id Share#id}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.object">object</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]</code> | object block. |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.object">object</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | object block. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#owner Share#owner}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.storageLocation">storage_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#storage_location Share#storage_location}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.storageRoot">storage_root</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#storage_root Share#storage_root}. |
@@ -80,13 +80,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `object`<sup>Optional</sup> <a name="object" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.object"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
 
 object block.
 
@@ -476,7 +476,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-databricks.share.Share.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-databricks.share.Share.importFrom"></a>
@@ -539,7 +539,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -555,7 +555,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-databricks.share.Share.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -583,13 +583,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_object(
-  value: typing.Union[IResolvable, typing.List[ShareObject]]
+  value: IResolvable | typing.List[ShareObject]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.share.Share.putObject.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
 
 ---
 
@@ -790,20 +790,20 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.object">object</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList">ShareObjectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.createdAtInput">created_at_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.createdByInput">created_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.objectInput">object_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.objectInput">object_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.storageLocationInput">storage_location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.storageRootInput">storage_root_input</a></code> | <code>str</code> | *No description.* |
@@ -897,20 +897,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.share.Share.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.share.Share.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -957,10 +957,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.share.Share.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1027,10 +1027,10 @@ name_input: str
 ##### `object_input`<sup>Optional</sup> <a name="object_input" id="@cdktf/provider-databricks.share.Share.property.objectInput"></a>
 
 ```python
-object_input: typing.Union[IResolvable, typing.List[ShareObject]]
+object_input: IResolvable | typing.List[ShareObject]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
 
 ---
 
@@ -1212,19 +1212,19 @@ tfResourceType: str
 from cdktf_cdktf_provider_databricks import share
 
 share.ShareConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   comment: str = None,
   created_at: typing.Union[int, float] = None,
   created_by: str = None,
   id: str = None,
-  object: typing.Union[IResolvable, typing.List[ShareObject]] = None,
+  object: IResolvable | typing.List[ShareObject] = None,
   owner: str = None,
   storage_location: str = None,
   storage_root: str = None,
@@ -1237,19 +1237,19 @@ share.ShareConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#name Share#name}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#created_at Share#created_at}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.createdBy">created_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#created_by Share#created_by}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#id Share#id}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.object">object</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]</code> | object block. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.object">object</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | object block. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#owner Share#owner}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageLocation">storage_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#storage_location Share#storage_location}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageRoot">storage_root</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#storage_root Share#storage_root}. |
@@ -1261,20 +1261,20 @@ share.ShareConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.share.ShareConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.share.ShareConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1321,10 +1321,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.share.ShareConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1394,10 +1394,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `object`<sup>Optional</sup> <a name="object" id="@cdktf/provider-databricks.share.ShareConfig.property.object"></a>
 
 ```python
-object: typing.Union[IResolvable, typing.List[ShareObject]]
+object: IResolvable | typing.List[ShareObject]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
 
 object block.
 
@@ -1477,11 +1477,11 @@ share.ShareObject(
   name: str,
   added_at: typing.Union[int, float] = None,
   added_by: str = None,
-  cdf_enabled: typing.Union[bool, IResolvable] = None,
+  cdf_enabled: bool | IResolvable = None,
   comment: str = None,
   content: str = None,
   history_data_sharing_status: str = None,
-  partition: typing.Union[IResolvable, typing.List[ShareObjectPartition]] = None,
+  partition: IResolvable | typing.List[ShareObjectPartition] = None,
   shared_as: str = None,
   start_version: typing.Union[int, float] = None,
   status: str = None,
@@ -1497,11 +1497,11 @@ share.ShareObject(
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#name Share#name}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.addedAt">added_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#added_at Share#added_at}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.addedBy">added_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#added_by Share#added_by}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled">cdf_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#cdf_enabled Share#cdf_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled">cdf_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#cdf_enabled Share#cdf_enabled}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#content Share#content}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.historyDataSharingStatus">history_data_sharing_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.partition">partition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]</code> | partition block. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.partition">partition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | partition block. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.sharedAs">shared_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#shared_as Share#shared_as}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.startVersion">start_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#start_version Share#start_version}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#status Share#status}. |
@@ -1560,10 +1560,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `cdf_enabled`<sup>Optional</sup> <a name="cdf_enabled" id="@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled"></a>
 
 ```python
-cdf_enabled: typing.Union[bool, IResolvable]
+cdf_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share#cdf_enabled Share#cdf_enabled}.
 
@@ -1608,10 +1608,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `partition`<sup>Optional</sup> <a name="partition" id="@cdktf/provider-databricks.share.ShareObject.property.partition"></a>
 
 ```python
-partition: typing.Union[IResolvable, typing.List[ShareObjectPartition]]
+partition: IResolvable | typing.List[ShareObjectPartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]
 
 partition block.
 
@@ -1675,7 +1675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktf_cdktf_provider_databricks import share
 
 share.ShareObjectPartition(
-  value: typing.Union[IResolvable, typing.List[ShareObjectPartitionValue]] = None
+  value: IResolvable | typing.List[ShareObjectPartitionValue] = None
 )
 ```
 
@@ -1683,17 +1683,17 @@ share.ShareObjectPartition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartition.property.value">value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]</code> | value block. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartition.property.value">value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]</code> | value block. |
 
 ---
 
 ##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-databricks.share.ShareObjectPartition.property.value"></a>
 
 ```python
-value: typing.Union[IResolvable, typing.List[ShareObjectPartitionValue]]
+value: IResolvable | typing.List[ShareObjectPartitionValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]
 
 value block.
 
@@ -1908,7 +1908,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | *No description.* |
 
 ---
 
@@ -1939,10 +1939,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ShareObject]]
+internal_value: IResolvable | typing.List[ShareObject]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
 
 ---
 
@@ -2211,13 +2211,13 @@ Returns a reversible string representation.
 
 ```python
 def put_partition(
-  value: typing.Union[IResolvable, typing.List[ShareObjectPartition]]
+  value: IResolvable | typing.List[ShareObjectPartition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.putPartition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]
 
 ---
 
@@ -2297,20 +2297,20 @@ def reset_string_shared_as() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partition">partition</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList">ShareObjectPartitionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAtInput">added_at_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedByInput">added_by_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput">cdf_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput">cdf_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.dataObjectTypeInput">data_object_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.historyDataSharingStatusInput">history_data_sharing_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput">partition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput">partition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.sharedAsInput">shared_as_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersionInput">start_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAsInput">string_shared_as_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAt">added_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedBy">added_by</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled">cdf_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled">cdf_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.dataObjectType">data_object_type</a></code> | <code>str</code> | *No description.* |
@@ -2320,7 +2320,7 @@ def reset_string_shared_as() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersion">start_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAs">string_shared_as</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a></code> | *No description.* |
 
 ---
 
@@ -2381,10 +2381,10 @@ added_by_input: str
 ##### `cdf_enabled_input`<sup>Optional</sup> <a name="cdf_enabled_input" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput"></a>
 
 ```python
-cdf_enabled_input: typing.Union[bool, IResolvable]
+cdf_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2441,10 +2441,10 @@ name_input: str
 ##### `partition_input`<sup>Optional</sup> <a name="partition_input" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput"></a>
 
 ```python
-partition_input: typing.Union[IResolvable, typing.List[ShareObjectPartition]]
+partition_input: IResolvable | typing.List[ShareObjectPartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]
 
 ---
 
@@ -2511,10 +2511,10 @@ added_by: str
 ##### `cdf_enabled`<sup>Required</sup> <a name="cdf_enabled" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled"></a>
 
 ```python
-cdf_enabled: typing.Union[bool, IResolvable]
+cdf_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2611,10 +2611,10 @@ string_shared_as: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ShareObject]
+internal_value: IResolvable | ShareObject
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>
 
 ---
 
@@ -2750,7 +2750,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | *No description.* |
 
 ---
 
@@ -2781,10 +2781,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectPartitionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ShareObjectPartition]]
+internal_value: IResolvable | typing.List[ShareObjectPartition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]
 
 ---
 
@@ -3043,13 +3043,13 @@ Returns a reversible string representation.
 
 ```python
 def put_value(
-  value: typing.Union[IResolvable, typing.List[ShareObjectPartitionValue]]
+  value: IResolvable | typing.List[ShareObjectPartitionValue]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.putValue.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]
 
 ---
 
@@ -3067,8 +3067,8 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.value">value</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList">ShareObjectPartitionValueList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput">value_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a></code> | *No description.* |
 
 ---
 
@@ -3109,20 +3109,20 @@ value: ShareObjectPartitionValueList
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.valueInput"></a>
 
 ```python
-value_input: typing.Union[IResolvable, typing.List[ShareObjectPartitionValue]]
+value_input: IResolvable | typing.List[ShareObjectPartitionValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectPartitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ShareObjectPartition]
+internal_value: IResolvable | ShareObjectPartition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>
 
 ---
 
@@ -3258,7 +3258,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]</code> | *No description.* |
 
 ---
 
@@ -3289,10 +3289,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectPartitionValueList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ShareObjectPartitionValue]]
+internal_value: IResolvable | typing.List[ShareObjectPartitionValue]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]
 
 ---
 
@@ -3574,7 +3574,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.op">op</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.recipientPropertyKey">recipient_property_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a></code> | *No description.* |
 
 ---
 
@@ -3685,10 +3685,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-databricks.share.ShareObjectPartitionValueOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ShareObjectPartitionValue]
+internal_value: IResolvable | ShareObjectPartitionValue
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue">ShareObjectPartitionValue</a>
 
 ---
 

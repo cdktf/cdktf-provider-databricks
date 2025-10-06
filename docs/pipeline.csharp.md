@@ -327,7 +327,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-databricks.pipeline.Pipeline.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-databricks.pipeline.Pipeline.importFrom"></a>
@@ -381,7 +381,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-databricks.pipeline.Pipeline.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -396,7 +396,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-databricks.pipeline.Pipeline.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -421,12 +421,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutCluster` <a name="PutCluster" id="@cdktf/provider-databricks.pipeline.Pipeline.putCluster"></a>
 
 ```csharp
-private void PutCluster(object Value)
+private void PutCluster(IResolvable|PipelineCluster[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.Pipeline.putCluster.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]
 
 ---
 
@@ -505,36 +505,36 @@ private void PutIngestionDefinition(PipelineIngestionDefinition Value)
 ##### `PutLatestUpdates` <a name="PutLatestUpdates" id="@cdktf/provider-databricks.pipeline.Pipeline.putLatestUpdates"></a>
 
 ```csharp
-private void PutLatestUpdates(object Value)
+private void PutLatestUpdates(IResolvable|PipelineLatestUpdates[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.Pipeline.putLatestUpdates.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
 
 ---
 
 ##### `PutLibrary` <a name="PutLibrary" id="@cdktf/provider-databricks.pipeline.Pipeline.putLibrary"></a>
 
 ```csharp
-private void PutLibrary(object Value)
+private void PutLibrary(IResolvable|PipelineLibrary[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.Pipeline.putLibrary.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]
 
 ---
 
 ##### `PutNotification` <a name="PutNotification" id="@cdktf/provider-databricks.pipeline.Pipeline.putNotification"></a>
 
 ```csharp
-private void PutNotification(object Value)
+private void PutNotification(IResolvable|PipelineNotification[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.Pipeline.putNotification.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]
 
 ---
 
@@ -952,13 +952,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.cluster">Cluster</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterList">PipelineClusterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.deployment">Deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeploymentOutputReference">PipelineDeploymentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.environment">Environment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironmentOutputReference">PipelineEnvironmentOutputReference</a></code> | *No description.* |
@@ -973,18 +973,18 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.runAs">RunAs</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAsOutputReference">PipelineRunAsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference">PipelineTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.trigger">Trigger</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTriggerOutputReference">PipelineTriggerOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNamesInput">AllowDuplicateNamesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNamesInput">AllowDuplicateNamesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.budgetPolicyIdInput">BudgetPolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.catalogInput">CatalogInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.causeInput">CauseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.channelInput">ChannelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterIdInput">ClusterIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterInput">ClusterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterInput">ClusterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.configurationInput">ConfigurationInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.continuousInput">ContinuousInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.continuousInput">ContinuousInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.creatorUserNameInput">CreatorUserNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.deploymentInput">DeploymentInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.developmentInput">DevelopmentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.developmentInput">DevelopmentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.editionInput">EditionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.environmentInput">EnvironmentInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.eventLogInput">EventLogInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | *No description.* |
@@ -995,45 +995,45 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.ingestionDefinitionInput">IngestionDefinitionInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.lastModifiedInput">LastModifiedInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdatesInput">LatestUpdatesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.libraryInput">LibraryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdatesInput">LatestUpdatesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.libraryInput">LibraryInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.notificationInput">NotificationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.photonInput">PhotonInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.notificationInput">NotificationInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.photonInput">PhotonInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.restartWindowInput">RestartWindowInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.rootPathInput">RootPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.runAsInput">RunAsInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.runAsUserNameInput">RunAsUserNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.serverlessInput">ServerlessInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.serverlessInput">ServerlessInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.stateInput">StateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.storageInput">StorageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.targetInput">TargetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.triggerInput">TriggerInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNames">AllowDuplicateNames</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNames">AllowDuplicateNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.catalog">Catalog</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.cause">Cause</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.channel">Channel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.clusterId">ClusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.configuration">Configuration</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.continuous">Continuous</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.continuous">Continuous</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.creatorUserName">CreatorUserName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.development">Development</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.development">Development</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.edition">Edition</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.expectedLastModified">ExpectedLastModified</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.health">Health</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.lastModified">LastModified</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.photon">Photon</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.photon">Photon</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.rootPath">RootPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.runAsUserName">RunAsUserName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.serverless">Serverless</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.serverless">Serverless</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.storage">Storage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.Pipeline.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -1117,20 +1117,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-databricks.pipeline.Pipeline.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-databricks.pipeline.Pipeline.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1177,10 +1177,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-databricks.pipeline.Pipeline.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1327,10 +1327,10 @@ public PipelineTriggerOutputReference Trigger { get; }
 ##### `AllowDuplicateNamesInput`<sup>Optional</sup> <a name="AllowDuplicateNamesInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNamesInput"></a>
 
 ```csharp
-public object AllowDuplicateNamesInput { get; }
+public bool|IResolvable AllowDuplicateNamesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1387,10 +1387,10 @@ public string ClusterIdInput { get; }
 ##### `ClusterInput`<sup>Optional</sup> <a name="ClusterInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.clusterInput"></a>
 
 ```csharp
-public object ClusterInput { get; }
+public IResolvable|PipelineCluster[] ClusterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]
 
 ---
 
@@ -1407,10 +1407,10 @@ public System.Collections.Generic.IDictionary<string, string> ConfigurationInput
 ##### `ContinuousInput`<sup>Optional</sup> <a name="ContinuousInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.continuousInput"></a>
 
 ```csharp
-public object ContinuousInput { get; }
+public bool|IResolvable ContinuousInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1437,10 +1437,10 @@ public PipelineDeployment DeploymentInput { get; }
 ##### `DevelopmentInput`<sup>Optional</sup> <a name="DevelopmentInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.developmentInput"></a>
 
 ```csharp
-public object DevelopmentInput { get; }
+public bool|IResolvable DevelopmentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1547,20 +1547,20 @@ public double LastModifiedInput { get; }
 ##### `LatestUpdatesInput`<sup>Optional</sup> <a name="LatestUpdatesInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.latestUpdatesInput"></a>
 
 ```csharp
-public object LatestUpdatesInput { get; }
+public IResolvable|PipelineLatestUpdates[] LatestUpdatesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
 
 ---
 
 ##### `LibraryInput`<sup>Optional</sup> <a name="LibraryInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.libraryInput"></a>
 
 ```csharp
-public object LibraryInput { get; }
+public IResolvable|PipelineLibrary[] LibraryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]
 
 ---
 
@@ -1577,20 +1577,20 @@ public string NameInput { get; }
 ##### `NotificationInput`<sup>Optional</sup> <a name="NotificationInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.notificationInput"></a>
 
 ```csharp
-public object NotificationInput { get; }
+public IResolvable|PipelineNotification[] NotificationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]
 
 ---
 
 ##### `PhotonInput`<sup>Optional</sup> <a name="PhotonInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.photonInput"></a>
 
 ```csharp
-public object PhotonInput { get; }
+public bool|IResolvable PhotonInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1647,10 +1647,10 @@ public string SchemaInput { get; }
 ##### `ServerlessInput`<sup>Optional</sup> <a name="ServerlessInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.serverlessInput"></a>
 
 ```csharp
-public object ServerlessInput { get; }
+public bool|IResolvable ServerlessInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1697,10 +1697,10 @@ public string TargetInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-databricks.pipeline.Pipeline.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|PipelineTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a>
 
 ---
 
@@ -1727,10 +1727,10 @@ public string UrlInput { get; }
 ##### `AllowDuplicateNames`<sup>Required</sup> <a name="AllowDuplicateNames" id="@cdktf/provider-databricks.pipeline.Pipeline.property.allowDuplicateNames"></a>
 
 ```csharp
-public object AllowDuplicateNames { get; }
+public bool|IResolvable AllowDuplicateNames { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1797,10 +1797,10 @@ public System.Collections.Generic.IDictionary<string, string> Configuration { ge
 ##### `Continuous`<sup>Required</sup> <a name="Continuous" id="@cdktf/provider-databricks.pipeline.Pipeline.property.continuous"></a>
 
 ```csharp
-public object Continuous { get; }
+public bool|IResolvable Continuous { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1817,10 +1817,10 @@ public string CreatorUserName { get; }
 ##### `Development`<sup>Required</sup> <a name="Development" id="@cdktf/provider-databricks.pipeline.Pipeline.property.development"></a>
 
 ```csharp
-public object Development { get; }
+public bool|IResolvable Development { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1887,10 +1887,10 @@ public string Name { get; }
 ##### `Photon`<sup>Required</sup> <a name="Photon" id="@cdktf/provider-databricks.pipeline.Pipeline.property.photon"></a>
 
 ```csharp
-public object Photon { get; }
+public bool|IResolvable Photon { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1927,10 +1927,10 @@ public string Schema { get; }
 ##### `Serverless`<sup>Required</sup> <a name="Serverless" id="@cdktf/provider-databricks.pipeline.Pipeline.property.serverless"></a>
 
 ```csharp
-public object Serverless { get; }
+public bool|IResolvable Serverless { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2012,7 +2012,7 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new PipelineCluster {
-    object ApplyPolicyDefaultValues = null,
+    bool|IResolvable ApplyPolicyDefaultValues = null,
     PipelineClusterAutoscale Autoscale = null,
     PipelineClusterAwsAttributes AwsAttributes = null,
     PipelineClusterAzureAttributes AzureAttributes = null,
@@ -2020,9 +2020,9 @@ new PipelineCluster {
     System.Collections.Generic.IDictionary<string, string> CustomTags = null,
     string DriverInstancePoolId = null,
     string DriverNodeTypeId = null,
-    object EnableLocalDiskEncryption = null,
+    bool|IResolvable EnableLocalDiskEncryption = null,
     PipelineClusterGcpAttributes GcpAttributes = null,
-    object InitScripts = null,
+    IResolvable|PipelineClusterInitScripts[] InitScripts = null,
     string InstancePoolId = null,
     string Label = null,
     string NodeTypeId = null,
@@ -2038,7 +2038,7 @@ new PipelineCluster {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale">PipelineClusterAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes">PipelineClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes">PipelineClusterAzureAttributes</a></code> | azure_attributes block. |
@@ -2046,9 +2046,9 @@ new PipelineCluster {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes">PipelineClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.initScripts">InitScripts</a></code> | <code>object</code> | init_scripts block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.initScripts">InitScripts</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]</code> | init_scripts block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">InstancePoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#label Pipeline#label}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
@@ -2063,10 +2063,10 @@ new PipelineCluster {
 ##### `ApplyPolicyDefaultValues`<sup>Optional</sup> <a name="ApplyPolicyDefaultValues" id="@cdktf/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues"></a>
 
 ```csharp
-public object ApplyPolicyDefaultValues { get; set; }
+public bool|IResolvable ApplyPolicyDefaultValues { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
 
@@ -2167,10 +2167,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableLocalDiskEncryption`<sup>Optional</sup> <a name="EnableLocalDiskEncryption" id="@cdktf/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption"></a>
 
 ```csharp
-public object EnableLocalDiskEncryption { get; set; }
+public bool|IResolvable EnableLocalDiskEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
 
@@ -2193,10 +2193,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `InitScripts`<sup>Optional</sup> <a name="InitScripts" id="@cdktf/provider-databricks.pipeline.PipelineCluster.property.initScripts"></a>
 
 ```csharp
-public object InitScripts { get; set; }
+public IResolvable|PipelineClusterInitScripts[] InitScripts { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]
 
 init_scripts block.
 
@@ -2748,7 +2748,7 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new PipelineClusterClusterLogConfS3 {
     string Destination,
     string CannedAcl = null,
-    object EnableEncryption = null,
+    bool|IResolvable EnableEncryption = null,
     string EncryptionType = null,
     string Endpoint = null,
     string KmsKey = null,
@@ -2762,7 +2762,7 @@ new PipelineClusterClusterLogConfS3 {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
@@ -2797,10 +2797,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableEncryption`<sup>Optional</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; set; }
+public bool|IResolvable EnableEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
@@ -3242,7 +3242,7 @@ using HashiCorp.Cdktf.Providers.Databricks;
 new PipelineClusterInitScriptsS3 {
     string Destination,
     string CannedAcl = null,
-    object EnableEncryption = null,
+    bool|IResolvable EnableEncryption = null,
     string EncryptionType = null,
     string Endpoint = null,
     string KmsKey = null,
@@ -3256,7 +3256,7 @@ new PipelineClusterInitScriptsS3 {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">Destination</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#destination Pipeline#destination}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
@@ -3291,10 +3291,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `EnableEncryption`<sup>Optional</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; set; }
+public bool|IResolvable EnableEncryption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
@@ -3420,25 +3420,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new PipelineConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object AllowDuplicateNames = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    bool|IResolvable AllowDuplicateNames = null,
     string BudgetPolicyId = null,
     string Catalog = null,
     string Cause = null,
     string Channel = null,
-    object Cluster = null,
+    IResolvable|PipelineCluster[] Cluster = null,
     string ClusterId = null,
     System.Collections.Generic.IDictionary<string, string> Configuration = null,
-    object Continuous = null,
+    bool|IResolvable Continuous = null,
     string CreatorUserName = null,
     PipelineDeployment Deployment = null,
-    object Development = null,
+    bool|IResolvable Development = null,
     string Edition = null,
     PipelineEnvironment Environment = null,
     PipelineEventLog EventLog = null,
@@ -3449,17 +3449,17 @@ new PipelineConfig {
     string Id = null,
     PipelineIngestionDefinition IngestionDefinition = null,
     double LastModified = null,
-    object LatestUpdates = null,
-    object Library = null,
+    IResolvable|PipelineLatestUpdates[] LatestUpdates = null,
+    IResolvable|PipelineLibrary[] Library = null,
     string Name = null,
-    object Notification = null,
-    object Photon = null,
+    IResolvable|PipelineNotification[] Notification = null,
+    bool|IResolvable Photon = null,
     PipelineRestartWindow RestartWindow = null,
     string RootPath = null,
     PipelineRunAs RunAs = null,
     string RunAsUserName = null,
     string Schema = null,
-    object Serverless = null,
+    bool|IResolvable Serverless = null,
     string State = null,
     string Storage = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
@@ -3474,25 +3474,25 @@ new PipelineConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">AllowDuplicateNames</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">AllowDuplicateNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cause">Cause</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cause Pipeline#cause}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.channel">Channel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#channel Pipeline#channel}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cluster">Cluster</a></code> | <code>object</code> | cluster block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.cluster">Cluster</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]</code> | cluster block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.configuration">Configuration</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">Continuous</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous">Continuous</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">CreatorUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.deployment">Deployment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">Development</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.development">Development</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.edition">Edition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#edition Pipeline#edition}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.environment">Environment</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.eventLog">EventLog</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | event_log block. |
@@ -3503,17 +3503,17 @@ new PipelineConfig {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#id Pipeline#id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.ingestionDefinition">IngestionDefinition</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.lastModified">LastModified</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates">LatestUpdates</a></code> | <code>object</code> | latest_updates block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.library">Library</a></code> | <code>object</code> | library block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates">LatestUpdates</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]</code> | latest_updates block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.library">Library</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]</code> | library block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#name Pipeline#name}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.notification">Notification</a></code> | <code>object</code> | notification block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">Photon</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.notification">Notification</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]</code> | notification block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon">Photon</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.restartWindow">RestartWindow</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | restart_window block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.rootPath">RootPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAs">RunAs</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | run_as block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">RunAsUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">Serverless</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless">Serverless</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#state Pipeline#state}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.storage">Storage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#storage Pipeline#storage}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#tags Pipeline#tags}. |
@@ -3527,20 +3527,20 @@ new PipelineConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -3587,20 +3587,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `AllowDuplicateNames`<sup>Optional</sup> <a name="AllowDuplicateNames" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames"></a>
 
 ```csharp
-public object AllowDuplicateNames { get; set; }
+public bool|IResolvable AllowDuplicateNames { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
@@ -3657,10 +3657,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Cluster`<sup>Optional</sup> <a name="Cluster" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.cluster"></a>
 
 ```csharp
-public object Cluster { get; set; }
+public IResolvable|PipelineCluster[] Cluster { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]
 
 cluster block.
 
@@ -3695,10 +3695,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Continuous`<sup>Optional</sup> <a name="Continuous" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.continuous"></a>
 
 ```csharp
-public object Continuous { get; set; }
+public bool|IResolvable Continuous { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 
@@ -3733,10 +3733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Development`<sup>Optional</sup> <a name="Development" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.development"></a>
 
 ```csharp
-public object Development { get; set; }
+public bool|IResolvable Development { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#development Pipeline#development}.
 
@@ -3878,10 +3878,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `LatestUpdates`<sup>Optional</sup> <a name="LatestUpdates" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.latestUpdates"></a>
 
 ```csharp
-public object LatestUpdates { get; set; }
+public IResolvable|PipelineLatestUpdates[] LatestUpdates { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
 
 latest_updates block.
 
@@ -3892,10 +3892,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Library`<sup>Optional</sup> <a name="Library" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.library"></a>
 
 ```csharp
-public object Library { get; set; }
+public IResolvable|PipelineLibrary[] Library { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]
 
 library block.
 
@@ -3918,10 +3918,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Notification`<sup>Optional</sup> <a name="Notification" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.notification"></a>
 
 ```csharp
-public object Notification { get; set; }
+public IResolvable|PipelineNotification[] Notification { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]
 
 notification block.
 
@@ -3932,10 +3932,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Photon`<sup>Optional</sup> <a name="Photon" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.photon"></a>
 
 ```csharp
-public object Photon { get; set; }
+public bool|IResolvable Photon { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#photon Pipeline#photon}.
 
@@ -4008,10 +4008,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Serverless`<sup>Optional</sup> <a name="Serverless" id="@cdktf/provider-databricks.pipeline.PipelineConfig.property.serverless"></a>
 
 ```csharp
-public object Serverless { get; set; }
+public bool|IResolvable Serverless { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 
@@ -4388,8 +4388,8 @@ new PipelineIngestionDefinition {
     string ConnectionName = null,
     string IngestionGatewayId = null,
     string NetsuiteJarPath = null,
-    object Objects = null,
-    object SourceConfigurations = null,
+    IResolvable|PipelineIngestionDefinitionObjects[] Objects = null,
+    IResolvable|PipelineIngestionDefinitionSourceConfigurations[] SourceConfigurations = null,
     string SourceType = null,
     PipelineIngestionDefinitionTableConfiguration TableConfiguration = null
 };
@@ -4402,8 +4402,8 @@ new PipelineIngestionDefinition {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">IngestionGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath">NetsuiteJarPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects">Objects</a></code> | <code>object</code> | objects block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceConfigurations">SourceConfigurations</a></code> | <code>object</code> | source_configurations block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects">Objects</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]</code> | objects block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceConfigurations">SourceConfigurations</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]</code> | source_configurations block. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">SourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.tableConfiguration">TableConfiguration</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | table_configuration block. |
 
@@ -4448,10 +4448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `Objects`<sup>Optional</sup> <a name="Objects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects"></a>
 
 ```csharp
-public object Objects { get; set; }
+public IResolvable|PipelineIngestionDefinitionObjects[] Objects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
 
 objects block.
 
@@ -4462,10 +4462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `SourceConfigurations`<sup>Optional</sup> <a name="SourceConfigurations" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceConfigurations"></a>
 
 ```csharp
-public object SourceConfigurations { get; set; }
+public IResolvable|PipelineIngestionDefinitionSourceConfigurations[] SourceConfigurations { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]
 
 source_configurations block.
 
@@ -4667,7 +4667,7 @@ new PipelineIngestionDefinitionObjectsReportTableConfiguration {
     string[] IncludeColumns = null,
     string[] PrimaryKeys = null,
     PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
-    object SalesforceIncludeFormulaFields = null,
+    bool|IResolvable SalesforceIncludeFormulaFields = null,
     string ScdType = null,
     string[] SequenceBy = null,
     PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
@@ -4682,7 +4682,7 @@ new PipelineIngestionDefinitionObjectsReportTableConfiguration {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
@@ -4742,10 +4742,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `SalesforceIncludeFormulaFields`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; set; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
@@ -4857,9 +4857,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters {
-    object Incremental = null,
+    bool|IResolvable Incremental = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
-    object ReportParameters = null
+    IResolvable|PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters = null
 };
 ```
 
@@ -4867,19 +4867,19 @@ new PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | report_parameters block. |
 
 ---
 
 ##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; set; }
+public bool|IResolvable Incremental { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
@@ -4900,10 +4900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
 
 ```csharp
-public object ReportParameters { get; set; }
+public IResolvable|PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 report_parameters block.
 
@@ -5059,7 +5059,7 @@ new PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
     string[] IncludeColumns = null,
     string[] PrimaryKeys = null,
     PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
-    object SalesforceIncludeFormulaFields = null,
+    bool|IResolvable SalesforceIncludeFormulaFields = null,
     string ScdType = null,
     string[] SequenceBy = null,
     PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
@@ -5074,7 +5074,7 @@ new PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
@@ -5134,10 +5134,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `SalesforceIncludeFormulaFields`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; set; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
@@ -5249,9 +5249,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters {
-    object Incremental = null,
+    bool|IResolvable Incremental = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
-    object ReportParameters = null
+    IResolvable|PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters = null
 };
 ```
 
@@ -5259,19 +5259,19 @@ new PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | report_parameters block. |
 
 ---
 
 ##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; set; }
+public bool|IResolvable Incremental { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
@@ -5292,10 +5292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
 
 ```csharp
-public object ReportParameters { get; set; }
+public IResolvable|PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 report_parameters block.
 
@@ -5479,7 +5479,7 @@ new PipelineIngestionDefinitionObjectsTableTableConfiguration {
     string[] IncludeColumns = null,
     string[] PrimaryKeys = null,
     PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
-    object SalesforceIncludeFormulaFields = null,
+    bool|IResolvable SalesforceIncludeFormulaFields = null,
     string ScdType = null,
     string[] SequenceBy = null,
     PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
@@ -5494,7 +5494,7 @@ new PipelineIngestionDefinitionObjectsTableTableConfiguration {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
@@ -5554,10 +5554,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `SalesforceIncludeFormulaFields`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; set; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
@@ -5669,9 +5669,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters {
-    object Incremental = null,
+    bool|IResolvable Incremental = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
-    object ReportParameters = null
+    IResolvable|PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters = null
 };
 ```
 
@@ -5679,19 +5679,19 @@ new PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParame
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | report_parameters block. |
 
 ---
 
 ##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; set; }
+public bool|IResolvable Incremental { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
@@ -5712,10 +5712,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
 
 ```csharp
-public object ReportParameters { get; set; }
+public IResolvable|PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 report_parameters block.
 
@@ -5943,7 +5943,7 @@ new PipelineIngestionDefinitionTableConfiguration {
     string[] IncludeColumns = null,
     string[] PrimaryKeys = null,
     PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig QueryBasedConnectorConfig = null,
-    object SalesforceIncludeFormulaFields = null,
+    bool|IResolvable SalesforceIncludeFormulaFields = null,
     string ScdType = null,
     string[] SequenceBy = null,
     PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters WorkdayReportParameters = null
@@ -5958,7 +5958,7 @@ new PipelineIngestionDefinitionTableConfiguration {
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.queryBasedConnectorConfig">QueryBasedConnectorConfig</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">ScdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.workdayReportParameters">WorkdayReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
@@ -6018,10 +6018,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `SalesforceIncludeFormulaFields`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; set; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
@@ -6133,9 +6133,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using HashiCorp.Cdktf.Providers.Databricks;
 
 new PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters {
-    object Incremental = null,
+    bool|IResolvable Incremental = null,
     System.Collections.Generic.IDictionary<string, string> Parameters = null,
-    object ReportParameters = null
+    IResolvable|PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters = null
 };
 ```
 
@@ -6143,19 +6143,19 @@ new PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>object</code> | report_parameters block. |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters">ReportParameters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | report_parameters block. |
 
 ---
 
 ##### `Incremental`<sup>Optional</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; set; }
+public bool|IResolvable Incremental { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
@@ -6176,10 +6176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `ReportParameters`<sup>Optional</sup> <a name="ReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters"></a>
 
 ```csharp
-public object ReportParameters { get; set; }
+public IResolvable|PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] ReportParameters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 report_parameters block.
 
@@ -9300,14 +9300,14 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.cannedAclInput">CannedAclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.encryptionTypeInput">EncryptionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.endpointInput">EndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.kmsKeyInput">KmsKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.encryptionType">EncryptionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.kmsKey">KmsKey</a></code> | <code>string</code> | *No description.* |
@@ -9363,10 +9363,10 @@ public string DestinationInput { get; }
 ##### `EnableEncryptionInput`<sup>Optional</sup> <a name="EnableEncryptionInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.enableEncryptionInput"></a>
 
 ```csharp
-public object EnableEncryptionInput { get; }
+public bool|IResolvable EnableEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9433,10 +9433,10 @@ public string Destination { get; }
 ##### `EnableEncryption`<sup>Required</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; }
+public bool|IResolvable EnableEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -11361,7 +11361,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]</code> | *No description.* |
 
 ---
 
@@ -11392,10 +11392,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineClusterInitScripts[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]
 
 ---
 
@@ -11782,7 +11782,7 @@ private void ResetWorkspace()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.property.s3Input">S3Input</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3">PipelineClusterInitScriptsS3</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.property.volumesInput">VolumesInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes">PipelineClusterInitScriptsVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.property.workspaceInput">WorkspaceInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace">PipelineClusterInitScriptsWorkspace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a></code> | *No description.* |
 
 ---
 
@@ -11953,10 +11953,10 @@ public PipelineClusterInitScriptsWorkspace WorkspaceInput { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineClusterInitScripts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>
 
 ---
 
@@ -12215,14 +12215,14 @@ private void ResetRegion()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.cannedAclInput">CannedAclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.enableEncryptionInput">EnableEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.encryptionTypeInput">EncryptionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.endpointInput">EndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.kmsKeyInput">KmsKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.cannedAcl">CannedAcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.enableEncryption">EnableEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.encryptionType">EncryptionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.kmsKey">KmsKey</a></code> | <code>string</code> | *No description.* |
@@ -12278,10 +12278,10 @@ public string DestinationInput { get; }
 ##### `EnableEncryptionInput`<sup>Optional</sup> <a name="EnableEncryptionInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.enableEncryptionInput"></a>
 
 ```csharp
-public object EnableEncryptionInput { get; }
+public bool|IResolvable EnableEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -12348,10 +12348,10 @@ public string Destination { get; }
 ##### `EnableEncryption`<sup>Required</sup> <a name="EnableEncryption" id="@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.property.enableEncryption"></a>
 
 ```csharp
-public object EnableEncryption { get; }
+public bool|IResolvable EnableEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13069,7 +13069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]</code> | *No description.* |
 
 ---
 
@@ -13100,10 +13100,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineClusterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineCluster[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>[]
 
 ---
 
@@ -13417,12 +13417,12 @@ private void PutGcpAttributes(PipelineClusterGcpAttributes Value)
 ##### `PutInitScripts` <a name="PutInitScripts" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.putInitScripts"></a>
 
 ```csharp
-private void PutInitScripts(object Value)
+private void PutInitScripts(IResolvable|PipelineClusterInitScripts[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.putInitScripts.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]
 
 ---
 
@@ -13553,7 +13553,7 @@ private void ResetSshPublicKeys()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterClusterLogConfOutputReference">PipelineClusterClusterLogConfOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference">PipelineClusterGcpAttributesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.initScripts">InitScripts</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScriptsList">PipelineClusterInitScriptsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.applyPolicyDefaultValuesInput">ApplyPolicyDefaultValuesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.applyPolicyDefaultValuesInput">ApplyPolicyDefaultValuesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.autoscaleInput">AutoscaleInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAutoscale">PipelineClusterAutoscale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.awsAttributesInput">AwsAttributesInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAwsAttributes">PipelineClusterAwsAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.azureAttributesInput">AzureAttributesInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterAzureAttributes">PipelineClusterAzureAttributes</a></code> | *No description.* |
@@ -13561,9 +13561,9 @@ private void ResetSshPublicKeys()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.customTagsInput">CustomTagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.driverInstancePoolIdInput">DriverInstancePoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.driverNodeTypeIdInput">DriverNodeTypeIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.enableLocalDiskEncryptionInput">EnableLocalDiskEncryptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.enableLocalDiskEncryptionInput">EnableLocalDiskEncryptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.gcpAttributesInput">GcpAttributesInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterGcpAttributes">PipelineClusterGcpAttributes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.initScriptsInput">InitScriptsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.initScriptsInput">InitScriptsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.instancePoolIdInput">InstancePoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.nodeTypeIdInput">NodeTypeIdInput</a></code> | <code>string</code> | *No description.* |
@@ -13572,11 +13572,11 @@ private void ResetSshPublicKeys()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.sparkConfInput">SparkConfInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.sparkEnvVarsInput">SparkEnvVarsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.sshPublicKeysInput">SshPublicKeysInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.customTags">CustomTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.instancePoolId">InstancePoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.label">Label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.nodeTypeId">NodeTypeId</a></code> | <code>string</code> | *No description.* |
@@ -13585,7 +13585,7 @@ private void ResetSshPublicKeys()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.sparkConf">SparkConf</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.sparkEnvVars">SparkEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.sshPublicKeys">SshPublicKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a></code> | *No description.* |
 
 ---
 
@@ -13676,10 +13676,10 @@ public PipelineClusterInitScriptsList InitScripts { get; }
 ##### `ApplyPolicyDefaultValuesInput`<sup>Optional</sup> <a name="ApplyPolicyDefaultValuesInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.applyPolicyDefaultValuesInput"></a>
 
 ```csharp
-public object ApplyPolicyDefaultValuesInput { get; }
+public bool|IResolvable ApplyPolicyDefaultValuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13756,10 +13756,10 @@ public string DriverNodeTypeIdInput { get; }
 ##### `EnableLocalDiskEncryptionInput`<sup>Optional</sup> <a name="EnableLocalDiskEncryptionInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.enableLocalDiskEncryptionInput"></a>
 
 ```csharp
-public object EnableLocalDiskEncryptionInput { get; }
+public bool|IResolvable EnableLocalDiskEncryptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13776,10 +13776,10 @@ public PipelineClusterGcpAttributes GcpAttributesInput { get; }
 ##### `InitScriptsInput`<sup>Optional</sup> <a name="InitScriptsInput" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.initScriptsInput"></a>
 
 ```csharp
-public object InitScriptsInput { get; }
+public IResolvable|PipelineClusterInitScripts[] InitScriptsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>[]
 
 ---
 
@@ -13866,10 +13866,10 @@ public string[] SshPublicKeysInput { get; }
 ##### `ApplyPolicyDefaultValues`<sup>Required</sup> <a name="ApplyPolicyDefaultValues" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.applyPolicyDefaultValues"></a>
 
 ```csharp
-public object ApplyPolicyDefaultValues { get; }
+public bool|IResolvable ApplyPolicyDefaultValues { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13906,10 +13906,10 @@ public string DriverNodeTypeId { get; }
 ##### `EnableLocalDiskEncryption`<sup>Required</sup> <a name="EnableLocalDiskEncryption" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.enableLocalDiskEncryption"></a>
 
 ```csharp
-public object EnableLocalDiskEncryption { get; }
+public bool|IResolvable EnableLocalDiskEncryption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -13996,10 +13996,10 @@ public string[] SshPublicKeys { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineClusterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineCluster InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>
 
 ---
 
@@ -15712,7 +15712,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]</code> | *No description.* |
 
 ---
 
@@ -15743,10 +15743,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjects[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
 
 ---
 
@@ -16045,7 +16045,7 @@ private void ResetTable()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.reportInput">ReportInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport">PipelineIngestionDefinitionObjectsReport</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.schemaInput">SchemaInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema">PipelineIngestionDefinitionObjectsSchema</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.tableInput">TableInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable">PipelineIngestionDefinitionObjectsTable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a></code> | *No description.* |
 
 ---
 
@@ -16136,10 +16136,10 @@ public PipelineIngestionDefinitionObjectsTable TableInput { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjects InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>
 
 ---
 
@@ -16828,14 +16828,14 @@ private void ResetWorkdayReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.queryBasedConnectorConfigInput">QueryBasedConnectorConfigInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.scdType">ScdType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration">PipelineIngestionDefinitionObjectsReportTableConfiguration</a></code> | *No description.* |
@@ -16929,10 +16929,10 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConne
 ##### `SalesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFieldsInput { get; }
+public bool|IResolvable SalesforceIncludeFormulaFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16999,10 +16999,10 @@ public string[] PrimaryKeys { get; }
 ##### `SalesforceIncludeFormulaFields`<sup>Required</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17583,12 +17583,12 @@ Returns a reversible string representation.
 ##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
 
 ```csharp
-private void PutReportParameters(object Value)
+private void PutReportParameters(IResolvable|PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -17618,10 +17618,10 @@ private void ResetReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 
@@ -17664,10 +17664,10 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportPa
 ##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
 
 ```csharp
-public object IncrementalInput { get; }
+public bool|IResolvable IncrementalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17684,20 +17684,20 @@ public System.Collections.Generic.IDictionary<string, string> ParametersInput { 
 ##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
 
 ```csharp
-public object ReportParametersInput { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] ReportParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
 ##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; }
+public bool|IResolvable Incremental { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17843,7 +17843,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -17874,10 +17874,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -18128,7 +18128,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -18199,10 +18199,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>
 
 ---
 
@@ -18891,14 +18891,14 @@ private void ResetWorkdayReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.queryBasedConnectorConfigInput">QueryBasedConnectorConfigInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.scdType">ScdType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | *No description.* |
@@ -18992,10 +18992,10 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConne
 ##### `SalesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFieldsInput { get; }
+public bool|IResolvable SalesforceIncludeFormulaFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19062,10 +19062,10 @@ public string[] PrimaryKeys { get; }
 ##### `SalesforceIncludeFormulaFields`<sup>Required</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19646,12 +19646,12 @@ Returns a reversible string representation.
 ##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
 
 ```csharp
-private void PutReportParameters(object Value)
+private void PutReportParameters(IResolvable|PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -19681,10 +19681,10 @@ private void ResetReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 
@@ -19727,10 +19727,10 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportPa
 ##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
 
 ```csharp
-public object IncrementalInput { get; }
+public bool|IResolvable IncrementalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19747,20 +19747,20 @@ public System.Collections.Generic.IDictionary<string, string> ParametersInput { 
 ##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
 
 ```csharp
-public object ReportParametersInput { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] ReportParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
 ##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; }
+public bool|IResolvable Incremental { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19906,7 +19906,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -19937,10 +19937,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -20191,7 +20191,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -20262,10 +20262,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>
 
 ---
 
@@ -21012,14 +21012,14 @@ private void ResetWorkdayReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.queryBasedConnectorConfigInput">QueryBasedConnectorConfigInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.scdType">ScdType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | *No description.* |
@@ -21113,10 +21113,10 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnec
 ##### `SalesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFieldsInput { get; }
+public bool|IResolvable SalesforceIncludeFormulaFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21183,10 +21183,10 @@ public string[] PrimaryKeys { get; }
 ##### `SalesforceIncludeFormulaFields`<sup>Required</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21767,12 +21767,12 @@ Returns a reversible string representation.
 ##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
 
 ```csharp
-private void PutReportParameters(object Value)
+private void PutReportParameters(IResolvable|PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -21802,10 +21802,10 @@ private void ResetReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 
@@ -21848,10 +21848,10 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportPar
 ##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
 
 ```csharp
-public object IncrementalInput { get; }
+public bool|IResolvable IncrementalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21868,20 +21868,20 @@ public System.Collections.Generic.IDictionary<string, string> ParametersInput { 
 ##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
 
 ```csharp
-public object ReportParametersInput { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] ReportParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
 ##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; }
+public bool|IResolvable Incremental { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22027,7 +22027,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -22058,10 +22058,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -22312,7 +22312,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -22383,10 +22383,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>
 
 ---
 
@@ -22607,24 +22607,24 @@ Returns a reversible string representation.
 ##### `PutObjects` <a name="PutObjects" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putObjects"></a>
 
 ```csharp
-private void PutObjects(object Value)
+private void PutObjects(IResolvable|PipelineIngestionDefinitionObjects[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putObjects.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
 
 ---
 
 ##### `PutSourceConfigurations` <a name="PutSourceConfigurations" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putSourceConfigurations"></a>
 
 ```csharp
-private void PutSourceConfigurations(object Value)
+private void PutSourceConfigurations(IResolvable|PipelineIngestionDefinitionSourceConfigurations[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.putSourceConfigurations.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]
 
 ---
 
@@ -22695,8 +22695,8 @@ private void ResetTableConfiguration()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionNameInput">ConnectionNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.ingestionGatewayIdInput">IngestionGatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.netsuiteJarPathInput">NetsuiteJarPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput">ObjectsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceConfigurationsInput">SourceConfigurationsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput">ObjectsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceConfigurationsInput">SourceConfigurationsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceTypeInput">SourceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.tableConfigurationInput">TableConfigurationInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.connectionName">ConnectionName</a></code> | <code>string</code> | *No description.* |
@@ -22794,20 +22794,20 @@ public string NetsuiteJarPathInput { get; }
 ##### `ObjectsInput`<sup>Optional</sup> <a name="ObjectsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.objectsInput"></a>
 
 ```csharp
-public object ObjectsInput { get; }
+public IResolvable|PipelineIngestionDefinitionObjects[] ObjectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>[]
 
 ---
 
 ##### `SourceConfigurationsInput`<sup>Optional</sup> <a name="SourceConfigurationsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.property.sourceConfigurationsInput"></a>
 
 ```csharp
-public object SourceConfigurationsInput { get; }
+public IResolvable|PipelineIngestionDefinitionSourceConfigurations[] SourceConfigurationsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]
 
 ---
 
@@ -23921,7 +23921,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]</code> | *No description.* |
 
 ---
 
@@ -23952,10 +23952,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionSourceConfigurations[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>[]
 
 ---
 
@@ -24210,7 +24210,7 @@ private void ResetCatalog()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.property.catalog">Catalog</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference">PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.property.catalogInput">CatalogInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog">PipelineIngestionDefinitionSourceConfigurationsCatalog</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a></code> | *No description.* |
 
 ---
 
@@ -24261,10 +24261,10 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalog CatalogInput { get
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionSourceConfigurations InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>
 
 ---
 
@@ -24567,14 +24567,14 @@ private void ResetWorkdayReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.includeColumnsInput">IncludeColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeysInput">PrimaryKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.queryBasedConnectorConfigInput">QueryBasedConnectorConfigInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput">SalesforceIncludeFormulaFieldsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdTypeInput">ScdTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.sequenceByInput">SequenceByInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.workdayReportParametersInput">WorkdayReportParametersInput</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.excludeColumns">ExcludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.includeColumns">IncludeColumns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.primaryKeys">PrimaryKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFields">SalesforceIncludeFormulaFields</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.scdType">ScdType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.sequenceBy">SequenceBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | *No description.* |
@@ -24668,10 +24668,10 @@ public PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig Qu
 ##### `SalesforceIncludeFormulaFieldsInput`<sup>Optional</sup> <a name="SalesforceIncludeFormulaFieldsInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFieldsInput"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFieldsInput { get; }
+public bool|IResolvable SalesforceIncludeFormulaFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24738,10 +24738,10 @@ public string[] PrimaryKeys { get; }
 ##### `SalesforceIncludeFormulaFields`<sup>Required</sup> <a name="SalesforceIncludeFormulaFields" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.property.salesforceIncludeFormulaFields"></a>
 
 ```csharp
-public object SalesforceIncludeFormulaFields { get; }
+public bool|IResolvable SalesforceIncludeFormulaFields { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25322,12 +25322,12 @@ Returns a reversible string representation.
 ##### `PutReportParameters` <a name="PutReportParameters" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters"></a>
 
 ```csharp
-private void PutReportParameters(object Value)
+private void PutReportParameters(IResolvable|PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.putReportParameters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -25357,10 +25357,10 @@ private void ResetReportParameters()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParameters">ReportParameters</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput">IncrementalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parametersInput">ParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput">ReportParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental">Incremental</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | *No description.* |
 
@@ -25403,10 +25403,10 @@ public PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersRepor
 ##### `IncrementalInput`<sup>Optional</sup> <a name="IncrementalInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incrementalInput"></a>
 
 ```csharp
-public object IncrementalInput { get; }
+public bool|IResolvable IncrementalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25423,20 +25423,20 @@ public System.Collections.Generic.IDictionary<string, string> ParametersInput { 
 ##### `ReportParametersInput`<sup>Optional</sup> <a name="ReportParametersInput" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.reportParametersInput"></a>
 
 ```csharp
-public object ReportParametersInput { get; }
+public IResolvable|PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] ReportParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
 ##### `Incremental`<sup>Required</sup> <a name="Incremental" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.property.incremental"></a>
 
 ```csharp
-public object Incremental { get; }
+public bool|IResolvable Incremental { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25582,7 +25582,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -25613,10 +25613,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>[]
 
 ---
 
@@ -25867,7 +25867,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a></code> | *No description.* |
 
 ---
 
@@ -25938,10 +25938,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>
 
 ---
 
@@ -26067,7 +26067,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]</code> | *No description.* |
 
 ---
 
@@ -26098,10 +26098,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineLatestUpdates[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>[]
 
 ---
 
@@ -26361,7 +26361,7 @@ private void ResetUpdateId()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.creationTime">CreationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.updateId">UpdateId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a></code> | *No description.* |
 
 ---
 
@@ -26452,10 +26452,10 @@ public string UpdateId { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineLatestUpdates InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>
 
 ---
 
@@ -27123,7 +27123,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]</code> | *No description.* |
 
 ---
 
@@ -27154,10 +27154,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineLibraryList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineLibrary[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>[]
 
 ---
 
@@ -28096,7 +28096,7 @@ private void ResetWhl()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryOutputReference.property.whlInput">WhlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryOutputReference.property.jar">Jar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryOutputReference.property.whl">Whl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineLibraryOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a></code> | *No description.* |
 
 ---
 
@@ -28247,10 +28247,10 @@ public string Whl { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineLibraryOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineLibrary InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>
 
 ---
 
@@ -28376,7 +28376,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]</code> | *No description.* |
 
 ---
 
@@ -28407,10 +28407,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineNotificationList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineNotification[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>[]
 
 ---
 
@@ -28661,7 +28661,7 @@ private void ResetEmailRecipients()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.property.emailRecipientsInput">EmailRecipientsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.property.alerts">Alerts</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.property.emailRecipients">EmailRecipients</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a></code> | *No description.* |
 
 ---
 
@@ -28732,10 +28732,10 @@ public string[] EmailRecipients { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineNotificationOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineNotification InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>
 
 ---
 
@@ -29595,7 +29595,7 @@ private void ResetDefault()
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference.property.defaultInput">DefaultInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -29646,10 +29646,10 @@ public string Default { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.pipeline.PipelineTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|PipelineTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a>
 
 ---
 

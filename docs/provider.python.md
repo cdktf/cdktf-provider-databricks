@@ -25,7 +25,7 @@ provider.DatabricksProvider(
   azure_environment: str = None,
   azure_login_app_id: str = None,
   azure_tenant_id: str = None,
-  azure_use_msi: typing.Union[bool, IResolvable] = None,
+  azure_use_msi: bool | IResolvable = None,
   azure_workspace_resource_id: str = None,
   client_id: str = None,
   client_secret: str = None,
@@ -33,7 +33,7 @@ provider.DatabricksProvider(
   config_file: str = None,
   databricks_cli_path: str = None,
   databricks_id_token_filepath: str = None,
-  debug_headers: typing.Union[bool, IResolvable] = None,
+  debug_headers: bool | IResolvable = None,
   debug_truncate_bytes: typing.Union[int, float] = None,
   google_credentials: str = None,
   google_service_account: str = None,
@@ -47,7 +47,7 @@ provider.DatabricksProvider(
   rate_limit: typing.Union[int, float] = None,
   retry_timeout_seconds: typing.Union[int, float] = None,
   serverless_compute_id: str = None,
-  skip_verify: typing.Union[bool, IResolvable] = None,
+  skip_verify: bool | IResolvable = None,
   token: str = None,
   username: str = None,
   warehouse_id: str = None
@@ -69,7 +69,7 @@ provider.DatabricksProvider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_environment DatabricksProvider#azure_environment}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_secret DatabricksProvider#client_secret}. |
@@ -77,7 +77,7 @@ provider.DatabricksProvider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#config_file DatabricksProvider#config_file}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debug_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debug_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_credentials DatabricksProvider#google_credentials}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_service_account DatabricksProvider#google_service_account}. |
@@ -91,7 +91,7 @@ provider.DatabricksProvider(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#rate_limit DatabricksProvider#rate_limit}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#token DatabricksProvider#token}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#username DatabricksProvider#username}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
@@ -272,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
@@ -384,7 +384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
@@ -912,7 +912,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput">azure_environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput">azure_login_app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azure_use_msi_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azure_use_msi_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">azure_workspace_resource_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
@@ -920,7 +920,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">config_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">databricks_cli_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">databricks_id_token_filepath_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debug_headers_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debug_headers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">debug_truncate_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">google_credentials_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
@@ -934,7 +934,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">rate_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput">retry_timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput">serverless_compute_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
@@ -948,7 +948,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azure_use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
@@ -956,7 +956,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">config_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debug_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials">google_credentials</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
@@ -970,7 +970,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseId">warehouse_id</a></code> | <code>str</code> | *No description.* |
@@ -1182,10 +1182,10 @@ azure_tenant_id_input: str
 ##### `azure_use_msi_input`<sup>Optional</sup> <a name="azure_use_msi_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput"></a>
 
 ```python
-azure_use_msi_input: typing.Union[bool, IResolvable]
+azure_use_msi_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1262,10 +1262,10 @@ databricks_id_token_filepath_input: str
 ##### `debug_headers_input`<sup>Optional</sup> <a name="debug_headers_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
 
 ```python
-debug_headers_input: typing.Union[bool, IResolvable]
+debug_headers_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1402,10 +1402,10 @@ serverless_compute_id_input: str
 ##### `skip_verify_input`<sup>Optional</sup> <a name="skip_verify_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput"></a>
 
 ```python
-skip_verify_input: typing.Union[bool, IResolvable]
+skip_verify_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1542,10 +1542,10 @@ azure_tenant_id: str
 ##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi"></a>
 
 ```python
-azure_use_msi: typing.Union[bool, IResolvable]
+azure_use_msi: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1622,10 +1622,10 @@ databricks_id_token_filepath: str
 ##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
 
 ```python
-debug_headers: typing.Union[bool, IResolvable]
+debug_headers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1762,10 +1762,10 @@ serverless_compute_id: str
 ##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify"></a>
 
 ```python
-skip_verify: typing.Union[bool, IResolvable]
+skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1838,7 +1838,7 @@ provider.DatabricksProviderConfig(
   azure_environment: str = None,
   azure_login_app_id: str = None,
   azure_tenant_id: str = None,
-  azure_use_msi: typing.Union[bool, IResolvable] = None,
+  azure_use_msi: bool | IResolvable = None,
   azure_workspace_resource_id: str = None,
   client_id: str = None,
   client_secret: str = None,
@@ -1846,7 +1846,7 @@ provider.DatabricksProviderConfig(
   config_file: str = None,
   databricks_cli_path: str = None,
   databricks_id_token_filepath: str = None,
-  debug_headers: typing.Union[bool, IResolvable] = None,
+  debug_headers: bool | IResolvable = None,
   debug_truncate_bytes: typing.Union[int, float] = None,
   google_credentials: str = None,
   google_service_account: str = None,
@@ -1860,7 +1860,7 @@ provider.DatabricksProviderConfig(
   rate_limit: typing.Union[int, float] = None,
   retry_timeout_seconds: typing.Union[int, float] = None,
   serverless_compute_id: str = None,
-  skip_verify: typing.Union[bool, IResolvable] = None,
+  skip_verify: bool | IResolvable = None,
   token: str = None,
   username: str = None,
   warehouse_id: str = None
@@ -1882,7 +1882,7 @@ provider.DatabricksProviderConfig(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_environment DatabricksProvider#azure_environment}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_secret DatabricksProvider#client_secret}. |
@@ -1890,7 +1890,7 @@ provider.DatabricksProviderConfig(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#config_file DatabricksProvider#config_file}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debug_headers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_credentials DatabricksProvider#google_credentials}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_service_account DatabricksProvider#google_service_account}. |
@@ -1904,7 +1904,7 @@ provider.DatabricksProviderConfig(
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#rate_limit DatabricksProvider#rate_limit}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#token DatabricksProvider#token}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#username DatabricksProvider#username}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
@@ -2048,10 +2048,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi"></a>
 
 ```python
-azure_use_msi: typing.Union[bool, IResolvable]
+azure_use_msi: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
@@ -2144,10 +2144,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders"></a>
 
 ```python
-debug_headers: typing.Union[bool, IResolvable]
+debug_headers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
@@ -2312,10 +2312,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify"></a>
 
 ```python
-skip_verify: typing.Union[bool, IResolvable]
+skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}.
 

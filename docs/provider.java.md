@@ -23,8 +23,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 //  .azureEnvironment(java.lang.String)
 //  .azureLoginAppId(java.lang.String)
 //  .azureTenantId(java.lang.String)
-//  .azureUseMsi(java.lang.Boolean)
-//  .azureUseMsi(IResolvable)
+//  .azureUseMsi(java.lang.Boolean|IResolvable)
 //  .azureWorkspaceResourceId(java.lang.String)
 //  .clientId(java.lang.String)
 //  .clientSecret(java.lang.String)
@@ -32,8 +31,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 //  .configFile(java.lang.String)
 //  .databricksCliPath(java.lang.String)
 //  .databricksIdTokenFilepath(java.lang.String)
-//  .debugHeaders(java.lang.Boolean)
-//  .debugHeaders(IResolvable)
+//  .debugHeaders(java.lang.Boolean|IResolvable)
 //  .debugTruncateBytes(java.lang.Number)
 //  .googleCredentials(java.lang.String)
 //  .googleServiceAccount(java.lang.String)
@@ -47,8 +45,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 //  .rateLimit(java.lang.Number)
 //  .retryTimeoutSeconds(java.lang.Number)
 //  .serverlessComputeId(java.lang.String)
-//  .skipVerify(java.lang.Boolean)
-//  .skipVerify(IResolvable)
+//  .skipVerify(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
 //  .username(java.lang.String)
 //  .warehouseId(java.lang.String)
@@ -70,7 +67,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_environment DatabricksProvider#azure_environment}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">clientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_secret DatabricksProvider#client_secret}. |
@@ -78,7 +75,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">configFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#config_file DatabricksProvider#config_file}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricksIdTokenFilepath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_credentials DatabricksProvider#google_credentials}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_service_account DatabricksProvider#google_service_account}. |
@@ -92,7 +89,7 @@ DatabricksProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#rate_limit DatabricksProvider#rate_limit}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#token DatabricksProvider#token}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#username DatabricksProvider#username}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
@@ -209,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `azureUseMsi`<sup>Optional</sup> <a name="azureUseMsi" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
@@ -273,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `debugHeaders`<sup>Optional</sup> <a name="debugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
@@ -385,7 +382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ##### `skipVerify`<sup>Optional</sup> <a name="skipVerify" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
@@ -897,7 +894,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput">azureEnvironmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput">azureLoginAppIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">azureTenantIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azureUseMsiInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azureUseMsiInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">azureWorkspaceResourceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput">clientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -905,7 +902,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">configFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">databricksCliPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">databricksIdTokenFilepathInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debugHeadersInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debugHeadersInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">debugTruncateBytesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">googleCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">googleServiceAccountInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -919,7 +916,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">rateLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput">retryTimeoutSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput">serverlessComputeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">skipVerifyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">skipVerifyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput">warehouseIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -933,7 +930,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId">clientId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -941,7 +938,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">configFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">databricksIdTokenFilepath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -955,7 +952,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1167,10 +1164,10 @@ public java.lang.String getAzureTenantIdInput();
 ##### `azureUseMsiInput`<sup>Optional</sup> <a name="azureUseMsiInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput"></a>
 
 ```java
-public java.lang.Object getAzureUseMsiInput();
+public java.lang.Boolean|IResolvable getAzureUseMsiInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1247,10 +1244,10 @@ public java.lang.String getDatabricksIdTokenFilepathInput();
 ##### `debugHeadersInput`<sup>Optional</sup> <a name="debugHeadersInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
 
 ```java
-public java.lang.Object getDebugHeadersInput();
+public java.lang.Boolean|IResolvable getDebugHeadersInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1387,10 +1384,10 @@ public java.lang.String getServerlessComputeIdInput();
 ##### `skipVerifyInput`<sup>Optional</sup> <a name="skipVerifyInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput"></a>
 
 ```java
-public java.lang.Object getSkipVerifyInput();
+public java.lang.Boolean|IResolvable getSkipVerifyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1527,10 +1524,10 @@ public java.lang.String getAzureTenantId();
 ##### `azureUseMsi`<sup>Optional</sup> <a name="azureUseMsi" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi"></a>
 
 ```java
-public java.lang.Object getAzureUseMsi();
+public java.lang.Boolean|IResolvable getAzureUseMsi();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1607,10 +1604,10 @@ public java.lang.String getDatabricksIdTokenFilepath();
 ##### `debugHeaders`<sup>Optional</sup> <a name="debugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
 
 ```java
-public java.lang.Object getDebugHeaders();
+public java.lang.Boolean|IResolvable getDebugHeaders();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1747,10 +1744,10 @@ public java.lang.String getServerlessComputeId();
 ##### `skipVerify`<sup>Optional</sup> <a name="skipVerify" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify"></a>
 
 ```java
-public java.lang.Object getSkipVerify();
+public java.lang.Boolean|IResolvable getSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1823,8 +1820,7 @@ DatabricksProviderConfig.builder()
 //  .azureEnvironment(java.lang.String)
 //  .azureLoginAppId(java.lang.String)
 //  .azureTenantId(java.lang.String)
-//  .azureUseMsi(java.lang.Boolean)
-//  .azureUseMsi(IResolvable)
+//  .azureUseMsi(java.lang.Boolean|IResolvable)
 //  .azureWorkspaceResourceId(java.lang.String)
 //  .clientId(java.lang.String)
 //  .clientSecret(java.lang.String)
@@ -1832,8 +1828,7 @@ DatabricksProviderConfig.builder()
 //  .configFile(java.lang.String)
 //  .databricksCliPath(java.lang.String)
 //  .databricksIdTokenFilepath(java.lang.String)
-//  .debugHeaders(java.lang.Boolean)
-//  .debugHeaders(IResolvable)
+//  .debugHeaders(java.lang.Boolean|IResolvable)
 //  .debugTruncateBytes(java.lang.Number)
 //  .googleCredentials(java.lang.String)
 //  .googleServiceAccount(java.lang.String)
@@ -1847,8 +1842,7 @@ DatabricksProviderConfig.builder()
 //  .rateLimit(java.lang.Number)
 //  .retryTimeoutSeconds(java.lang.Number)
 //  .serverlessComputeId(java.lang.String)
-//  .skipVerify(java.lang.Boolean)
-//  .skipVerify(IResolvable)
+//  .skipVerify(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
 //  .username(java.lang.String)
 //  .warehouseId(java.lang.String)
@@ -1870,7 +1864,7 @@ DatabricksProviderConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azureEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_environment DatabricksProvider#azure_environment}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azureLoginAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azureUseMsi</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azureWorkspaceResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">clientId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_id DatabricksProvider#client_id}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#client_secret DatabricksProvider#client_secret}. |
@@ -1878,7 +1872,7 @@ DatabricksProviderConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">configFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#config_file DatabricksProvider#config_file}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricksCliPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricksIdTokenFilepath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debugHeaders</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debugTruncateBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">googleCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_credentials DatabricksProvider#google_credentials}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#google_service_account DatabricksProvider#google_service_account}. |
@@ -1892,7 +1886,7 @@ DatabricksProviderConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rateLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#rate_limit DatabricksProvider#rate_limit}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retryTimeoutSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#token DatabricksProvider#token}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#username DatabricksProvider#username}. |
 | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
@@ -2036,10 +2030,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `azureUseMsi`<sup>Optional</sup> <a name="azureUseMsi" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi"></a>
 
 ```java
-public java.lang.Object getAzureUseMsi();
+public java.lang.Boolean|IResolvable getAzureUseMsi();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
@@ -2132,10 +2126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `debugHeaders`<sup>Optional</sup> <a name="debugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders"></a>
 
 ```java
-public java.lang.Object getDebugHeaders();
+public java.lang.Boolean|IResolvable getDebugHeaders();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
@@ -2300,10 +2294,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ##### `skipVerify`<sup>Optional</sup> <a name="skipVerify" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify"></a>
 
 ```java
-public java.lang.Object getSkipVerify();
+public java.lang.Boolean|IResolvable getSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
