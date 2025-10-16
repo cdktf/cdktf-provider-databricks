@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,63 +13,63 @@ import * as cdktf from 'cdktf';
 
 export interface QueryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}
   */
   readonly applyAutoLimit?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#catalog Query#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#catalog Query#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#description Query#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#description Query#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#display_name Query#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#display_name Query#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#owner_user_name Query#owner_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#owner_user_name Query#owner_user_name}
   */
   readonly ownerUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#parent_path Query#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#parent_path Query#parent_path}
   */
   readonly parentPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#query_text Query#query_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#query_text Query#query_text}
   */
   readonly queryText: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#run_as_mode Query#run_as_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#run_as_mode Query#run_as_mode}
   */
   readonly runAsMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#schema Query#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#schema Query#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#tags Query#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#tags Query#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#warehouse_id Query#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#warehouse_id Query#warehouse_id}
   */
   readonly warehouseId: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#parameter Query#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#parameter Query#parameter}
   */
   readonly parameter?: QueryParameter[] | cdktf.IResolvable;
 }
 export interface QueryParameterDateRangeValueDateRangeValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#end Query#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#end Query#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#start Query#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#start Query#start}
   */
   readonly start: string;
 }
@@ -176,21 +176,21 @@ export class QueryParameterDateRangeValueDateRangeValueOutputReference extends c
 }
 export interface QueryParameterDateRangeValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}
   */
   readonly dynamicDateRangeValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#precision Query#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#precision Query#precision}
   */
   readonly precision?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#start_day_of_week Query#start_day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#start_day_of_week Query#start_day_of_week}
   */
   readonly startDayOfWeek?: number;
   /**
   * date_range_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#date_range_value Query#date_range_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#date_range_value Query#date_range_value}
   */
   readonly dateRangeValue?: QueryParameterDateRangeValueDateRangeValue;
 }
@@ -361,15 +361,15 @@ export class QueryParameterDateRangeValueOutputReference extends cdktf.ComplexOb
 }
 export interface QueryParameterDateValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#date_value Query#date_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#date_value Query#date_value}
   */
   readonly dateValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}
   */
   readonly dynamicDateValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#precision Query#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#precision Query#precision}
   */
   readonly precision?: string;
 }
@@ -511,15 +511,15 @@ export class QueryParameterDateValueOutputReference extends cdktf.ComplexObject 
 }
 export interface QueryParameterEnumValueMultiValuesOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#prefix Query#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#prefix Query#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#separator Query#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#separator Query#separator}
   */
   readonly separator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#suffix Query#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#suffix Query#suffix}
   */
   readonly suffix?: string;
 }
@@ -661,17 +661,17 @@ export class QueryParameterEnumValueMultiValuesOptionsOutputReference extends cd
 }
 export interface QueryParameterEnumValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#enum_options Query#enum_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#enum_options Query#enum_options}
   */
   readonly enumOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#values Query#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#values Query#values}
   */
   readonly values?: string[];
   /**
   * multi_values_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#multi_values_options Query#multi_values_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#multi_values_options Query#multi_values_options}
   */
   readonly multiValuesOptions?: QueryParameterEnumValueMultiValuesOptions;
 }
@@ -813,7 +813,7 @@ export class QueryParameterEnumValueOutputReference extends cdktf.ComplexObject 
 }
 export interface QueryParameterNumericValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#value Query#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#value Query#value}
   */
   readonly value: number;
 }
@@ -894,15 +894,15 @@ export class QueryParameterNumericValueOutputReference extends cdktf.ComplexObje
 }
 export interface QueryParameterQueryBackedValueMultiValuesOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#prefix Query#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#prefix Query#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#separator Query#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#separator Query#separator}
   */
   readonly separator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#suffix Query#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#suffix Query#suffix}
   */
   readonly suffix?: string;
 }
@@ -1044,17 +1044,17 @@ export class QueryParameterQueryBackedValueMultiValuesOptionsOutputReference ext
 }
 export interface QueryParameterQueryBackedValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#query_id Query#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#query_id Query#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#values Query#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#values Query#values}
   */
   readonly values?: string[];
   /**
   * multi_values_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#multi_values_options Query#multi_values_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#multi_values_options Query#multi_values_options}
   */
   readonly multiValuesOptions?: QueryParameterQueryBackedValueMultiValuesOptions;
 }
@@ -1193,7 +1193,7 @@ export class QueryParameterQueryBackedValueOutputReference extends cdktf.Complex
 }
 export interface QueryParameterTextValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#value Query#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#value Query#value}
   */
   readonly value: string;
 }
@@ -1274,47 +1274,47 @@ export class QueryParameterTextValueOutputReference extends cdktf.ComplexObject 
 }
 export interface QueryParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#name Query#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#name Query#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#title Query#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#title Query#title}
   */
   readonly title?: string;
   /**
   * date_range_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#date_range_value Query#date_range_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#date_range_value Query#date_range_value}
   */
   readonly dateRangeValue?: QueryParameterDateRangeValue;
   /**
   * date_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#date_value Query#date_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#date_value Query#date_value}
   */
   readonly dateValue?: QueryParameterDateValue;
   /**
   * enum_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#enum_value Query#enum_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#enum_value Query#enum_value}
   */
   readonly enumValue?: QueryParameterEnumValue;
   /**
   * numeric_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#numeric_value Query#numeric_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#numeric_value Query#numeric_value}
   */
   readonly numericValue?: QueryParameterNumericValue;
   /**
   * query_backed_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#query_backed_value Query#query_backed_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#query_backed_value Query#query_backed_value}
   */
   readonly queryBackedValue?: QueryParameterQueryBackedValue;
   /**
   * text_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#text_value Query#text_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#text_value Query#text_value}
   */
   readonly textValue?: QueryParameterTextValue;
 }
@@ -1630,7 +1630,7 @@ export class QueryParameterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query databricks_query}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query databricks_query}
 */
 export class Query extends cdktf.TerraformResource {
 
@@ -1646,7 +1646,7 @@ export class Query extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Query resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Query to import
-  * @param importFromId The id of the existing Query that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Query that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Query to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1658,7 +1658,7 @@ export class Query extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/query databricks_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/query databricks_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1669,7 +1669,7 @@ export class Query extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_query',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

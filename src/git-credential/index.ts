@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface GitCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#force GitCredential#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#force GitCredential#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#git_provider GitCredential#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#git_email GitCredential#git_email}
+  */
+  readonly gitEmail?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#git_provider GitCredential#git_provider}
   */
   readonly gitProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#git_username GitCredential#git_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#git_username GitCredential#git_username}
   */
   readonly gitUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#id GitCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#id GitCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}
   */
   readonly isDefaultForProvider?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#name GitCredential#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#name GitCredential#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}
   */
   readonly personalAccessToken?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential databricks_git_credential}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential databricks_git_credential}
 */
 export class GitCredential extends cdktf.TerraformResource {
 
@@ -62,7 +66,7 @@ export class GitCredential extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GitCredential resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GitCredential to import
-  * @param importFromId The id of the existing GitCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GitCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GitCredential to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +78,7 @@ export class GitCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/git_credential databricks_git_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/git_credential databricks_git_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +89,7 @@ export class GitCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_git_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -97,6 +101,7 @@ export class GitCredential extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._force = config.force;
+    this._gitEmail = config.gitEmail;
     this._gitProvider = config.gitProvider;
     this._gitUsername = config.gitUsername;
     this._id = config.id;
@@ -123,6 +128,22 @@ export class GitCredential extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forceInput() {
     return this._force;
+  }
+
+  // git_email - computed: false, optional: true, required: false
+  private _gitEmail?: string; 
+  public get gitEmail() {
+    return this.getStringAttribute('git_email');
+  }
+  public set gitEmail(value: string) {
+    this._gitEmail = value;
+  }
+  public resetGitEmail() {
+    this._gitEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitEmailInput() {
+    return this._gitEmail;
   }
 
   // git_provider - computed: false, optional: false, required: true
@@ -225,6 +246,7 @@ export class GitCredential extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       force: cdktf.booleanToTerraform(this._force),
+      git_email: cdktf.stringToTerraform(this._gitEmail),
       git_provider: cdktf.stringToTerraform(this._gitProvider),
       git_username: cdktf.stringToTerraform(this._gitUsername),
       id: cdktf.stringToTerraform(this._id),
@@ -241,6 +263,12 @@ export class GitCredential extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      git_email: {
+        value: cdktf.stringToHclTerraform(this._gitEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       git_provider: {
         value: cdktf.stringToHclTerraform(this._gitProvider),

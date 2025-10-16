@@ -31,6 +31,8 @@ Object.defineProperty(exports, 'connection', { get: function () { return require
 Object.defineProperty(exports, 'credential', { get: function () { return require('./credential'); } });
 Object.defineProperty(exports, 'customAppIntegration', { get: function () { return require('./custom-app-integration'); } });
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
+Object.defineProperty(exports, 'dataQualityMonitor', { get: function () { return require('./data-quality-monitor'); } });
+Object.defineProperty(exports, 'dataQualityRefresh', { get: function () { return require('./data-quality-refresh'); } });
 Object.defineProperty(exports, 'databaseDatabaseCatalog', { get: function () { return require('./database-database-catalog'); } });
 Object.defineProperty(exports, 'databaseInstance', { get: function () { return require('./database-instance'); } });
 Object.defineProperty(exports, 'databaseSyncedDatabaseTable', { get: function () { return require('./database-synced-database-table'); } });
@@ -165,6 +167,10 @@ Object.defineProperty(exports, 'dataDatabricksCurrentConfig', { get: function ()
 Object.defineProperty(exports, 'dataDatabricksCurrentMetastore', { get: function () { return require('./data-databricks-current-metastore'); } });
 Object.defineProperty(exports, 'dataDatabricksCurrentUser', { get: function () { return require('./data-databricks-current-user'); } });
 Object.defineProperty(exports, 'dataDatabricksDashboards', { get: function () { return require('./data-databricks-dashboards'); } });
+Object.defineProperty(exports, 'dataDatabricksDataQualityMonitor', { get: function () { return require('./data-databricks-data-quality-monitor'); } });
+Object.defineProperty(exports, 'dataDatabricksDataQualityMonitors', { get: function () { return require('./data-databricks-data-quality-monitors'); } });
+Object.defineProperty(exports, 'dataDatabricksDataQualityRefresh', { get: function () { return require('./data-databricks-data-quality-refresh'); } });
+Object.defineProperty(exports, 'dataDatabricksDataQualityRefreshes', { get: function () { return require('./data-databricks-data-quality-refreshes'); } });
 Object.defineProperty(exports, 'dataDatabricksDatabaseDatabaseCatalog', { get: function () { return require('./data-databricks-database-database-catalog'); } });
 Object.defineProperty(exports, 'dataDatabricksDatabaseDatabaseCatalogs', { get: function () { return require('./data-databricks-database-database-catalogs'); } });
 Object.defineProperty(exports, 'dataDatabricksDatabaseInstance', { get: function () { return require('./data-databricks-database-instance'); } });

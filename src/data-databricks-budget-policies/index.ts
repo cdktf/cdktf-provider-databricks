@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataDatabricksBudgetPoliciesConfig extends cdktf.TerraformMetaA
 }
 export interface DataDatabricksBudgetPoliciesPoliciesCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}
   */
   readonly value?: string;
 }
@@ -161,19 +161,15 @@ export class DataDatabricksBudgetPoliciesPoliciesCustomTagsList extends cdktf.Co
 }
 export interface DataDatabricksBudgetPoliciesPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#binding_workspace_ids DataDatabricksBudgetPolicies#binding_workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies#binding_workspace_ids DataDatabricksBudgetPolicies#binding_workspace_ids}
   */
   readonly bindingWorkspaceIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies#custom_tags DataDatabricksBudgetPolicies#custom_tags}
   */
   readonly customTags?: DataDatabricksBudgetPoliciesPoliciesCustomTags[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}
-  */
-  readonly policyId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}
   */
   readonly policyName?: string;
 }
@@ -186,7 +182,6 @@ export function dataDatabricksBudgetPoliciesPoliciesToTerraform(struct?: DataDat
   return {
     binding_workspace_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.bindingWorkspaceIds),
     custom_tags: cdktf.listMapper(dataDatabricksBudgetPoliciesPoliciesCustomTagsToTerraform, false)(struct!.customTags),
-    policy_id: cdktf.stringToTerraform(struct!.policyId),
     policy_name: cdktf.stringToTerraform(struct!.policyName),
   }
 }
@@ -209,12 +204,6 @@ export function dataDatabricksBudgetPoliciesPoliciesToHclTerraform(struct?: Data
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksBudgetPoliciesPoliciesCustomTagsList",
-    },
-    policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
     },
     policy_name: {
       value: cdktf.stringToHclTerraform(struct!.policyName),
@@ -252,10 +241,6 @@ export class DataDatabricksBudgetPoliciesPoliciesOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.customTags = this._customTags?.internalValue;
     }
-    if (this._policyId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.policyId = this._policyId;
-    }
     if (this._policyName !== undefined) {
       hasAnyValues = true;
       internalValueResult.policyName = this._policyName;
@@ -268,14 +253,12 @@ export class DataDatabricksBudgetPoliciesPoliciesOutputReference extends cdktf.C
       this.isEmptyObject = false;
       this._bindingWorkspaceIds = undefined;
       this._customTags.internalValue = undefined;
-      this._policyId = undefined;
       this._policyName = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bindingWorkspaceIds = value.bindingWorkspaceIds;
       this._customTags.internalValue = value.customTags;
-      this._policyId = value.policyId;
       this._policyName = value.policyName;
     }
   }
@@ -312,20 +295,9 @@ export class DataDatabricksBudgetPoliciesPoliciesOutputReference extends cdktf.C
     return this._customTags.internalValue;
   }
 
-  // policy_id - computed: true, optional: true, required: false
-  private _policyId?: string; 
+  // policy_id - computed: true, optional: false, required: false
   public get policyId() {
     return this.getStringAttribute('policy_id');
-  }
-  public set policyId(value: string) {
-    this._policyId = value;
-  }
-  public resetPolicyId() {
-    this._policyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyIdInput() {
-    return this._policyId;
   }
 
   // policy_name - computed: true, optional: true, required: false
@@ -366,7 +338,7 @@ export class DataDatabricksBudgetPoliciesPoliciesList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies databricks_budget_policies}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies databricks_budget_policies}
 */
 export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
 
@@ -382,7 +354,7 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksBudgetPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksBudgetPolicies to import
-  * @param importFromId The id of the existing DataDatabricksBudgetPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksBudgetPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksBudgetPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -394,7 +366,7 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/budget_policies databricks_budget_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -405,7 +377,7 @@ export class DataDatabricksBudgetPolicies extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_budget_policies',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
