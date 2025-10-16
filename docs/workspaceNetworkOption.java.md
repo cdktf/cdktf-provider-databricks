@@ -4,7 +4,7 @@
 
 ### WorkspaceNetworkOption <a name="WorkspaceNetworkOption" id="@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer"></a>
 
@@ -35,8 +35,8 @@ WorkspaceNetworkOption.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
 
 ---
 
@@ -553,7 +553,7 @@ The construct id used in the generated config for the WorkspaceNetworkOption to 
 
 The id of the existing WorkspaceNetworkOption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,8 +823,8 @@ WorkspaceNetworkOptionConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
 
 ---
 
@@ -906,7 +906,7 @@ public java.lang.String getNetworkPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
 
 ---
 
@@ -918,7 +918,7 @@ public java.lang.Number getWorkspaceId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
 
 ---
 
