@@ -4,7 +4,7 @@
 
 ### PermissionAssignment <a name="PermissionAssignment" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment databricks_permission_assignment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment databricks_permission_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer"></a>
 
@@ -22,8 +22,11 @@ permissionAssignment.PermissionAssignment(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   permissions: typing.List[str],
-  principal_id: typing.Union[int, float],
-  id: str = None
+  group_name: str = None,
+  id: str = None,
+  principal_id: typing.Union[int, float] = None,
+  service_principal_name: str = None,
+  user_name: str = None
 )
 ```
 
@@ -38,9 +41,12 @@ permissionAssignment.PermissionAssignment(
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#id PermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.groupName">group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#id PermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}. |
 
 ---
 
@@ -108,15 +114,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}.
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.principalId"></a>
+##### `group_name`<sup>Optional</sup> <a name="group_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.groupName"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}.
 
 ---
 
@@ -124,10 +130,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#id PermissionAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#id PermissionAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `principal_id`<sup>Optional</sup> <a name="principal_id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.principalId"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}.
+
+---
+
+##### `service_principal_name`<sup>Optional</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.servicePrincipalName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}.
+
+---
+
+##### `user_name`<sup>Optional</sup> <a name="user_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer.parameter.userName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}.
 
 ---
 
@@ -158,7 +188,11 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetGroupName">reset_group_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetPrincipalId">reset_principal_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetServicePrincipalName">reset_service_principal_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetUserName">reset_user_name</a></code> | *No description.* |
 
 ---
 
@@ -487,10 +521,34 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_group_name` <a name="reset_group_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetGroupName"></a>
+
+```python
+def reset_group_name() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_principal_id` <a name="reset_principal_id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetPrincipalId"></a>
+
+```python
+def reset_principal_id() -> None
+```
+
+##### `reset_service_principal_name` <a name="reset_service_principal_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetServicePrincipalName"></a>
+
+```python
+def reset_service_principal_name() -> None
+```
+
+##### `reset_user_name` <a name="reset_user_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetUserName"></a>
+
+```python
+def reset_user_name() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -607,7 +665,7 @@ The construct id used in the generated config for the PermissionAssignment to im
 
 The id of the existing PermissionAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,12 +695,19 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupNameInput">group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.permissionsInput">permissions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.principalIdInput">principal_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.servicePrincipalNameInput">service_principal_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.userNameInput">user_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupName">group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.userName">user_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -788,6 +853,26 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.displayName"></a>
+
+```python
+display_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_name_input`<sup>Optional</sup> <a name="group_name_input" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupNameInput"></a>
+
+```python
+group_name_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.idInput"></a>
 
 ```python
@@ -818,6 +903,36 @@ principal_id_input: typing.Union[int, float]
 
 ---
 
+##### `service_principal_name_input`<sup>Optional</sup> <a name="service_principal_name_input" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.servicePrincipalNameInput"></a>
+
+```python
+service_principal_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_name_input`<sup>Optional</sup> <a name="user_name_input" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.userNameInput"></a>
+
+```python
+user_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_name`<sup>Required</sup> <a name="group_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupName"></a>
+
+```python
+group_name: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.id"></a>
 
 ```python
@@ -845,6 +960,26 @@ principal_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `service_principal_name`<sup>Required</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.servicePrincipalName"></a>
+
+```python
+service_principal_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_name`<sup>Required</sup> <a name="user_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.userName"></a>
+
+```python
+user_name: str
+```
+
+- *Type:* str
 
 ---
 
@@ -884,8 +1019,11 @@ permissionAssignment.PermissionAssignmentConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   permissions: typing.List[str],
-  principal_id: typing.Union[int, float],
-  id: str = None
+  group_name: str = None,
+  id: str = None,
+  principal_id: typing.Union[int, float] = None,
+  service_principal_name: str = None,
+  user_name: str = None
 )
 ```
 
@@ -900,9 +1038,12 @@ permissionAssignment.PermissionAssignmentConfig(
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#id PermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.groupName">group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#id PermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.servicePrincipalName">service_principal_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.userName">user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}. |
 
 ---
 
@@ -984,19 +1125,19 @@ permissions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}.
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.principalId"></a>
+##### `group_name`<sup>Optional</sup> <a name="group_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.groupName"></a>
 
 ```python
-principal_id: typing.Union[int, float]
+group_name: str
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}.
 
 ---
 
@@ -1008,10 +1149,46 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/permission_assignment#id PermissionAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#id PermissionAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `principal_id`<sup>Optional</sup> <a name="principal_id" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.principalId"></a>
+
+```python
+principal_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}.
+
+---
+
+##### `service_principal_name`<sup>Optional</sup> <a name="service_principal_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.servicePrincipalName"></a>
+
+```python
+service_principal_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}.
+
+---
+
+##### `user_name`<sup>Optional</sup> <a name="user_name" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.userName"></a>
+
+```python
+user_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}.
 
 ---
 

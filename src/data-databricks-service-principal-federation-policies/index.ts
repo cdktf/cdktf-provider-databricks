@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksServicePrincipalFederationPoliciesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
   */
   readonly servicePrincipalId: number;
 }
 export interface DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#audiences DataDatabricksServicePrincipalFederationPolicies#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#audiences DataDatabricksServicePrincipalFederationPolicies#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#issuer DataDatabricksServicePrincipalFederationPolicies#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#issuer DataDatabricksServicePrincipalFederationPolicies#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#jwks_json DataDatabricksServicePrincipalFederationPolicies#jwks_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#jwks_json DataDatabricksServicePrincipalFederationPolicies#jwks_json}
   */
   readonly jwksJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#jwks_uri DataDatabricksServicePrincipalFederationPolicies#jwks_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#jwks_uri DataDatabricksServicePrincipalFederationPolicies#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#subject DataDatabricksServicePrincipalFederationPolicies#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#subject DataDatabricksServicePrincipalFederationPolicies#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#subject_claim DataDatabricksServicePrincipalFederationPolicies#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#subject_claim DataDatabricksServicePrincipalFederationPolicies#subject_claim}
   */
   readonly subjectClaim?: string;
 }
@@ -278,21 +278,13 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyO
 }
 export interface DataDatabricksServicePrincipalFederationPoliciesPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#description DataDatabricksServicePrincipalFederationPolicies#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#description DataDatabricksServicePrincipalFederationPolicies#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#oidc_policy DataDatabricksServicePrincipalFederationPolicies#oidc_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#oidc_policy DataDatabricksServicePrincipalFederationPolicies#oidc_policy}
   */
   readonly oidcPolicy?: DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#policy_id DataDatabricksServicePrincipalFederationPolicies#policy_id}
-  */
-  readonly policyId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
-  */
-  readonly servicePrincipalId?: number;
 }
 
 export function dataDatabricksServicePrincipalFederationPoliciesPoliciesToTerraform(struct?: DataDatabricksServicePrincipalFederationPoliciesPolicies): any {
@@ -303,8 +295,6 @@ export function dataDatabricksServicePrincipalFederationPoliciesPoliciesToTerraf
   return {
     description: cdktf.stringToTerraform(struct!.description),
     oidc_policy: dataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyToTerraform(struct!.oidcPolicy),
-    policy_id: cdktf.stringToTerraform(struct!.policyId),
-    service_principal_id: cdktf.numberToTerraform(struct!.servicePrincipalId),
   }
 }
 
@@ -326,18 +316,6 @@ export function dataDatabricksServicePrincipalFederationPoliciesPoliciesToHclTer
       isBlock: true,
       type: "struct",
       storageClassType: "DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy",
-    },
-    policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    service_principal_id: {
-      value: cdktf.numberToHclTerraform(struct!.servicePrincipalId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
     },
   };
 
@@ -369,14 +347,6 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputRefer
       hasAnyValues = true;
       internalValueResult.oidcPolicy = this._oidcPolicy?.internalValue;
     }
-    if (this._policyId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.policyId = this._policyId;
-    }
-    if (this._servicePrincipalId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.servicePrincipalId = this._servicePrincipalId;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -385,15 +355,11 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputRefer
       this.isEmptyObject = false;
       this._description = undefined;
       this._oidcPolicy.internalValue = undefined;
-      this._policyId = undefined;
-      this._servicePrincipalId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._description = value.description;
       this._oidcPolicy.internalValue = value.oidcPolicy;
-      this._policyId = value.policyId;
-      this._servicePrincipalId = value.servicePrincipalId;
     }
   }
 
@@ -439,36 +405,14 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputRefer
     return this._oidcPolicy.internalValue;
   }
 
-  // policy_id - computed: true, optional: true, required: false
-  private _policyId?: string; 
+  // policy_id - computed: true, optional: false, required: false
   public get policyId() {
     return this.getStringAttribute('policy_id');
   }
-  public set policyId(value: string) {
-    this._policyId = value;
-  }
-  public resetPolicyId() {
-    this._policyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyIdInput() {
-    return this._policyId;
-  }
 
-  // service_principal_id - computed: true, optional: true, required: false
-  private _servicePrincipalId?: number; 
+  // service_principal_id - computed: true, optional: false, required: false
   public get servicePrincipalId() {
     return this.getNumberAttribute('service_principal_id');
-  }
-  public set servicePrincipalId(value: number) {
-    this._servicePrincipalId = value;
-  }
-  public resetServicePrincipalId() {
-    this._servicePrincipalId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get servicePrincipalIdInput() {
-    return this._servicePrincipalId;
   }
 
   // uid - computed: true, optional: false, required: false
@@ -503,7 +447,7 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies}
 */
 export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.TerraformDataSource {
 
@@ -519,7 +463,7 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
   * Generates CDKTF code for importing a DataDatabricksServicePrincipalFederationPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksServicePrincipalFederationPolicies to import
-  * @param importFromId The id of the existing DataDatabricksServicePrincipalFederationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksServicePrincipalFederationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksServicePrincipalFederationPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -531,7 +475,7 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -542,7 +486,7 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
       terraformResourceType: 'databricks_service_principal_federation_policies',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `databricks_share`
 
-Refer to the Terraform Registry for docs: [`databricks_share`](https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/share).
+Refer to the Terraform Registry for docs: [`databricks_share`](https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share).

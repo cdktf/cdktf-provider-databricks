@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksRegisteredModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#include_aliases DataDatabricksRegisteredModel#include_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#include_aliases DataDatabricksRegisteredModel#include_aliases}
   */
   readonly includeAliases?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#include_browse DataDatabricksRegisteredModel#include_browse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#include_browse DataDatabricksRegisteredModel#include_browse}
   */
   readonly includeBrowse?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#model_info DataDatabricksRegisteredModel#model_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#model_info DataDatabricksRegisteredModel#model_info}
   */
   readonly modelInfo?: DataDatabricksRegisteredModelModelInfo[] | cdktf.IResolvable;
 }
 export interface DataDatabricksRegisteredModelModelInfoAliases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#alias_name DataDatabricksRegisteredModel#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#alias_name DataDatabricksRegisteredModel#alias_name}
   */
   readonly aliasName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#version_num DataDatabricksRegisteredModel#version_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}
+  */
+  readonly catalogName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#id DataDatabricksRegisteredModel#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#model_name DataDatabricksRegisteredModel#model_name}
+  */
+  readonly modelName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}
+  */
+  readonly schemaName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#version_num DataDatabricksRegisteredModel#version_num}
   */
   readonly versionNum?: number;
 }
@@ -47,6 +66,10 @@ export function dataDatabricksRegisteredModelModelInfoAliasesToTerraform(struct?
   }
   return {
     alias_name: cdktf.stringToTerraform(struct!.aliasName),
+    catalog_name: cdktf.stringToTerraform(struct!.catalogName),
+    id: cdktf.stringToTerraform(struct!.id),
+    model_name: cdktf.stringToTerraform(struct!.modelName),
+    schema_name: cdktf.stringToTerraform(struct!.schemaName),
     version_num: cdktf.numberToTerraform(struct!.versionNum),
   }
 }
@@ -60,6 +83,30 @@ export function dataDatabricksRegisteredModelModelInfoAliasesToHclTerraform(stru
   const attrs = {
     alias_name: {
       value: cdktf.stringToHclTerraform(struct!.aliasName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    catalog_name: {
+      value: cdktf.stringToHclTerraform(struct!.catalogName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_name: {
+      value: cdktf.stringToHclTerraform(struct!.modelName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_name: {
+      value: cdktf.stringToHclTerraform(struct!.schemaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,6 +147,22 @@ export class DataDatabricksRegisteredModelModelInfoAliasesOutputReference extend
       hasAnyValues = true;
       internalValueResult.aliasName = this._aliasName;
     }
+    if (this._catalogName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.catalogName = this._catalogName;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._modelName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelName = this._modelName;
+    }
+    if (this._schemaName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaName = this._schemaName;
+    }
     if (this._versionNum !== undefined) {
       hasAnyValues = true;
       internalValueResult.versionNum = this._versionNum;
@@ -112,6 +175,10 @@ export class DataDatabricksRegisteredModelModelInfoAliasesOutputReference extend
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._aliasName = undefined;
+      this._catalogName = undefined;
+      this._id = undefined;
+      this._modelName = undefined;
+      this._schemaName = undefined;
       this._versionNum = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -122,6 +189,10 @@ export class DataDatabricksRegisteredModelModelInfoAliasesOutputReference extend
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._aliasName = value.aliasName;
+      this._catalogName = value.catalogName;
+      this._id = value.id;
+      this._modelName = value.modelName;
+      this._schemaName = value.schemaName;
       this._versionNum = value.versionNum;
     }
   }
@@ -140,6 +211,70 @@ export class DataDatabricksRegisteredModelModelInfoAliasesOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get aliasNameInput() {
     return this._aliasName;
+  }
+
+  // catalog_name - computed: true, optional: true, required: false
+  private _catalogName?: string; 
+  public get catalogName() {
+    return this.getStringAttribute('catalog_name');
+  }
+  public set catalogName(value: string) {
+    this._catalogName = value;
+  }
+  public resetCatalogName() {
+    this._catalogName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogNameInput() {
+    return this._catalogName;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // model_name - computed: true, optional: true, required: false
+  private _modelName?: string; 
+  public get modelName() {
+    return this.getStringAttribute('model_name');
+  }
+  public set modelName(value: string) {
+    this._modelName = value;
+  }
+  public resetModelName() {
+    this._modelName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelNameInput() {
+    return this._modelName;
+  }
+
+  // schema_name - computed: true, optional: true, required: false
+  private _schemaName?: string; 
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+  public set schemaName(value: string) {
+    this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaNameInput() {
+    return this._schemaName;
   }
 
   // version_num - computed: true, optional: true, required: false
@@ -180,59 +315,59 @@ export class DataDatabricksRegisteredModelModelInfoAliasesList extends cdktf.Com
 }
 export interface DataDatabricksRegisteredModelModelInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#aliases DataDatabricksRegisteredModel#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#aliases DataDatabricksRegisteredModel#aliases}
   */
   readonly aliases?: DataDatabricksRegisteredModelModelInfoAliases[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#browse_only DataDatabricksRegisteredModel#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#browse_only DataDatabricksRegisteredModel#browse_only}
   */
   readonly browseOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#comment DataDatabricksRegisteredModel#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#comment DataDatabricksRegisteredModel#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#created_at DataDatabricksRegisteredModel#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#created_at DataDatabricksRegisteredModel#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#created_by DataDatabricksRegisteredModel#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#created_by DataDatabricksRegisteredModel#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#metastore_id DataDatabricksRegisteredModel#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#metastore_id DataDatabricksRegisteredModel#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#name DataDatabricksRegisteredModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#name DataDatabricksRegisteredModel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#owner DataDatabricksRegisteredModel#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#owner DataDatabricksRegisteredModel#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#storage_location DataDatabricksRegisteredModel#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#storage_location DataDatabricksRegisteredModel#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#updated_at DataDatabricksRegisteredModel#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#updated_at DataDatabricksRegisteredModel#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#updated_by DataDatabricksRegisteredModel#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#updated_by DataDatabricksRegisteredModel#updated_by}
   */
   readonly updatedBy?: string;
 }
@@ -725,7 +860,7 @@ export class DataDatabricksRegisteredModelModelInfoList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model databricks_registered_model}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model databricks_registered_model}
 */
 export class DataDatabricksRegisteredModel extends cdktf.TerraformDataSource {
 
@@ -741,7 +876,7 @@ export class DataDatabricksRegisteredModel extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksRegisteredModel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksRegisteredModel to import
-  * @param importFromId The id of the existing DataDatabricksRegisteredModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksRegisteredModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksRegisteredModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -753,7 +888,7 @@ export class DataDatabricksRegisteredModel extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/registered_model databricks_registered_model} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/registered_model databricks_registered_model} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -764,7 +899,7 @@ export class DataDatabricksRegisteredModel extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_registered_model',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

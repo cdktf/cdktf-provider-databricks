@@ -1,3 +1,3 @@
 # `databricks_catalog_workspace_binding`
 
-Refer to the Terraform Registry for docs: [`databricks_catalog_workspace_binding`](https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/catalog_workspace_binding).
+Refer to the Terraform Registry for docs: [`databricks_catalog_workspace_binding`](https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/catalog_workspace_binding).

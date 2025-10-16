@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksExternalMetadataConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#columns DataDatabricksExternalMetadata#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#columns DataDatabricksExternalMetadata#columns}
   */
   readonly columns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#description DataDatabricksExternalMetadata#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#description DataDatabricksExternalMetadata#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#entity_type DataDatabricksExternalMetadata#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#entity_type DataDatabricksExternalMetadata#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#id DataDatabricksExternalMetadata#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#owner DataDatabricksExternalMetadata#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#owner DataDatabricksExternalMetadata#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#properties DataDatabricksExternalMetadata#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#properties DataDatabricksExternalMetadata#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#system_type DataDatabricksExternalMetadata#system_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#system_type DataDatabricksExternalMetadata#system_type}
   */
   readonly systemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#url DataDatabricksExternalMetadata#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#url DataDatabricksExternalMetadata#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata databricks_external_metadata}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata databricks_external_metadata}
 */
 export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
 
@@ -63,7 +70,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksExternalMetadata resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksExternalMetadata to import
-  * @param importFromId The id of the existing DataDatabricksExternalMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksExternalMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksExternalMetadata to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -75,7 +82,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +93,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_external_metadata',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -100,6 +107,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
     this._columns = config.columns;
     this._description = config.description;
     this._entityType = config.entityType;
+    this._id = config.id;
     this._name = config.name;
     this._owner = config.owner;
     this._properties = config.properties;
@@ -166,9 +174,17 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
     return this._entityType;
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metastore_id - computed: true, optional: false, required: false
@@ -269,6 +285,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
       columns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columns),
       description: cdktf.stringToTerraform(this._description),
       entity_type: cdktf.stringToTerraform(this._entityType),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       owner: cdktf.stringToTerraform(this._owner),
       properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
@@ -293,6 +310,12 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
       },
       entity_type: {
         value: cdktf.stringToHclTerraform(this._entityType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

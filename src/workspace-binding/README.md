@@ -1,3 +1,3 @@
 # `databricks_workspace_binding`
 
-Refer to the Terraform Registry for docs: [`databricks_workspace_binding`](https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/workspace_binding).
+Refer to the Terraform Registry for docs: [`databricks_workspace_binding`](https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_binding).

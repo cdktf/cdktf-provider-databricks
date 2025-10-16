@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app
+// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface AppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#budget_policy_id App#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#budget_policy_id App#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#description App#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#compute_size App#compute_size}
+  */
+  readonly computeSize?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#description App#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#no_compute App#no_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#no_compute App#no_compute}
   */
   readonly noCompute?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#resources App#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#resources App#resources}
   */
   readonly resources?: AppResources[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#user_api_scopes App#user_api_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#user_api_scopes App#user_api_scopes}
   */
   readonly userApiScopes?: string[];
 }
 export interface AppActiveDeploymentDeploymentArtifacts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#source_code_path App#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#source_code_path App#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -182,15 +186,15 @@ export class AppActiveDeploymentStatusOutputReference extends cdktf.ComplexObjec
 }
 export interface AppActiveDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#deployment_id App#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#deployment_id App#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#mode App#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#mode App#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#source_code_path App#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#source_code_path App#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -477,7 +481,7 @@ export class AppComputeStatusOutputReference extends cdktf.ComplexObject {
 }
 export interface AppPendingDeploymentDeploymentArtifacts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#source_code_path App#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#source_code_path App#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -620,15 +624,15 @@ export class AppPendingDeploymentStatusOutputReference extends cdktf.ComplexObje
 }
 export interface AppPendingDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#deployment_id App#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#deployment_id App#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#mode App#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#mode App#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#source_code_path App#source_code_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#source_code_path App#source_code_path}
   */
   readonly sourceCodePath?: string;
 }
@@ -797,15 +801,15 @@ export class AppPendingDeploymentOutputReference extends cdktf.ComplexObject {
 }
 export interface AppResourcesDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#database_name App#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#database_name App#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#instance_name App#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#instance_name App#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#permission App#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
   */
   readonly permission: string;
 }
@@ -946,16 +950,167 @@ export class AppResourcesDatabaseOutputReference extends cdktf.ComplexObject {
     return this._permission;
   }
 }
+export interface AppResourcesGenieSpace {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#name App#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
+  */
+  readonly permission: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#space_id App#space_id}
+  */
+  readonly spaceId: string;
+}
+
+export function appResourcesGenieSpaceToTerraform(struct?: AppResourcesGenieSpace | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    permission: cdktf.stringToTerraform(struct!.permission),
+    space_id: cdktf.stringToTerraform(struct!.spaceId),
+  }
+}
+
+
+export function appResourcesGenieSpaceToHclTerraform(struct?: AppResourcesGenieSpace | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    space_id: {
+      value: cdktf.stringToHclTerraform(struct!.spaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppResourcesGenieSpaceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): AppResourcesGenieSpace | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    if (this._spaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spaceId = this._spaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppResourcesGenieSpace | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._permission = undefined;
+      this._spaceId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._permission = value.permission;
+      this._spaceId = value.spaceId;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // permission - computed: false, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+
+  // space_id - computed: false, optional: false, required: true
+  private _spaceId?: string; 
+  public get spaceId() {
+    return this.getStringAttribute('space_id');
+  }
+  public set spaceId(value: string) {
+    this._spaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spaceIdInput() {
+    return this._spaceId;
+  }
+}
 export interface AppResourcesJob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#id App#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#id App#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#permission App#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
   */
   readonly permission: string;
 }
@@ -1072,15 +1227,15 @@ export class AppResourcesJobOutputReference extends cdktf.ComplexObject {
 }
 export interface AppResourcesSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#key App#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#key App#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#permission App#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#scope App#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#scope App#scope}
   */
   readonly scope: string;
 }
@@ -1223,11 +1378,11 @@ export class AppResourcesSecretOutputReference extends cdktf.ComplexObject {
 }
 export interface AppResourcesServingEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#permission App#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
   */
   readonly permission: string;
 }
@@ -1344,14 +1499,14 @@ export class AppResourcesServingEndpointOutputReference extends cdktf.ComplexObj
 }
 export interface AppResourcesSqlWarehouse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#id App#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#id App#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#permission App#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
   */
   readonly permission: string;
 }
@@ -1468,15 +1623,15 @@ export class AppResourcesSqlWarehouseOutputReference extends cdktf.ComplexObject
 }
 export interface AppResourcesUcSecurable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#permission App#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#permission App#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#securable_full_name App#securable_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#securable_full_name App#securable_full_name}
   */
   readonly securableFullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#securable_type App#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#securable_type App#securable_type}
   */
   readonly securableType: string;
 }
@@ -1619,35 +1774,39 @@ export class AppResourcesUcSecurableOutputReference extends cdktf.ComplexObject 
 }
 export interface AppResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#database App#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#database App#database}
   */
   readonly database?: AppResourcesDatabase;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#description App#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#description App#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#job App#job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#genie_space App#genie_space}
+  */
+  readonly genieSpace?: AppResourcesGenieSpace;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#job App#job}
   */
   readonly job?: AppResourcesJob;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#name App#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#name App#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#secret App#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#secret App#secret}
   */
   readonly secret?: AppResourcesSecret;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#serving_endpoint App#serving_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#serving_endpoint App#serving_endpoint}
   */
   readonly servingEndpoint?: AppResourcesServingEndpoint;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#sql_warehouse App#sql_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#sql_warehouse App#sql_warehouse}
   */
   readonly sqlWarehouse?: AppResourcesSqlWarehouse;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#uc_securable App#uc_securable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#uc_securable App#uc_securable}
   */
   readonly ucSecurable?: AppResourcesUcSecurable;
 }
@@ -1660,6 +1819,7 @@ export function appResourcesToTerraform(struct?: AppResources | cdktf.IResolvabl
   return {
     database: appResourcesDatabaseToTerraform(struct!.database),
     description: cdktf.stringToTerraform(struct!.description),
+    genie_space: appResourcesGenieSpaceToTerraform(struct!.genieSpace),
     job: appResourcesJobToTerraform(struct!.job),
     name: cdktf.stringToTerraform(struct!.name),
     secret: appResourcesSecretToTerraform(struct!.secret),
@@ -1687,6 +1847,12 @@ export function appResourcesToHclTerraform(struct?: AppResources | cdktf.IResolv
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    genie_space: {
+      value: appResourcesGenieSpaceToHclTerraform(struct!.genieSpace),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "AppResourcesGenieSpace",
     },
     job: {
       value: appResourcesJobToHclTerraform(struct!.job),
@@ -1758,6 +1924,10 @@ export class AppResourcesOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.description = this._description;
     }
+    if (this._genieSpace?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.genieSpace = this._genieSpace?.internalValue;
+    }
     if (this._job?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.job = this._job?.internalValue;
@@ -1791,6 +1961,7 @@ export class AppResourcesOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._database.internalValue = undefined;
       this._description = undefined;
+      this._genieSpace.internalValue = undefined;
       this._job.internalValue = undefined;
       this._name = undefined;
       this._secret.internalValue = undefined;
@@ -1807,6 +1978,7 @@ export class AppResourcesOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._database.internalValue = value.database;
       this._description = value.description;
+      this._genieSpace.internalValue = value.genieSpace;
       this._job.internalValue = value.job;
       this._name = value.name;
       this._secret.internalValue = value.secret;
@@ -1846,6 +2018,22 @@ export class AppResourcesOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // genie_space - computed: false, optional: true, required: false
+  private _genieSpace = new AppResourcesGenieSpaceOutputReference(this, "genie_space");
+  public get genieSpace() {
+    return this._genieSpace;
+  }
+  public putGenieSpace(value: AppResourcesGenieSpace) {
+    this._genieSpace.internalValue = value;
+  }
+  public resetGenieSpace() {
+    this._genieSpace.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get genieSpaceInput() {
+    return this._genieSpace.internalValue;
   }
 
   // job - computed: false, optional: true, required: false
@@ -1963,7 +2151,7 @@ export class AppResourcesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app databricks_app}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app databricks_app}
 */
 export class App extends cdktf.TerraformResource {
 
@@ -1979,7 +2167,7 @@ export class App extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a App resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the App to import
-  * @param importFromId The id of the existing App that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing App that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the App to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1991,7 +2179,7 @@ export class App extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.91.0/docs/resources/app databricks_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/app databricks_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2002,7 +2190,7 @@ export class App extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_app',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.91.0',
+        providerVersion: '1.92.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2014,6 +2202,7 @@ export class App extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._budgetPolicyId = config.budgetPolicyId;
+    this._computeSize = config.computeSize;
     this._description = config.description;
     this._name = config.name;
     this._noCompute = config.noCompute;
@@ -2051,6 +2240,22 @@ export class App extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get budgetPolicyIdInput() {
     return this._budgetPolicyId;
+  }
+
+  // compute_size - computed: true, optional: true, required: false
+  private _computeSize?: string; 
+  public get computeSize() {
+    return this.getStringAttribute('compute_size');
+  }
+  public set computeSize(value: string) {
+    this._computeSize = value;
+  }
+  public resetComputeSize() {
+    this._computeSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeSizeInput() {
+    return this._computeSize;
   }
 
   // compute_status - computed: true, optional: false, required: false
@@ -2219,6 +2424,7 @@ export class App extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       budget_policy_id: cdktf.stringToTerraform(this._budgetPolicyId),
+      compute_size: cdktf.stringToTerraform(this._computeSize),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       no_compute: cdktf.booleanToTerraform(this._noCompute),
@@ -2231,6 +2437,12 @@ export class App extends cdktf.TerraformResource {
     const attrs = {
       budget_policy_id: {
         value: cdktf.stringToHclTerraform(this._budgetPolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compute_size: {
+        value: cdktf.stringToHclTerraform(this._computeSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
