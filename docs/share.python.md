@@ -4,7 +4,7 @@
 
 ### Share <a name="Share" id="@cdktf/provider-databricks.share.Share"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share databricks_share}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share databricks_share}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.share.Share.Initializer"></a>
 
@@ -23,15 +23,9 @@ share.Share(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   comment: str = None,
-  created_at: typing.Union[int, float] = None,
-  created_by: str = None,
-  id: str = None,
   object: IResolvable | typing.List[ShareObject] = None,
   owner: str = None,
-  storage_location: str = None,
-  storage_root: str = None,
-  updated_at: typing.Union[int, float] = None,
-  updated_by: str = None
+  storage_root: str = None
 )
 ```
 
@@ -46,17 +40,11 @@ share.Share(
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#comment Share#comment}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_at Share#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.createdBy">created_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_by Share#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#id Share#id}. |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}. |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.object">object</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | object block. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#owner Share#owner}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.storageLocation">storage_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_location Share#storage_location}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.storageRoot">storage_root</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_root Share#storage_root}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.updatedAt">updated_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_at Share#updated_at}. |
-| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.updatedBy">updated_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_by Share#updated_by}. |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#owner Share#owner}. |
+| <code><a href="#@cdktf/provider-databricks.share.Share.Initializer.parameter.storageRoot">storage_root</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#storage_root Share#storage_root}. |
 
 ---
 
@@ -124,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}.
 
 ---
 
@@ -132,34 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#comment Share#comment}.
-
----
-
-##### `created_at`<sup>Optional</sup> <a name="created_at" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.createdAt"></a>
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_at Share#created_at}.
-
----
-
-##### `created_by`<sup>Optional</sup> <a name="created_by" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.createdBy"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_by Share#created_by}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#id Share#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#comment Share#comment}.
 
 ---
 
@@ -169,7 +130,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#object Share#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#object Share#object}
 
 ---
 
@@ -177,15 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#owner Share#owner}.
-
----
-
-##### `storage_location`<sup>Optional</sup> <a name="storage_location" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.storageLocation"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_location Share#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#owner Share#owner}.
 
 ---
 
@@ -193,23 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_root Share#storage_root}.
-
----
-
-##### `updated_at`<sup>Optional</sup> <a name="updated_at" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.updatedAt"></a>
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_at Share#updated_at}.
-
----
-
-##### `updated_by`<sup>Optional</sup> <a name="updated_by" id="@cdktf/provider-databricks.share.Share.Initializer.parameter.updatedBy"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_by Share#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#storage_root Share#storage_root}.
 
 ---
 
@@ -242,15 +179,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktf/provider-databricks.share.Share.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-databricks.share.Share.putObject">put_object</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.resetComment">reset_comment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.resetCreatedAt">reset_created_at</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.resetCreatedBy">reset_created_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.resetObject">reset_object</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.resetOwner">reset_owner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.resetStorageLocation">reset_storage_location</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.resetStorageRoot">reset_storage_root</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.resetUpdatedAt">reset_updated_at</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.resetUpdatedBy">reset_updated_by</a></code> | *No description.* |
 
 ---
 
@@ -599,24 +530,6 @@ def put_object(
 def reset_comment() -> None
 ```
 
-##### `reset_created_at` <a name="reset_created_at" id="@cdktf/provider-databricks.share.Share.resetCreatedAt"></a>
-
-```python
-def reset_created_at() -> None
-```
-
-##### `reset_created_by` <a name="reset_created_by" id="@cdktf/provider-databricks.share.Share.resetCreatedBy"></a>
-
-```python
-def reset_created_by() -> None
-```
-
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.share.Share.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_object` <a name="reset_object" id="@cdktf/provider-databricks.share.Share.resetObject"></a>
 
 ```python
@@ -629,28 +542,10 @@ def reset_object() -> None
 def reset_owner() -> None
 ```
 
-##### `reset_storage_location` <a name="reset_storage_location" id="@cdktf/provider-databricks.share.Share.resetStorageLocation"></a>
-
-```python
-def reset_storage_location() -> None
-```
-
 ##### `reset_storage_root` <a name="reset_storage_root" id="@cdktf/provider-databricks.share.Share.resetStorageRoot"></a>
 
 ```python
 def reset_storage_root() -> None
-```
-
-##### `reset_updated_at` <a name="reset_updated_at" id="@cdktf/provider-databricks.share.Share.resetUpdatedAt"></a>
-
-```python
-def reset_updated_at() -> None
-```
-
-##### `reset_updated_by` <a name="reset_updated_by" id="@cdktf/provider-databricks.share.Share.resetUpdatedBy"></a>
-
-```python
-def reset_updated_by() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -767,7 +662,7 @@ The construct id used in the generated config for the Share to import.
 
 The id of the existing Share that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,28 +692,23 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.effectiveOwner">effective_owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.object">object</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectList">ShareObjectList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.storageLocation">storage_location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.updatedAt">updated_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.Share.property.updatedBy">updated_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.createdAtInput">created_at_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.createdByInput">created_by_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.objectInput">object_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.storageLocationInput">storage_location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.storageRootInput">storage_root_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.updatedAtInput">updated_at_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.updatedByInput">updated_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.storageLocation">storage_location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.Share.property.storageRoot">storage_root</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.updatedAt">updated_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.Share.property.updatedBy">updated_by</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -964,6 +854,46 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `created_at`<sup>Required</sup> <a name="created_at" id="@cdktf/provider-databricks.share.Share.property.createdAt"></a>
+
+```python
+created_at: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `created_by`<sup>Required</sup> <a name="created_by" id="@cdktf/provider-databricks.share.Share.property.createdBy"></a>
+
+```python
+created_by: str
+```
+
+- *Type:* str
+
+---
+
+##### `effective_owner`<sup>Required</sup> <a name="effective_owner" id="@cdktf/provider-databricks.share.Share.property.effectiveOwner"></a>
+
+```python
+effective_owner: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.share.Share.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `object`<sup>Required</sup> <a name="object" id="@cdktf/provider-databricks.share.Share.property.object"></a>
 
 ```python
@@ -974,40 +904,40 @@ object: ShareObjectList
 
 ---
 
-##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-databricks.share.Share.property.commentInput"></a>
+##### `storage_location`<sup>Required</sup> <a name="storage_location" id="@cdktf/provider-databricks.share.Share.property.storageLocation"></a>
 
 ```python
-comment_input: str
+storage_location: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `created_at_input`<sup>Optional</sup> <a name="created_at_input" id="@cdktf/provider-databricks.share.Share.property.createdAtInput"></a>
+##### `updated_at`<sup>Required</sup> <a name="updated_at" id="@cdktf/provider-databricks.share.Share.property.updatedAt"></a>
 
 ```python
-created_at_input: typing.Union[int, float]
+updated_at: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
 
 ---
 
-##### `created_by_input`<sup>Optional</sup> <a name="created_by_input" id="@cdktf/provider-databricks.share.Share.property.createdByInput"></a>
+##### `updated_by`<sup>Required</sup> <a name="updated_by" id="@cdktf/provider-databricks.share.Share.property.updatedBy"></a>
 
 ```python
-created_by_input: str
+updated_by: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-databricks.share.Share.property.idInput"></a>
+##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-databricks.share.Share.property.commentInput"></a>
 
 ```python
-id_input: str
+comment_input: str
 ```
 
 - *Type:* str
@@ -1044,16 +974,6 @@ owner_input: str
 
 ---
 
-##### `storage_location_input`<sup>Optional</sup> <a name="storage_location_input" id="@cdktf/provider-databricks.share.Share.property.storageLocationInput"></a>
-
-```python
-storage_location_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `storage_root_input`<sup>Optional</sup> <a name="storage_root_input" id="@cdktf/provider-databricks.share.Share.property.storageRootInput"></a>
 
 ```python
@@ -1064,60 +984,10 @@ storage_root_input: str
 
 ---
 
-##### `updated_at_input`<sup>Optional</sup> <a name="updated_at_input" id="@cdktf/provider-databricks.share.Share.property.updatedAtInput"></a>
-
-```python
-updated_at_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `updated_by_input`<sup>Optional</sup> <a name="updated_by_input" id="@cdktf/provider-databricks.share.Share.property.updatedByInput"></a>
-
-```python
-updated_by_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-databricks.share.Share.property.comment"></a>
 
 ```python
 comment: str
-```
-
-- *Type:* str
-
----
-
-##### `created_at`<sup>Required</sup> <a name="created_at" id="@cdktf/provider-databricks.share.Share.property.createdAt"></a>
-
-```python
-created_at: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `created_by`<sup>Required</sup> <a name="created_by" id="@cdktf/provider-databricks.share.Share.property.createdBy"></a>
-
-```python
-created_by: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.share.Share.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -1144,40 +1014,10 @@ owner: str
 
 ---
 
-##### `storage_location`<sup>Required</sup> <a name="storage_location" id="@cdktf/provider-databricks.share.Share.property.storageLocation"></a>
-
-```python
-storage_location: str
-```
-
-- *Type:* str
-
----
-
 ##### `storage_root`<sup>Required</sup> <a name="storage_root" id="@cdktf/provider-databricks.share.Share.property.storageRoot"></a>
 
 ```python
 storage_root: str
-```
-
-- *Type:* str
-
----
-
-##### `updated_at`<sup>Required</sup> <a name="updated_at" id="@cdktf/provider-databricks.share.Share.property.updatedAt"></a>
-
-```python
-updated_at: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `updated_by`<sup>Required</sup> <a name="updated_by" id="@cdktf/provider-databricks.share.Share.property.updatedBy"></a>
-
-```python
-updated_by: str
 ```
 
 - *Type:* str
@@ -1221,15 +1061,9 @@ share.ShareConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   comment: str = None,
-  created_at: typing.Union[int, float] = None,
-  created_by: str = None,
-  id: str = None,
   object: IResolvable | typing.List[ShareObject] = None,
   owner: str = None,
-  storage_location: str = None,
-  storage_root: str = None,
-  updated_at: typing.Union[int, float] = None,
-  updated_by: str = None
+  storage_root: str = None
 )
 ```
 
@@ -1244,17 +1078,11 @@ share.ShareConfig(
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#comment Share#comment}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_at Share#created_at}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.createdBy">created_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_by Share#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#id Share#id}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#comment Share#comment}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.object">object</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a>]</code> | object block. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#owner Share#owner}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageLocation">storage_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_location Share#storage_location}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageRoot">storage_root</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_root Share#storage_root}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.updatedAt">updated_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_at Share#updated_at}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.updatedBy">updated_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_by Share#updated_by}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#owner Share#owner}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareConfig.property.storageRoot">storage_root</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#storage_root Share#storage_root}. |
 
 ---
 
@@ -1336,7 +1164,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}.
 
 ---
 
@@ -1348,46 +1176,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#comment Share#comment}.
-
----
-
-##### `created_at`<sup>Optional</sup> <a name="created_at" id="@cdktf/provider-databricks.share.ShareConfig.property.createdAt"></a>
-
-```python
-created_at: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_at Share#created_at}.
-
----
-
-##### `created_by`<sup>Optional</sup> <a name="created_by" id="@cdktf/provider-databricks.share.ShareConfig.property.createdBy"></a>
-
-```python
-created_by: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#created_by Share#created_by}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.share.ShareConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#id Share#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#comment Share#comment}.
 
 ---
 
@@ -1401,7 +1190,7 @@ object: IResolvable | typing.List[ShareObject]
 
 object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#object Share#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#object Share#object}
 
 ---
 
@@ -1413,19 +1202,7 @@ owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#owner Share#owner}.
-
----
-
-##### `storage_location`<sup>Optional</sup> <a name="storage_location" id="@cdktf/provider-databricks.share.ShareConfig.property.storageLocation"></a>
-
-```python
-storage_location: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_location Share#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#owner Share#owner}.
 
 ---
 
@@ -1437,31 +1214,7 @@ storage_root: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#storage_root Share#storage_root}.
-
----
-
-##### `updated_at`<sup>Optional</sup> <a name="updated_at" id="@cdktf/provider-databricks.share.ShareConfig.property.updatedAt"></a>
-
-```python
-updated_at: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_at Share#updated_at}.
-
----
-
-##### `updated_by`<sup>Optional</sup> <a name="updated_by" id="@cdktf/provider-databricks.share.ShareConfig.property.updatedBy"></a>
-
-```python
-updated_by: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#updated_by Share#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#storage_root Share#storage_root}.
 
 ---
 
@@ -1475,8 +1228,6 @@ from cdktf_cdktf_provider_databricks import share
 share.ShareObject(
   data_object_type: str,
   name: str,
-  added_at: typing.Union[int, float] = None,
-  added_by: str = None,
   cdf_enabled: bool | IResolvable = None,
   comment: str = None,
   content: str = None,
@@ -1484,7 +1235,6 @@ share.ShareObject(
   partition: IResolvable | typing.List[ShareObjectPartition] = None,
   shared_as: str = None,
   start_version: typing.Union[int, float] = None,
-  status: str = None,
   string_shared_as: str = None
 )
 ```
@@ -1493,19 +1243,16 @@ share.ShareObject(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.dataObjectType">data_object_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#data_object_type Share#data_object_type}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.addedAt">added_at</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#added_at Share#added_at}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.addedBy">added_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#added_by Share#added_by}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled">cdf_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#cdf_enabled Share#cdf_enabled}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#comment Share#comment}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#content Share#content}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.historyDataSharingStatus">history_data_sharing_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.dataObjectType">data_object_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#data_object_type Share#data_object_type}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.cdfEnabled">cdf_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#cdf_enabled Share#cdf_enabled}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#comment Share#comment}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#content Share#content}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.historyDataSharingStatus">history_data_sharing_status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.partition">partition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | partition block. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.sharedAs">shared_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#shared_as Share#shared_as}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.startVersion">start_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#start_version Share#start_version}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#status Share#status}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.stringSharedAs">string_shared_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#string_shared_as Share#string_shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.sharedAs">shared_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#shared_as Share#shared_as}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.startVersion">start_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#start_version Share#start_version}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObject.property.stringSharedAs">string_shared_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#string_shared_as Share#string_shared_as}. |
 
 ---
 
@@ -1517,7 +1264,7 @@ data_object_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#data_object_type Share#data_object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#data_object_type Share#data_object_type}.
 
 ---
 
@@ -1529,31 +1276,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}.
-
----
-
-##### `added_at`<sup>Optional</sup> <a name="added_at" id="@cdktf/provider-databricks.share.ShareObject.property.addedAt"></a>
-
-```python
-added_at: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#added_at Share#added_at}.
-
----
-
-##### `added_by`<sup>Optional</sup> <a name="added_by" id="@cdktf/provider-databricks.share.ShareObject.property.addedBy"></a>
-
-```python
-added_by: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#added_by Share#added_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}.
 
 ---
 
@@ -1565,7 +1288,7 @@ cdf_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#cdf_enabled Share#cdf_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#cdf_enabled Share#cdf_enabled}.
 
 ---
 
@@ -1577,7 +1300,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#comment Share#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#comment Share#comment}.
 
 ---
 
@@ -1589,7 +1312,7 @@ content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#content Share#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#content Share#content}.
 
 ---
 
@@ -1601,7 +1324,7 @@ history_data_sharing_status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}.
 
 ---
 
@@ -1615,7 +1338,7 @@ partition: IResolvable | typing.List[ShareObjectPartition]
 
 partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#partition Share#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#partition Share#partition}
 
 ---
 
@@ -1627,7 +1350,7 @@ shared_as: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#shared_as Share#shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#shared_as Share#shared_as}.
 
 ---
 
@@ -1639,19 +1362,7 @@ start_version: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#start_version Share#start_version}.
-
----
-
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-databricks.share.ShareObject.property.status"></a>
-
-```python
-status: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#status Share#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#start_version Share#start_version}.
 
 ---
 
@@ -1663,7 +1374,7 @@ string_shared_as: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#string_shared_as Share#string_shared_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#string_shared_as Share#string_shared_as}.
 
 ---
 
@@ -1697,7 +1408,7 @@ value: IResolvable | typing.List[ShareObjectPartitionValue]
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#value Share#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#value Share#value}
 
 ---
 
@@ -1720,10 +1431,10 @@ share.ShareObjectPartitionValue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#op Share#op}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.recipientPropertyKey">recipient_property_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#recipient_property_key Share#recipient_property_key}. |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#value Share#value}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.op">op</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#op Share#op}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.recipientPropertyKey">recipient_property_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#recipient_property_key Share#recipient_property_key}. |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionValue.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#value Share#value}. |
 
 ---
 
@@ -1735,7 +1446,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#name Share#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#name Share#name}.
 
 ---
 
@@ -1747,7 +1458,7 @@ op: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#op Share#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#op Share#op}.
 
 ---
 
@@ -1759,7 +1470,7 @@ recipient_property_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#recipient_property_key Share#recipient_property_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#recipient_property_key Share#recipient_property_key}.
 
 ---
 
@@ -1771,7 +1482,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/share#value Share#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/share#value Share#value}.
 
 ---
 
@@ -2021,8 +1732,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.putPartition">put_partition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetAddedAt">reset_added_at</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetAddedBy">reset_added_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetCdfEnabled">reset_cdf_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetContent">reset_content</a></code> | *No description.* |
@@ -2030,7 +1739,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetPartition">reset_partition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetSharedAs">reset_shared_as</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetStartVersion">reset_start_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.resetStringSharedAs">reset_string_shared_as</a></code> | *No description.* |
 
 ---
@@ -2221,18 +1929,6 @@ def put_partition(
 
 ---
 
-##### `reset_added_at` <a name="reset_added_at" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.resetAddedAt"></a>
-
-```python
-def reset_added_at() -> None
-```
-
-##### `reset_added_by` <a name="reset_added_by" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.resetAddedBy"></a>
-
-```python
-def reset_added_by() -> None
-```
-
 ##### `reset_cdf_enabled` <a name="reset_cdf_enabled" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.resetCdfEnabled"></a>
 
 ```python
@@ -2275,12 +1971,6 @@ def reset_shared_as() -> None
 def reset_start_version() -> None
 ```
 
-##### `reset_status` <a name="reset_status" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.resetStatus"></a>
-
-```python
-def reset_status() -> None
-```
-
 ##### `reset_string_shared_as` <a name="reset_string_shared_as" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.resetStringSharedAs"></a>
 
 ```python
@@ -2294,9 +1984,15 @@ def reset_string_shared_as() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAt">added_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedBy">added_by</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveCdfEnabled">effective_cdf_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveHistoryDataSharingStatus">effective_history_data_sharing_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveSharedAs">effective_shared_as</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveStartVersion">effective_start_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveStringSharedAs">effective_string_shared_as</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partition">partition</a></code> | <code><a href="#@cdktf/provider-databricks.share.ShareObjectPartitionList">ShareObjectPartitionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAtInput">added_at_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedByInput">added_by_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabledInput">cdf_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
@@ -2306,10 +2002,7 @@ def reset_string_shared_as() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partitionInput">partition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-databricks.share.ShareObjectPartition">ShareObjectPartition</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.sharedAsInput">shared_as_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersionInput">start_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAsInput">string_shared_as_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAt">added_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedBy">added_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.cdfEnabled">cdf_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
@@ -2318,7 +2011,6 @@ def reset_string_shared_as() -> None
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.sharedAs">shared_as</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.startVersion">start_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAs">string_shared_as</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.share.ShareObjectOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-databricks.share.ShareObject">ShareObject</a></code> | *No description.* |
 
@@ -2348,6 +2040,76 @@ fqn: str
 
 ---
 
+##### `added_at`<sup>Required</sup> <a name="added_at" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAt"></a>
+
+```python
+added_at: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `added_by`<sup>Required</sup> <a name="added_by" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedBy"></a>
+
+```python
+added_by: str
+```
+
+- *Type:* str
+
+---
+
+##### `effective_cdf_enabled`<sup>Required</sup> <a name="effective_cdf_enabled" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveCdfEnabled"></a>
+
+```python
+effective_cdf_enabled: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `effective_history_data_sharing_status`<sup>Required</sup> <a name="effective_history_data_sharing_status" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveHistoryDataSharingStatus"></a>
+
+```python
+effective_history_data_sharing_status: str
+```
+
+- *Type:* str
+
+---
+
+##### `effective_shared_as`<sup>Required</sup> <a name="effective_shared_as" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveSharedAs"></a>
+
+```python
+effective_shared_as: str
+```
+
+- *Type:* str
+
+---
+
+##### `effective_start_version`<sup>Required</sup> <a name="effective_start_version" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveStartVersion"></a>
+
+```python
+effective_start_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `effective_string_shared_as`<sup>Required</sup> <a name="effective_string_shared_as" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.effectiveStringSharedAs"></a>
+
+```python
+effective_string_shared_as: str
+```
+
+- *Type:* str
+
+---
+
 ##### `partition`<sup>Required</sup> <a name="partition" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.partition"></a>
 
 ```python
@@ -2358,20 +2120,10 @@ partition: ShareObjectPartitionList
 
 ---
 
-##### `added_at_input`<sup>Optional</sup> <a name="added_at_input" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAtInput"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status"></a>
 
 ```python
-added_at_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `added_by_input`<sup>Optional</sup> <a name="added_by_input" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedByInput"></a>
-
-```python
-added_by_input: str
+status: str
 ```
 
 - *Type:* str
@@ -2468,40 +2220,10 @@ start_version_input: typing.Union[int, float]
 
 ---
 
-##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.statusInput"></a>
-
-```python
-status_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `string_shared_as_input`<sup>Optional</sup> <a name="string_shared_as_input" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.stringSharedAsInput"></a>
 
 ```python
 string_shared_as_input: str
-```
-
-- *Type:* str
-
----
-
-##### `added_at`<sup>Required</sup> <a name="added_at" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedAt"></a>
-
-```python
-added_at: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `added_by`<sup>Required</sup> <a name="added_by" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.addedBy"></a>
-
-```python
-added_by: str
 ```
 
 - *Type:* str
@@ -2585,16 +2307,6 @@ start_version: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
-
----
-
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-databricks.share.ShareObjectOutputReference.property.status"></a>
-
-```python
-status: str
-```
-
-- *Type:* str
 
 ---
 
