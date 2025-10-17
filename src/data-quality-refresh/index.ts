@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh
+// https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataQualityRefreshConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}
   */
   readonly objectType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh databricks_data_quality_refresh}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh databricks_data_quality_refresh}
 */
 export class DataQualityRefresh extends cdktf.TerraformResource {
 
@@ -39,7 +39,7 @@ export class DataQualityRefresh extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataQualityRefresh resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataQualityRefresh to import
-  * @param importFromId The id of the existing DataQualityRefresh that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataQualityRefresh that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataQualityRefresh to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +51,7 @@ export class DataQualityRefresh extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh databricks_data_quality_refresh} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh databricks_data_quality_refresh} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +62,7 @@ export class DataQualityRefresh extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_data_quality_refresh',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.92.0',
+        providerVersion: '1.93.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

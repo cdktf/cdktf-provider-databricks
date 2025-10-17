@@ -113,7 +113,6 @@ Object.defineProperty(exports, 'servicePrincipalFederationPolicy', { get: functi
 Object.defineProperty(exports, 'servicePrincipalRole', { get: function () { return require('./service-principal-role'); } });
 Object.defineProperty(exports, 'servicePrincipalSecret', { get: function () { return require('./service-principal-secret'); } });
 Object.defineProperty(exports, 'share', { get: function () { return require('./share'); } });
-Object.defineProperty(exports, 'sharePluginframework', { get: function () { return require('./share-pluginframework'); } });
 Object.defineProperty(exports, 'sqlAlert', { get: function () { return require('./sql-alert'); } });
 Object.defineProperty(exports, 'sqlDashboard', { get: function () { return require('./sql-dashboard'); } });
 Object.defineProperty(exports, 'sqlEndpoint', { get: function () { return require('./sql-endpoint'); } });
@@ -229,9 +228,7 @@ Object.defineProperty(exports, 'dataDatabricksServicePrincipalFederationPolicy',
 Object.defineProperty(exports, 'dataDatabricksServicePrincipals', { get: function () { return require('./data-databricks-service-principals'); } });
 Object.defineProperty(exports, 'dataDatabricksServingEndpoints', { get: function () { return require('./data-databricks-serving-endpoints'); } });
 Object.defineProperty(exports, 'dataDatabricksShare', { get: function () { return require('./data-databricks-share'); } });
-Object.defineProperty(exports, 'dataDatabricksSharePluginframework', { get: function () { return require('./data-databricks-share-pluginframework'); } });
 Object.defineProperty(exports, 'dataDatabricksShares', { get: function () { return require('./data-databricks-shares'); } });
-Object.defineProperty(exports, 'dataDatabricksSharesPluginframework', { get: function () { return require('./data-databricks-shares-pluginframework'); } });
 Object.defineProperty(exports, 'dataDatabricksSparkVersion', { get: function () { return require('./data-databricks-spark-version'); } });
 Object.defineProperty(exports, 'dataDatabricksSqlWarehouse', { get: function () { return require('./data-databricks-sql-warehouse'); } });
 Object.defineProperty(exports, 'dataDatabricksSqlWarehouses', { get: function () { return require('./data-databricks-sql-warehouses'); } });

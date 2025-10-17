@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations
+// https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface RfaAccessRequestDestinationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#destinations RfaAccessRequestDestinations#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#destinations RfaAccessRequestDestinations#destinations}
   */
   readonly destinations: RfaAccessRequestDestinationsDestinations[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#securable RfaAccessRequestDestinations#securable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#securable RfaAccessRequestDestinations#securable}
   */
   readonly securable: RfaAccessRequestDestinationsSecurable;
 }
 export interface RfaAccessRequestDestinationsDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#destination_id RfaAccessRequestDestinations#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#destination_id RfaAccessRequestDestinations#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#destination_type RfaAccessRequestDestinations#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#destination_type RfaAccessRequestDestinations#destination_type}
   */
   readonly destinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#special_destination RfaAccessRequestDestinations#special_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#special_destination RfaAccessRequestDestinations#special_destination}
   */
   readonly specialDestination?: string;
 }
@@ -205,15 +205,15 @@ export class RfaAccessRequestDestinationsDestinationsList extends cdktf.ComplexL
 }
 export interface RfaAccessRequestDestinationsSecurable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#full_name RfaAccessRequestDestinations#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#full_name RfaAccessRequestDestinations#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#provider_share RfaAccessRequestDestinations#provider_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#provider_share RfaAccessRequestDestinations#provider_share}
   */
   readonly providerShare?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#type RfaAccessRequestDestinations#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#type RfaAccessRequestDestinations#type}
   */
   readonly type?: string;
 }
@@ -365,7 +365,7 @@ export class RfaAccessRequestDestinationsSecurableOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations}
 */
 export class RfaAccessRequestDestinations extends cdktf.TerraformResource {
 
@@ -381,7 +381,7 @@ export class RfaAccessRequestDestinations extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RfaAccessRequestDestinations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RfaAccessRequestDestinations to import
-  * @param importFromId The id of the existing RfaAccessRequestDestinations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RfaAccessRequestDestinations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RfaAccessRequestDestinations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -393,7 +393,7 @@ export class RfaAccessRequestDestinations extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -404,7 +404,7 @@ export class RfaAccessRequestDestinations extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_rfa_access_request_destinations',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.92.0',
+        providerVersion: '1.93.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
