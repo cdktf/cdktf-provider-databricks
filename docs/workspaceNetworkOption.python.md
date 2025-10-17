@@ -4,7 +4,7 @@
 
 ### WorkspaceNetworkOption <a name="WorkspaceNetworkOption" id="@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer"></a>
 
@@ -37,8 +37,8 @@ workspaceNetworkOption.WorkspaceNetworkOption(
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.networkPolicyId">network_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.networkPolicyId">network_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the WorkspaceNetworkOption to 
 
 The id of the existing WorkspaceNetworkOption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,8 +871,8 @@ workspaceNetworkOption.WorkspaceNetworkOptionConfig(
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.networkPolicyId">network_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.networkPolicyId">network_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
 
 ---
 
@@ -954,7 +954,7 @@ network_policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
 
 ---
 
@@ -966,7 +966,7 @@ workspace_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
 
 ---
 

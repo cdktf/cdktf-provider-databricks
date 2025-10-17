@@ -4,7 +4,7 @@
 
 ### DataQualityRefresh <a name="DataQualityRefresh" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh databricks_data_quality_refresh}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh databricks_data_quality_refresh}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataQualityRefresh.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}.
 
 ---
 
@@ -539,7 +539,7 @@ The construct id used in the generated config for the DataQualityRefresh to impo
 
 The id of the existing DataQualityRefresh that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,8 +875,8 @@ DataQualityRefreshConfig.builder()
 | <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}. |
 
 ---
 
@@ -958,7 +958,7 @@ public java.lang.String getObjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_id DataQualityRefresh#object_id}.
 
 ---
 
@@ -970,7 +970,7 @@ public java.lang.String getObjectType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.92.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/data_quality_refresh#object_type DataQualityRefresh#object_type}.
 
 ---
 

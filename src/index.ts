@@ -113,7 +113,6 @@ export * as servicePrincipalFederationPolicy from './service-principal-federatio
 export * as servicePrincipalRole from './service-principal-role';
 export * as servicePrincipalSecret from './service-principal-secret';
 export * as share from './share';
-export * as sharePluginframework from './share-pluginframework';
 export * as sqlAlert from './sql-alert';
 export * as sqlDashboard from './sql-dashboard';
 export * as sqlEndpoint from './sql-endpoint';
@@ -229,9 +228,7 @@ export * as dataDatabricksServicePrincipalFederationPolicy from './data-databric
 export * as dataDatabricksServicePrincipals from './data-databricks-service-principals';
 export * as dataDatabricksServingEndpoints from './data-databricks-serving-endpoints';
 export * as dataDatabricksShare from './data-databricks-share';
-export * as dataDatabricksSharePluginframework from './data-databricks-share-pluginframework';
 export * as dataDatabricksShares from './data-databricks-shares';
-export * as dataDatabricksSharesPluginframework from './data-databricks-shares-pluginframework';
 export * as dataDatabricksSparkVersion from './data-databricks-spark-version';
 export * as dataDatabricksSqlWarehouse from './data-databricks-sql-warehouse';
 export * as dataDatabricksSqlWarehouses from './data-databricks-sql-warehouses';
