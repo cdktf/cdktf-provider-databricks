@@ -1,3 +1,3 @@
 # `databricks_system_schema`
 
-Refer to the Terraform Registry for docs: [`databricks_system_schema`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/system_schema).
+Refer to the Terraform Registry for docs: [`databricks_system_schema`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/system_schema).

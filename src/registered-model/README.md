@@ -1,3 +1,3 @@
 # `databricks_registered_model`
 
-Refer to the Terraform Registry for docs: [`databricks_registered_model`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/registered_model).
+Refer to the Terraform Registry for docs: [`databricks_registered_model`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/registered_model).

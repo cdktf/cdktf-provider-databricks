@@ -1,3 +1,3 @@
 # `databricks_external_location`
 
-Refer to the Terraform Registry for docs: [`databricks_external_location`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/external_location).
+Refer to the Terraform Registry for docs: [`databricks_external_location`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/external_location).
