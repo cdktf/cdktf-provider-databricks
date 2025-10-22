@@ -1,3 +1,3 @@
 # `databricks_git_credential`
 
-Refer to the Terraform Registry for docs: [`databricks_git_credential`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/git_credential).
+Refer to the Terraform Registry for docs: [`databricks_git_credential`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/git_credential).

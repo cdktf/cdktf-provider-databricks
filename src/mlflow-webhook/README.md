@@ -1,3 +1,3 @@
 # `databricks_mlflow_webhook`
 
-Refer to the Terraform Registry for docs: [`databricks_mlflow_webhook`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/mlflow_webhook).
+Refer to the Terraform Registry for docs: [`databricks_mlflow_webhook`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/mlflow_webhook).

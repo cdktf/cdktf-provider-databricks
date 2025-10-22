@@ -1,3 +1,3 @@
 # `databricks_mws_customer_managed_keys`
 
-Refer to the Terraform Registry for docs: [`databricks_mws_customer_managed_keys`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/mws_customer_managed_keys).
+Refer to the Terraform Registry for docs: [`databricks_mws_customer_managed_keys`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/mws_customer_managed_keys).

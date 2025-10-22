@@ -1,3 +1,3 @@
 # `databricks_service_principal_secret`
 
-Refer to the Terraform Registry for docs: [`databricks_service_principal_secret`](https://registry.terraform.io/providers/databricks/databricks/1.93.0/docs/resources/service_principal_secret).
+Refer to the Terraform Registry for docs: [`databricks_service_principal_secret`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/service_principal_secret).
