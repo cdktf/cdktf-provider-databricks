@@ -99,7 +99,6 @@ Object.defineProperty(exports, 'qualityMonitor', { get: function () { return req
 Object.defineProperty(exports, 'qualityMonitorV2', { get: function () { return require('./quality-monitor-v2'); } });
 Object.defineProperty(exports, 'query', { get: function () { return require('./query'); } });
 Object.defineProperty(exports, 'recipient', { get: function () { return require('./recipient'); } });
-Object.defineProperty(exports, 'recipientFederationPolicy', { get: function () { return require('./recipient-federation-policy'); } });
 Object.defineProperty(exports, 'registeredModel', { get: function () { return require('./registered-model'); } });
 Object.defineProperty(exports, 'repo', { get: function () { return require('./repo'); } });
 Object.defineProperty(exports, 'restrictWorkspaceAdminsSetting', { get: function () { return require('./restrict-workspace-admins-setting'); } });
@@ -215,8 +214,6 @@ Object.defineProperty(exports, 'dataDatabricksPolicyInfo', { get: function () { 
 Object.defineProperty(exports, 'dataDatabricksPolicyInfos', { get: function () { return require('./data-databricks-policy-infos'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
-Object.defineProperty(exports, 'dataDatabricksRecipientFederationPolicies', { get: function () { return require('./data-databricks-recipient-federation-policies'); } });
-Object.defineProperty(exports, 'dataDatabricksRecipientFederationPolicy', { get: function () { return require('./data-databricks-recipient-federation-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModel', { get: function () { return require('./data-databricks-registered-model'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModelVersions', { get: function () { return require('./data-databricks-registered-model-versions'); } });
 Object.defineProperty(exports, 'dataDatabricksRfaAccessRequestDestinations', { get: function () { return require('./data-databricks-rfa-access-request-destinations'); } });

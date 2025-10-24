@@ -4,7 +4,7 @@
 
 ### CustomAppIntegration <a name="CustomAppIntegration" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration databricks_custom_app_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegration.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the CustomAppIntegration to im
 
 The id of the existing CustomAppIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1073,19 +1073,19 @@ const customAppIntegrationConfig: customAppIntegration.CustomAppIntegrationConfi
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#client_id CustomAppIntegration#client_id}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#client_secret CustomAppIntegration#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.confidential">confidential</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#confidential CustomAppIntegration#confidential}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.createdBy">createdBy</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#created_by CustomAppIntegration#created_by}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.createTime">createTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#create_time CustomAppIntegration#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.creatorUsername">creatorUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#creator_username CustomAppIntegration#creator_username}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#id CustomAppIntegration#id}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.integrationId">integrationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#integration_id CustomAppIntegration#integration_id}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#name CustomAppIntegration#name}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.redirectUrls">redirectUrls</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#redirect_urls CustomAppIntegration#redirect_urls}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#scopes CustomAppIntegration#scopes}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#client_id CustomAppIntegration#client_id}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#client_secret CustomAppIntegration#client_secret}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.confidential">confidential</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#confidential CustomAppIntegration#confidential}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.createdBy">createdBy</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#created_by CustomAppIntegration#created_by}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.createTime">createTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#create_time CustomAppIntegration#create_time}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.creatorUsername">creatorUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#creator_username CustomAppIntegration#creator_username}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#id CustomAppIntegration#id}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.integrationId">integrationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#integration_id CustomAppIntegration#integration_id}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#name CustomAppIntegration#name}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.redirectUrls">redirectUrls</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#redirect_urls CustomAppIntegration#redirect_urls}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#scopes CustomAppIntegration#scopes}. |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.tokenAccessPolicy">tokenAccessPolicy</a></code> | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy">CustomAppIntegrationTokenAccessPolicy</a></code> | token_access_policy block. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.userAuthorizedScopes">userAuthorizedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#user_authorized_scopes CustomAppIntegration#user_authorized_scopes}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationConfig.property.userAuthorizedScopes">userAuthorizedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#user_authorized_scopes CustomAppIntegration#user_authorized_scopes}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly clientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#client_id CustomAppIntegration#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#client_id CustomAppIntegration#client_id}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly clientSecret: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#client_secret CustomAppIntegration#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#client_secret CustomAppIntegration#client_secret}.
 
 ---
 
@@ -1191,7 +1191,7 @@ public readonly confidential: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#confidential CustomAppIntegration#confidential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#confidential CustomAppIntegration#confidential}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly createdBy: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#created_by CustomAppIntegration#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#created_by CustomAppIntegration#created_by}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly createTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#create_time CustomAppIntegration#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#create_time CustomAppIntegration#create_time}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public readonly creatorUsername: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#creator_username CustomAppIntegration#creator_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#creator_username CustomAppIntegration#creator_username}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#id CustomAppIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#id CustomAppIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1254,7 +1254,7 @@ public readonly integrationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#integration_id CustomAppIntegration#integration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#integration_id CustomAppIntegration#integration_id}.
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#name CustomAppIntegration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#name CustomAppIntegration#name}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public readonly redirectUrls: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#redirect_urls CustomAppIntegration#redirect_urls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#redirect_urls CustomAppIntegration#redirect_urls}.
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly scopes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#scopes CustomAppIntegration#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#scopes CustomAppIntegration#scopes}.
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly tokenAccessPolicy: CustomAppIntegrationTokenAccessPolicy;
 
 token_access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#token_access_policy CustomAppIntegration#token_access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#token_access_policy CustomAppIntegration#token_access_policy}
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly userAuthorizedScopes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#user_authorized_scopes CustomAppIntegration#user_authorized_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#user_authorized_scopes CustomAppIntegration#user_authorized_scopes}.
 
 ---
 
@@ -1334,8 +1334,22 @@ const customAppIntegrationTokenAccessPolicy: customAppIntegration.CustomAppInteg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.accessTokenTtlInMinutes">accessTokenTtlInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}. |
-| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.refreshTokenTtlInMinutes">refreshTokenTtlInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.absoluteSessionLifetimeInMinutes">absoluteSessionLifetimeInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#absolute_session_lifetime_in_minutes CustomAppIntegration#absolute_session_lifetime_in_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.accessTokenTtlInMinutes">accessTokenTtlInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.enableSingleUseRefreshTokens">enableSingleUseRefreshTokens</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#enable_single_use_refresh_tokens CustomAppIntegration#enable_single_use_refresh_tokens}. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.refreshTokenTtlInMinutes">refreshTokenTtlInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}. |
+
+---
+
+##### `absoluteSessionLifetimeInMinutes`<sup>Optional</sup> <a name="absoluteSessionLifetimeInMinutes" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.absoluteSessionLifetimeInMinutes"></a>
+
+```typescript
+public readonly absoluteSessionLifetimeInMinutes: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#absolute_session_lifetime_in_minutes CustomAppIntegration#absolute_session_lifetime_in_minutes}.
 
 ---
 
@@ -1347,7 +1361,19 @@ public readonly accessTokenTtlInMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}.
+
+---
+
+##### `enableSingleUseRefreshTokens`<sup>Optional</sup> <a name="enableSingleUseRefreshTokens" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy.property.enableSingleUseRefreshTokens"></a>
+
+```typescript
+public readonly enableSingleUseRefreshTokens: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#enable_single_use_refresh_tokens CustomAppIntegration#enable_single_use_refresh_tokens}.
 
 ---
 
@@ -1359,7 +1385,7 @@ public readonly refreshTokenTtlInMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}.
 
 ---
 
@@ -1415,7 +1441,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetAbsoluteSessionLifetimeInMinutes">resetAbsoluteSessionLifetimeInMinutes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetAccessTokenTtlInMinutes">resetAccessTokenTtlInMinutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetEnableSingleUseRefreshTokens">resetEnableSingleUseRefreshTokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetRefreshTokenTtlInMinutes">resetRefreshTokenTtlInMinutes</a></code> | *No description.* |
 
 ---
@@ -1570,10 +1598,22 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAbsoluteSessionLifetimeInMinutes` <a name="resetAbsoluteSessionLifetimeInMinutes" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetAbsoluteSessionLifetimeInMinutes"></a>
+
+```typescript
+public resetAbsoluteSessionLifetimeInMinutes(): void
+```
+
 ##### `resetAccessTokenTtlInMinutes` <a name="resetAccessTokenTtlInMinutes" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetAccessTokenTtlInMinutes"></a>
 
 ```typescript
 public resetAccessTokenTtlInMinutes(): void
+```
+
+##### `resetEnableSingleUseRefreshTokens` <a name="resetEnableSingleUseRefreshTokens" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetEnableSingleUseRefreshTokens"></a>
+
+```typescript
+public resetEnableSingleUseRefreshTokens(): void
 ```
 
 ##### `resetRefreshTokenTtlInMinutes` <a name="resetRefreshTokenTtlInMinutes" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.resetRefreshTokenTtlInMinutes"></a>
@@ -1589,9 +1629,13 @@ public resetRefreshTokenTtlInMinutes(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.absoluteSessionLifetimeInMinutesInput">absoluteSessionLifetimeInMinutesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.accessTokenTtlInMinutesInput">accessTokenTtlInMinutesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.enableSingleUseRefreshTokensInput">enableSingleUseRefreshTokensInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.refreshTokenTtlInMinutesInput">refreshTokenTtlInMinutesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.absoluteSessionLifetimeInMinutes">absoluteSessionLifetimeInMinutes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.accessTokenTtlInMinutes">accessTokenTtlInMinutes</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.enableSingleUseRefreshTokens">enableSingleUseRefreshTokens</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.refreshTokenTtlInMinutes">refreshTokenTtlInMinutes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicy">CustomAppIntegrationTokenAccessPolicy</a></code> | *No description.* |
 
@@ -1621,6 +1665,16 @@ public readonly fqn: string;
 
 ---
 
+##### `absoluteSessionLifetimeInMinutesInput`<sup>Optional</sup> <a name="absoluteSessionLifetimeInMinutesInput" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.absoluteSessionLifetimeInMinutesInput"></a>
+
+```typescript
+public readonly absoluteSessionLifetimeInMinutesInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `accessTokenTtlInMinutesInput`<sup>Optional</sup> <a name="accessTokenTtlInMinutesInput" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.accessTokenTtlInMinutesInput"></a>
 
 ```typescript
@@ -1628,6 +1682,16 @@ public readonly accessTokenTtlInMinutesInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `enableSingleUseRefreshTokensInput`<sup>Optional</sup> <a name="enableSingleUseRefreshTokensInput" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.enableSingleUseRefreshTokensInput"></a>
+
+```typescript
+public readonly enableSingleUseRefreshTokensInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1641,6 +1705,16 @@ public readonly refreshTokenTtlInMinutesInput: number;
 
 ---
 
+##### `absoluteSessionLifetimeInMinutes`<sup>Required</sup> <a name="absoluteSessionLifetimeInMinutes" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.absoluteSessionLifetimeInMinutes"></a>
+
+```typescript
+public readonly absoluteSessionLifetimeInMinutes: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `accessTokenTtlInMinutes`<sup>Required</sup> <a name="accessTokenTtlInMinutes" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.accessTokenTtlInMinutes"></a>
 
 ```typescript
@@ -1648,6 +1722,16 @@ public readonly accessTokenTtlInMinutes: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `enableSingleUseRefreshTokens`<sup>Required</sup> <a name="enableSingleUseRefreshTokens" id="@cdktf/provider-databricks.customAppIntegration.CustomAppIntegrationTokenAccessPolicyOutputReference.property.enableSingleUseRefreshTokens"></a>
+
+```typescript
+public readonly enableSingleUseRefreshTokens: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 

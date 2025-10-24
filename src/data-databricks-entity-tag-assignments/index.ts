@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksEntityTagAssignmentsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#max_results DataDatabricksEntityTagAssignments#max_results}
+  */
+  readonly maxResults?: number;
 }
 export interface DataDatabricksEntityTagAssignmentsTagAssignments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#tag_key DataDatabricksEntityTagAssignments#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#tag_key DataDatabricksEntityTagAssignments#tag_key}
   */
   readonly tagKey: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#tag_value DataDatabricksEntityTagAssignments#tag_value}
-  */
-  readonly tagValue?: string;
 }
 
 export function dataDatabricksEntityTagAssignmentsTagAssignmentsToTerraform(struct?: DataDatabricksEntityTagAssignmentsTagAssignments): any {
@@ -49,7 +49,6 @@ export function dataDatabricksEntityTagAssignmentsTagAssignmentsToTerraform(stru
     entity_name: cdktf.stringToTerraform(struct!.entityName),
     entity_type: cdktf.stringToTerraform(struct!.entityType),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
 }
 
@@ -74,12 +73,6 @@ export function dataDatabricksEntityTagAssignmentsTagAssignmentsToHclTerraform(s
     },
     tag_key: {
       value: cdktf.stringToHclTerraform(struct!.tagKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.tagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,10 +111,6 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference ext
       hasAnyValues = true;
       internalValueResult.tagKey = this._tagKey;
     }
-    if (this._tagValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tagValue = this._tagValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -131,14 +120,12 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference ext
       this._entityName = undefined;
       this._entityType = undefined;
       this._tagKey = undefined;
-      this._tagValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._entityName = value.entityName;
       this._entityType = value.entityType;
       this._tagKey = value.tagKey;
-      this._tagValue = value.tagValue;
     }
   }
 
@@ -181,20 +168,9 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference ext
     return this._tagKey;
   }
 
-  // tag_value - computed: true, optional: true, required: false
-  private _tagValue?: string; 
+  // tag_value - computed: true, optional: false, required: false
   public get tagValue() {
     return this.getStringAttribute('tag_value');
-  }
-  public set tagValue(value: string) {
-    this._tagValue = value;
-  }
-  public resetTagValue() {
-    this._tagValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagValueInput() {
-    return this._tagValue;
   }
 }
 
@@ -219,7 +195,7 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}
 */
 export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSource {
 
@@ -235,7 +211,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatabricksEntityTagAssignments resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksEntityTagAssignments to import
-  * @param importFromId The id of the existing DataDatabricksEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksEntityTagAssignments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -247,7 +223,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,7 +234,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
       terraformResourceType: 'databricks_entity_tag_assignments',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -271,6 +247,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
     });
     this._entityName = config.entityName;
     this._entityType = config.entityType;
+    this._maxResults = config.maxResults;
   }
 
   // ==========
@@ -303,6 +280,22 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
     return this._entityType;
   }
 
+  // max_results - computed: false, optional: true, required: false
+  private _maxResults?: number; 
+  public get maxResults() {
+    return this.getNumberAttribute('max_results');
+  }
+  public set maxResults(value: number) {
+    this._maxResults = value;
+  }
+  public resetMaxResults() {
+    this._maxResults = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxResultsInput() {
+    return this._maxResults;
+  }
+
   // tag_assignments - computed: true, optional: false, required: false
   private _tagAssignments = new DataDatabricksEntityTagAssignmentsTagAssignmentsList(this, "tag_assignments", false);
   public get tagAssignments() {
@@ -317,6 +310,7 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
     return {
       entity_name: cdktf.stringToTerraform(this._entityName),
       entity_type: cdktf.stringToTerraform(this._entityType),
+      max_results: cdktf.numberToTerraform(this._maxResults),
     };
   }
 
@@ -333,6 +327,12 @@ export class DataDatabricksEntityTagAssignments extends cdktf.TerraformDataSourc
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      max_results: {
+        value: cdktf.numberToHclTerraform(this._maxResults),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
     };
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface TagPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy#description TagPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy#description TagPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}
   */
   readonly tagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy#values TagPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy#values TagPolicy#values}
   */
   readonly values?: TagPolicyValues[] | cdktf.IResolvable;
 }
 export interface TagPolicyValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy#name TagPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy#name TagPolicy#name}
   */
   readonly name: string;
 }
@@ -140,7 +140,7 @@ export class TagPolicyValuesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy databricks_tag_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy databricks_tag_policy}
 */
 export class TagPolicy extends cdktf.TerraformResource {
 
@@ -156,7 +156,7 @@ export class TagPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TagPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagPolicy to import
-  * @param importFromId The id of the existing TagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -168,7 +168,7 @@ export class TagPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/tag_policy databricks_tag_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/tag_policy databricks_tag_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,7 @@ export class TagPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_tag_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

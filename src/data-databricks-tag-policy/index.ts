@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksTagPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy#description DataDatabricksTagPolicy#description}
-  */
-  readonly description?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}
   */
   readonly tagKey: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy#values DataDatabricksTagPolicy#values}
-  */
-  readonly values?: DataDatabricksTagPolicyValues[] | cdktf.IResolvable;
 }
 export interface DataDatabricksTagPolicyValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}
   */
   readonly name: string;
 }
 
-export function dataDatabricksTagPolicyValuesToTerraform(struct?: DataDatabricksTagPolicyValues | cdktf.IResolvable): any {
+export function dataDatabricksTagPolicyValuesToTerraform(struct?: DataDatabricksTagPolicyValues): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -43,7 +35,7 @@ export function dataDatabricksTagPolicyValuesToTerraform(struct?: DataDatabricks
 }
 
 
-export function dataDatabricksTagPolicyValuesToHclTerraform(struct?: DataDatabricksTagPolicyValues | cdktf.IResolvable): any {
+export function dataDatabricksTagPolicyValuesToHclTerraform(struct?: DataDatabricksTagPolicyValues): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -63,7 +55,6 @@ export function dataDatabricksTagPolicyValuesToHclTerraform(struct?: DataDatabri
 
 export class DataDatabricksTagPolicyValuesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,10 +66,7 @@ export class DataDatabricksTagPolicyValuesOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksTagPolicyValues | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksTagPolicyValues | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name !== undefined) {
@@ -88,24 +76,18 @@ export class DataDatabricksTagPolicyValuesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksTagPolicyValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksTagPolicyValues | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._name = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._name = value.name;
     }
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -140,7 +122,7 @@ export class DataDatabricksTagPolicyValuesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy databricks_tag_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy databricks_tag_policy}
 */
 export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
 
@@ -156,7 +138,7 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksTagPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksTagPolicy to import
-  * @param importFromId The id of the existing DataDatabricksTagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksTagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksTagPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -168,7 +150,7 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +161,7 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_tag_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -190,9 +172,7 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._description = config.description;
     this._tagKey = config.tagKey;
-    this._values.internalValue = config.values;
   }
 
   // ==========
@@ -204,20 +184,9 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
     return this.getStringAttribute('create_time');
   }
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
-  }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
   }
 
   // id - computed: true, optional: false, required: false
@@ -243,20 +212,10 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
     return this.getStringAttribute('update_time');
   }
 
-  // values - computed: false, optional: true, required: false
+  // values - computed: true, optional: false, required: false
   private _values = new DataDatabricksTagPolicyValuesList(this, "values", false);
   public get values() {
     return this._values;
-  }
-  public putValues(value: DataDatabricksTagPolicyValues[] | cdktf.IResolvable) {
-    this._values.internalValue = value;
-  }
-  public resetValues() {
-    this._values.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
-    return this._values.internalValue;
   }
 
   // =========
@@ -265,31 +224,17 @@ export class DataDatabricksTagPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
       tag_key: cdktf.stringToTerraform(this._tagKey),
-      values: cdktf.listMapper(dataDatabricksTagPolicyValuesToTerraform, false)(this._values.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       tag_key: {
         value: cdktf.stringToHclTerraform(this._tagKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      values: {
-        value: cdktf.listMapperHcl(dataDatabricksTagPolicyValuesToHclTerraform, false)(this._values.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataDatabricksTagPolicyValuesList",
       },
     };
 

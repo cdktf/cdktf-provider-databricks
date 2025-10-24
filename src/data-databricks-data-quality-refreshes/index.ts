@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksDataQualityRefreshesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes#object_id DataDatabricksDataQualityRefreshes#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#object_id DataDatabricksDataQualityRefreshes#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes#object_type DataDatabricksDataQualityRefreshes#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#object_type DataDatabricksDataQualityRefreshes#object_type}
   */
   readonly objectType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#page_size DataDatabricksDataQualityRefreshes#page_size}
+  */
+  readonly pageSize?: number;
 }
 export interface DataDatabricksDataQualityRefreshesRefreshes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes#object_id DataDatabricksDataQualityRefreshes#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#object_id DataDatabricksDataQualityRefreshes#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes#object_type DataDatabricksDataQualityRefreshes#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#object_type DataDatabricksDataQualityRefreshes#object_type}
   */
   readonly objectType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#refresh_id DataDatabricksDataQualityRefreshes#refresh_id}
+  */
+  readonly refreshId: number;
 }
 
 export function dataDatabricksDataQualityRefreshesRefreshesToTerraform(struct?: DataDatabricksDataQualityRefreshesRefreshes): any {
@@ -40,6 +48,7 @@ export function dataDatabricksDataQualityRefreshesRefreshesToTerraform(struct?: 
   return {
     object_id: cdktf.stringToTerraform(struct!.objectId),
     object_type: cdktf.stringToTerraform(struct!.objectType),
+    refresh_id: cdktf.numberToTerraform(struct!.refreshId),
   }
 }
 
@@ -61,6 +70,12 @@ export function dataDatabricksDataQualityRefreshesRefreshesToHclTerraform(struct
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    refresh_id: {
+      value: cdktf.numberToHclTerraform(struct!.refreshId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
   };
 
@@ -92,6 +107,10 @@ export class DataDatabricksDataQualityRefreshesRefreshesOutputReference extends 
       hasAnyValues = true;
       internalValueResult.objectType = this._objectType;
     }
+    if (this._refreshId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.refreshId = this._refreshId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -100,11 +119,13 @@ export class DataDatabricksDataQualityRefreshesRefreshesOutputReference extends 
       this.isEmptyObject = false;
       this._objectId = undefined;
       this._objectType = undefined;
+      this._refreshId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._objectId = value.objectId;
       this._objectType = value.objectType;
+      this._refreshId = value.refreshId;
     }
   }
 
@@ -144,9 +165,17 @@ export class DataDatabricksDataQualityRefreshesRefreshesOutputReference extends 
     return this._objectType;
   }
 
-  // refresh_id - computed: true, optional: false, required: false
+  // refresh_id - computed: true, optional: false, required: true
+  private _refreshId?: number; 
   public get refreshId() {
     return this.getNumberAttribute('refresh_id');
+  }
+  public set refreshId(value: number) {
+    this._refreshId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refreshIdInput() {
+    return this._refreshId;
   }
 
   // start_time_ms - computed: true, optional: false, required: false
@@ -186,7 +215,7 @@ export class DataDatabricksDataQualityRefreshesRefreshesList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes databricks_data_quality_refreshes}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes databricks_data_quality_refreshes}
 */
 export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSource {
 
@@ -202,7 +231,7 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatabricksDataQualityRefreshes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDataQualityRefreshes to import
-  * @param importFromId The id of the existing DataDatabricksDataQualityRefreshes that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDataQualityRefreshes that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDataQualityRefreshes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -214,7 +243,7 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/data_quality_refreshes databricks_data_quality_refreshes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/data_quality_refreshes databricks_data_quality_refreshes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +254,7 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
       terraformResourceType: 'databricks_data_quality_refreshes',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -238,6 +267,7 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
     });
     this._objectId = config.objectId;
     this._objectType = config.objectType;
+    this._pageSize = config.pageSize;
   }
 
   // ==========
@@ -270,6 +300,22 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
     return this._objectType;
   }
 
+  // page_size - computed: false, optional: true, required: false
+  private _pageSize?: number; 
+  public get pageSize() {
+    return this.getNumberAttribute('page_size');
+  }
+  public set pageSize(value: number) {
+    this._pageSize = value;
+  }
+  public resetPageSize() {
+    this._pageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageSizeInput() {
+    return this._pageSize;
+  }
+
   // refreshes - computed: true, optional: false, required: false
   private _refreshes = new DataDatabricksDataQualityRefreshesRefreshesList(this, "refreshes", false);
   public get refreshes() {
@@ -284,6 +330,7 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
     return {
       object_id: cdktf.stringToTerraform(this._objectId),
       object_type: cdktf.stringToTerraform(this._objectType),
+      page_size: cdktf.numberToTerraform(this._pageSize),
     };
   }
 
@@ -300,6 +347,12 @@ export class DataDatabricksDataQualityRefreshes extends cdktf.TerraformDataSourc
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      page_size: {
+        value: cdktf.numberToHclTerraform(this._pageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
     };
 

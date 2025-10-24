@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/quality_monitors_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,6 +12,10 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksQualityMonitorsV2Config extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2#page_size DataDatabricksQualityMonitorsV2#page_size}
+  */
+  readonly pageSize?: number;
 }
 export interface DataDatabricksQualityMonitorsV2QualityMonitorsAnomalyDetectionConfig {
 }
@@ -74,11 +78,11 @@ export class DataDatabricksQualityMonitorsV2QualityMonitorsAnomalyDetectionConfi
 }
 export interface DataDatabricksQualityMonitorsV2QualityMonitors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/quality_monitors_v2#object_id DataDatabricksQualityMonitorsV2#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2#object_id DataDatabricksQualityMonitorsV2#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/quality_monitors_v2#object_type DataDatabricksQualityMonitorsV2#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2#object_type DataDatabricksQualityMonitorsV2#object_type}
   */
   readonly objectType: string;
 }
@@ -213,7 +217,7 @@ export class DataDatabricksQualityMonitorsV2QualityMonitorsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2}
 */
 export class DataDatabricksQualityMonitorsV2 extends cdktf.TerraformDataSource {
 
@@ -229,7 +233,7 @@ export class DataDatabricksQualityMonitorsV2 extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksQualityMonitorsV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksQualityMonitorsV2 to import
-  * @param importFromId The id of the existing DataDatabricksQualityMonitorsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/quality_monitors_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksQualityMonitorsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksQualityMonitorsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -241,7 +245,7 @@ export class DataDatabricksQualityMonitorsV2 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/quality_monitors_v2 databricks_quality_monitors_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -252,7 +256,7 @@ export class DataDatabricksQualityMonitorsV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_quality_monitors_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -263,11 +267,28 @@ export class DataDatabricksQualityMonitorsV2 extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._pageSize = config.pageSize;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // page_size - computed: false, optional: true, required: false
+  private _pageSize?: number; 
+  public get pageSize() {
+    return this.getNumberAttribute('page_size');
+  }
+  public set pageSize(value: number) {
+    this._pageSize = value;
+  }
+  public resetPageSize() {
+    this._pageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageSizeInput() {
+    return this._pageSize;
+  }
 
   // quality_monitors - computed: true, optional: false, required: false
   private _qualityMonitors = new DataDatabricksQualityMonitorsV2QualityMonitorsList(this, "quality_monitors", false);
@@ -281,12 +302,21 @@ export class DataDatabricksQualityMonitorsV2 extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      page_size: cdktf.numberToTerraform(this._pageSize),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      page_size: {
+        value: cdktf.numberToHclTerraform(this._pageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

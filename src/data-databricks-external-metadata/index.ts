@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksExternalMetadataConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#columns DataDatabricksExternalMetadata#columns}
-  */
-  readonly columns?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#description DataDatabricksExternalMetadata#description}
-  */
-  readonly description?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#entity_type DataDatabricksExternalMetadata#entity_type}
-  */
-  readonly entityType: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#id DataDatabricksExternalMetadata#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}
   */
   readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#owner DataDatabricksExternalMetadata#owner}
-  */
-  readonly owner?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#properties DataDatabricksExternalMetadata#properties}
-  */
-  readonly properties?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#system_type DataDatabricksExternalMetadata#system_type}
-  */
-  readonly systemType: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#url DataDatabricksExternalMetadata#url}
-  */
-  readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata databricks_external_metadata}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadata databricks_external_metadata}
 */
 export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
 
@@ -70,7 +35,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksExternalMetadata resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksExternalMetadata to import
-  * @param importFromId The id of the existing DataDatabricksExternalMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksExternalMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadata#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksExternalMetadata to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,7 +47,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/external_metadata databricks_external_metadata} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +58,7 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_external_metadata',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -104,35 +69,16 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._columns = config.columns;
-    this._description = config.description;
-    this._entityType = config.entityType;
-    this._id = config.id;
     this._name = config.name;
-    this._owner = config.owner;
-    this._properties = config.properties;
-    this._systemType = config.systemType;
-    this._url = config.url;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // columns - computed: false, optional: true, required: false
-  private _columns?: string[]; 
+  // columns - computed: true, optional: false, required: false
   public get columns() {
     return this.getListAttribute('columns');
-  }
-  public set columns(value: string[]) {
-    this._columns = value;
-  }
-  public resetColumns() {
-    this._columns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get columnsInput() {
-    return this._columns;
   }
 
   // create_time - computed: true, optional: false, required: false
@@ -145,46 +91,19 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
     return this.getStringAttribute('created_by');
   }
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
-  }
 
-  // entity_type - computed: false, optional: false, required: true
-  private _entityType?: string; 
+  // entity_type - computed: true, optional: false, required: false
   public get entityType() {
     return this.getStringAttribute('entity_type');
   }
-  public set entityType(value: string) {
-    this._entityType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get entityTypeInput() {
-    return this._entityType;
-  }
 
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // metastore_id - computed: true, optional: false, required: false
@@ -205,49 +124,20 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
     return this._name;
   }
 
-  // owner - computed: false, optional: true, required: false
-  private _owner?: string; 
+  // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string) {
-    this._owner = value;
-  }
-  public resetOwner() {
-    this._owner = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ownerInput() {
-    return this._owner;
-  }
 
-  // properties - computed: false, optional: true, required: false
-  private _properties?: { [key: string]: string }; 
+  // properties - computed: true, optional: false, required: false
+  private _properties = new cdktf.StringMap(this, "properties");
   public get properties() {
-    return this.getStringMapAttribute('properties');
-  }
-  public set properties(value: { [key: string]: string }) {
-    this._properties = value;
-  }
-  public resetProperties() {
-    this._properties = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get propertiesInput() {
     return this._properties;
   }
 
-  // system_type - computed: false, optional: false, required: true
-  private _systemType?: string; 
+  // system_type - computed: true, optional: false, required: false
   public get systemType() {
     return this.getStringAttribute('system_type');
-  }
-  public set systemType(value: string) {
-    this._systemType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get systemTypeInput() {
-    return this._systemType;
   }
 
   // update_time - computed: true, optional: false, required: false
@@ -260,20 +150,9 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
     return this.getStringAttribute('updated_by');
   }
 
-  // url - computed: false, optional: true, required: false
-  private _url?: string; 
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
-  }
-  public set url(value: string) {
-    this._url = value;
-  }
-  public resetUrl() {
-    this._url = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url;
   }
 
   // =========
@@ -282,70 +161,14 @@ export class DataDatabricksExternalMetadata extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      columns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columns),
-      description: cdktf.stringToTerraform(this._description),
-      entity_type: cdktf.stringToTerraform(this._entityType),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      system_type: cdktf.stringToTerraform(this._systemType),
-      url: cdktf.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      columns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._columns),
-        isBlock: false,
-        type: "list",
-        storageClassType: "stringList",
-      },
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      entity_type: {
-        value: cdktf.stringToHclTerraform(this._entityType),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
-        isBlock: false,
-        type: "map",
-        storageClassType: "stringMap",
-      },
-      system_type: {
-        value: cdktf.stringToHclTerraform(this._systemType),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      url: {
-        value: cdktf.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

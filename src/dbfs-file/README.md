@@ -1,3 +1,3 @@
 # `databricks_dbfs_file`
 
-Refer to the Terraform Registry for docs: [`databricks_dbfs_file`](https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/resources/dbfs_file).
+Refer to the Terraform Registry for docs: [`databricks_dbfs_file`](https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/dbfs_file).

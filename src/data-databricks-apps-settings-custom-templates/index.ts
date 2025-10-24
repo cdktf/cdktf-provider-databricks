@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,10 +12,14 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksAppsSettingsCustomTemplatesConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#page_size DataDatabricksAppsSettingsCustomTemplates#page_size}
+  */
+  readonly pageSize?: number;
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsJobSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
   */
   readonly permission: string;
 }
@@ -106,7 +110,7 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceS
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsSecretSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
   */
   readonly permission: string;
 }
@@ -197,7 +201,7 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceS
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsServingEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
   */
   readonly permission: string;
 }
@@ -288,7 +292,7 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceS
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsSqlWarehouseSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
   */
   readonly permission: string;
 }
@@ -379,11 +383,11 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceS
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsUcSecurableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#permission DataDatabricksAppsSettingsCustomTemplates#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#securable_type DataDatabricksAppsSettingsCustomTemplates#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#securable_type DataDatabricksAppsSettingsCustomTemplates#securable_type}
   */
   readonly securableType: string;
 }
@@ -500,31 +504,31 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceS
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#description DataDatabricksAppsSettingsCustomTemplates#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#description DataDatabricksAppsSettingsCustomTemplates#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#job_spec DataDatabricksAppsSettingsCustomTemplates#job_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#job_spec DataDatabricksAppsSettingsCustomTemplates#job_spec}
   */
   readonly jobSpec?: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsJobSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#name DataDatabricksAppsSettingsCustomTemplates#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#name DataDatabricksAppsSettingsCustomTemplates#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#secret_spec DataDatabricksAppsSettingsCustomTemplates#secret_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#secret_spec DataDatabricksAppsSettingsCustomTemplates#secret_spec}
   */
   readonly secretSpec?: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsSecretSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#serving_endpoint_spec DataDatabricksAppsSettingsCustomTemplates#serving_endpoint_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#serving_endpoint_spec DataDatabricksAppsSettingsCustomTemplates#serving_endpoint_spec}
   */
   readonly servingEndpointSpec?: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsServingEndpointSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#sql_warehouse_spec DataDatabricksAppsSettingsCustomTemplates#sql_warehouse_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#sql_warehouse_spec DataDatabricksAppsSettingsCustomTemplates#sql_warehouse_spec}
   */
   readonly sqlWarehouseSpec?: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsSqlWarehouseSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#uc_securable_spec DataDatabricksAppsSettingsCustomTemplates#uc_securable_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#uc_securable_spec DataDatabricksAppsSettingsCustomTemplates#uc_securable_spec}
   */
   readonly ucSecurableSpec?: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecsUcSecurableSpec;
 }
@@ -811,19 +815,19 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceS
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#description DataDatabricksAppsSettingsCustomTemplates#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#description DataDatabricksAppsSettingsCustomTemplates#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#name DataDatabricksAppsSettingsCustomTemplates#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#name DataDatabricksAppsSettingsCustomTemplates#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#resource_specs DataDatabricksAppsSettingsCustomTemplates#resource_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#resource_specs DataDatabricksAppsSettingsCustomTemplates#resource_specs}
   */
   readonly resourceSpecs?: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestResourceSpecs[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#version DataDatabricksAppsSettingsCustomTemplates#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#version DataDatabricksAppsSettingsCustomTemplates#version}
   */
   readonly version: number;
 }
@@ -988,29 +992,9 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputRef
 }
 export interface DataDatabricksAppsSettingsCustomTemplatesTemplates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#description DataDatabricksAppsSettingsCustomTemplates#description}
-  */
-  readonly description?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#git_provider DataDatabricksAppsSettingsCustomTemplates#git_provider}
-  */
-  readonly gitProvider: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#git_repo DataDatabricksAppsSettingsCustomTemplates#git_repo}
-  */
-  readonly gitRepo: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#manifest DataDatabricksAppsSettingsCustomTemplates#manifest}
-  */
-  readonly manifest: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#name DataDatabricksAppsSettingsCustomTemplates#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#name DataDatabricksAppsSettingsCustomTemplates#name}
   */
   readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#path DataDatabricksAppsSettingsCustomTemplates#path}
-  */
-  readonly path: string;
 }
 
 export function dataDatabricksAppsSettingsCustomTemplatesTemplatesToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplatesTemplates): any {
@@ -1019,12 +1003,7 @@ export function dataDatabricksAppsSettingsCustomTemplatesTemplatesToTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    git_provider: cdktf.stringToTerraform(struct!.gitProvider),
-    git_repo: cdktf.stringToTerraform(struct!.gitRepo),
-    manifest: dataDatabricksAppsSettingsCustomTemplatesTemplatesManifestToTerraform(struct!.manifest),
     name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
   }
 }
 
@@ -1035,38 +1014,8 @@ export function dataDatabricksAppsSettingsCustomTemplatesTemplatesToHclTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    git_provider: {
-      value: cdktf.stringToHclTerraform(struct!.gitProvider),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    git_repo: {
-      value: cdktf.stringToHclTerraform(struct!.gitRepo),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    manifest: {
-      value: dataDatabricksAppsSettingsCustomTemplatesTemplatesManifestToHclTerraform(struct!.manifest),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest",
-    },
     name: {
       value: cdktf.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1093,29 +1042,9 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference e
   public get internalValue(): DataDatabricksAppsSettingsCustomTemplatesTemplates | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._description !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.description = this._description;
-    }
-    if (this._gitProvider !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.gitProvider = this._gitProvider;
-    }
-    if (this._gitRepo !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.gitRepo = this._gitRepo;
-    }
-    if (this._manifest?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.manifest = this._manifest?.internalValue;
-    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
-    }
-    if (this._path !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.path = this._path;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1123,21 +1052,11 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference e
   public set internalValue(value: DataDatabricksAppsSettingsCustomTemplatesTemplates | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._description = undefined;
-      this._gitProvider = undefined;
-      this._gitRepo = undefined;
-      this._manifest.internalValue = undefined;
       this._name = undefined;
-      this._path = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._description = value.description;
-      this._gitProvider = value.gitProvider;
-      this._gitRepo = value.gitRepo;
-      this._manifest.internalValue = value.manifest;
       this._name = value.name;
-      this._path = value.path;
     }
   }
 
@@ -1146,59 +1065,25 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference e
     return this.getStringAttribute('creator');
   }
 
-  // description - computed: true, optional: true, required: false
-  private _description?: string; 
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
-  }
 
-  // git_provider - computed: true, optional: false, required: true
-  private _gitProvider?: string; 
+  // git_provider - computed: true, optional: false, required: false
   public get gitProvider() {
     return this.getStringAttribute('git_provider');
   }
-  public set gitProvider(value: string) {
-    this._gitProvider = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gitProviderInput() {
-    return this._gitProvider;
-  }
 
-  // git_repo - computed: true, optional: false, required: true
-  private _gitRepo?: string; 
+  // git_repo - computed: true, optional: false, required: false
   public get gitRepo() {
     return this.getStringAttribute('git_repo');
   }
-  public set gitRepo(value: string) {
-    this._gitRepo = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gitRepoInput() {
-    return this._gitRepo;
-  }
 
-  // manifest - computed: true, optional: false, required: true
+  // manifest - computed: true, optional: false, required: false
   private _manifest = new DataDatabricksAppsSettingsCustomTemplatesTemplatesManifestOutputReference(this, "manifest");
   public get manifest() {
     return this._manifest;
-  }
-  public putManifest(value: DataDatabricksAppsSettingsCustomTemplatesTemplatesManifest) {
-    this._manifest.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get manifestInput() {
-    return this._manifest.internalValue;
   }
 
   // name - computed: true, optional: false, required: true
@@ -1214,17 +1099,9 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesOutputReference e
     return this._name;
   }
 
-  // path - computed: true, optional: false, required: true
-  private _path?: string; 
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
-  }
-  public set path(value: string) {
-    this._path = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pathInput() {
-    return this._path;
   }
 }
 
@@ -1249,7 +1126,7 @@ export class DataDatabricksAppsSettingsCustomTemplatesTemplatesList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates}
 */
 export class DataDatabricksAppsSettingsCustomTemplates extends cdktf.TerraformDataSource {
 
@@ -1265,7 +1142,7 @@ export class DataDatabricksAppsSettingsCustomTemplates extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataDatabricksAppsSettingsCustomTemplates resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAppsSettingsCustomTemplates to import
-  * @param importFromId The id of the existing DataDatabricksAppsSettingsCustomTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAppsSettingsCustomTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAppsSettingsCustomTemplates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1277,7 +1154,7 @@ export class DataDatabricksAppsSettingsCustomTemplates extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/apps_settings_custom_templates databricks_apps_settings_custom_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1288,7 +1165,7 @@ export class DataDatabricksAppsSettingsCustomTemplates extends cdktf.TerraformDa
       terraformResourceType: 'databricks_apps_settings_custom_templates',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1299,11 +1176,28 @@ export class DataDatabricksAppsSettingsCustomTemplates extends cdktf.TerraformDa
       connection: config.connection,
       forEach: config.forEach
     });
+    this._pageSize = config.pageSize;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // page_size - computed: false, optional: true, required: false
+  private _pageSize?: number; 
+  public get pageSize() {
+    return this.getNumberAttribute('page_size');
+  }
+  public set pageSize(value: number) {
+    this._pageSize = value;
+  }
+  public resetPageSize() {
+    this._pageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageSizeInput() {
+    return this._pageSize;
+  }
 
   // templates - computed: true, optional: false, required: false
   private _templates = new DataDatabricksAppsSettingsCustomTemplatesTemplatesList(this, "templates", false);
@@ -1317,12 +1211,21 @@ export class DataDatabricksAppsSettingsCustomTemplates extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      page_size: cdktf.numberToTerraform(this._pageSize),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      page_size: {
+        value: cdktf.numberToHclTerraform(this._pageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

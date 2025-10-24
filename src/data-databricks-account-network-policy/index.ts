@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksAccountNetworkPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#account_id DataDatabricksAccountNetworkPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}
   */
-  readonly accountId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#egress DataDatabricksAccountNetworkPolicy#egress}
-  */
-  readonly egress?: DataDatabricksAccountNetworkPolicyEgress;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}
-  */
-  readonly networkPolicyId?: string;
+  readonly networkPolicyId: string;
 }
 export interface DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}
   */
   readonly destination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}
   */
   readonly internetDestinationType?: string;
 }
@@ -122,7 +114,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInterne
     }
   }
 
-  // destination - computed: false, optional: true, required: false
+  // destination - computed: true, optional: true, required: false
   private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
@@ -138,7 +130,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInterne
     return this._destination;
   }
 
-  // internet_destination_type - computed: false, optional: true, required: false
+  // internet_destination_type - computed: true, optional: true, required: false
   private _internetDestinationType?: string; 
   public get internetDestinationType() {
     return this.getStringAttribute('internet_destination_type');
@@ -176,23 +168,23 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInterne
 }
 export interface DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#azure_storage_account DataDatabricksAccountNetworkPolicy#azure_storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#azure_storage_account DataDatabricksAccountNetworkPolicy#azure_storage_account}
   */
   readonly azureStorageAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#azure_storage_service DataDatabricksAccountNetworkPolicy#azure_storage_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#azure_storage_service DataDatabricksAccountNetworkPolicy#azure_storage_service}
   */
   readonly azureStorageService?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#bucket_name DataDatabricksAccountNetworkPolicy#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#bucket_name DataDatabricksAccountNetworkPolicy#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#region DataDatabricksAccountNetworkPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#region DataDatabricksAccountNetworkPolicy#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#storage_destination_type DataDatabricksAccountNetworkPolicy#storage_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#storage_destination_type DataDatabricksAccountNetworkPolicy#storage_destination_type}
   */
   readonly storageDestinationType?: string;
 }
@@ -322,7 +314,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorage
     }
   }
 
-  // azure_storage_account - computed: false, optional: true, required: false
+  // azure_storage_account - computed: true, optional: true, required: false
   private _azureStorageAccount?: string; 
   public get azureStorageAccount() {
     return this.getStringAttribute('azure_storage_account');
@@ -338,7 +330,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorage
     return this._azureStorageAccount;
   }
 
-  // azure_storage_service - computed: false, optional: true, required: false
+  // azure_storage_service - computed: true, optional: true, required: false
   private _azureStorageService?: string; 
   public get azureStorageService() {
     return this.getStringAttribute('azure_storage_service');
@@ -354,7 +346,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorage
     return this._azureStorageService;
   }
 
-  // bucket_name - computed: false, optional: true, required: false
+  // bucket_name - computed: true, optional: true, required: false
   private _bucketName?: string; 
   public get bucketName() {
     return this.getStringAttribute('bucket_name');
@@ -370,7 +362,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorage
     return this._bucketName;
   }
 
-  // region - computed: false, optional: true, required: false
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -386,7 +378,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorage
     return this._region;
   }
 
-  // storage_destination_type - computed: false, optional: true, required: false
+  // storage_destination_type - computed: true, optional: true, required: false
   private _storageDestinationType?: string; 
   public get storageDestinationType() {
     return this.getStringAttribute('storage_destination_type');
@@ -424,11 +416,11 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorage
 }
 export interface DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicy#dry_run_mode_product_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicy#dry_run_mode_product_filter}
   */
   readonly dryRunModeProductFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#enforcement_mode DataDatabricksAccountNetworkPolicy#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#enforcement_mode DataDatabricksAccountNetworkPolicy#enforcement_mode}
   */
   readonly enforcementMode?: string;
 }
@@ -517,7 +509,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcem
     }
   }
 
-  // dry_run_mode_product_filter - computed: false, optional: true, required: false
+  // dry_run_mode_product_filter - computed: true, optional: true, required: false
   private _dryRunModeProductFilter?: string[]; 
   public get dryRunModeProductFilter() {
     return this.getListAttribute('dry_run_mode_product_filter');
@@ -533,7 +525,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcem
     return this._dryRunModeProductFilter;
   }
 
-  // enforcement_mode - computed: false, optional: true, required: false
+  // enforcement_mode - computed: true, optional: true, required: false
   private _enforcementMode?: string; 
   public get enforcementMode() {
     return this.getStringAttribute('enforcement_mode');
@@ -551,19 +543,19 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcem
 }
 export interface DataDatabricksAccountNetworkPolicyEgressNetworkAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#allowed_internet_destinations DataDatabricksAccountNetworkPolicy#allowed_internet_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#allowed_internet_destinations DataDatabricksAccountNetworkPolicy#allowed_internet_destinations}
   */
   readonly allowedInternetDestinations?: DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#allowed_storage_destinations DataDatabricksAccountNetworkPolicy#allowed_storage_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#allowed_storage_destinations DataDatabricksAccountNetworkPolicy#allowed_storage_destinations}
   */
   readonly allowedStorageDestinations?: DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#policy_enforcement DataDatabricksAccountNetworkPolicy#policy_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#policy_enforcement DataDatabricksAccountNetworkPolicy#policy_enforcement}
   */
   readonly policyEnforcement?: DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -678,7 +670,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReferenc
     }
   }
 
-  // allowed_internet_destinations - computed: false, optional: true, required: false
+  // allowed_internet_destinations - computed: true, optional: true, required: false
   private _allowedInternetDestinations = new DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList(this, "allowed_internet_destinations", false);
   public get allowedInternetDestinations() {
     return this._allowedInternetDestinations;
@@ -694,7 +686,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReferenc
     return this._allowedInternetDestinations.internalValue;
   }
 
-  // allowed_storage_destinations - computed: false, optional: true, required: false
+  // allowed_storage_destinations - computed: true, optional: true, required: false
   private _allowedStorageDestinations = new DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList(this, "allowed_storage_destinations", false);
   public get allowedStorageDestinations() {
     return this._allowedStorageDestinations;
@@ -710,7 +702,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReferenc
     return this._allowedStorageDestinations.internalValue;
   }
 
-  // policy_enforcement - computed: false, optional: true, required: false
+  // policy_enforcement - computed: true, optional: true, required: false
   private _policyEnforcement = new DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference(this, "policy_enforcement");
   public get policyEnforcement() {
     return this._policyEnforcement;
@@ -726,7 +718,7 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReferenc
     return this._policyEnforcement.internalValue;
   }
 
-  // restriction_mode - computed: false, optional: false, required: true
+  // restriction_mode - computed: true, optional: false, required: true
   private _restrictionMode?: string; 
   public get restrictionMode() {
     return this.getStringAttribute('restriction_mode');
@@ -741,12 +733,12 @@ export class DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReferenc
 }
 export interface DataDatabricksAccountNetworkPolicyEgress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#network_access DataDatabricksAccountNetworkPolicy#network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#network_access DataDatabricksAccountNetworkPolicy#network_access}
   */
   readonly networkAccess?: DataDatabricksAccountNetworkPolicyEgressNetworkAccess;
 }
 
-export function dataDatabricksAccountNetworkPolicyEgressToTerraform(struct?: DataDatabricksAccountNetworkPolicyEgress | cdktf.IResolvable): any {
+export function dataDatabricksAccountNetworkPolicyEgressToTerraform(struct?: DataDatabricksAccountNetworkPolicyEgress): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -757,7 +749,7 @@ export function dataDatabricksAccountNetworkPolicyEgressToTerraform(struct?: Dat
 }
 
 
-export function dataDatabricksAccountNetworkPolicyEgressToHclTerraform(struct?: DataDatabricksAccountNetworkPolicyEgress | cdktf.IResolvable): any {
+export function dataDatabricksAccountNetworkPolicyEgressToHclTerraform(struct?: DataDatabricksAccountNetworkPolicyEgress): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -777,7 +769,6 @@ export function dataDatabricksAccountNetworkPolicyEgressToHclTerraform(struct?: 
 
 export class DataDatabricksAccountNetworkPolicyEgressOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -787,10 +778,7 @@ export class DataDatabricksAccountNetworkPolicyEgressOutputReference extends cdk
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountNetworkPolicyEgress | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountNetworkPolicyEgress | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._networkAccess?.internalValue !== undefined) {
@@ -800,24 +788,18 @@ export class DataDatabricksAccountNetworkPolicyEgressOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountNetworkPolicyEgress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountNetworkPolicyEgress | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._networkAccess.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._networkAccess.internalValue = value.networkAccess;
     }
   }
 
-  // network_access - computed: false, optional: true, required: false
+  // network_access - computed: true, optional: true, required: false
   private _networkAccess = new DataDatabricksAccountNetworkPolicyEgressNetworkAccessOutputReference(this, "network_access");
   public get networkAccess() {
     return this._networkAccess;
@@ -835,7 +817,7 @@ export class DataDatabricksAccountNetworkPolicyEgressOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy databricks_account_network_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy databricks_account_network_policy}
 */
 export class DataDatabricksAccountNetworkPolicy extends cdktf.TerraformDataSource {
 
@@ -851,7 +833,7 @@ export class DataDatabricksAccountNetworkPolicy extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataDatabricksAccountNetworkPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountNetworkPolicy to import
-  * @param importFromId The id of the existing DataDatabricksAccountNetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountNetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountNetworkPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -863,18 +845,18 @@ export class DataDatabricksAccountNetworkPolicy extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksAccountNetworkPolicyConfig = {}
+  * @param options DataDatabricksAccountNetworkPolicyConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksAccountNetworkPolicyConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksAccountNetworkPolicyConfig) {
     super(scope, id, {
       terraformResourceType: 'databricks_account_network_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -885,8 +867,6 @@ export class DataDatabricksAccountNetworkPolicy extends cdktf.TerraformDataSourc
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountId = config.accountId;
-    this._egress.internalValue = config.egress;
     this._networkPolicyId = config.networkPolicyId;
   }
 
@@ -894,48 +874,24 @@ export class DataDatabricksAccountNetworkPolicy extends cdktf.TerraformDataSourc
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
-  private _accountId?: string; 
+  // account_id - computed: true, optional: false, required: false
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string) {
-    this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId;
-  }
 
-  // egress - computed: false, optional: true, required: false
+  // egress - computed: true, optional: false, required: false
   private _egress = new DataDatabricksAccountNetworkPolicyEgressOutputReference(this, "egress");
   public get egress() {
     return this._egress;
   }
-  public putEgress(value: DataDatabricksAccountNetworkPolicyEgress) {
-    this._egress.internalValue = value;
-  }
-  public resetEgress() {
-    this._egress.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get egressInput() {
-    return this._egress.internalValue;
-  }
 
-  // network_policy_id - computed: false, optional: true, required: false
+  // network_policy_id - computed: false, optional: false, required: true
   private _networkPolicyId?: string; 
   public get networkPolicyId() {
     return this.getStringAttribute('network_policy_id');
   }
   public set networkPolicyId(value: string) {
     this._networkPolicyId = value;
-  }
-  public resetNetworkPolicyId() {
-    this._networkPolicyId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networkPolicyIdInput() {
@@ -948,26 +904,12 @@ export class DataDatabricksAccountNetworkPolicy extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      egress: dataDatabricksAccountNetworkPolicyEgressToTerraform(this._egress.internalValue),
       network_policy_id: cdktf.stringToTerraform(this._networkPolicyId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      egress: {
-        value: dataDatabricksAccountNetworkPolicyEgressToHclTerraform(this._egress.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountNetworkPolicyEgress",
-      },
       network_policy_id: {
         value: cdktf.stringToHclTerraform(this._networkPolicyId),
         isBlock: false,

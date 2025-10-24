@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,14 +12,18 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksFeatureEngineeringFeaturesConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#page_size DataDatabricksFeatureEngineeringFeatures#page_size}
+  */
+  readonly pageSize?: number;
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#key DataDatabricksFeatureEngineeringFeatures#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#key DataDatabricksFeatureEngineeringFeatures#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#value DataDatabricksFeatureEngineeringFeatures#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#value DataDatabricksFeatureEngineeringFeatures#value}
   */
   readonly value: string;
 }
@@ -158,11 +162,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParame
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#extra_parameters DataDatabricksFeatureEngineeringFeatures#extra_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#extra_parameters DataDatabricksFeatureEngineeringFeatures#extra_parameters}
   */
   readonly extraParameters?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#function_type DataDatabricksFeatureEngineeringFeatures#function_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#function_type DataDatabricksFeatureEngineeringFeatures#function_type}
   */
   readonly functionType: string;
 }
@@ -272,15 +276,15 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputRefer
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#entity_columns DataDatabricksFeatureEngineeringFeatures#entity_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#entity_columns DataDatabricksFeatureEngineeringFeatures#entity_columns}
   */
   readonly entityColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#timeseries_column DataDatabricksFeatureEngineeringFeatures#timeseries_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#timeseries_column DataDatabricksFeatureEngineeringFeatures#timeseries_column}
   */
   readonly timeseriesColumn: string;
 }
@@ -423,7 +427,7 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSou
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#delta_table_source DataDatabricksFeatureEngineeringFeatures#delta_table_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#delta_table_source DataDatabricksFeatureEngineeringFeatures#delta_table_source}
   */
   readonly deltaTableSource?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource;
 }
@@ -507,11 +511,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReferen
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#duration DataDatabricksFeatureEngineeringFeatures#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#duration DataDatabricksFeatureEngineeringFeatures#duration}
   */
   readonly duration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#offset DataDatabricksFeatureEngineeringFeatures#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#offset DataDatabricksFeatureEngineeringFeatures#offset}
   */
   readonly offset?: string;
 }
@@ -621,29 +625,9 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputRef
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeatures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#description DataDatabricksFeatureEngineeringFeatures#description}
-  */
-  readonly description?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
   */
   readonly fullName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#function DataDatabricksFeatureEngineeringFeatures#function}
-  */
-  readonly function: DataDatabricksFeatureEngineeringFeaturesFeaturesFunction;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#inputs DataDatabricksFeatureEngineeringFeatures#inputs}
-  */
-  readonly inputs: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#source DataDatabricksFeatureEngineeringFeatures#source}
-  */
-  readonly source: DataDatabricksFeatureEngineeringFeaturesFeaturesSource;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#time_window DataDatabricksFeatureEngineeringFeatures#time_window}
-  */
-  readonly timeWindow: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow;
 }
 
 export function dataDatabricksFeatureEngineeringFeaturesFeaturesToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeatures): any {
@@ -652,12 +636,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesToTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
     full_name: cdktf.stringToTerraform(struct!.fullName),
-    function: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionToTerraform(struct!.function),
-    inputs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputs),
-    source: dataDatabricksFeatureEngineeringFeaturesFeaturesSourceToTerraform(struct!.source),
-    time_window: dataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowToTerraform(struct!.timeWindow),
   }
 }
 
@@ -668,41 +647,11 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesToHclTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     full_name: {
       value: cdktf.stringToHclTerraform(struct!.fullName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    function: {
-      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionToHclTerraform(struct!.function),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunction",
-    },
-    inputs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputs),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    source: {
-      value: dataDatabricksFeatureEngineeringFeaturesFeaturesSourceToHclTerraform(struct!.source),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesSource",
-    },
-    time_window: {
-      value: dataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowToHclTerraform(struct!.timeWindow),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow",
     },
   };
 
@@ -726,29 +675,9 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference ext
   public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeatures | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._description !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.description = this._description;
-    }
     if (this._fullName !== undefined) {
       hasAnyValues = true;
       internalValueResult.fullName = this._fullName;
-    }
-    if (this._function?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.function = this._function?.internalValue;
-    }
-    if (this._inputs !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.inputs = this._inputs;
-    }
-    if (this._source?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.source = this._source?.internalValue;
-    }
-    if (this._timeWindow?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeWindow = this._timeWindow?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -756,38 +685,17 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference ext
   public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeatures | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._description = undefined;
       this._fullName = undefined;
-      this._function.internalValue = undefined;
-      this._inputs = undefined;
-      this._source.internalValue = undefined;
-      this._timeWindow.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._description = value.description;
       this._fullName = value.fullName;
-      this._function.internalValue = value.function;
-      this._inputs = value.inputs;
-      this._source.internalValue = value.source;
-      this._timeWindow.internalValue = value.timeWindow;
     }
   }
 
-  // description - computed: true, optional: true, required: false
-  private _description?: string; 
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
-  }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
   }
 
   // full_name - computed: true, optional: false, required: true
@@ -803,56 +711,27 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference ext
     return this._fullName;
   }
 
-  // function - computed: true, optional: false, required: true
+  // function - computed: true, optional: false, required: false
   private _function = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputReference(this, "function");
   public get function() {
     return this._function;
   }
-  public putFunction(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunction) {
-    this._function.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get functionInput() {
-    return this._function.internalValue;
-  }
 
-  // inputs - computed: true, optional: false, required: true
-  private _inputs?: string[]; 
+  // inputs - computed: true, optional: false, required: false
   public get inputs() {
     return this.getListAttribute('inputs');
   }
-  public set inputs(value: string[]) {
-    this._inputs = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputsInput() {
-    return this._inputs;
-  }
 
-  // source - computed: true, optional: false, required: true
+  // source - computed: true, optional: false, required: false
   private _source = new DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReference(this, "source");
   public get source() {
     return this._source;
   }
-  public putSource(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSource) {
-    this._source.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceInput() {
-    return this._source.internalValue;
-  }
 
-  // time_window - computed: true, optional: false, required: true
+  // time_window - computed: true, optional: false, required: false
   private _timeWindow = new DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputReference(this, "time_window");
   public get timeWindow() {
     return this._timeWindow;
-  }
-  public putTimeWindow(value: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow) {
-    this._timeWindow.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeWindowInput() {
-    return this._timeWindow.internalValue;
   }
 }
 
@@ -877,7 +756,7 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}
 */
 export class DataDatabricksFeatureEngineeringFeatures extends cdktf.TerraformDataSource {
 
@@ -893,7 +772,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktf.TerraformDat
   * Generates CDKTF code for importing a DataDatabricksFeatureEngineeringFeatures resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFeatureEngineeringFeatures to import
-  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFeatureEngineeringFeatures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -905,7 +784,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -916,7 +795,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktf.TerraformDat
       terraformResourceType: 'databricks_feature_engineering_features',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -927,6 +806,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktf.TerraformDat
       connection: config.connection,
       forEach: config.forEach
     });
+    this._pageSize = config.pageSize;
   }
 
   // ==========
@@ -939,18 +819,43 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktf.TerraformDat
     return this._features;
   }
 
+  // page_size - computed: false, optional: true, required: false
+  private _pageSize?: number; 
+  public get pageSize() {
+    return this.getNumberAttribute('page_size');
+  }
+  public set pageSize(value: number) {
+    this._pageSize = value;
+  }
+  public resetPageSize() {
+    this._pageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageSizeInput() {
+    return this._pageSize;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      page_size: cdktf.numberToTerraform(this._pageSize),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      page_size: {
+        value: cdktf.numberToHclTerraform(this._pageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
