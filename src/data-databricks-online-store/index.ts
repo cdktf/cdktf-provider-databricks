@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/online_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksOnlineStoreConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store#capacity DataDatabricksOnlineStore#capacity}
-  */
-  readonly capacity: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}
   */
   readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store#read_replica_count DataDatabricksOnlineStore#read_replica_count}
-  */
-  readonly readReplicaCount?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store databricks_online_store}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/online_store databricks_online_store}
 */
 export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
 
@@ -43,7 +35,7 @@ export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksOnlineStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksOnlineStore to import
-  * @param importFromId The id of the existing DataDatabricksOnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksOnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/online_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksOnlineStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +47,7 @@ export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/online_store databricks_online_store} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/online_store databricks_online_store} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +58,7 @@ export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_online_store',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -77,26 +69,16 @@ export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._capacity = config.capacity;
     this._name = config.name;
-    this._readReplicaCount = config.readReplicaCount;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // capacity - computed: false, optional: false, required: true
-  private _capacity?: string; 
+  // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getStringAttribute('capacity');
-  }
-  public set capacity(value: string) {
-    this._capacity = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get capacityInput() {
-    return this._capacity;
   }
 
   // creation_time - computed: true, optional: false, required: false
@@ -122,20 +104,9 @@ export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
     return this._name;
   }
 
-  // read_replica_count - computed: false, optional: true, required: false
-  private _readReplicaCount?: number; 
+  // read_replica_count - computed: true, optional: false, required: false
   public get readReplicaCount() {
     return this.getNumberAttribute('read_replica_count');
-  }
-  public set readReplicaCount(value: number) {
-    this._readReplicaCount = value;
-  }
-  public resetReadReplicaCount() {
-    this._readReplicaCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readReplicaCountInput() {
-    return this._readReplicaCount;
   }
 
   // state - computed: true, optional: false, required: false
@@ -149,31 +120,17 @@ export class DataDatabricksOnlineStore extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity: cdktf.stringToTerraform(this._capacity),
       name: cdktf.stringToTerraform(this._name),
-      read_replica_count: cdktf.numberToTerraform(this._readReplicaCount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      capacity: {
-        value: cdktf.stringToHclTerraform(this._capacity),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      read_replica_count: {
-        value: cdktf.numberToHclTerraform(this._readReplicaCount),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
     };
 

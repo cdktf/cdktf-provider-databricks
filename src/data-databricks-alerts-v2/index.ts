@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,14 +12,18 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksAlertsV2Config extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#page_size DataDatabricksAlertsV2#page_size}
+  */
+  readonly pageSize?: number;
 }
 export interface DataDatabricksAlertsV2AlertsEffectiveRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
   */
   readonly userName?: string;
 }
@@ -132,11 +136,11 @@ export class DataDatabricksAlertsV2AlertsEffectiveRunAsOutputReference extends c
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#destination_id DataDatabricksAlertsV2#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#destination_id DataDatabricksAlertsV2#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#user_email DataDatabricksAlertsV2#user_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#user_email DataDatabricksAlertsV2#user_email}
   */
   readonly userEmail?: string;
 }
@@ -281,15 +285,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsList
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#notify_on_ok DataDatabricksAlertsV2#notify_on_ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#notify_on_ok DataDatabricksAlertsV2#notify_on_ok}
   */
   readonly notifyOnOk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#retrigger_seconds DataDatabricksAlertsV2#retrigger_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#retrigger_seconds DataDatabricksAlertsV2#retrigger_seconds}
   */
   readonly retriggerSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#subscriptions DataDatabricksAlertsV2#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#subscriptions DataDatabricksAlertsV2#subscriptions}
   */
   readonly subscriptions?: DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions[] | cdktf.IResolvable;
 }
@@ -441,15 +445,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference e
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
   */
   readonly name?: string;
 }
@@ -601,15 +605,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference extends
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationThresholdColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
   */
   readonly name?: string;
 }
@@ -761,15 +765,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationThresholdColumnOutputReferenc
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationThresholdValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#bool_value DataDatabricksAlertsV2#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#bool_value DataDatabricksAlertsV2#bool_value}
   */
   readonly boolValue?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#double_value DataDatabricksAlertsV2#double_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#double_value DataDatabricksAlertsV2#double_value}
   */
   readonly doubleValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#string_value DataDatabricksAlertsV2#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#string_value DataDatabricksAlertsV2#string_value}
   */
   readonly stringValue?: string;
 }
@@ -921,11 +925,11 @@ export class DataDatabricksAlertsV2AlertsEvaluationThresholdValueOutputReference
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#column DataDatabricksAlertsV2#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#column DataDatabricksAlertsV2#column}
   */
   readonly column?: DataDatabricksAlertsV2AlertsEvaluationThresholdColumn;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#value DataDatabricksAlertsV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#value DataDatabricksAlertsV2#value}
   */
   readonly value?: DataDatabricksAlertsV2AlertsEvaluationThresholdValue;
 }
@@ -1048,28 +1052,28 @@ export class DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReference exte
 }
 export interface DataDatabricksAlertsV2AlertsEvaluation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#comparison_operator DataDatabricksAlertsV2#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#comparison_operator DataDatabricksAlertsV2#comparison_operator}
   */
   readonly comparisonOperator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#empty_result_state DataDatabricksAlertsV2#empty_result_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#empty_result_state DataDatabricksAlertsV2#empty_result_state}
   */
   readonly emptyResultState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#notification DataDatabricksAlertsV2#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#notification DataDatabricksAlertsV2#notification}
   */
   readonly notification?: DataDatabricksAlertsV2AlertsEvaluationNotification;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#source DataDatabricksAlertsV2#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#source DataDatabricksAlertsV2#source}
   */
   readonly source?: DataDatabricksAlertsV2AlertsEvaluationSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#threshold DataDatabricksAlertsV2#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#threshold DataDatabricksAlertsV2#threshold}
   */
   readonly threshold?: DataDatabricksAlertsV2AlertsEvaluationThreshold;
 }
 
-export function dataDatabricksAlertsV2AlertsEvaluationToTerraform(struct?: DataDatabricksAlertsV2AlertsEvaluation | cdktf.IResolvable): any {
+export function dataDatabricksAlertsV2AlertsEvaluationToTerraform(struct?: DataDatabricksAlertsV2AlertsEvaluation): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1084,7 +1088,7 @@ export function dataDatabricksAlertsV2AlertsEvaluationToTerraform(struct?: DataD
 }
 
 
-export function dataDatabricksAlertsV2AlertsEvaluationToHclTerraform(struct?: DataDatabricksAlertsV2AlertsEvaluation | cdktf.IResolvable): any {
+export function dataDatabricksAlertsV2AlertsEvaluationToHclTerraform(struct?: DataDatabricksAlertsV2AlertsEvaluation): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1128,7 +1132,6 @@ export function dataDatabricksAlertsV2AlertsEvaluationToHclTerraform(struct?: Da
 
 export class DataDatabricksAlertsV2AlertsEvaluationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1138,10 +1141,7 @@ export class DataDatabricksAlertsV2AlertsEvaluationOutputReference extends cdktf
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAlertsV2AlertsEvaluation | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAlertsV2AlertsEvaluation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator !== undefined) {
@@ -1167,23 +1167,17 @@ export class DataDatabricksAlertsV2AlertsEvaluationOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAlertsV2AlertsEvaluation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAlertsV2AlertsEvaluation | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._comparisonOperator = undefined;
       this._emptyResultState = undefined;
       this._notification.internalValue = undefined;
       this._source.internalValue = undefined;
       this._threshold.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._comparisonOperator = value.comparisonOperator;
       this._emptyResultState = value.emptyResultState;
       this._notification.internalValue = value.notification;
@@ -1284,16 +1278,16 @@ export class DataDatabricksAlertsV2AlertsEvaluationOutputReference extends cdktf
 }
 export interface DataDatabricksAlertsV2AlertsRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
   */
   readonly userName?: string;
 }
 
-export function dataDatabricksAlertsV2AlertsRunAsToTerraform(struct?: DataDatabricksAlertsV2AlertsRunAs | cdktf.IResolvable): any {
+export function dataDatabricksAlertsV2AlertsRunAsToTerraform(struct?: DataDatabricksAlertsV2AlertsRunAs): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1305,7 +1299,7 @@ export function dataDatabricksAlertsV2AlertsRunAsToTerraform(struct?: DataDatabr
 }
 
 
-export function dataDatabricksAlertsV2AlertsRunAsToHclTerraform(struct?: DataDatabricksAlertsV2AlertsRunAs | cdktf.IResolvable): any {
+export function dataDatabricksAlertsV2AlertsRunAsToHclTerraform(struct?: DataDatabricksAlertsV2AlertsRunAs): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1331,7 +1325,6 @@ export function dataDatabricksAlertsV2AlertsRunAsToHclTerraform(struct?: DataDat
 
 export class DataDatabricksAlertsV2AlertsRunAsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1341,10 +1334,7 @@ export class DataDatabricksAlertsV2AlertsRunAsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAlertsV2AlertsRunAs | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAlertsV2AlertsRunAs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._servicePrincipalName !== undefined) {
@@ -1358,20 +1348,14 @@ export class DataDatabricksAlertsV2AlertsRunAsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAlertsV2AlertsRunAs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAlertsV2AlertsRunAs | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._servicePrincipalName = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._servicePrincipalName = value.servicePrincipalName;
       this._userName = value.userName;
     }
@@ -1411,20 +1395,20 @@ export class DataDatabricksAlertsV2AlertsRunAsOutputReference extends cdktf.Comp
 }
 export interface DataDatabricksAlertsV2AlertsSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#pause_status DataDatabricksAlertsV2#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#pause_status DataDatabricksAlertsV2#pause_status}
   */
   readonly pauseStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#quartz_cron_schedule DataDatabricksAlertsV2#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#quartz_cron_schedule DataDatabricksAlertsV2#quartz_cron_schedule}
   */
   readonly quartzCronSchedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#timezone_id DataDatabricksAlertsV2#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#timezone_id DataDatabricksAlertsV2#timezone_id}
   */
   readonly timezoneId?: string;
 }
 
-export function dataDatabricksAlertsV2AlertsScheduleToTerraform(struct?: DataDatabricksAlertsV2AlertsSchedule | cdktf.IResolvable): any {
+export function dataDatabricksAlertsV2AlertsScheduleToTerraform(struct?: DataDatabricksAlertsV2AlertsSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1437,7 +1421,7 @@ export function dataDatabricksAlertsV2AlertsScheduleToTerraform(struct?: DataDat
 }
 
 
-export function dataDatabricksAlertsV2AlertsScheduleToHclTerraform(struct?: DataDatabricksAlertsV2AlertsSchedule | cdktf.IResolvable): any {
+export function dataDatabricksAlertsV2AlertsScheduleToHclTerraform(struct?: DataDatabricksAlertsV2AlertsSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1469,7 +1453,6 @@ export function dataDatabricksAlertsV2AlertsScheduleToHclTerraform(struct?: Data
 
 export class DataDatabricksAlertsV2AlertsScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1479,10 +1462,7 @@ export class DataDatabricksAlertsV2AlertsScheduleOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAlertsV2AlertsSchedule | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAlertsV2AlertsSchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._pauseStatus !== undefined) {
@@ -1500,21 +1480,15 @@ export class DataDatabricksAlertsV2AlertsScheduleOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAlertsV2AlertsSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAlertsV2AlertsSchedule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._pauseStatus = undefined;
       this._quartzCronSchedule = undefined;
       this._timezoneId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._pauseStatus = value.pauseStatus;
       this._quartzCronSchedule = value.quartzCronSchedule;
       this._timezoneId = value.timezoneId;
@@ -1571,52 +1545,12 @@ export class DataDatabricksAlertsV2AlertsScheduleOutputReference extends cdktf.C
 }
 export interface DataDatabricksAlertsV2Alerts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#custom_description DataDatabricksAlertsV2#custom_description}
-  */
-  readonly customDescription?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#custom_summary DataDatabricksAlertsV2#custom_summary}
-  */
-  readonly customSummary?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#display_name DataDatabricksAlertsV2#display_name}
-  */
-  readonly displayName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#evaluation DataDatabricksAlertsV2#evaluation}
-  */
-  readonly evaluation?: DataDatabricksAlertsV2AlertsEvaluation;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#id DataDatabricksAlertsV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#id DataDatabricksAlertsV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#parent_path DataDatabricksAlertsV2#parent_path}
-  */
-  readonly parentPath?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#query_text DataDatabricksAlertsV2#query_text}
-  */
-  readonly queryText?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#run_as DataDatabricksAlertsV2#run_as}
-  */
-  readonly runAs?: DataDatabricksAlertsV2AlertsRunAs;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#run_as_user_name DataDatabricksAlertsV2#run_as_user_name}
-  */
-  readonly runAsUserName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#schedule DataDatabricksAlertsV2#schedule}
-  */
-  readonly schedule?: DataDatabricksAlertsV2AlertsSchedule;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#warehouse_id DataDatabricksAlertsV2#warehouse_id}
-  */
-  readonly warehouseId?: string;
 }
 
 export function dataDatabricksAlertsV2AlertsToTerraform(struct?: DataDatabricksAlertsV2Alerts): any {
@@ -1625,17 +1559,7 @@ export function dataDatabricksAlertsV2AlertsToTerraform(struct?: DataDatabricksA
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_description: cdktf.stringToTerraform(struct!.customDescription),
-    custom_summary: cdktf.stringToTerraform(struct!.customSummary),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    evaluation: dataDatabricksAlertsV2AlertsEvaluationToTerraform(struct!.evaluation),
     id: cdktf.stringToTerraform(struct!.id),
-    parent_path: cdktf.stringToTerraform(struct!.parentPath),
-    query_text: cdktf.stringToTerraform(struct!.queryText),
-    run_as: dataDatabricksAlertsV2AlertsRunAsToTerraform(struct!.runAs),
-    run_as_user_name: cdktf.stringToTerraform(struct!.runAsUserName),
-    schedule: dataDatabricksAlertsV2AlertsScheduleToTerraform(struct!.schedule),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
   }
 }
 
@@ -1646,68 +1570,8 @@ export function dataDatabricksAlertsV2AlertsToHclTerraform(struct?: DataDatabric
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_description: {
-      value: cdktf.stringToHclTerraform(struct!.customDescription),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    custom_summary: {
-      value: cdktf.stringToHclTerraform(struct!.customSummary),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    evaluation: {
-      value: dataDatabricksAlertsV2AlertsEvaluationToHclTerraform(struct!.evaluation),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAlertsV2AlertsEvaluation",
-    },
     id: {
       value: cdktf.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    parent_path: {
-      value: cdktf.stringToHclTerraform(struct!.parentPath),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    query_text: {
-      value: cdktf.stringToHclTerraform(struct!.queryText),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    run_as: {
-      value: dataDatabricksAlertsV2AlertsRunAsToHclTerraform(struct!.runAs),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAlertsV2AlertsRunAs",
-    },
-    run_as_user_name: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUserName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    schedule: {
-      value: dataDatabricksAlertsV2AlertsScheduleToHclTerraform(struct!.schedule),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "DataDatabricksAlertsV2AlertsSchedule",
-    },
-    warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1734,49 +1598,9 @@ export class DataDatabricksAlertsV2AlertsOutputReference extends cdktf.ComplexOb
   public get internalValue(): DataDatabricksAlertsV2Alerts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customDescription !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.customDescription = this._customDescription;
-    }
-    if (this._customSummary !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.customSummary = this._customSummary;
-    }
-    if (this._displayName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.displayName = this._displayName;
-    }
-    if (this._evaluation?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.evaluation = this._evaluation?.internalValue;
-    }
     if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
-    }
-    if (this._parentPath !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parentPath = this._parentPath;
-    }
-    if (this._queryText !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.queryText = this._queryText;
-    }
-    if (this._runAs?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.runAs = this._runAs?.internalValue;
-    }
-    if (this._runAsUserName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.runAsUserName = this._runAsUserName;
-    }
-    if (this._schedule?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.schedule = this._schedule?.internalValue;
-    }
-    if (this._warehouseId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.warehouseId = this._warehouseId;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1784,31 +1608,11 @@ export class DataDatabricksAlertsV2AlertsOutputReference extends cdktf.ComplexOb
   public set internalValue(value: DataDatabricksAlertsV2Alerts | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._customDescription = undefined;
-      this._customSummary = undefined;
-      this._displayName = undefined;
-      this._evaluation.internalValue = undefined;
       this._id = undefined;
-      this._parentPath = undefined;
-      this._queryText = undefined;
-      this._runAs.internalValue = undefined;
-      this._runAsUserName = undefined;
-      this._schedule.internalValue = undefined;
-      this._warehouseId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._customDescription = value.customDescription;
-      this._customSummary = value.customSummary;
-      this._displayName = value.displayName;
-      this._evaluation.internalValue = value.evaluation;
       this._id = value.id;
-      this._parentPath = value.parentPath;
-      this._queryText = value.queryText;
-      this._runAs.internalValue = value.runAs;
-      this._runAsUserName = value.runAsUserName;
-      this._schedule.internalValue = value.schedule;
-      this._warehouseId = value.warehouseId;
     }
   }
 
@@ -1817,52 +1621,19 @@ export class DataDatabricksAlertsV2AlertsOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('create_time');
   }
 
-  // custom_description - computed: true, optional: true, required: false
-  private _customDescription?: string; 
+  // custom_description - computed: true, optional: false, required: false
   public get customDescription() {
     return this.getStringAttribute('custom_description');
   }
-  public set customDescription(value: string) {
-    this._customDescription = value;
-  }
-  public resetCustomDescription() {
-    this._customDescription = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customDescriptionInput() {
-    return this._customDescription;
-  }
 
-  // custom_summary - computed: true, optional: true, required: false
-  private _customSummary?: string; 
+  // custom_summary - computed: true, optional: false, required: false
   public get customSummary() {
     return this.getStringAttribute('custom_summary');
   }
-  public set customSummary(value: string) {
-    this._customSummary = value;
-  }
-  public resetCustomSummary() {
-    this._customSummary = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customSummaryInput() {
-    return this._customSummary;
-  }
 
-  // display_name - computed: true, optional: true, required: false
-  private _displayName?: string; 
+  // display_name - computed: true, optional: false, required: false
   public get displayName() {
     return this.getStringAttribute('display_name');
-  }
-  public set displayName(value: string) {
-    this._displayName = value;
-  }
-  public resetDisplayName() {
-    this._displayName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get displayNameInput() {
-    return this._displayName;
   }
 
   // effective_run_as - computed: true, optional: false, required: false
@@ -1871,20 +1642,10 @@ export class DataDatabricksAlertsV2AlertsOutputReference extends cdktf.ComplexOb
     return this._effectiveRunAs;
   }
 
-  // evaluation - computed: true, optional: true, required: false
+  // evaluation - computed: true, optional: false, required: false
   private _evaluation = new DataDatabricksAlertsV2AlertsEvaluationOutputReference(this, "evaluation");
   public get evaluation() {
     return this._evaluation;
-  }
-  public putEvaluation(value: DataDatabricksAlertsV2AlertsEvaluation) {
-    this._evaluation.internalValue = value;
-  }
-  public resetEvaluation() {
-    this._evaluation.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get evaluationInput() {
-    return this._evaluation.internalValue;
   }
 
   // id - computed: true, optional: false, required: true
@@ -1910,84 +1671,31 @@ export class DataDatabricksAlertsV2AlertsOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('owner_user_name');
   }
 
-  // parent_path - computed: true, optional: true, required: false
-  private _parentPath?: string; 
+  // parent_path - computed: true, optional: false, required: false
   public get parentPath() {
     return this.getStringAttribute('parent_path');
   }
-  public set parentPath(value: string) {
-    this._parentPath = value;
-  }
-  public resetParentPath() {
-    this._parentPath = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parentPathInput() {
-    return this._parentPath;
-  }
 
-  // query_text - computed: true, optional: true, required: false
-  private _queryText?: string; 
+  // query_text - computed: true, optional: false, required: false
   public get queryText() {
     return this.getStringAttribute('query_text');
   }
-  public set queryText(value: string) {
-    this._queryText = value;
-  }
-  public resetQueryText() {
-    this._queryText = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get queryTextInput() {
-    return this._queryText;
-  }
 
-  // run_as - computed: true, optional: true, required: false
+  // run_as - computed: true, optional: false, required: false
   private _runAs = new DataDatabricksAlertsV2AlertsRunAsOutputReference(this, "run_as");
   public get runAs() {
     return this._runAs;
   }
-  public putRunAs(value: DataDatabricksAlertsV2AlertsRunAs) {
-    this._runAs.internalValue = value;
-  }
-  public resetRunAs() {
-    this._runAs.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get runAsInput() {
-    return this._runAs.internalValue;
-  }
 
-  // run_as_user_name - computed: true, optional: true, required: false
-  private _runAsUserName?: string; 
+  // run_as_user_name - computed: true, optional: false, required: false
   public get runAsUserName() {
     return this.getStringAttribute('run_as_user_name');
   }
-  public set runAsUserName(value: string) {
-    this._runAsUserName = value;
-  }
-  public resetRunAsUserName() {
-    this._runAsUserName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get runAsUserNameInput() {
-    return this._runAsUserName;
-  }
 
-  // schedule - computed: true, optional: true, required: false
+  // schedule - computed: true, optional: false, required: false
   private _schedule = new DataDatabricksAlertsV2AlertsScheduleOutputReference(this, "schedule");
   public get schedule() {
     return this._schedule;
-  }
-  public putSchedule(value: DataDatabricksAlertsV2AlertsSchedule) {
-    this._schedule.internalValue = value;
-  }
-  public resetSchedule() {
-    this._schedule.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleInput() {
-    return this._schedule.internalValue;
   }
 
   // update_time - computed: true, optional: false, required: false
@@ -1995,20 +1703,9 @@ export class DataDatabricksAlertsV2AlertsOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('update_time');
   }
 
-  // warehouse_id - computed: true, optional: true, required: false
-  private _warehouseId?: string; 
+  // warehouse_id - computed: true, optional: false, required: false
   public get warehouseId() {
     return this.getStringAttribute('warehouse_id');
-  }
-  public set warehouseId(value: string) {
-    this._warehouseId = value;
-  }
-  public resetWarehouseId() {
-    this._warehouseId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get warehouseIdInput() {
-    return this._warehouseId;
   }
 }
 
@@ -2033,7 +1730,7 @@ export class DataDatabricksAlertsV2AlertsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2 databricks_alerts_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2 databricks_alerts_v2}
 */
 export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
 
@@ -2049,7 +1746,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksAlertsV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAlertsV2 to import
-  * @param importFromId The id of the existing DataDatabricksAlertsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAlertsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAlertsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2061,7 +1758,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2072,7 +1769,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_alerts_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2083,6 +1780,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._pageSize = config.pageSize;
   }
 
   // ==========
@@ -2095,18 +1793,43 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
     return this._alerts;
   }
 
+  // page_size - computed: false, optional: true, required: false
+  private _pageSize?: number; 
+  public get pageSize() {
+    return this.getNumberAttribute('page_size');
+  }
+  public set pageSize(value: number) {
+    this._pageSize = value;
+  }
+  public resetPageSize() {
+    this._pageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageSizeInput() {
+    return this._pageSize;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      page_size: cdktf.numberToTerraform(this._pageSize),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      page_size: {
+        value: cdktf.numberToHclTerraform(this._pageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

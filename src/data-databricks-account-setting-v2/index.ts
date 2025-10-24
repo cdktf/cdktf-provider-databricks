@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksAccountSettingV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#aibi_dashboard_embedding_access_policy DataDatabricksAccountSettingV2#aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#name DataDatabricksAccountSettingV2#name}
   */
-  readonly aibiDashboardEmbeddingAccessPolicy?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#aibi_dashboard_embedding_approved_domains DataDatabricksAccountSettingV2#aibi_dashboard_embedding_approved_domains}
-  */
-  readonly aibiDashboardEmbeddingApprovedDomains?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#automatic_cluster_update_workspace DataDatabricksAccountSettingV2#automatic_cluster_update_workspace}
-  */
-  readonly automaticClusterUpdateWorkspace?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#boolean_val DataDatabricksAccountSettingV2#boolean_val}
-  */
-  readonly booleanVal?: DataDatabricksAccountSettingV2BooleanVal;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy DataDatabricksAccountSettingV2#effective_aibi_dashboard_embedding_access_policy}
-  */
-  readonly effectiveAibiDashboardEmbeddingAccessPolicy?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains DataDatabricksAccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}
-  */
-  readonly effectiveAibiDashboardEmbeddingApprovedDomains?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#effective_automatic_cluster_update_workspace DataDatabricksAccountSettingV2#effective_automatic_cluster_update_workspace}
-  */
-  readonly effectiveAutomaticClusterUpdateWorkspace?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#effective_personal_compute DataDatabricksAccountSettingV2#effective_personal_compute}
-  */
-  readonly effectivePersonalCompute?: DataDatabricksAccountSettingV2EffectivePersonalCompute;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#effective_restrict_workspace_admins DataDatabricksAccountSettingV2#effective_restrict_workspace_admins}
-  */
-  readonly effectiveRestrictWorkspaceAdmins?: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#integer_val DataDatabricksAccountSettingV2#integer_val}
-  */
-  readonly integerVal?: DataDatabricksAccountSettingV2IntegerVal;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#name DataDatabricksAccountSettingV2#name}
-  */
-  readonly name?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#personal_compute DataDatabricksAccountSettingV2#personal_compute}
-  */
-  readonly personalCompute?: DataDatabricksAccountSettingV2PersonalCompute;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#restrict_workspace_admins DataDatabricksAccountSettingV2#restrict_workspace_admins}
-  */
-  readonly restrictWorkspaceAdmins?: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#string_val DataDatabricksAccountSettingV2#string_val}
-  */
-  readonly stringVal?: DataDatabricksAccountSettingV2StringVal;
+  readonly name: string;
 }
 export interface DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
 
-export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -87,7 +35,7 @@ export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy
 }
 
 
-export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -107,7 +55,6 @@ export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy
 
 export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,10 +64,7 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOut
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessPolicyType !== undefined) {
@@ -130,24 +74,18 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._accessPolicyType = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._accessPolicyType = value.accessPolicyType;
     }
   }
 
-  // access_policy_type - computed: false, optional: false, required: true
+  // access_policy_type - computed: true, optional: false, required: true
   private _accessPolicyType?: string; 
   public get accessPolicyType() {
     return this.getStringAttribute('access_policy_type');
@@ -162,12 +100,12 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOut
 }
 export interface DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
 
-export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -178,7 +116,7 @@ export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDoma
 }
 
 
-export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -198,7 +136,6 @@ export function dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDoma
 
 export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -208,10 +145,7 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._approvedDomains !== undefined) {
@@ -221,24 +155,18 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._approvedDomains = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._approvedDomains = value.approvedDomains;
     }
   }
 
-  // approved_domains - computed: false, optional: true, required: false
+  // approved_domains - computed: true, optional: true, required: false
   private _approvedDomains?: string[]; 
   public get approvedDomains() {
     return this.getListAttribute('approved_domains');
@@ -256,15 +184,15 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable;
 }
@@ -366,7 +294,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnable
     }
   }
 
-  // forced_for_compliance_mode - computed: false, optional: true, required: false
+  // forced_for_compliance_mode - computed: true, optional: true, required: false
   private _forcedForComplianceMode?: boolean | cdktf.IResolvable; 
   public get forcedForComplianceMode() {
     return this.getBooleanAttribute('forced_for_compliance_mode');
@@ -382,7 +310,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnable
     return this._forcedForComplianceMode;
   }
 
-  // unavailable_for_disabled_entitlement - computed: false, optional: true, required: false
+  // unavailable_for_disabled_entitlement - computed: true, optional: true, required: false
   private _unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable; 
   public get unavailableForDisabledEntitlement() {
     return this.getBooleanAttribute('unavailable_for_disabled_entitlement');
@@ -398,7 +326,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnable
     return this._unavailableForDisabledEntitlement;
   }
 
-  // unavailable_for_non_enterprise_tier - computed: false, optional: true, required: false
+  // unavailable_for_non_enterprise_tier - computed: true, optional: true, required: false
   private _unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable; 
   public get unavailableForNonEnterpriseTier() {
     return this.getBooleanAttribute('unavailable_for_non_enterprise_tier');
@@ -416,11 +344,11 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnable
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -509,7 +437,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
     }
   }
 
-  // hours - computed: false, optional: true, required: false
+  // hours - computed: true, optional: true, required: false
   private _hours?: number; 
   public get hours() {
     return this.getNumberAttribute('hours');
@@ -525,7 +453,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
     return this._hours;
   }
 
-  // minutes - computed: false, optional: true, required: false
+  // minutes - computed: true, optional: true, required: false
   private _minutes?: number; 
   public get minutes() {
     return this.getNumberAttribute('minutes');
@@ -543,15 +471,15 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
   */
   readonly windowStartTime?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -653,7 +581,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
     }
   }
 
-  // day_of_week - computed: false, optional: true, required: false
+  // day_of_week - computed: true, optional: true, required: false
   private _dayOfWeek?: string; 
   public get dayOfWeek() {
     return this.getStringAttribute('day_of_week');
@@ -669,7 +597,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
     return this._dayOfWeek;
   }
 
-  // frequency - computed: false, optional: true, required: false
+  // frequency - computed: true, optional: true, required: false
   private _frequency?: string; 
   public get frequency() {
     return this.getStringAttribute('frequency');
@@ -685,7 +613,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
     return this._frequency;
   }
 
-  // window_start_time - computed: false, optional: true, required: false
+  // window_start_time - computed: true, optional: true, required: false
   private _windowStartTime = new DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference(this, "window_start_time");
   public get windowStartTime() {
     return this._windowStartTime;
@@ -703,7 +631,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -779,7 +707,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
     }
   }
 
-  // week_day_based_schedule - computed: false, optional: true, required: false
+  // week_day_based_schedule - computed: true, optional: true, required: false
   private _weekDayBasedSchedule = new DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference(this, "week_day_based_schedule");
   public get weekDayBasedSchedule() {
     return this._weekDayBasedSchedule;
@@ -797,28 +725,28 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
   */
   readonly enablementDetails?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable;
 }
 
-export function dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToTerraform(struct?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToTerraform(struct?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -833,7 +761,7 @@ export function dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToT
 }
 
 
-export function dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(struct?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(struct?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -877,7 +805,6 @@ export function dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToH
 
 export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -887,10 +814,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._canToggle !== undefined) {
@@ -916,23 +840,17 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._canToggle = undefined;
       this._enabled = undefined;
       this._enablementDetails.internalValue = undefined;
       this._maintenanceWindow.internalValue = undefined;
       this._restartEvenIfNoUpdatesAvailable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._canToggle = value.canToggle;
       this._enabled = value.enabled;
       this._enablementDetails.internalValue = value.enablementDetails;
@@ -941,7 +859,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     }
   }
 
-  // can_toggle - computed: false, optional: true, required: false
+  // can_toggle - computed: true, optional: true, required: false
   private _canToggle?: boolean | cdktf.IResolvable; 
   public get canToggle() {
     return this.getBooleanAttribute('can_toggle');
@@ -957,7 +875,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     return this._canToggle;
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -973,7 +891,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     return this._enabled;
   }
 
-  // enablement_details - computed: false, optional: true, required: false
+  // enablement_details - computed: true, optional: true, required: false
   private _enablementDetails = new DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference(this, "enablement_details");
   public get enablementDetails() {
     return this._enablementDetails;
@@ -989,7 +907,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     return this._enablementDetails.internalValue;
   }
 
-  // maintenance_window - computed: false, optional: true, required: false
+  // maintenance_window - computed: true, optional: true, required: false
   private _maintenanceWindow = new DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference(this, "maintenance_window");
   public get maintenanceWindow() {
     return this._maintenanceWindow;
@@ -1005,7 +923,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
     return this._maintenanceWindow.internalValue;
   }
 
-  // restart_even_if_no_updates_available - computed: false, optional: true, required: false
+  // restart_even_if_no_updates_available - computed: true, optional: true, required: false
   private _restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable; 
   public get restartEvenIfNoUpdatesAvailable() {
     return this.getBooleanAttribute('restart_even_if_no_updates_available');
@@ -1023,12 +941,12 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
 }
 export interface DataDatabricksAccountSettingV2BooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: boolean | cdktf.IResolvable;
 }
 
-export function dataDatabricksAccountSettingV2BooleanValToTerraform(struct?: DataDatabricksAccountSettingV2BooleanVal | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2BooleanValToTerraform(struct?: DataDatabricksAccountSettingV2BooleanVal): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1039,7 +957,7 @@ export function dataDatabricksAccountSettingV2BooleanValToTerraform(struct?: Dat
 }
 
 
-export function dataDatabricksAccountSettingV2BooleanValToHclTerraform(struct?: DataDatabricksAccountSettingV2BooleanVal | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2BooleanValToHclTerraform(struct?: DataDatabricksAccountSettingV2BooleanVal): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1059,7 +977,6 @@ export function dataDatabricksAccountSettingV2BooleanValToHclTerraform(struct?: 
 
 export class DataDatabricksAccountSettingV2BooleanValOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1069,10 +986,7 @@ export class DataDatabricksAccountSettingV2BooleanValOutputReference extends cdk
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2BooleanVal | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2BooleanVal | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._value !== undefined) {
@@ -1082,24 +996,18 @@ export class DataDatabricksAccountSettingV2BooleanValOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2BooleanVal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2BooleanVal | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._value = value.value;
     }
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: boolean | cdktf.IResolvable; 
   public get value() {
     return this.getBooleanAttribute('value');
@@ -1117,12 +1025,12 @@ export class DataDatabricksAccountSettingV2BooleanValOutputReference extends cdk
 }
 export interface DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
 
-export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1133,7 +1041,7 @@ export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAcc
 }
 
 
-export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1153,7 +1061,6 @@ export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAcc
 
 export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1163,10 +1070,7 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccess
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessPolicyType !== undefined) {
@@ -1176,24 +1080,18 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccess
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._accessPolicyType = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._accessPolicyType = value.accessPolicyType;
     }
   }
 
-  // access_policy_type - computed: false, optional: false, required: true
+  // access_policy_type - computed: true, optional: false, required: true
   private _accessPolicyType?: string; 
   public get accessPolicyType() {
     return this.getStringAttribute('access_policy_type');
@@ -1208,12 +1106,12 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccess
 }
 export interface DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
 
-export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1224,7 +1122,7 @@ export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApp
 }
 
 
-export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1244,7 +1142,6 @@ export function dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApp
 
 export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1254,10 +1151,7 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprov
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._approvedDomains !== undefined) {
@@ -1267,24 +1161,18 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprov
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._approvedDomains = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._approvedDomains = value.approvedDomains;
     }
   }
 
-  // approved_domains - computed: false, optional: true, required: false
+  // approved_domains - computed: true, optional: true, required: false
   private _approvedDomains?: string[]; 
   public get approvedDomains() {
     return this.getListAttribute('approved_domains');
@@ -1302,15 +1190,15 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprov
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable;
 }
@@ -1412,7 +1300,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     }
   }
 
-  // forced_for_compliance_mode - computed: false, optional: true, required: false
+  // forced_for_compliance_mode - computed: true, optional: true, required: false
   private _forcedForComplianceMode?: boolean | cdktf.IResolvable; 
   public get forcedForComplianceMode() {
     return this.getBooleanAttribute('forced_for_compliance_mode');
@@ -1428,7 +1316,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._forcedForComplianceMode;
   }
 
-  // unavailable_for_disabled_entitlement - computed: false, optional: true, required: false
+  // unavailable_for_disabled_entitlement - computed: true, optional: true, required: false
   private _unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable; 
   public get unavailableForDisabledEntitlement() {
     return this.getBooleanAttribute('unavailable_for_disabled_entitlement');
@@ -1444,7 +1332,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._unavailableForDisabledEntitlement;
   }
 
-  // unavailable_for_non_enterprise_tier - computed: false, optional: true, required: false
+  // unavailable_for_non_enterprise_tier - computed: true, optional: true, required: false
   private _unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable; 
   public get unavailableForNonEnterpriseTier() {
     return this.getBooleanAttribute('unavailable_for_non_enterprise_tier');
@@ -1462,11 +1350,11 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -1555,7 +1443,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     }
   }
 
-  // hours - computed: false, optional: true, required: false
+  // hours - computed: true, optional: true, required: false
   private _hours?: number; 
   public get hours() {
     return this.getNumberAttribute('hours');
@@ -1571,7 +1459,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._hours;
   }
 
-  // minutes - computed: false, optional: true, required: false
+  // minutes - computed: true, optional: true, required: false
   private _minutes?: number; 
   public get minutes() {
     return this.getNumberAttribute('minutes');
@@ -1589,15 +1477,15 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
   */
   readonly windowStartTime?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -1699,7 +1587,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     }
   }
 
-  // day_of_week - computed: false, optional: true, required: false
+  // day_of_week - computed: true, optional: true, required: false
   private _dayOfWeek?: string; 
   public get dayOfWeek() {
     return this.getStringAttribute('day_of_week');
@@ -1715,7 +1603,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._dayOfWeek;
   }
 
-  // frequency - computed: false, optional: true, required: false
+  // frequency - computed: true, optional: true, required: false
   private _frequency?: string; 
   public get frequency() {
     return this.getStringAttribute('frequency');
@@ -1731,7 +1619,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._frequency;
   }
 
-  // window_start_time - computed: false, optional: true, required: false
+  // window_start_time - computed: true, optional: true, required: false
   private _windowStartTime = new DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference(this, "window_start_time");
   public get windowStartTime() {
     return this._windowStartTime;
@@ -1749,7 +1637,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -1825,7 +1713,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     }
   }
 
-  // week_day_based_schedule - computed: false, optional: true, required: false
+  // week_day_based_schedule - computed: true, optional: true, required: false
   private _weekDayBasedSchedule = new DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference(this, "week_day_based_schedule");
   public get weekDayBasedSchedule() {
     return this._weekDayBasedSchedule;
@@ -1843,28 +1731,28 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
   */
   readonly enablementDetails?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable;
 }
 
-export function dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1879,7 +1767,7 @@ export function dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWor
 }
 
 
-export function dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1923,7 +1811,6 @@ export function dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWor
 
 export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1933,10 +1820,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._canToggle !== undefined) {
@@ -1962,23 +1846,17 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._canToggle = undefined;
       this._enabled = undefined;
       this._enablementDetails.internalValue = undefined;
       this._maintenanceWindow.internalValue = undefined;
       this._restartEvenIfNoUpdatesAvailable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._canToggle = value.canToggle;
       this._enabled = value.enabled;
       this._enablementDetails.internalValue = value.enablementDetails;
@@ -1987,7 +1865,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     }
   }
 
-  // can_toggle - computed: false, optional: true, required: false
+  // can_toggle - computed: true, optional: true, required: false
   private _canToggle?: boolean | cdktf.IResolvable; 
   public get canToggle() {
     return this.getBooleanAttribute('can_toggle');
@@ -2003,7 +1881,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._canToggle;
   }
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -2019,7 +1897,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._enabled;
   }
 
-  // enablement_details - computed: false, optional: true, required: false
+  // enablement_details - computed: true, optional: true, required: false
   private _enablementDetails = new DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference(this, "enablement_details");
   public get enablementDetails() {
     return this._enablementDetails;
@@ -2035,7 +1913,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._enablementDetails.internalValue;
   }
 
-  // maintenance_window - computed: false, optional: true, required: false
+  // maintenance_window - computed: true, optional: true, required: false
   private _maintenanceWindow = new DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference(this, "maintenance_window");
   public get maintenanceWindow() {
     return this._maintenanceWindow;
@@ -2051,7 +1929,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
     return this._maintenanceWindow.internalValue;
   }
 
-  // restart_even_if_no_updates_available - computed: false, optional: true, required: false
+  // restart_even_if_no_updates_available - computed: true, optional: true, required: false
   private _restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable; 
   public get restartEvenIfNoUpdatesAvailable() {
     return this.getBooleanAttribute('restart_even_if_no_updates_available');
@@ -2069,7 +1947,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveBooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: boolean | cdktf.IResolvable;
 }
@@ -2153,7 +2031,7 @@ export class DataDatabricksAccountSettingV2EffectiveBooleanValOutputReference ex
 }
 export interface DataDatabricksAccountSettingV2EffectiveIntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: number;
 }
@@ -2237,12 +2115,12 @@ export class DataDatabricksAccountSettingV2EffectiveIntegerValOutputReference ex
 }
 export interface DataDatabricksAccountSettingV2EffectivePersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksAccountSettingV2EffectivePersonalComputeToTerraform(struct?: DataDatabricksAccountSettingV2EffectivePersonalCompute | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectivePersonalComputeToTerraform(struct?: DataDatabricksAccountSettingV2EffectivePersonalCompute): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2253,7 +2131,7 @@ export function dataDatabricksAccountSettingV2EffectivePersonalComputeToTerrafor
 }
 
 
-export function dataDatabricksAccountSettingV2EffectivePersonalComputeToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectivePersonalCompute | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectivePersonalComputeToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectivePersonalCompute): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2273,7 +2151,6 @@ export function dataDatabricksAccountSettingV2EffectivePersonalComputeToHclTerra
 
 export class DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2283,10 +2160,7 @@ export class DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReferen
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2EffectivePersonalCompute | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2EffectivePersonalCompute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._value !== undefined) {
@@ -2296,24 +2170,18 @@ export class DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2EffectivePersonalCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2EffectivePersonalCompute | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._value = value.value;
     }
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -2331,12 +2199,12 @@ export class DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReferen
 }
 export interface DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
   */
   readonly status: string;
 }
 
-export function dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(struct?: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2347,7 +2215,7 @@ export function dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsTo
 }
 
 
-export function dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform(struct?: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2367,7 +2235,6 @@ export function dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsTo
 
 export class DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2377,10 +2244,7 @@ export class DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutpu
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status !== undefined) {
@@ -2390,24 +2254,18 @@ export class DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._status = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._status = value.status;
     }
   }
 
-  // status - computed: false, optional: false, required: true
+  // status - computed: true, optional: false, required: true
   private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
@@ -2422,7 +2280,7 @@ export class DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutpu
 }
 export interface DataDatabricksAccountSettingV2EffectiveStringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2506,12 +2364,12 @@ export class DataDatabricksAccountSettingV2EffectiveStringValOutputReference ext
 }
 export interface DataDatabricksAccountSettingV2IntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: number;
 }
 
-export function dataDatabricksAccountSettingV2IntegerValToTerraform(struct?: DataDatabricksAccountSettingV2IntegerVal | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2IntegerValToTerraform(struct?: DataDatabricksAccountSettingV2IntegerVal): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2522,7 +2380,7 @@ export function dataDatabricksAccountSettingV2IntegerValToTerraform(struct?: Dat
 }
 
 
-export function dataDatabricksAccountSettingV2IntegerValToHclTerraform(struct?: DataDatabricksAccountSettingV2IntegerVal | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2IntegerValToHclTerraform(struct?: DataDatabricksAccountSettingV2IntegerVal): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2542,7 +2400,6 @@ export function dataDatabricksAccountSettingV2IntegerValToHclTerraform(struct?: 
 
 export class DataDatabricksAccountSettingV2IntegerValOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2552,10 +2409,7 @@ export class DataDatabricksAccountSettingV2IntegerValOutputReference extends cdk
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2IntegerVal | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2IntegerVal | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._value !== undefined) {
@@ -2565,24 +2419,18 @@ export class DataDatabricksAccountSettingV2IntegerValOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2IntegerVal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2IntegerVal | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._value = value.value;
     }
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: number; 
   public get value() {
     return this.getNumberAttribute('value');
@@ -2600,12 +2448,12 @@ export class DataDatabricksAccountSettingV2IntegerValOutputReference extends cdk
 }
 export interface DataDatabricksAccountSettingV2PersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksAccountSettingV2PersonalComputeToTerraform(struct?: DataDatabricksAccountSettingV2PersonalCompute | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2PersonalComputeToTerraform(struct?: DataDatabricksAccountSettingV2PersonalCompute): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2616,7 +2464,7 @@ export function dataDatabricksAccountSettingV2PersonalComputeToTerraform(struct?
 }
 
 
-export function dataDatabricksAccountSettingV2PersonalComputeToHclTerraform(struct?: DataDatabricksAccountSettingV2PersonalCompute | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2PersonalComputeToHclTerraform(struct?: DataDatabricksAccountSettingV2PersonalCompute): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2636,7 +2484,6 @@ export function dataDatabricksAccountSettingV2PersonalComputeToHclTerraform(stru
 
 export class DataDatabricksAccountSettingV2PersonalComputeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2646,10 +2493,7 @@ export class DataDatabricksAccountSettingV2PersonalComputeOutputReference extend
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2PersonalCompute | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2PersonalCompute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._value !== undefined) {
@@ -2659,24 +2503,18 @@ export class DataDatabricksAccountSettingV2PersonalComputeOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2PersonalCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2PersonalCompute | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._value = value.value;
     }
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -2694,12 +2532,12 @@ export class DataDatabricksAccountSettingV2PersonalComputeOutputReference extend
 }
 export interface DataDatabricksAccountSettingV2RestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
   */
   readonly status: string;
 }
 
-export function dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToTerraform(struct?: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToTerraform(struct?: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2710,7 +2548,7 @@ export function dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToTerraform
 }
 
 
-export function dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToHclTerraform(struct?: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToHclTerraform(struct?: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2730,7 +2568,6 @@ export function dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToHclTerraf
 
 export class DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2740,10 +2577,7 @@ export class DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReferenc
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2RestrictWorkspaceAdmins | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status !== undefined) {
@@ -2753,24 +2587,18 @@ export class DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._status = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._status = value.status;
     }
   }
 
-  // status - computed: false, optional: false, required: true
+  // status - computed: true, optional: false, required: true
   private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
@@ -2785,12 +2613,12 @@ export class DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReferenc
 }
 export interface DataDatabricksAccountSettingV2StringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksAccountSettingV2StringValToTerraform(struct?: DataDatabricksAccountSettingV2StringVal | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2StringValToTerraform(struct?: DataDatabricksAccountSettingV2StringVal): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2801,7 +2629,7 @@ export function dataDatabricksAccountSettingV2StringValToTerraform(struct?: Data
 }
 
 
-export function dataDatabricksAccountSettingV2StringValToHclTerraform(struct?: DataDatabricksAccountSettingV2StringVal | cdktf.IResolvable): any {
+export function dataDatabricksAccountSettingV2StringValToHclTerraform(struct?: DataDatabricksAccountSettingV2StringVal): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2821,7 +2649,6 @@ export function dataDatabricksAccountSettingV2StringValToHclTerraform(struct?: D
 
 export class DataDatabricksAccountSettingV2StringValOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2831,10 +2658,7 @@ export class DataDatabricksAccountSettingV2StringValOutputReference extends cdkt
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountSettingV2StringVal | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksAccountSettingV2StringVal | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._value !== undefined) {
@@ -2844,24 +2668,18 @@ export class DataDatabricksAccountSettingV2StringValOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountSettingV2StringVal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountSettingV2StringVal | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._value = value.value;
     }
   }
 
-  // value - computed: false, optional: true, required: false
+  // value - computed: true, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -2879,7 +2697,7 @@ export class DataDatabricksAccountSettingV2StringValOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}
 */
 export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
 
@@ -2895,7 +2713,7 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksAccountSettingV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountSettingV2 to import
-  * @param importFromId The id of the existing DataDatabricksAccountSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountSettingV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2907,18 +2725,18 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksAccountSettingV2Config = {}
+  * @param options DataDatabricksAccountSettingV2Config
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksAccountSettingV2Config = {}) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksAccountSettingV2Config) {
     super(scope, id, {
       terraformResourceType: 'databricks_account_setting_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2929,136 +2747,53 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._aibiDashboardEmbeddingAccessPolicy.internalValue = config.aibiDashboardEmbeddingAccessPolicy;
-    this._aibiDashboardEmbeddingApprovedDomains.internalValue = config.aibiDashboardEmbeddingApprovedDomains;
-    this._automaticClusterUpdateWorkspace.internalValue = config.automaticClusterUpdateWorkspace;
-    this._booleanVal.internalValue = config.booleanVal;
-    this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue = config.effectiveAibiDashboardEmbeddingAccessPolicy;
-    this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue = config.effectiveAibiDashboardEmbeddingApprovedDomains;
-    this._effectiveAutomaticClusterUpdateWorkspace.internalValue = config.effectiveAutomaticClusterUpdateWorkspace;
-    this._effectivePersonalCompute.internalValue = config.effectivePersonalCompute;
-    this._effectiveRestrictWorkspaceAdmins.internalValue = config.effectiveRestrictWorkspaceAdmins;
-    this._integerVal.internalValue = config.integerVal;
     this._name = config.name;
-    this._personalCompute.internalValue = config.personalCompute;
-    this._restrictWorkspaceAdmins.internalValue = config.restrictWorkspaceAdmins;
-    this._stringVal.internalValue = config.stringVal;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // aibi_dashboard_embedding_access_policy - computed: false, optional: true, required: false
+  // aibi_dashboard_embedding_access_policy - computed: true, optional: false, required: false
   private _aibiDashboardEmbeddingAccessPolicy = new DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference(this, "aibi_dashboard_embedding_access_policy");
   public get aibiDashboardEmbeddingAccessPolicy() {
     return this._aibiDashboardEmbeddingAccessPolicy;
   }
-  public putAibiDashboardEmbeddingAccessPolicy(value: DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy) {
-    this._aibiDashboardEmbeddingAccessPolicy.internalValue = value;
-  }
-  public resetAibiDashboardEmbeddingAccessPolicy() {
-    this._aibiDashboardEmbeddingAccessPolicy.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aibiDashboardEmbeddingAccessPolicyInput() {
-    return this._aibiDashboardEmbeddingAccessPolicy.internalValue;
-  }
 
-  // aibi_dashboard_embedding_approved_domains - computed: false, optional: true, required: false
+  // aibi_dashboard_embedding_approved_domains - computed: true, optional: false, required: false
   private _aibiDashboardEmbeddingApprovedDomains = new DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference(this, "aibi_dashboard_embedding_approved_domains");
   public get aibiDashboardEmbeddingApprovedDomains() {
     return this._aibiDashboardEmbeddingApprovedDomains;
   }
-  public putAibiDashboardEmbeddingApprovedDomains(value: DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains) {
-    this._aibiDashboardEmbeddingApprovedDomains.internalValue = value;
-  }
-  public resetAibiDashboardEmbeddingApprovedDomains() {
-    this._aibiDashboardEmbeddingApprovedDomains.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aibiDashboardEmbeddingApprovedDomainsInput() {
-    return this._aibiDashboardEmbeddingApprovedDomains.internalValue;
-  }
 
-  // automatic_cluster_update_workspace - computed: false, optional: true, required: false
+  // automatic_cluster_update_workspace - computed: true, optional: false, required: false
   private _automaticClusterUpdateWorkspace = new DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference(this, "automatic_cluster_update_workspace");
   public get automaticClusterUpdateWorkspace() {
     return this._automaticClusterUpdateWorkspace;
   }
-  public putAutomaticClusterUpdateWorkspace(value: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace) {
-    this._automaticClusterUpdateWorkspace.internalValue = value;
-  }
-  public resetAutomaticClusterUpdateWorkspace() {
-    this._automaticClusterUpdateWorkspace.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get automaticClusterUpdateWorkspaceInput() {
-    return this._automaticClusterUpdateWorkspace.internalValue;
-  }
 
-  // boolean_val - computed: false, optional: true, required: false
+  // boolean_val - computed: true, optional: false, required: false
   private _booleanVal = new DataDatabricksAccountSettingV2BooleanValOutputReference(this, "boolean_val");
   public get booleanVal() {
     return this._booleanVal;
   }
-  public putBooleanVal(value: DataDatabricksAccountSettingV2BooleanVal) {
-    this._booleanVal.internalValue = value;
-  }
-  public resetBooleanVal() {
-    this._booleanVal.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get booleanValInput() {
-    return this._booleanVal.internalValue;
-  }
 
-  // effective_aibi_dashboard_embedding_access_policy - computed: false, optional: true, required: false
+  // effective_aibi_dashboard_embedding_access_policy - computed: true, optional: false, required: false
   private _effectiveAibiDashboardEmbeddingAccessPolicy = new DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference(this, "effective_aibi_dashboard_embedding_access_policy");
   public get effectiveAibiDashboardEmbeddingAccessPolicy() {
     return this._effectiveAibiDashboardEmbeddingAccessPolicy;
   }
-  public putEffectiveAibiDashboardEmbeddingAccessPolicy(value: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy) {
-    this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue = value;
-  }
-  public resetEffectiveAibiDashboardEmbeddingAccessPolicy() {
-    this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveAibiDashboardEmbeddingAccessPolicyInput() {
-    return this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue;
-  }
 
-  // effective_aibi_dashboard_embedding_approved_domains - computed: false, optional: true, required: false
+  // effective_aibi_dashboard_embedding_approved_domains - computed: true, optional: false, required: false
   private _effectiveAibiDashboardEmbeddingApprovedDomains = new DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference(this, "effective_aibi_dashboard_embedding_approved_domains");
   public get effectiveAibiDashboardEmbeddingApprovedDomains() {
     return this._effectiveAibiDashboardEmbeddingApprovedDomains;
   }
-  public putEffectiveAibiDashboardEmbeddingApprovedDomains(value: DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains) {
-    this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue = value;
-  }
-  public resetEffectiveAibiDashboardEmbeddingApprovedDomains() {
-    this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveAibiDashboardEmbeddingApprovedDomainsInput() {
-    return this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue;
-  }
 
-  // effective_automatic_cluster_update_workspace - computed: false, optional: true, required: false
+  // effective_automatic_cluster_update_workspace - computed: true, optional: false, required: false
   private _effectiveAutomaticClusterUpdateWorkspace = new DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference(this, "effective_automatic_cluster_update_workspace");
   public get effectiveAutomaticClusterUpdateWorkspace() {
     return this._effectiveAutomaticClusterUpdateWorkspace;
-  }
-  public putEffectiveAutomaticClusterUpdateWorkspace(value: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace) {
-    this._effectiveAutomaticClusterUpdateWorkspace.internalValue = value;
-  }
-  public resetEffectiveAutomaticClusterUpdateWorkspace() {
-    this._effectiveAutomaticClusterUpdateWorkspace.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveAutomaticClusterUpdateWorkspaceInput() {
-    return this._effectiveAutomaticClusterUpdateWorkspace.internalValue;
   }
 
   // effective_boolean_val - computed: true, optional: false, required: false
@@ -3073,36 +2808,16 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
     return this._effectiveIntegerVal;
   }
 
-  // effective_personal_compute - computed: false, optional: true, required: false
+  // effective_personal_compute - computed: true, optional: false, required: false
   private _effectivePersonalCompute = new DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReference(this, "effective_personal_compute");
   public get effectivePersonalCompute() {
     return this._effectivePersonalCompute;
   }
-  public putEffectivePersonalCompute(value: DataDatabricksAccountSettingV2EffectivePersonalCompute) {
-    this._effectivePersonalCompute.internalValue = value;
-  }
-  public resetEffectivePersonalCompute() {
-    this._effectivePersonalCompute.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectivePersonalComputeInput() {
-    return this._effectivePersonalCompute.internalValue;
-  }
 
-  // effective_restrict_workspace_admins - computed: false, optional: true, required: false
+  // effective_restrict_workspace_admins - computed: true, optional: false, required: false
   private _effectiveRestrictWorkspaceAdmins = new DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference(this, "effective_restrict_workspace_admins");
   public get effectiveRestrictWorkspaceAdmins() {
     return this._effectiveRestrictWorkspaceAdmins;
-  }
-  public putEffectiveRestrictWorkspaceAdmins(value: DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins) {
-    this._effectiveRestrictWorkspaceAdmins.internalValue = value;
-  }
-  public resetEffectiveRestrictWorkspaceAdmins() {
-    this._effectiveRestrictWorkspaceAdmins.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get effectiveRestrictWorkspaceAdminsInput() {
-    return this._effectiveRestrictWorkspaceAdmins.internalValue;
   }
 
   // effective_string_val - computed: true, optional: false, required: false
@@ -3111,23 +2826,13 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
     return this._effectiveStringVal;
   }
 
-  // integer_val - computed: false, optional: true, required: false
+  // integer_val - computed: true, optional: false, required: false
   private _integerVal = new DataDatabricksAccountSettingV2IntegerValOutputReference(this, "integer_val");
   public get integerVal() {
     return this._integerVal;
   }
-  public putIntegerVal(value: DataDatabricksAccountSettingV2IntegerVal) {
-    this._integerVal.internalValue = value;
-  }
-  public resetIntegerVal() {
-    this._integerVal.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integerValInput() {
-    return this._integerVal.internalValue;
-  }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -3135,60 +2840,27 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
   public set name(value: string) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // personal_compute - computed: false, optional: true, required: false
+  // personal_compute - computed: true, optional: false, required: false
   private _personalCompute = new DataDatabricksAccountSettingV2PersonalComputeOutputReference(this, "personal_compute");
   public get personalCompute() {
     return this._personalCompute;
   }
-  public putPersonalCompute(value: DataDatabricksAccountSettingV2PersonalCompute) {
-    this._personalCompute.internalValue = value;
-  }
-  public resetPersonalCompute() {
-    this._personalCompute.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get personalComputeInput() {
-    return this._personalCompute.internalValue;
-  }
 
-  // restrict_workspace_admins - computed: false, optional: true, required: false
+  // restrict_workspace_admins - computed: true, optional: false, required: false
   private _restrictWorkspaceAdmins = new DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReference(this, "restrict_workspace_admins");
   public get restrictWorkspaceAdmins() {
     return this._restrictWorkspaceAdmins;
   }
-  public putRestrictWorkspaceAdmins(value: DataDatabricksAccountSettingV2RestrictWorkspaceAdmins) {
-    this._restrictWorkspaceAdmins.internalValue = value;
-  }
-  public resetRestrictWorkspaceAdmins() {
-    this._restrictWorkspaceAdmins.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restrictWorkspaceAdminsInput() {
-    return this._restrictWorkspaceAdmins.internalValue;
-  }
 
-  // string_val - computed: false, optional: true, required: false
+  // string_val - computed: true, optional: false, required: false
   private _stringVal = new DataDatabricksAccountSettingV2StringValOutputReference(this, "string_val");
   public get stringVal() {
     return this._stringVal;
-  }
-  public putStringVal(value: DataDatabricksAccountSettingV2StringVal) {
-    this._stringVal.internalValue = value;
-  }
-  public resetStringVal() {
-    this._stringVal.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringValInput() {
-    return this._stringVal.internalValue;
   }
 
   // =========
@@ -3197,108 +2869,17 @@ export class DataDatabricksAccountSettingV2 extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aibi_dashboard_embedding_access_policy: dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(this._aibiDashboardEmbeddingAccessPolicy.internalValue),
-      aibi_dashboard_embedding_approved_domains: dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(this._aibiDashboardEmbeddingApprovedDomains.internalValue),
-      automatic_cluster_update_workspace: dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToTerraform(this._automaticClusterUpdateWorkspace.internalValue),
-      boolean_val: dataDatabricksAccountSettingV2BooleanValToTerraform(this._booleanVal.internalValue),
-      effective_aibi_dashboard_embedding_access_policy: dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue),
-      effective_aibi_dashboard_embedding_approved_domains: dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToTerraform(this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue),
-      effective_automatic_cluster_update_workspace: dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraform(this._effectiveAutomaticClusterUpdateWorkspace.internalValue),
-      effective_personal_compute: dataDatabricksAccountSettingV2EffectivePersonalComputeToTerraform(this._effectivePersonalCompute.internalValue),
-      effective_restrict_workspace_admins: dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(this._effectiveRestrictWorkspaceAdmins.internalValue),
-      integer_val: dataDatabricksAccountSettingV2IntegerValToTerraform(this._integerVal.internalValue),
       name: cdktf.stringToTerraform(this._name),
-      personal_compute: dataDatabricksAccountSettingV2PersonalComputeToTerraform(this._personalCompute.internalValue),
-      restrict_workspace_admins: dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToTerraform(this._restrictWorkspaceAdmins.internalValue),
-      string_val: dataDatabricksAccountSettingV2StringValToTerraform(this._stringVal.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      aibi_dashboard_embedding_access_policy: {
-        value: dataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerraform(this._aibiDashboardEmbeddingAccessPolicy.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy",
-      },
-      aibi_dashboard_embedding_approved_domains: {
-        value: dataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerraform(this._aibiDashboardEmbeddingApprovedDomains.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains",
-      },
-      automatic_cluster_update_workspace: {
-        value: dataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(this._automaticClusterUpdateWorkspace.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace",
-      },
-      boolean_val: {
-        value: dataDatabricksAccountSettingV2BooleanValToHclTerraform(this._booleanVal.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2BooleanVal",
-      },
-      effective_aibi_dashboard_embedding_access_policy: {
-        value: dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToHclTerraform(this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy",
-      },
-      effective_aibi_dashboard_embedding_approved_domains: {
-        value: dataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToHclTerraform(this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains",
-      },
-      effective_automatic_cluster_update_workspace: {
-        value: dataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclTerraform(this._effectiveAutomaticClusterUpdateWorkspace.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace",
-      },
-      effective_personal_compute: {
-        value: dataDatabricksAccountSettingV2EffectivePersonalComputeToHclTerraform(this._effectivePersonalCompute.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2EffectivePersonalCompute",
-      },
-      effective_restrict_workspace_admins: {
-        value: dataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform(this._effectiveRestrictWorkspaceAdmins.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins",
-      },
-      integer_val: {
-        value: dataDatabricksAccountSettingV2IntegerValToHclTerraform(this._integerVal.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2IntegerVal",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      personal_compute: {
-        value: dataDatabricksAccountSettingV2PersonalComputeToHclTerraform(this._personalCompute.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2PersonalCompute",
-      },
-      restrict_workspace_admins: {
-        value: dataDatabricksAccountSettingV2RestrictWorkspaceAdminsToHclTerraform(this._restrictWorkspaceAdmins.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2RestrictWorkspaceAdmins",
-      },
-      string_val: {
-        value: dataDatabricksAccountSettingV2StringValToHclTerraform(this._stringVal.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksAccountSettingV2StringVal",
       },
     };
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,31 +12,23 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksRfaAccessRequestDestinationsConfig extends cdktf.TerraformMetaArguments {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#destinations DataDatabricksRfaAccessRequestDestinations#destinations}
-  */
-  readonly destinations: DataDatabricksRfaAccessRequestDestinationsDestinations[] | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#securable DataDatabricksRfaAccessRequestDestinations#securable}
-  */
-  readonly securable: DataDatabricksRfaAccessRequestDestinationsSecurable;
 }
 export interface DataDatabricksRfaAccessRequestDestinationsDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#destination_id DataDatabricksRfaAccessRequestDestinations#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#destination_id DataDatabricksRfaAccessRequestDestinations#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#destination_type DataDatabricksRfaAccessRequestDestinations#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#destination_type DataDatabricksRfaAccessRequestDestinations#destination_type}
   */
   readonly destinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#special_destination DataDatabricksRfaAccessRequestDestinations#special_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#special_destination DataDatabricksRfaAccessRequestDestinations#special_destination}
   */
   readonly specialDestination?: string;
 }
 
-export function dataDatabricksRfaAccessRequestDestinationsDestinationsToTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsDestinations | cdktf.IResolvable): any {
+export function dataDatabricksRfaAccessRequestDestinationsDestinationsToTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsDestinations): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -49,7 +41,7 @@ export function dataDatabricksRfaAccessRequestDestinationsDestinationsToTerrafor
 }
 
 
-export function dataDatabricksRfaAccessRequestDestinationsDestinationsToHclTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsDestinations | cdktf.IResolvable): any {
+export function dataDatabricksRfaAccessRequestDestinationsDestinationsToHclTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsDestinations): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -81,7 +73,6 @@ export function dataDatabricksRfaAccessRequestDestinationsDestinationsToHclTerra
 
 export class DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,10 +84,7 @@ export class DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReferen
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksRfaAccessRequestDestinationsDestinations | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksRfaAccessRequestDestinationsDestinations | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationId !== undefined) {
@@ -114,28 +102,22 @@ export class DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksRfaAccessRequestDestinationsDestinations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksRfaAccessRequestDestinationsDestinations | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._destinationId = undefined;
       this._destinationType = undefined;
       this._specialDestination = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._destinationId = value.destinationId;
       this._destinationType = value.destinationType;
       this._specialDestination = value.specialDestination;
     }
   }
 
-  // destination_id - computed: false, optional: true, required: false
+  // destination_id - computed: true, optional: true, required: false
   private _destinationId?: string; 
   public get destinationId() {
     return this.getStringAttribute('destination_id');
@@ -151,7 +133,7 @@ export class DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReferen
     return this._destinationId;
   }
 
-  // destination_type - computed: false, optional: true, required: false
+  // destination_type - computed: true, optional: true, required: false
   private _destinationType?: string; 
   public get destinationType() {
     return this.getStringAttribute('destination_type');
@@ -167,7 +149,7 @@ export class DataDatabricksRfaAccessRequestDestinationsDestinationsOutputReferen
     return this._destinationType;
   }
 
-  // special_destination - computed: false, optional: true, required: false
+  // special_destination - computed: true, optional: true, required: false
   private _specialDestination?: string; 
   public get specialDestination() {
     return this.getStringAttribute('special_destination');
@@ -205,20 +187,20 @@ export class DataDatabricksRfaAccessRequestDestinationsDestinationsList extends 
 }
 export interface DataDatabricksRfaAccessRequestDestinationsSecurable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#full_name DataDatabricksRfaAccessRequestDestinations#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#full_name DataDatabricksRfaAccessRequestDestinations#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#provider_share DataDatabricksRfaAccessRequestDestinations#provider_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#provider_share DataDatabricksRfaAccessRequestDestinations#provider_share}
   */
   readonly providerShare?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#type DataDatabricksRfaAccessRequestDestinations#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#type DataDatabricksRfaAccessRequestDestinations#type}
   */
   readonly type?: string;
 }
 
-export function dataDatabricksRfaAccessRequestDestinationsSecurableToTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsSecurable | cdktf.IResolvable): any {
+export function dataDatabricksRfaAccessRequestDestinationsSecurableToTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsSecurable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -231,7 +213,7 @@ export function dataDatabricksRfaAccessRequestDestinationsSecurableToTerraform(s
 }
 
 
-export function dataDatabricksRfaAccessRequestDestinationsSecurableToHclTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsSecurable | cdktf.IResolvable): any {
+export function dataDatabricksRfaAccessRequestDestinationsSecurableToHclTerraform(struct?: DataDatabricksRfaAccessRequestDestinationsSecurable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -263,7 +245,6 @@ export function dataDatabricksRfaAccessRequestDestinationsSecurableToHclTerrafor
 
 export class DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -273,10 +254,7 @@ export class DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference 
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksRfaAccessRequestDestinationsSecurable | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksRfaAccessRequestDestinationsSecurable | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fullName !== undefined) {
@@ -294,28 +272,22 @@ export class DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksRfaAccessRequestDestinationsSecurable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksRfaAccessRequestDestinationsSecurable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._fullName = undefined;
       this._providerShare = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._fullName = value.fullName;
       this._providerShare = value.providerShare;
       this._type = value.type;
     }
   }
 
-  // full_name - computed: false, optional: true, required: false
+  // full_name - computed: true, optional: true, required: false
   private _fullName?: string; 
   public get fullName() {
     return this.getStringAttribute('full_name');
@@ -331,7 +303,7 @@ export class DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference 
     return this._fullName;
   }
 
-  // provider_share - computed: false, optional: true, required: false
+  // provider_share - computed: true, optional: true, required: false
   private _providerShare?: string; 
   public get providerShare() {
     return this.getStringAttribute('provider_share');
@@ -347,7 +319,7 @@ export class DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference 
     return this._providerShare;
   }
 
-  // type - computed: false, optional: true, required: false
+  // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -365,7 +337,7 @@ export class DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations}
 */
 export class DataDatabricksRfaAccessRequestDestinations extends cdktf.TerraformDataSource {
 
@@ -381,7 +353,7 @@ export class DataDatabricksRfaAccessRequestDestinations extends cdktf.TerraformD
   * Generates CDKTF code for importing a DataDatabricksRfaAccessRequestDestinations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksRfaAccessRequestDestinations to import
-  * @param importFromId The id of the existing DataDatabricksRfaAccessRequestDestinations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksRfaAccessRequestDestinations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksRfaAccessRequestDestinations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -393,18 +365,18 @@ export class DataDatabricksRfaAccessRequestDestinations extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/rfa_access_request_destinations databricks_rfa_access_request_destinations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksRfaAccessRequestDestinationsConfig
+  * @param options DataDatabricksRfaAccessRequestDestinationsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksRfaAccessRequestDestinationsConfig) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksRfaAccessRequestDestinationsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'databricks_rfa_access_request_destinations',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -415,8 +387,6 @@ export class DataDatabricksRfaAccessRequestDestinations extends cdktf.TerraformD
       connection: config.connection,
       forEach: config.forEach
     });
-    this._destinations.internalValue = config.destinations;
-    this._securable.internalValue = config.securable;
   }
 
   // ==========
@@ -428,30 +398,16 @@ export class DataDatabricksRfaAccessRequestDestinations extends cdktf.TerraformD
     return this.getBooleanAttribute('are_any_destinations_hidden');
   }
 
-  // destinations - computed: false, optional: false, required: true
+  // destinations - computed: true, optional: false, required: false
   private _destinations = new DataDatabricksRfaAccessRequestDestinationsDestinationsList(this, "destinations", false);
   public get destinations() {
     return this._destinations;
   }
-  public putDestinations(value: DataDatabricksRfaAccessRequestDestinationsDestinations[] | cdktf.IResolvable) {
-    this._destinations.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get destinationsInput() {
-    return this._destinations.internalValue;
-  }
 
-  // securable - computed: false, optional: false, required: true
+  // securable - computed: true, optional: false, required: false
   private _securable = new DataDatabricksRfaAccessRequestDestinationsSecurableOutputReference(this, "securable");
   public get securable() {
     return this._securable;
-  }
-  public putSecurable(value: DataDatabricksRfaAccessRequestDestinationsSecurable) {
-    this._securable.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securableInput() {
-    return this._securable.internalValue;
   }
 
   // =========
@@ -460,28 +416,12 @@ export class DataDatabricksRfaAccessRequestDestinations extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destinations: cdktf.listMapper(dataDatabricksRfaAccessRequestDestinationsDestinationsToTerraform, false)(this._destinations.internalValue),
-      securable: dataDatabricksRfaAccessRequestDestinationsSecurableToTerraform(this._securable.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      destinations: {
-        value: cdktf.listMapperHcl(dataDatabricksRfaAccessRequestDestinationsDestinationsToHclTerraform, false)(this._destinations.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataDatabricksRfaAccessRequestDestinationsDestinationsList",
-      },
-      securable: {
-        value: dataDatabricksRfaAccessRequestDestinationsSecurableToHclTerraform(this._securable.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksRfaAccessRequestDestinationsSecurable",
-      },
     };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+    return attrs;
   }
 }

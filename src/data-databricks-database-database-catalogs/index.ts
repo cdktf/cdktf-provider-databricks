@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,22 +12,18 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatabricksDatabaseDatabaseCatalogsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs#instance_name DataDatabricksDatabaseDatabaseCatalogs#instance_name}
+  */
+  readonly instanceName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs#page_size DataDatabricksDatabaseDatabaseCatalogs#page_size}
+  */
+  readonly pageSize?: number;
 }
 export interface DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs#create_database_if_not_exists DataDatabricksDatabaseDatabaseCatalogs#create_database_if_not_exists}
-  */
-  readonly createDatabaseIfNotExists?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs#database_instance_name DataDatabricksDatabaseDatabaseCatalogs#database_instance_name}
-  */
-  readonly databaseInstanceName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs#database_name DataDatabricksDatabaseDatabaseCatalogs#database_name}
-  */
-  readonly databaseName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs#name DataDatabricksDatabaseDatabaseCatalogs#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs#name DataDatabricksDatabaseDatabaseCatalogs#name}
   */
   readonly name: string;
 }
@@ -38,9 +34,6 @@ export function dataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create_database_if_not_exists: cdktf.booleanToTerraform(struct!.createDatabaseIfNotExists),
-    database_instance_name: cdktf.stringToTerraform(struct!.databaseInstanceName),
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -52,24 +45,6 @@ export function dataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsToHclTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    create_database_if_not_exists: {
-      value: cdktf.booleanToHclTerraform(struct!.createDatabaseIfNotExists),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    database_instance_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseInstanceName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     name: {
       value: cdktf.stringToHclTerraform(struct!.name),
       isBlock: false,
@@ -98,18 +73,6 @@ export class DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReferen
   public get internalValue(): DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._createDatabaseIfNotExists !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.createDatabaseIfNotExists = this._createDatabaseIfNotExists;
-    }
-    if (this._databaseInstanceName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.databaseInstanceName = this._databaseInstanceName;
-    }
-    if (this._databaseName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.databaseName = this._databaseName;
-    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -120,60 +83,27 @@ export class DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReferen
   public set internalValue(value: DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._createDatabaseIfNotExists = undefined;
-      this._databaseInstanceName = undefined;
-      this._databaseName = undefined;
       this._name = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._createDatabaseIfNotExists = value.createDatabaseIfNotExists;
-      this._databaseInstanceName = value.databaseInstanceName;
-      this._databaseName = value.databaseName;
       this._name = value.name;
     }
   }
 
-  // create_database_if_not_exists - computed: true, optional: true, required: false
-  private _createDatabaseIfNotExists?: boolean | cdktf.IResolvable; 
+  // create_database_if_not_exists - computed: true, optional: false, required: false
   public get createDatabaseIfNotExists() {
     return this.getBooleanAttribute('create_database_if_not_exists');
   }
-  public set createDatabaseIfNotExists(value: boolean | cdktf.IResolvable) {
-    this._createDatabaseIfNotExists = value;
-  }
-  public resetCreateDatabaseIfNotExists() {
-    this._createDatabaseIfNotExists = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createDatabaseIfNotExistsInput() {
-    return this._createDatabaseIfNotExists;
-  }
 
-  // database_instance_name - computed: true, optional: false, required: true
-  private _databaseInstanceName?: string; 
+  // database_instance_name - computed: true, optional: false, required: false
   public get databaseInstanceName() {
     return this.getStringAttribute('database_instance_name');
   }
-  public set databaseInstanceName(value: string) {
-    this._databaseInstanceName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInstanceNameInput() {
-    return this._databaseInstanceName;
-  }
 
-  // database_name - computed: true, optional: false, required: true
-  private _databaseName?: string; 
+  // database_name - computed: true, optional: false, required: false
   public get databaseName() {
     return this.getStringAttribute('database_name');
-  }
-  public set databaseName(value: string) {
-    this._databaseName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseNameInput() {
-    return this._databaseName;
   }
 
   // name - computed: true, optional: false, required: true
@@ -216,7 +146,7 @@ export class DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs}
 */
 export class DataDatabricksDatabaseDatabaseCatalogs extends cdktf.TerraformDataSource {
 
@@ -232,7 +162,7 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataDatabricksDatabaseDatabaseCatalogs resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseDatabaseCatalogs to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseDatabaseCatalogs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseDatabaseCatalogs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseDatabaseCatalogs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -244,18 +174,18 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksDatabaseDatabaseCatalogsConfig = {}
+  * @param options DataDatabricksDatabaseDatabaseCatalogsConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksDatabaseDatabaseCatalogsConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksDatabaseDatabaseCatalogsConfig) {
     super(scope, id, {
       terraformResourceType: 'databricks_database_database_catalogs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -266,6 +196,8 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktf.TerraformDataS
       connection: config.connection,
       forEach: config.forEach
     });
+    this._instanceName = config.instanceName;
+    this._pageSize = config.pageSize;
   }
 
   // ==========
@@ -278,18 +210,63 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktf.TerraformDataS
     return this._databaseCatalogs;
   }
 
+  // instance_name - computed: false, optional: false, required: true
+  private _instanceName?: string; 
+  public get instanceName() {
+    return this.getStringAttribute('instance_name');
+  }
+  public set instanceName(value: string) {
+    this._instanceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceNameInput() {
+    return this._instanceName;
+  }
+
+  // page_size - computed: false, optional: true, required: false
+  private _pageSize?: number; 
+  public get pageSize() {
+    return this.getNumberAttribute('page_size');
+  }
+  public set pageSize(value: number) {
+    this._pageSize = value;
+  }
+  public resetPageSize() {
+    this._pageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pageSizeInput() {
+    return this._pageSize;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      instance_name: cdktf.stringToTerraform(this._instanceName),
+      page_size: cdktf.numberToTerraform(this._pageSize),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      instance_name: {
+        value: cdktf.stringToHclTerraform(this._instanceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      page_size: {
+        value: cdktf.numberToHclTerraform(this._pageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
     };
-    return attrs;
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

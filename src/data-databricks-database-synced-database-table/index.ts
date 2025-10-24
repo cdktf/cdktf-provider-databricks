@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table
+// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,9 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksDatabaseSyncedDatabaseTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#database_instance_name DataDatabricksDatabaseSyncedDatabaseTable#database_instance_name}
-  */
-  readonly databaseInstanceName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#logical_database_name DataDatabricksDatabaseSyncedDatabaseTable#logical_database_name}
-  */
-  readonly logicalDatabaseName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#name DataDatabricksDatabaseSyncedDatabaseTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#name DataDatabricksDatabaseSyncedDatabaseTable#name}
   */
   readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#spec DataDatabricksDatabaseSyncedDatabaseTable#spec}
-  */
-  readonly spec?: DataDatabricksDatabaseSyncedDatabaseTableSpec;
 }
 export interface DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgress {
 }
@@ -676,19 +664,19 @@ export class DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusT
 }
 export interface DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#continuous_update_status DataDatabricksDatabaseSyncedDatabaseTable#continuous_update_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#continuous_update_status DataDatabricksDatabaseSyncedDatabaseTable#continuous_update_status}
   */
   readonly continuousUpdateStatus?: DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#failed_status DataDatabricksDatabaseSyncedDatabaseTable#failed_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#failed_status DataDatabricksDatabaseSyncedDatabaseTable#failed_status}
   */
   readonly failedStatus?: DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#provisioning_status DataDatabricksDatabaseSyncedDatabaseTable#provisioning_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#provisioning_status DataDatabricksDatabaseSyncedDatabaseTable#provisioning_status}
   */
   readonly provisioningStatus?: DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#triggered_update_status DataDatabricksDatabaseSyncedDatabaseTable#triggered_update_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#triggered_update_status DataDatabricksDatabaseSyncedDatabaseTable#triggered_update_status}
   */
   readonly triggeredUpdateStatus?: DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus;
 }
@@ -880,11 +868,11 @@ export class DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusO
 }
 export interface DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#storage_catalog DataDatabricksDatabaseSyncedDatabaseTable#storage_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#storage_catalog DataDatabricksDatabaseSyncedDatabaseTable#storage_catalog}
   */
   readonly storageCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#storage_schema DataDatabricksDatabaseSyncedDatabaseTable#storage_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#storage_schema DataDatabricksDatabaseSyncedDatabaseTable#storage_schema}
   */
   readonly storageSchema?: string;
 }
@@ -1007,36 +995,36 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputR
 }
 export interface DataDatabricksDatabaseSyncedDatabaseTableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#create_database_objects_if_missing DataDatabricksDatabaseSyncedDatabaseTable#create_database_objects_if_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#create_database_objects_if_missing DataDatabricksDatabaseSyncedDatabaseTable#create_database_objects_if_missing}
   */
   readonly createDatabaseObjectsIfMissing?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#existing_pipeline_id DataDatabricksDatabaseSyncedDatabaseTable#existing_pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#existing_pipeline_id DataDatabricksDatabaseSyncedDatabaseTable#existing_pipeline_id}
   */
   readonly existingPipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#new_pipeline_spec DataDatabricksDatabaseSyncedDatabaseTable#new_pipeline_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#new_pipeline_spec DataDatabricksDatabaseSyncedDatabaseTable#new_pipeline_spec}
   */
   readonly newPipelineSpec?: DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#primary_key_columns DataDatabricksDatabaseSyncedDatabaseTable#primary_key_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#primary_key_columns DataDatabricksDatabaseSyncedDatabaseTable#primary_key_columns}
   */
   readonly primaryKeyColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#scheduling_policy DataDatabricksDatabaseSyncedDatabaseTable#scheduling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#scheduling_policy DataDatabricksDatabaseSyncedDatabaseTable#scheduling_policy}
   */
   readonly schedulingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#source_table_full_name DataDatabricksDatabaseSyncedDatabaseTable#source_table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#source_table_full_name DataDatabricksDatabaseSyncedDatabaseTable#source_table_full_name}
   */
   readonly sourceTableFullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#timeseries_key DataDatabricksDatabaseSyncedDatabaseTable#timeseries_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#timeseries_key DataDatabricksDatabaseSyncedDatabaseTable#timeseries_key}
   */
   readonly timeseriesKey?: string;
 }
 
-export function dataDatabricksDatabaseSyncedDatabaseTableSpecToTerraform(struct?: DataDatabricksDatabaseSyncedDatabaseTableSpec | cdktf.IResolvable): any {
+export function dataDatabricksDatabaseSyncedDatabaseTableSpecToTerraform(struct?: DataDatabricksDatabaseSyncedDatabaseTableSpec): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1053,7 +1041,7 @@ export function dataDatabricksDatabaseSyncedDatabaseTableSpecToTerraform(struct?
 }
 
 
-export function dataDatabricksDatabaseSyncedDatabaseTableSpecToHclTerraform(struct?: DataDatabricksDatabaseSyncedDatabaseTableSpec | cdktf.IResolvable): any {
+export function dataDatabricksDatabaseSyncedDatabaseTableSpecToHclTerraform(struct?: DataDatabricksDatabaseSyncedDatabaseTableSpec): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1109,7 +1097,6 @@ export function dataDatabricksDatabaseSyncedDatabaseTableSpecToHclTerraform(stru
 
 export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1119,10 +1106,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDatabaseSyncedDatabaseTableSpec | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataDatabricksDatabaseSyncedDatabaseTableSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._createDatabaseObjectsIfMissing !== undefined) {
@@ -1156,10 +1140,9 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDatabaseSyncedDatabaseTableSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDatabaseSyncedDatabaseTableSpec | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._createDatabaseObjectsIfMissing = undefined;
       this._existingPipelineId = undefined;
       this._newPipelineSpec.internalValue = undefined;
@@ -1168,13 +1151,8 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
       this._sourceTableFullName = undefined;
       this._timeseriesKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._createDatabaseObjectsIfMissing = value.createDatabaseObjectsIfMissing;
       this._existingPipelineId = value.existingPipelineId;
       this._newPipelineSpec.internalValue = value.newPipelineSpec;
@@ -1233,7 +1211,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
     return this._newPipelineSpec.internalValue;
   }
 
-  // primary_key_columns - computed: false, optional: true, required: false
+  // primary_key_columns - computed: true, optional: true, required: false
   private _primaryKeyColumns?: string[]; 
   public get primaryKeyColumns() {
     return this.getListAttribute('primary_key_columns');
@@ -1249,7 +1227,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
     return this._primaryKeyColumns;
   }
 
-  // scheduling_policy - computed: false, optional: true, required: false
+  // scheduling_policy - computed: true, optional: true, required: false
   private _schedulingPolicy?: string; 
   public get schedulingPolicy() {
     return this.getStringAttribute('scheduling_policy');
@@ -1265,7 +1243,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
     return this._schedulingPolicy;
   }
 
-  // source_table_full_name - computed: false, optional: true, required: false
+  // source_table_full_name - computed: true, optional: true, required: false
   private _sourceTableFullName?: string; 
   public get sourceTableFullName() {
     return this.getStringAttribute('source_table_full_name');
@@ -1281,7 +1259,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
     return this._sourceTableFullName;
   }
 
-  // timeseries_key - computed: false, optional: true, required: false
+  // timeseries_key - computed: true, optional: true, required: false
   private _timeseriesKey?: string; 
   public get timeseriesKey() {
     return this.getStringAttribute('timeseries_key');
@@ -1299,7 +1277,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table}
 */
 export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDataSource {
 
@@ -1315,7 +1293,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataDatabricksDatabaseSyncedDatabaseTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseSyncedDatabaseTable to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseSyncedDatabaseTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseSyncedDatabaseTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseSyncedDatabaseTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1327,7 +1305,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.94.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/database_synced_database_table databricks_database_synced_database_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1338,7 +1316,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
       terraformResourceType: 'databricks_database_synced_database_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.94.0',
+        providerVersion: '1.95.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1349,10 +1327,7 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
       connection: config.connection,
       forEach: config.forEach
     });
-    this._databaseInstanceName = config.databaseInstanceName;
-    this._logicalDatabaseName = config.logicalDatabaseName;
     this._name = config.name;
-    this._spec.internalValue = config.spec;
   }
 
   // ==========
@@ -1365,20 +1340,9 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
     return this._dataSynchronizationStatus;
   }
 
-  // database_instance_name - computed: true, optional: true, required: false
-  private _databaseInstanceName?: string; 
+  // database_instance_name - computed: true, optional: false, required: false
   public get databaseInstanceName() {
     return this.getStringAttribute('database_instance_name');
-  }
-  public set databaseInstanceName(value: string) {
-    this._databaseInstanceName = value;
-  }
-  public resetDatabaseInstanceName() {
-    this._databaseInstanceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInstanceNameInput() {
-    return this._databaseInstanceName;
   }
 
   // effective_database_instance_name - computed: true, optional: false, required: false
@@ -1391,20 +1355,9 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
     return this.getStringAttribute('effective_logical_database_name');
   }
 
-  // logical_database_name - computed: true, optional: true, required: false
-  private _logicalDatabaseName?: string; 
+  // logical_database_name - computed: true, optional: false, required: false
   public get logicalDatabaseName() {
     return this.getStringAttribute('logical_database_name');
-  }
-  public set logicalDatabaseName(value: string) {
-    this._logicalDatabaseName = value;
-  }
-  public resetLogicalDatabaseName() {
-    this._logicalDatabaseName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logicalDatabaseNameInput() {
-    return this._logicalDatabaseName;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1420,20 +1373,10 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
     return this._name;
   }
 
-  // spec - computed: false, optional: true, required: false
+  // spec - computed: true, optional: false, required: false
   private _spec = new DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;
-  }
-  public putSpec(value: DataDatabricksDatabaseSyncedDatabaseTableSpec) {
-    this._spec.internalValue = value;
-  }
-  public resetSpec() {
-    this._spec.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get specInput() {
-    return this._spec.internalValue;
   }
 
   // unity_catalog_provisioning_state - computed: true, optional: false, required: false
@@ -1447,38 +1390,17 @@ export class DataDatabricksDatabaseSyncedDatabaseTable extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_instance_name: cdktf.stringToTerraform(this._databaseInstanceName),
-      logical_database_name: cdktf.stringToTerraform(this._logicalDatabaseName),
       name: cdktf.stringToTerraform(this._name),
-      spec: dataDatabricksDatabaseSyncedDatabaseTableSpecToTerraform(this._spec.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      database_instance_name: {
-        value: cdktf.stringToHclTerraform(this._databaseInstanceName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      logical_database_name: {
-        value: cdktf.stringToHclTerraform(this._logicalDatabaseName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      spec: {
-        value: dataDatabricksDatabaseSyncedDatabaseTableSpecToHclTerraform(this._spec.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "DataDatabricksDatabaseSyncedDatabaseTableSpec",
       },
     };
 
