@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for databricks/databricks provider version 1.95.0
+# CDKTF prebuilt bindings for databricks/databricks provider version 1.96.0
 
-This repo builds and publishes the [Terraform databricks provider](https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform databricks provider](https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform databricks provider versio
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform databricks provider](https://registry.terraform.io/providers/databricks/databricks/1.95.0)
+- [Terraform databricks provider](https://registry.terraform.io/providers/databricks/databricks/1.96.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version
+// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,143 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksSparkVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#beta DataDatabricksSparkVersion#beta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#beta DataDatabricksSparkVersion#beta}
   */
   readonly beta?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#genomics DataDatabricksSparkVersion#genomics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#genomics DataDatabricksSparkVersion#genomics}
   */
   readonly genomics?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#gpu DataDatabricksSparkVersion#gpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#gpu DataDatabricksSparkVersion#gpu}
   */
   readonly gpu?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#graviton DataDatabricksSparkVersion#graviton}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#graviton DataDatabricksSparkVersion#graviton}
   */
   readonly graviton?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#id DataDatabricksSparkVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#id DataDatabricksSparkVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#latest DataDatabricksSparkVersion#latest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#latest DataDatabricksSparkVersion#latest}
   */
   readonly latest?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#long_term_support DataDatabricksSparkVersion#long_term_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#long_term_support DataDatabricksSparkVersion#long_term_support}
   */
   readonly longTermSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#ml DataDatabricksSparkVersion#ml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#ml DataDatabricksSparkVersion#ml}
   */
   readonly ml?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#photon DataDatabricksSparkVersion#photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#photon DataDatabricksSparkVersion#photon}
   */
   readonly photon?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#scala DataDatabricksSparkVersion#scala}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#scala DataDatabricksSparkVersion#scala}
   */
   readonly scala?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#spark_version DataDatabricksSparkVersion#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#spark_version DataDatabricksSparkVersion#spark_version}
   */
   readonly sparkVersion?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#provider_config DataDatabricksSparkVersion#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksSparkVersionProviderConfig;
+}
+export interface DataDatabricksSparkVersionProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#workspace_id DataDatabricksSparkVersion#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksSparkVersionProviderConfigToTerraform(struct?: DataDatabricksSparkVersionProviderConfigOutputReference | DataDatabricksSparkVersionProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksSparkVersionProviderConfigToHclTerraform(struct?: DataDatabricksSparkVersionProviderConfigOutputReference | DataDatabricksSparkVersionProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksSparkVersionProviderConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksSparkVersionProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksSparkVersionProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version databricks_spark_version}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version databricks_spark_version}
 */
 export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
 
@@ -78,7 +165,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksSparkVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSparkVersion to import
-  * @param importFromId The id of the existing DataDatabricksSparkVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSparkVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSparkVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -90,7 +177,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/spark_version databricks_spark_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/spark_version databricks_spark_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +188,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_spark_version',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.95.0',
+        providerVersion: '1.96.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -123,6 +210,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
     this._photon = config.photon;
     this._scala = config.scala;
     this._sparkVersion = config.sparkVersion;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -305,6 +393,22 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
     return this._sparkVersion;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksSparkVersionProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksSparkVersionProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -322,6 +426,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
       photon: cdktf.booleanToTerraform(this._photon),
       scala: cdktf.stringToTerraform(this._scala),
       spark_version: cdktf.stringToTerraform(this._sparkVersion),
+      provider_config: dataDatabricksSparkVersionProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
@@ -392,6 +497,12 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: dataDatabricksSparkVersionProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksSparkVersionProviderConfigList",
       },
     };
 

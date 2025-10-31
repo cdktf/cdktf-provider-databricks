@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#definition ClusterPolicy#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#definition ClusterPolicy#definition}
   */
   readonly definition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#description ClusterPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#description ClusterPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#id ClusterPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#id ClusterPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#max_clusters_per_user ClusterPolicy#max_clusters_per_user}
   */
   readonly maxClustersPerUser?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#name ClusterPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#name ClusterPolicy#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#policy_family_definition_overrides ClusterPolicy#policy_family_definition_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#policy_family_definition_overrides ClusterPolicy#policy_family_definition_overrides}
   */
   readonly policyFamilyDefinitionOverrides?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#policy_family_id ClusterPolicy#policy_family_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#policy_family_id ClusterPolicy#policy_family_id}
   */
   readonly policyFamilyId?: string;
   /**
   * libraries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#libraries ClusterPolicy#libraries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#libraries ClusterPolicy#libraries}
   */
   readonly libraries?: ClusterPolicyLibraries[] | cdktf.IResolvable;
 }
 export interface ClusterPolicyLibrariesCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#package ClusterPolicy#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#package ClusterPolicy#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#repo ClusterPolicy#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#repo ClusterPolicy#repo}
   */
   readonly repo?: string;
 }
@@ -166,15 +166,15 @@ export class ClusterPolicyLibrariesCranOutputReference extends cdktf.ComplexObje
 }
 export interface ClusterPolicyLibrariesMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#coordinates ClusterPolicy#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#coordinates ClusterPolicy#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#exclusions ClusterPolicy#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#exclusions ClusterPolicy#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#repo ClusterPolicy#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#repo ClusterPolicy#repo}
   */
   readonly repo?: string;
 }
@@ -311,13 +311,94 @@ export class ClusterPolicyLibrariesMavenOutputReference extends cdktf.ComplexObj
     return this._repo;
   }
 }
+export interface ClusterPolicyLibrariesProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#workspace_id ClusterPolicy#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function clusterPolicyLibrariesProviderConfigToTerraform(struct?: ClusterPolicyLibrariesProviderConfigOutputReference | ClusterPolicyLibrariesProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function clusterPolicyLibrariesProviderConfigToHclTerraform(struct?: ClusterPolicyLibrariesProviderConfigOutputReference | ClusterPolicyLibrariesProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ClusterPolicyLibrariesProviderConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ClusterPolicyLibrariesProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterPolicyLibrariesProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 export interface ClusterPolicyLibrariesPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#package ClusterPolicy#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#package ClusterPolicy#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#repo ClusterPolicy#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#repo ClusterPolicy#repo}
   */
   readonly repo?: string;
 }
@@ -427,37 +508,43 @@ export class ClusterPolicyLibrariesPypiOutputReference extends cdktf.ComplexObje
 }
 export interface ClusterPolicyLibraries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#egg ClusterPolicy#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#egg ClusterPolicy#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#jar ClusterPolicy#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#jar ClusterPolicy#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#requirements ClusterPolicy#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#requirements ClusterPolicy#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#whl ClusterPolicy#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#whl ClusterPolicy#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#cran ClusterPolicy#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#cran ClusterPolicy#cran}
   */
   readonly cran?: ClusterPolicyLibrariesCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#maven ClusterPolicy#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#maven ClusterPolicy#maven}
   */
   readonly maven?: ClusterPolicyLibrariesMaven;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#provider_config ClusterPolicy#provider_config}
+  */
+  readonly providerConfig?: ClusterPolicyLibrariesProviderConfig;
+  /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#pypi ClusterPolicy#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#pypi ClusterPolicy#pypi}
   */
   readonly pypi?: ClusterPolicyLibrariesPypi;
 }
@@ -474,6 +561,7 @@ export function clusterPolicyLibrariesToTerraform(struct?: ClusterPolicyLibrarie
     whl: cdktf.stringToTerraform(struct!.whl),
     cran: clusterPolicyLibrariesCranToTerraform(struct!.cran),
     maven: clusterPolicyLibrariesMavenToTerraform(struct!.maven),
+    provider_config: clusterPolicyLibrariesProviderConfigToTerraform(struct!.providerConfig),
     pypi: clusterPolicyLibrariesPypiToTerraform(struct!.pypi),
   }
 }
@@ -520,6 +608,12 @@ export function clusterPolicyLibrariesToHclTerraform(struct?: ClusterPolicyLibra
       isBlock: true,
       type: "list",
       storageClassType: "ClusterPolicyLibrariesMavenList",
+    },
+    provider_config: {
+      value: clusterPolicyLibrariesProviderConfigToHclTerraform(struct!.providerConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ClusterPolicyLibrariesProviderConfigList",
     },
     pypi: {
       value: clusterPolicyLibrariesPypiToHclTerraform(struct!.pypi),
@@ -577,6 +671,10 @@ export class ClusterPolicyLibrariesOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.maven = this._maven?.internalValue;
     }
+    if (this._providerConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerConfig = this._providerConfig?.internalValue;
+    }
     if (this._pypi?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.pypi = this._pypi?.internalValue;
@@ -594,6 +692,7 @@ export class ClusterPolicyLibrariesOutputReference extends cdktf.ComplexObject {
       this._whl = undefined;
       this._cran.internalValue = undefined;
       this._maven.internalValue = undefined;
+      this._providerConfig.internalValue = undefined;
       this._pypi.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -609,6 +708,7 @@ export class ClusterPolicyLibrariesOutputReference extends cdktf.ComplexObject {
       this._whl = value.whl;
       this._cran.internalValue = value.cran;
       this._maven.internalValue = value.maven;
+      this._providerConfig.internalValue = value.providerConfig;
       this._pypi.internalValue = value.pypi;
     }
   }
@@ -709,6 +809,22 @@ export class ClusterPolicyLibrariesOutputReference extends cdktf.ComplexObject {
     return this._maven.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new ClusterPolicyLibrariesProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: ClusterPolicyLibrariesProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // pypi - computed: false, optional: true, required: false
   private _pypi = new ClusterPolicyLibrariesPypiOutputReference(this, "pypi");
   public get pypi() {
@@ -747,7 +863,7 @@ export class ClusterPolicyLibrariesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy databricks_cluster_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy databricks_cluster_policy}
 */
 export class ClusterPolicy extends cdktf.TerraformResource {
 
@@ -763,7 +879,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ClusterPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClusterPolicy to import
-  * @param importFromId The id of the existing ClusterPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ClusterPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClusterPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -775,7 +891,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/resources/cluster_policy databricks_cluster_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/cluster_policy databricks_cluster_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -786,7 +902,7 @@ export class ClusterPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.95.0',
+        providerVersion: '1.96.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
