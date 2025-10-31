@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints
+// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksServingEndpointsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}
   */
   readonly endpoints?: DataDatabricksServingEndpointsEndpoints[] | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#provider_config DataDatabricksServingEndpoints#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksServingEndpointsProviderConfig;
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -132,7 +136,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList 
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
   */
   readonly behavior?: string;
 }
@@ -248,19 +252,19 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiL
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
   */
   readonly pii?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
   */
   readonly safety?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
   */
   readonly validTopics?: string[];
 }
@@ -463,7 +467,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputList
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
   */
   readonly behavior?: string;
 }
@@ -579,19 +583,19 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
   */
   readonly pii?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
   */
   readonly safety?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
   */
   readonly validTopics?: string[];
 }
@@ -794,11 +798,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputLis
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}
   */
   readonly input?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}
   */
   readonly output?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktf.IResolvable;
 }
@@ -943,19 +947,19 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsList exte
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
@@ -1158,23 +1162,23 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}
   */
   readonly calls?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}
   */
   readonly principal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}
   */
   readonly renewalPeriod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#tokens DataDatabricksServingEndpoints#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#tokens DataDatabricksServingEndpoints#tokens}
   */
   readonly tokens?: number;
 }
@@ -1403,7 +1407,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsList exte
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -1519,23 +1523,23 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGateway {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}
   */
   readonly fallbackConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}
   */
   readonly guardrails?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}
   */
   readonly inferenceTableConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}
   */
   readonly rateLimits?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}
   */
   readonly usageTrackingConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktf.IResolvable;
 }
@@ -1767,11 +1771,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayList extends cdktf.
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}
   */
   readonly ai21LabsApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}
   */
   readonly ai21LabsApiKeyPlaintext?: string;
 }
@@ -1916,31 +1920,31 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}
   */
   readonly awsAccessKeyIdPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}
   */
   readonly awsRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}
   */
   readonly awsSecretAccessKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}
   */
   readonly bedrockProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
 }
@@ -2224,11 +2228,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}
   */
   readonly anthropicApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}
   */
   readonly anthropicApiKeyPlaintext?: string;
 }
@@ -2373,15 +2377,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}
   */
   readonly cohereApiBase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}
   */
   readonly cohereApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}
   */
   readonly cohereApiKeyPlaintext?: string;
 }
@@ -2555,15 +2559,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}
   */
   readonly valuePlaintext?: string;
 }
@@ -2734,11 +2738,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}
   */
   readonly tokenPlaintext?: string;
 }
@@ -2883,15 +2887,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}
   */
   readonly apiKeyAuth?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}
   */
   readonly bearerTokenAuth?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}
   */
   readonly customProviderUrl: string;
 }
@@ -3062,15 +3066,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}
   */
   readonly databricksApiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}
   */
   readonly databricksApiTokenPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}
   */
   readonly databricksWorkspaceUrl: string;
 }
@@ -3241,19 +3245,19 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}
   */
   readonly privateKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}
   */
   readonly region: string;
 }
@@ -3450,47 +3454,47 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}
   */
   readonly microsoftEntraClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}
   */
   readonly microsoftEntraClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}
   */
   readonly microsoftEntraClientSecretPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}
   */
   readonly microsoftEntraTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}
   */
   readonly openaiApiBase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}
   */
   readonly openaiApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}
   */
   readonly openaiApiKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}
   */
   readonly openaiApiType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}
   */
   readonly openaiApiVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}
   */
   readonly openaiDeploymentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}
   */
   readonly openaiOrganization?: string;
 }
@@ -3896,11 +3900,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}
   */
   readonly palmApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}
   */
   readonly palmApiKeyPlaintext?: string;
 }
@@ -4045,51 +4049,51 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}
   */
   readonly ai21LabsConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}
   */
   readonly amazonBedrockConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}
   */
   readonly anthropicConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}
   */
   readonly cohereConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}
   */
   readonly customProviderConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}
   */
   readonly databricksModelServingConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}
   */
   readonly googleCloudVertexAiConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}
   */
   readonly openaiConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}
   */
   readonly palmConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
   */
   readonly task: string;
 }
@@ -4515,19 +4519,19 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}
   */
   readonly docs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
 }
@@ -4730,23 +4734,23 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundati
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}
   */
   readonly entityName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}
   */
   readonly entityVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}
   */
   readonly externalModel?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}
   */
   readonly foundationModel?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
 }
@@ -4978,15 +4982,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesList ext
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedModels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}
   */
   readonly modelVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
 }
@@ -5160,11 +5164,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedModelsList exten
 }
 export interface DataDatabricksServingEndpointsEndpointsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}
   */
   readonly servedEntities?: DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}
   */
   readonly servedModels?: DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktf.IResolvable;
 }
@@ -5309,11 +5313,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigList extends cdktf.Com
 }
 export interface DataDatabricksServingEndpointsEndpointsState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}
   */
   readonly configUpdate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}
   */
   readonly ready?: string;
 }
@@ -5458,11 +5462,11 @@ export class DataDatabricksServingEndpointsEndpointsStateList extends cdktf.Comp
 }
 export interface DataDatabricksServingEndpointsEndpointsTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
   */
   readonly value?: string;
 }
@@ -5604,58 +5608,58 @@ export class DataDatabricksServingEndpointsEndpointsTagsList extends cdktf.Compl
 }
 export interface DataDatabricksServingEndpointsEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}
   */
   readonly aiGateway?: DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}
   */
   readonly config?: DataDatabricksServingEndpointsEndpointsConfig[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}
   */
   readonly creationTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}
   */
   readonly creator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}
   */
   readonly lastUpdatedTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}
   */
   readonly state?: DataDatabricksServingEndpointsEndpointsState[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}
   */
   readonly tags?: DataDatabricksServingEndpointsEndpointsTags[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
   */
   readonly task?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#usage_policy_id DataDatabricksServingEndpoints#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#usage_policy_id DataDatabricksServingEndpoints#usage_policy_id}
   */
   readonly usagePolicyId?: string;
 }
@@ -6117,9 +6121,100 @@ export class DataDatabricksServingEndpointsEndpointsList extends cdktf.ComplexLi
     return new DataDatabricksServingEndpointsEndpointsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatabricksServingEndpointsProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#workspace_id DataDatabricksServingEndpoints#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksServingEndpointsProviderConfigToTerraform(struct?: DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksServingEndpointsProviderConfigToHclTerraform(struct?: DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksServingEndpointsProviderConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}
 */
 export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
 
@@ -6135,7 +6230,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksServingEndpoints resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksServingEndpoints to import
-  * @param importFromId The id of the existing DataDatabricksServingEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksServingEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksServingEndpoints to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6147,7 +6242,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6158,7 +6253,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_serving_endpoints',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.95.0',
+        providerVersion: '1.96.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -6170,6 +6265,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._endpoints.internalValue = config.endpoints;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -6192,6 +6288,22 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
     return this._endpoints.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksServingEndpointsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksServingEndpointsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -6199,6 +6311,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoints: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsToTerraform, false)(this._endpoints.internalValue),
+      provider_config: dataDatabricksServingEndpointsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
@@ -6209,6 +6322,12 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
         isBlock: true,
         type: "list",
         storageClassType: "DataDatabricksServingEndpointsEndpointsList",
+      },
+      provider_config: {
+        value: dataDatabricksServingEndpointsProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksServingEndpointsProviderConfig",
       },
     };
 

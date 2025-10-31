@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type
+// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,159 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#arm DataDatabricksNodeType#arm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#arm DataDatabricksNodeType#arm}
   */
   readonly arm?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#category DataDatabricksNodeType#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#category DataDatabricksNodeType#category}
   */
   readonly category?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#fleet DataDatabricksNodeType#fleet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#fleet DataDatabricksNodeType#fleet}
   */
   readonly fleet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
   */
   readonly gbPerCore?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#graviton DataDatabricksNodeType#graviton}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#graviton DataDatabricksNodeType#graviton}
   */
   readonly graviton?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#id DataDatabricksNodeType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#id DataDatabricksNodeType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
   */
   readonly isIoCacheEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#local_disk DataDatabricksNodeType#local_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#local_disk DataDatabricksNodeType#local_disk}
   */
   readonly localDisk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
   */
   readonly localDiskMinSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#min_cores DataDatabricksNodeType#min_cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#min_cores DataDatabricksNodeType#min_cores}
   */
   readonly minCores?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#min_gpus DataDatabricksNodeType#min_gpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#min_gpus DataDatabricksNodeType#min_gpus}
   */
   readonly minGpus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#min_memory_gb DataDatabricksNodeType#min_memory_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#min_memory_gb DataDatabricksNodeType#min_memory_gb}
   */
   readonly minMemoryGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}
   */
   readonly photonDriverCapable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}
   */
   readonly photonWorkerCapable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
   */
   readonly supportPortForwarding?: boolean | cdktf.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#provider_config DataDatabricksNodeType#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksNodeTypeProviderConfig;
+}
+export interface DataDatabricksNodeTypeProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#workspace_id DataDatabricksNodeType#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksNodeTypeProviderConfigToTerraform(struct?: DataDatabricksNodeTypeProviderConfigOutputReference | DataDatabricksNodeTypeProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksNodeTypeProviderConfigToHclTerraform(struct?: DataDatabricksNodeTypeProviderConfigOutputReference | DataDatabricksNodeTypeProviderConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksNodeTypeProviderConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksNodeTypeProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksNodeTypeProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type databricks_node_type}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type databricks_node_type}
 */
 export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
 
@@ -94,7 +181,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksNodeType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksNodeType to import
-  * @param importFromId The id of the existing DataDatabricksNodeType that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksNodeType that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksNodeType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -106,7 +193,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/node_type databricks_node_type} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/node_type databricks_node_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -117,7 +204,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_node_type',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.95.0',
+        providerVersion: '1.96.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -143,6 +230,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
     this._photonDriverCapable = config.photonDriverCapable;
     this._photonWorkerCapable = config.photonWorkerCapable;
     this._supportPortForwarding = config.supportPortForwarding;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -389,6 +477,22 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
     return this._supportPortForwarding;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksNodeTypeProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksNodeTypeProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -410,6 +514,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       photon_driver_capable: cdktf.booleanToTerraform(this._photonDriverCapable),
       photon_worker_capable: cdktf.booleanToTerraform(this._photonWorkerCapable),
       support_port_forwarding: cdktf.booleanToTerraform(this._supportPortForwarding),
+      provider_config: dataDatabricksNodeTypeProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
@@ -504,6 +609,12 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: dataDatabricksNodeTypeProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksNodeTypeProviderConfigList",
       },
     };
 

@@ -48,6 +48,7 @@ export * as entityTagAssignment from './entity-tag-assignment';
 export * as externalLocation from './external-location';
 export * as externalMetadata from './external-metadata';
 export * as featureEngineeringFeature from './feature-engineering-feature';
+export * as featureEngineeringMaterializedFeature from './feature-engineering-materialized-feature';
 export * as file from './file';
 export * as gitCredential from './git-credential';
 export * as globalInitScript from './global-init-script';
@@ -186,6 +187,8 @@ export * as dataDatabricksExternalMetadata from './data-databricks-external-meta
 export * as dataDatabricksExternalMetadatas from './data-databricks-external-metadatas';
 export * as dataDatabricksFeatureEngineeringFeature from './data-databricks-feature-engineering-feature';
 export * as dataDatabricksFeatureEngineeringFeatures from './data-databricks-feature-engineering-features';
+export * as dataDatabricksFeatureEngineeringMaterializedFeature from './data-databricks-feature-engineering-materialized-feature';
+export * as dataDatabricksFeatureEngineeringMaterializedFeatures from './data-databricks-feature-engineering-materialized-features';
 export * as dataDatabricksFunctions from './data-databricks-functions';
 export * as dataDatabricksGroup from './data-databricks-group';
 export * as dataDatabricksInstancePool from './data-databricks-instance-pool';

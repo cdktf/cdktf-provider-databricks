@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions
+// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,69 +13,73 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksFunctionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#catalog_name DataDatabricksFunctions#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#catalog_name DataDatabricksFunctions#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#functions DataDatabricksFunctions#functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#functions DataDatabricksFunctions#functions}
   */
   readonly functions?: DataDatabricksFunctionsFunctions[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#include_browse DataDatabricksFunctions#include_browse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#include_browse DataDatabricksFunctions#include_browse}
   */
   readonly includeBrowse?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#schema_name DataDatabricksFunctions#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#provider_config DataDatabricksFunctions#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksFunctionsProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#schema_name DataDatabricksFunctions#schema_name}
   */
   readonly schemaName: string;
 }
 export interface DataDatabricksFunctionsFunctionsInputParamsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#comment DataDatabricksFunctions#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#comment DataDatabricksFunctions#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#name DataDatabricksFunctions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#name DataDatabricksFunctions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_default DataDatabricksFunctions#parameter_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_default DataDatabricksFunctions#parameter_default}
   */
   readonly parameterDefault?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_mode DataDatabricksFunctions#parameter_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_mode DataDatabricksFunctions#parameter_mode}
   */
   readonly parameterMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_type DataDatabricksFunctions#parameter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_type DataDatabricksFunctions#parameter_type}
   */
   readonly parameterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#position DataDatabricksFunctions#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#position DataDatabricksFunctions#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_interval_type DataDatabricksFunctions#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_interval_type DataDatabricksFunctions#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_json DataDatabricksFunctions#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_json DataDatabricksFunctions#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_name DataDatabricksFunctions#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_name DataDatabricksFunctions#type_name}
   */
   readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_precision DataDatabricksFunctions#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_precision DataDatabricksFunctions#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_scale DataDatabricksFunctions#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_scale DataDatabricksFunctions#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_text DataDatabricksFunctions#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_text DataDatabricksFunctions#type_text}
   */
   readonly typeText: string;
 }
@@ -498,7 +502,7 @@ export class DataDatabricksFunctionsFunctionsInputParamsParametersList extends c
 }
 export interface DataDatabricksFunctionsFunctionsInputParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}
   */
   readonly parameters?: DataDatabricksFunctionsFunctionsInputParamsParameters[] | cdktf.IResolvable;
 }
@@ -592,51 +596,51 @@ export class DataDatabricksFunctionsFunctionsInputParamsOutputReference extends 
 }
 export interface DataDatabricksFunctionsFunctionsReturnParamsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#comment DataDatabricksFunctions#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#comment DataDatabricksFunctions#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#name DataDatabricksFunctions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#name DataDatabricksFunctions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_default DataDatabricksFunctions#parameter_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_default DataDatabricksFunctions#parameter_default}
   */
   readonly parameterDefault?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_mode DataDatabricksFunctions#parameter_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_mode DataDatabricksFunctions#parameter_mode}
   */
   readonly parameterMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_type DataDatabricksFunctions#parameter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_type DataDatabricksFunctions#parameter_type}
   */
   readonly parameterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#position DataDatabricksFunctions#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#position DataDatabricksFunctions#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_interval_type DataDatabricksFunctions#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_interval_type DataDatabricksFunctions#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_json DataDatabricksFunctions#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_json DataDatabricksFunctions#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_name DataDatabricksFunctions#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_name DataDatabricksFunctions#type_name}
   */
   readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_precision DataDatabricksFunctions#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_precision DataDatabricksFunctions#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_scale DataDatabricksFunctions#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_scale DataDatabricksFunctions#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#type_text DataDatabricksFunctions#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#type_text DataDatabricksFunctions#type_text}
   */
   readonly typeText: string;
 }
@@ -1059,7 +1063,7 @@ export class DataDatabricksFunctionsFunctionsReturnParamsParametersList extends 
 }
 export interface DataDatabricksFunctionsFunctionsReturnParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameters DataDatabricksFunctions#parameters}
   */
   readonly parameters?: DataDatabricksFunctionsFunctionsReturnParamsParameters[] | cdktf.IResolvable;
 }
@@ -1153,7 +1157,7 @@ export class DataDatabricksFunctionsFunctionsReturnParamsOutputReference extends
 }
 export interface DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#connection_name DataDatabricksFunctions#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#connection_name DataDatabricksFunctions#connection_name}
   */
   readonly connectionName?: string;
 }
@@ -1247,7 +1251,7 @@ export class DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConn
 }
 export interface DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#credential_name DataDatabricksFunctions#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#credential_name DataDatabricksFunctions#credential_name}
   */
   readonly credentialName?: string;
 }
@@ -1341,7 +1345,7 @@ export class DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCred
 }
 export interface DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#function_full_name DataDatabricksFunctions#function_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#function_full_name DataDatabricksFunctions#function_full_name}
   */
   readonly functionFullName: string;
 }
@@ -1432,7 +1436,7 @@ export class DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunc
 }
 export interface DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#table_full_name DataDatabricksFunctions#table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#table_full_name DataDatabricksFunctions#table_full_name}
   */
   readonly tableFullName: string;
 }
@@ -1523,19 +1527,19 @@ export class DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTabl
 }
 export interface DataDatabricksFunctionsFunctionsRoutineDependenciesDependencies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#connection DataDatabricksFunctions#connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#connection DataDatabricksFunctions#connection}
   */
   readonly connection?: DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#credential DataDatabricksFunctions#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#credential DataDatabricksFunctions#credential}
   */
   readonly credential?: DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#function DataDatabricksFunctions#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#function DataDatabricksFunctions#function}
   */
   readonly function?: DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#table DataDatabricksFunctions#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#table DataDatabricksFunctions#table}
   */
   readonly table?: DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable;
 }
@@ -1738,7 +1742,7 @@ export class DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList
 }
 export interface DataDatabricksFunctionsFunctionsRoutineDependencies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#dependencies DataDatabricksFunctions#dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#dependencies DataDatabricksFunctions#dependencies}
   */
   readonly dependencies?: DataDatabricksFunctionsFunctionsRoutineDependenciesDependencies[] | cdktf.IResolvable;
 }
@@ -1832,123 +1836,123 @@ export class DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference 
 }
 export interface DataDatabricksFunctionsFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#browse_only DataDatabricksFunctions#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#browse_only DataDatabricksFunctions#browse_only}
   */
   readonly browseOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#catalog_name DataDatabricksFunctions#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#catalog_name DataDatabricksFunctions#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#comment DataDatabricksFunctions#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#comment DataDatabricksFunctions#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#created_at DataDatabricksFunctions#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#created_at DataDatabricksFunctions#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#created_by DataDatabricksFunctions#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#created_by DataDatabricksFunctions#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#data_type DataDatabricksFunctions#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#data_type DataDatabricksFunctions#data_type}
   */
   readonly dataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#external_language DataDatabricksFunctions#external_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#external_language DataDatabricksFunctions#external_language}
   */
   readonly externalLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#external_name DataDatabricksFunctions#external_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#external_name DataDatabricksFunctions#external_name}
   */
   readonly externalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#full_data_type DataDatabricksFunctions#full_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#full_data_type DataDatabricksFunctions#full_data_type}
   */
   readonly fullDataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#full_name DataDatabricksFunctions#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#full_name DataDatabricksFunctions#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#function_id DataDatabricksFunctions#function_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#function_id DataDatabricksFunctions#function_id}
   */
   readonly functionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#input_params DataDatabricksFunctions#input_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#input_params DataDatabricksFunctions#input_params}
   */
   readonly inputParams?: DataDatabricksFunctionsFunctionsInputParams;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#is_deterministic DataDatabricksFunctions#is_deterministic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#is_deterministic DataDatabricksFunctions#is_deterministic}
   */
   readonly isDeterministic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#is_null_call DataDatabricksFunctions#is_null_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#is_null_call DataDatabricksFunctions#is_null_call}
   */
   readonly isNullCall?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#metastore_id DataDatabricksFunctions#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#metastore_id DataDatabricksFunctions#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#name DataDatabricksFunctions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#name DataDatabricksFunctions#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#owner DataDatabricksFunctions#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#owner DataDatabricksFunctions#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#parameter_style DataDatabricksFunctions#parameter_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#parameter_style DataDatabricksFunctions#parameter_style}
   */
   readonly parameterStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#properties DataDatabricksFunctions#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#properties DataDatabricksFunctions#properties}
   */
   readonly properties?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#return_params DataDatabricksFunctions#return_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#return_params DataDatabricksFunctions#return_params}
   */
   readonly returnParams?: DataDatabricksFunctionsFunctionsReturnParams;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#routine_body DataDatabricksFunctions#routine_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#routine_body DataDatabricksFunctions#routine_body}
   */
   readonly routineBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#routine_definition DataDatabricksFunctions#routine_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#routine_definition DataDatabricksFunctions#routine_definition}
   */
   readonly routineDefinition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#routine_dependencies DataDatabricksFunctions#routine_dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#routine_dependencies DataDatabricksFunctions#routine_dependencies}
   */
   readonly routineDependencies?: DataDatabricksFunctionsFunctionsRoutineDependencies;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#schema_name DataDatabricksFunctions#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#schema_name DataDatabricksFunctions#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#security_type DataDatabricksFunctions#security_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#security_type DataDatabricksFunctions#security_type}
   */
   readonly securityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#specific_name DataDatabricksFunctions#specific_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#specific_name DataDatabricksFunctions#specific_name}
   */
   readonly specificName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#sql_data_access DataDatabricksFunctions#sql_data_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#sql_data_access DataDatabricksFunctions#sql_data_access}
   */
   readonly sqlDataAccess?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#sql_path DataDatabricksFunctions#sql_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#sql_path DataDatabricksFunctions#sql_path}
   */
   readonly sqlPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#updated_at DataDatabricksFunctions#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#updated_at DataDatabricksFunctions#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#updated_by DataDatabricksFunctions#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#updated_by DataDatabricksFunctions#updated_by}
   */
   readonly updatedBy?: string;
 }
@@ -2903,9 +2907,100 @@ export class DataDatabricksFunctionsFunctionsList extends cdktf.ComplexList {
     return new DataDatabricksFunctionsFunctionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatabricksFunctionsProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#workspace_id DataDatabricksFunctions#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksFunctionsProviderConfigToTerraform(struct?: DataDatabricksFunctionsProviderConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksFunctionsProviderConfigToHclTerraform(struct?: DataDatabricksFunctionsProviderConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFunctionsProviderConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFunctionsProviderConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFunctionsProviderConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions databricks_functions}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions databricks_functions}
 */
 export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
 
@@ -2921,7 +3016,7 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksFunctions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFunctions to import
-  * @param importFromId The id of the existing DataDatabricksFunctions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFunctions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFunctions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2933,7 +3028,7 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.95.0/docs/data-sources/functions databricks_functions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/functions databricks_functions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2944,7 +3039,7 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_functions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.95.0',
+        providerVersion: '1.96.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2958,6 +3053,7 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
     this._catalogName = config.catalogName;
     this._functions.internalValue = config.functions;
     this._includeBrowse = config.includeBrowse;
+    this._providerConfig.internalValue = config.providerConfig;
     this._schemaName = config.schemaName;
   }
 
@@ -3010,6 +3106,22 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
     return this._includeBrowse;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksFunctionsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksFunctionsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // schema_name - computed: false, optional: false, required: true
   private _schemaName?: string; 
   public get schemaName() {
@@ -3032,6 +3144,7 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
       catalog_name: cdktf.stringToTerraform(this._catalogName),
       functions: cdktf.listMapper(dataDatabricksFunctionsFunctionsToTerraform, false)(this._functions.internalValue),
       include_browse: cdktf.booleanToTerraform(this._includeBrowse),
+      provider_config: dataDatabricksFunctionsProviderConfigToTerraform(this._providerConfig.internalValue),
       schema_name: cdktf.stringToTerraform(this._schemaName),
     };
   }
@@ -3055,6 +3168,12 @@ export class DataDatabricksFunctions extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: dataDatabricksFunctionsProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksFunctionsProviderConfig",
       },
       schema_name: {
         value: cdktf.stringToHclTerraform(this._schemaName),
