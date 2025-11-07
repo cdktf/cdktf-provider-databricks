@@ -4,7 +4,7 @@
 
 ### Dashboard <a name="Dashboard" id="@cdktf/provider-databricks.dashboard.Dashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard databricks_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard databricks_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the Dashboard to import.
 
 The id of the existing Dashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,21 +1097,21 @@ const dashboardConfig: dashboard.DashboardConfig = { ... }
 | <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#display_name Dashboard#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.parentPath">parentPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#parent_path Dashboard#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.warehouseId">warehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.createTime">createTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#create_time Dashboard#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardChangeDetected">dashboardChangeDetected</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardId">dashboardId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.embedCredentials">embedCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#etag Dashboard#etag}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.filePath">filePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#file_path Dashboard#file_path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#id Dashboard#id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycleState">lifecycleState</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.md5">md5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#md5 Dashboard#md5}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#path Dashboard#path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.serializedDashboard">serializedDashboard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.updateTime">updateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#update_time Dashboard#update_time}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#display_name Dashboard#display_name}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.parentPath">parentPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#parent_path Dashboard#parent_path}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.warehouseId">warehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.createTime">createTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#create_time Dashboard#create_time}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardChangeDetected">dashboardChangeDetected</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardId">dashboardId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.embedCredentials">embedCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#etag Dashboard#etag}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.filePath">filePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#file_path Dashboard#file_path}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#id Dashboard#id}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycleState">lifecycleState</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.md5">md5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#md5 Dashboard#md5}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#path Dashboard#path}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.serializedDashboard">serializedDashboard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}. |
+| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.updateTime">updateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#update_time Dashboard#update_time}. |
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#display_name Dashboard#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#display_name Dashboard#display_name}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly parentPath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly warehouseId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly createTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#create_time Dashboard#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#create_time Dashboard#create_time}.
 
 ---
 
@@ -1241,7 +1241,7 @@ public readonly dashboardChangeDetected: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly dashboardId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
 
 ---
 
@@ -1265,7 +1265,7 @@ public readonly embedCredentials: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly etag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#etag Dashboard#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#etag Dashboard#etag}.
 
 ---
 
@@ -1289,7 +1289,7 @@ public readonly filePath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#file_path Dashboard#file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#file_path Dashboard#file_path}.
 
 ---
 
@@ -1301,7 +1301,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#id Dashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#id Dashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1316,7 +1316,7 @@ public readonly lifecycleState: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
 
 ---
 
@@ -1328,7 +1328,7 @@ public readonly md5: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#md5 Dashboard#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#md5 Dashboard#md5}.
 
 ---
 
@@ -1340,7 +1340,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#path Dashboard#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#path Dashboard#path}.
 
 ---
 
@@ -1352,7 +1352,7 @@ public readonly serializedDashboard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
 
 ---
 
@@ -1364,7 +1364,7 @@ public readonly updateTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/dashboard#update_time Dashboard#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/dashboard#update_time Dashboard#update_time}.
 
 ---
 
