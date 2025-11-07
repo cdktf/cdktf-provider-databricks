@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksAlertsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#page_size DataDatabricksAlertsV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#page_size DataDatabricksAlertsV2#page_size}
   */
   readonly pageSize?: number;
 }
 export interface DataDatabricksAlertsV2AlertsEffectiveRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
   */
   readonly userName?: string;
 }
@@ -136,11 +136,11 @@ export class DataDatabricksAlertsV2AlertsEffectiveRunAsOutputReference extends c
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#destination_id DataDatabricksAlertsV2#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#destination_id DataDatabricksAlertsV2#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#user_email DataDatabricksAlertsV2#user_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#user_email DataDatabricksAlertsV2#user_email}
   */
   readonly userEmail?: string;
 }
@@ -285,15 +285,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptionsList
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#notify_on_ok DataDatabricksAlertsV2#notify_on_ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#notify_on_ok DataDatabricksAlertsV2#notify_on_ok}
   */
   readonly notifyOnOk?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#retrigger_seconds DataDatabricksAlertsV2#retrigger_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#retrigger_seconds DataDatabricksAlertsV2#retrigger_seconds}
   */
   readonly retriggerSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#subscriptions DataDatabricksAlertsV2#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#subscriptions DataDatabricksAlertsV2#subscriptions}
   */
   readonly subscriptions?: DataDatabricksAlertsV2AlertsEvaluationNotificationSubscriptions[] | cdktf.IResolvable;
 }
@@ -455,15 +455,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationNotificationOutputReference e
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
   */
   readonly name: string;
 }
@@ -602,15 +602,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationSourceOutputReference extends
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationThresholdColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#aggregation DataDatabricksAlertsV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#display DataDatabricksAlertsV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#name DataDatabricksAlertsV2#name}
   */
   readonly name: string;
 }
@@ -759,15 +759,15 @@ export class DataDatabricksAlertsV2AlertsEvaluationThresholdColumnOutputReferenc
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationThresholdValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#bool_value DataDatabricksAlertsV2#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#bool_value DataDatabricksAlertsV2#bool_value}
   */
   readonly boolValue?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#double_value DataDatabricksAlertsV2#double_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#double_value DataDatabricksAlertsV2#double_value}
   */
   readonly doubleValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#string_value DataDatabricksAlertsV2#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#string_value DataDatabricksAlertsV2#string_value}
   */
   readonly stringValue?: string;
 }
@@ -919,11 +919,11 @@ export class DataDatabricksAlertsV2AlertsEvaluationThresholdValueOutputReference
 }
 export interface DataDatabricksAlertsV2AlertsEvaluationThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#column DataDatabricksAlertsV2#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#column DataDatabricksAlertsV2#column}
   */
   readonly column?: DataDatabricksAlertsV2AlertsEvaluationThresholdColumn;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#value DataDatabricksAlertsV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#value DataDatabricksAlertsV2#value}
   */
   readonly value?: DataDatabricksAlertsV2AlertsEvaluationThresholdValue;
 }
@@ -1046,23 +1046,23 @@ export class DataDatabricksAlertsV2AlertsEvaluationThresholdOutputReference exte
 }
 export interface DataDatabricksAlertsV2AlertsEvaluation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#comparison_operator DataDatabricksAlertsV2#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#comparison_operator DataDatabricksAlertsV2#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#empty_result_state DataDatabricksAlertsV2#empty_result_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#empty_result_state DataDatabricksAlertsV2#empty_result_state}
   */
   readonly emptyResultState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#notification DataDatabricksAlertsV2#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#notification DataDatabricksAlertsV2#notification}
   */
   readonly notification?: DataDatabricksAlertsV2AlertsEvaluationNotification;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#source DataDatabricksAlertsV2#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#source DataDatabricksAlertsV2#source}
   */
   readonly source: DataDatabricksAlertsV2AlertsEvaluationSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#threshold DataDatabricksAlertsV2#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#threshold DataDatabricksAlertsV2#threshold}
   */
   readonly threshold?: DataDatabricksAlertsV2AlertsEvaluationThreshold;
 }
@@ -1266,11 +1266,11 @@ export class DataDatabricksAlertsV2AlertsEvaluationOutputReference extends cdktf
 }
 export interface DataDatabricksAlertsV2AlertsRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#service_principal_name DataDatabricksAlertsV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#user_name DataDatabricksAlertsV2#user_name}
   */
   readonly userName?: string;
 }
@@ -1383,15 +1383,15 @@ export class DataDatabricksAlertsV2AlertsRunAsOutputReference extends cdktf.Comp
 }
 export interface DataDatabricksAlertsV2AlertsSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#pause_status DataDatabricksAlertsV2#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#pause_status DataDatabricksAlertsV2#pause_status}
   */
   readonly pauseStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#quartz_cron_schedule DataDatabricksAlertsV2#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#quartz_cron_schedule DataDatabricksAlertsV2#quartz_cron_schedule}
   */
   readonly quartzCronSchedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#timezone_id DataDatabricksAlertsV2#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#timezone_id DataDatabricksAlertsV2#timezone_id}
   */
   readonly timezoneId: string;
 }
@@ -1527,7 +1527,7 @@ export class DataDatabricksAlertsV2AlertsScheduleOutputReference extends cdktf.C
 }
 export interface DataDatabricksAlertsV2Alerts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#id DataDatabricksAlertsV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#id DataDatabricksAlertsV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1712,7 +1712,7 @@ export class DataDatabricksAlertsV2AlertsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2 databricks_alerts_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2 databricks_alerts_v2}
 */
 export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
 
@@ -1728,7 +1728,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksAlertsV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAlertsV2 to import
-  * @param importFromId The id of the existing DataDatabricksAlertsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAlertsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAlertsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1740,7 +1740,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/alerts_v2 databricks_alerts_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1751,7 +1751,7 @@ export class DataDatabricksAlertsV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_alerts_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.96.0',
+        providerVersion: '1.97.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

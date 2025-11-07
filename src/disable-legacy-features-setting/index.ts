@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface DisableLegacyFeaturesSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * disable_legacy_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting#disable_legacy_features DisableLegacyFeaturesSetting#disable_legacy_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#disable_legacy_features DisableLegacyFeaturesSetting#disable_legacy_features}
   */
   readonly disableLegacyFeatures: DisableLegacyFeaturesSettingDisableLegacyFeatures;
 }
 export interface DisableLegacyFeaturesSettingDisableLegacyFeatures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}
   */
   readonly value: boolean | cdktf.IResolvable;
 }
@@ -117,7 +117,7 @@ export class DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}
 */
 export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
 
@@ -133,7 +133,7 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DisableLegacyFeaturesSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DisableLegacyFeaturesSetting to import
-  * @param importFromId The id of the existing DisableLegacyFeaturesSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DisableLegacyFeaturesSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DisableLegacyFeaturesSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_disable_legacy_features_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.96.0',
+        providerVersion: '1.97.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

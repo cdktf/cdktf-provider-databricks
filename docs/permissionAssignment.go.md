@@ -4,7 +4,7 @@
 
 ### PermissionAssignment <a name="PermissionAssignment" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment databricks_permission_assignment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment databricks_permission_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.Initializer"></a>
 
@@ -73,9 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetGroupName">ResetGroupName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetPrincipalId">ResetPrincipalId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetServicePrincipalName">ResetServicePrincipalName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetUserName">ResetUserName</a></code> | *No description.* |
 
@@ -369,6 +371,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutProviderConfig` <a name="PutProviderConfig" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.putProviderConfig"></a>
+
+```go
+func PutProviderConfig(value PermissionAssignmentProviderConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.putProviderConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a>
+
+---
+
 ##### `ResetGroupName` <a name="ResetGroupName" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetGroupName"></a>
 
 ```go
@@ -385,6 +399,12 @@ func ResetId()
 
 ```go
 func ResetPrincipalId()
+```
+
+##### `ResetProviderConfig` <a name="ResetProviderConfig" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetProviderConfig"></a>
+
+```go
+func ResetProviderConfig()
 ```
 
 ##### `ResetServicePrincipalName` <a name="ResetServicePrincipalName" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.resetServicePrincipalName"></a>
@@ -502,7 +522,7 @@ The construct id used in the generated config for the PermissionAssignment to im
 
 The id of the existing PermissionAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,10 +553,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference">PermissionAssignmentProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupNameInput">GroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.permissionsInput">PermissionsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.principalIdInput">PrincipalIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.providerConfigInput">ProviderConfigInput</a></code> | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.servicePrincipalNameInput">ServicePrincipalNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.userNameInput">UserNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupName">GroupName</a></code> | <code>*string</code> | *No description.* |
@@ -700,6 +722,16 @@ func DisplayName() *string
 
 ---
 
+##### `ProviderConfig`<sup>Required</sup> <a name="ProviderConfig" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.providerConfig"></a>
+
+```go
+func ProviderConfig() PermissionAssignmentProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference">PermissionAssignmentProviderConfigOutputReference</a>
+
+---
+
 ##### `GroupNameInput`<sup>Optional</sup> <a name="GroupNameInput" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.groupNameInput"></a>
 
 ```go
@@ -737,6 +769,16 @@ func PrincipalIdInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `ProviderConfigInput`<sup>Optional</sup> <a name="ProviderConfigInput" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignment.property.providerConfigInput"></a>
+
+```go
+func ProviderConfigInput() PermissionAssignmentProviderConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a>
 
 ---
 
@@ -859,6 +901,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissiona
 	GroupName: *string,
 	Id: *string,
 	PrincipalId: *f64,
+	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.permissionAssignment.PermissionAssignmentProviderConfig,
 	ServicePrincipalName: *string,
 	UserName: *string,
 }
@@ -875,12 +918,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissiona
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.permissions">Permissions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#id PermissionAssignment#id}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.servicePrincipalName">ServicePrincipalName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.permissions">Permissions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#id PermissionAssignment#id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.servicePrincipalName">ServicePrincipalName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}. |
 
 ---
 
@@ -962,7 +1006,7 @@ Permissions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#permissions PermissionAssignment#permissions}.
 
 ---
 
@@ -974,7 +1018,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#group_name PermissionAssignment#group_name}.
 
 ---
 
@@ -986,7 +1030,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#id PermissionAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#id PermissionAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1001,7 +1045,21 @@ PrincipalId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#principal_id PermissionAssignment#principal_id}.
+
+---
+
+##### `ProviderConfig`<sup>Optional</sup> <a name="ProviderConfig" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentConfig.property.providerConfig"></a>
+
+```go
+ProviderConfig PermissionAssignmentProviderConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#provider_config PermissionAssignment#provider_config}
 
 ---
 
@@ -1013,7 +1071,7 @@ ServicePrincipalName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#service_principal_name PermissionAssignment#service_principal_name}.
 
 ---
 
@@ -1025,7 +1083,311 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#user_name PermissionAssignment#user_name}.
+
+---
+
+### PermissionAssignmentProviderConfig <a name="PermissionAssignmentProviderConfig" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissionassignment"
+
+&permissionassignment.PermissionAssignmentProviderConfig {
+	WorkspaceId: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#workspace_id PermissionAssignment#workspace_id}. |
+
+---
+
+##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig.property.workspaceId"></a>
+
+```go
+WorkspaceId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/permission_assignment#workspace_id PermissionAssignment#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### PermissionAssignmentProviderConfigOutputReference <a name="PermissionAssignmentProviderConfigOutputReference" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/permissionassignment"
+
+permissionassignment.NewPermissionAssignmentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PermissionAssignmentProviderConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```go
+func WorkspaceIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.workspaceId"></a>
+
+```go
+func WorkspaceId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() PermissionAssignmentProviderConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig">PermissionAssignmentProviderConfig</a>
 
 ---
 

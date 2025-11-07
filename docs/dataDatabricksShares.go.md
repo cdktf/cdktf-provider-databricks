@@ -4,7 +4,7 @@
 
 ### DataDatabricksShares <a name="DataDatabricksShares" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares databricks_shares}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares databricks_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer"></a>
 
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataDatabricksShares to im
 
 The id of the existing DataDatabricksShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,8 +640,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares">Shares</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares">Shares</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
 
 ---
 
@@ -723,7 +723,7 @@ ProviderConfig DataDatabricksSharesProviderConfig
 
 - *Type:* <a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}.
 
 ---
 
@@ -735,7 +735,7 @@ Shares *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
 
 ---
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}. |
 
 ---
 
@@ -767,7 +767,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}.
 
 ---
 

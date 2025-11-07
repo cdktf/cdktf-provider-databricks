@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface ServicePrincipalFederationPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#description ServicePrincipalFederationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#description ServicePrincipalFederationPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#oidc_policy ServicePrincipalFederationPolicy#oidc_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#oidc_policy ServicePrincipalFederationPolicy#oidc_policy}
   */
   readonly oidcPolicy?: ServicePrincipalFederationPolicyOidcPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#policy_id ServicePrincipalFederationPolicy#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#policy_id ServicePrincipalFederationPolicy#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#service_principal_id ServicePrincipalFederationPolicy#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#service_principal_id ServicePrincipalFederationPolicy#service_principal_id}
   */
   readonly servicePrincipalId?: number;
 }
 export interface ServicePrincipalFederationPolicyOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#audiences ServicePrincipalFederationPolicy#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#audiences ServicePrincipalFederationPolicy#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#issuer ServicePrincipalFederationPolicy#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#issuer ServicePrincipalFederationPolicy#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#jwks_json ServicePrincipalFederationPolicy#jwks_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#jwks_json ServicePrincipalFederationPolicy#jwks_json}
   */
   readonly jwksJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#jwks_uri ServicePrincipalFederationPolicy#jwks_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#jwks_uri ServicePrincipalFederationPolicy#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#subject ServicePrincipalFederationPolicy#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#subject ServicePrincipalFederationPolicy#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#subject_claim ServicePrincipalFederationPolicy#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#subject_claim ServicePrincipalFederationPolicy#subject_claim}
   */
   readonly subjectClaim?: string;
 }
@@ -290,7 +290,7 @@ export class ServicePrincipalFederationPolicyOidcPolicyOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy}
 */
 export class ServicePrincipalFederationPolicy extends cdktf.TerraformResource {
 
@@ -306,7 +306,7 @@ export class ServicePrincipalFederationPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicePrincipalFederationPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalFederationPolicy to import
-  * @param importFromId The id of the existing ServicePrincipalFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalFederationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -318,7 +318,7 @@ export class ServicePrincipalFederationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/service_principal_federation_policy databricks_service_principal_federation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -329,7 +329,7 @@ export class ServicePrincipalFederationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_service_principal_federation_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.96.0',
+        providerVersion: '1.97.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

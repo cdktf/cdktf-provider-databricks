@@ -4,7 +4,7 @@
 
 ### Notebook <a name="Notebook" id="@cdktf/provider-databricks.notebook.Notebook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook databricks_notebook}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook databricks_notebook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notebook.Notebook.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-databricks.notebook.Notebook.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetContentBase64">ResetContentBase64</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetFormat">ResetFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetId">ResetId</a></code> | *No description.* |
@@ -80,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetMd5">ResetMd5</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetObjectId">ResetObjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetObjectType">ResetObjectType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.resetSource">ResetSource</a></code> | *No description.* |
 
 ---
@@ -372,6 +374,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutProviderConfig` <a name="PutProviderConfig" id="@cdktf/provider-databricks.notebook.Notebook.putProviderConfig"></a>
+
+```go
+func PutProviderConfig(value NotebookProviderConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.notebook.Notebook.putProviderConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a>
+
+---
+
 ##### `ResetContentBase64` <a name="ResetContentBase64" id="@cdktf/provider-databricks.notebook.Notebook.resetContentBase64"></a>
 
 ```go
@@ -412,6 +426,12 @@ func ResetObjectId()
 
 ```go
 func ResetObjectType()
+```
+
+##### `ResetProviderConfig` <a name="ResetProviderConfig" id="@cdktf/provider-databricks.notebook.Notebook.resetProviderConfig"></a>
+
+```go
+func ResetProviderConfig()
 ```
 
 ##### `ResetSource` <a name="ResetSource" id="@cdktf/provider-databricks.notebook.Notebook.resetSource"></a>
@@ -523,7 +543,7 @@ The construct id used in the generated config for the Notebook to import.
 
 The id of the existing Notebook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -553,6 +573,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference">NotebookProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.workspacePath">WorkspacePath</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.contentBase64Input">ContentBase64Input</a></code> | <code>*string</code> | *No description.* |
@@ -563,6 +584,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.objectIdInput">ObjectIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.objectTypeInput">ObjectTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.providerConfigInput">ProviderConfigInput</a></code> | <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.sourceInput">SourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.Notebook.property.format">Format</a></code> | <code>*string</code> | *No description.* |
@@ -718,6 +740,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `ProviderConfig`<sup>Required</sup> <a name="ProviderConfig" id="@cdktf/provider-databricks.notebook.Notebook.property.providerConfig"></a>
+
+```go
+func ProviderConfig() NotebookProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference">NotebookProviderConfigOutputReference</a>
+
+---
+
 ##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-databricks.notebook.Notebook.property.url"></a>
 
 ```go
@@ -815,6 +847,16 @@ func PathInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ProviderConfigInput`<sup>Optional</sup> <a name="ProviderConfigInput" id="@cdktf/provider-databricks.notebook.Notebook.property.providerConfigInput"></a>
+
+```go
+func ProviderConfigInput() NotebookProviderConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a>
 
 ---
 
@@ -961,6 +1003,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notebook"
 	Md5: *string,
 	ObjectId: *f64,
 	ObjectType: *string,
+	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.notebook.NotebookProviderConfig,
 	Source: *string,
 }
 ```
@@ -976,15 +1019,16 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notebook"
 | <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#path Notebook#path}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#content_base64 Notebook#content_base64}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#format Notebook#format}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#id Notebook#id}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.language">Language</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#language Notebook#language}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.md5">Md5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#md5 Notebook#md5}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.objectId">ObjectId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#object_id Notebook#object_id}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#object_type Notebook#object_type}. |
-| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#source Notebook#source}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#path Notebook#path}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#content_base64 Notebook#content_base64}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#format Notebook#format}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#id Notebook#id}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.language">Language</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#language Notebook#language}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.md5">Md5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#md5 Notebook#md5}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.objectId">ObjectId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#object_id Notebook#object_id}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#object_type Notebook#object_type}. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#source Notebook#source}. |
 
 ---
 
@@ -1066,7 +1110,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#path Notebook#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#path Notebook#path}.
 
 ---
 
@@ -1078,7 +1122,7 @@ ContentBase64 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#content_base64 Notebook#content_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#content_base64 Notebook#content_base64}.
 
 ---
 
@@ -1090,7 +1134,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#format Notebook#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#format Notebook#format}.
 
 ---
 
@@ -1102,7 +1146,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#id Notebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#id Notebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1161,7 @@ Language *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#language Notebook#language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#language Notebook#language}.
 
 ---
 
@@ -1129,7 +1173,7 @@ Md5 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#md5 Notebook#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#md5 Notebook#md5}.
 
 ---
 
@@ -1141,7 +1185,7 @@ ObjectId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#object_id Notebook#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#object_id Notebook#object_id}.
 
 ---
 
@@ -1153,7 +1197,21 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#object_type Notebook#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#object_type Notebook#object_type}.
+
+---
+
+##### `ProviderConfig`<sup>Optional</sup> <a name="ProviderConfig" id="@cdktf/provider-databricks.notebook.NotebookConfig.property.providerConfig"></a>
+
+```go
+ProviderConfig NotebookProviderConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#provider_config Notebook#provider_config}
 
 ---
 
@@ -1165,7 +1223,311 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/resources/notebook#source Notebook#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#source Notebook#source}.
+
+---
+
+### NotebookProviderConfig <a name="NotebookProviderConfig" id="@cdktf/provider-databricks.notebook.NotebookProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.notebook.NotebookProviderConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notebook"
+
+&notebook.NotebookProviderConfig {
+	WorkspaceId: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#workspace_id Notebook#workspace_id}. |
+
+---
+
+##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.notebook.NotebookProviderConfig.property.workspaceId"></a>
+
+```go
+WorkspaceId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/resources/notebook#workspace_id Notebook#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### NotebookProviderConfigOutputReference <a name="NotebookProviderConfigOutputReference" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/notebook"
+
+notebook.NewNotebookProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotebookProviderConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```go
+func WorkspaceIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.workspaceId"></a>
+
+```go
+func WorkspaceId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-databricks.notebook.NotebookProviderConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() NotebookProviderConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-databricks.notebook.NotebookProviderConfig">NotebookProviderConfig</a>
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters
+// https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatabricksClustersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
   */
   readonly clusterNameContains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#id DataDatabricksClusters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#id DataDatabricksClusters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}
   */
   readonly ids?: string[];
   /**
   * filter_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#filter_by DataDatabricksClusters#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#filter_by DataDatabricksClusters#filter_by}
   */
   readonly filterBy?: DataDatabricksClustersFilterBy;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#provider_config DataDatabricksClusters#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#provider_config DataDatabricksClusters#provider_config}
   */
   readonly providerConfig?: DataDatabricksClustersProviderConfig;
 }
 export interface DataDatabricksClustersFilterBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}
   */
   readonly clusterSources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}
   */
   readonly clusterStates?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}
   */
   readonly isPinned?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}
   */
   readonly policyId?: string;
 }
@@ -225,7 +225,7 @@ export class DataDatabricksClustersFilterByOutputReference extends cdktf.Complex
 }
 export interface DataDatabricksClustersProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#workspace_id DataDatabricksClusters#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#workspace_id DataDatabricksClusters#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -306,7 +306,7 @@ export class DataDatabricksClustersProviderConfigOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters databricks_clusters}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters databricks_clusters}
 */
 export class DataDatabricksClusters extends cdktf.TerraformDataSource {
 
@@ -322,7 +322,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatabricksClusters resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksClusters to import
-  * @param importFromId The id of the existing DataDatabricksClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksClusters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -334,7 +334,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.96.0/docs/data-sources/clusters databricks_clusters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/clusters databricks_clusters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -345,7 +345,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_clusters',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.96.0',
+        providerVersion: '1.97.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
